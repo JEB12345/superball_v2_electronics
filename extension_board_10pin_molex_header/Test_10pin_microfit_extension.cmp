@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = Wed 31 Aug 2016 12:19:33 AM PDT
+
+BeginCmp
+TimeStamp = /57C683C9;
+Reference = P1;
+ValeurCmp = CONN_02X05;
+IdModule  = Connectors_Molex:Connector_Microfit3_Header_02x05_Angled_43045-100x;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C68382;
+Reference = P2;
+ValeurCmp = CONN_02X05;
+IdModule  = Connectors_Molex:Connector_Microfit3_Header_02x05_Angled_43045-100x;
+EndCmp
+
+EndListe
