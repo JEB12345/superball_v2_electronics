@@ -1,0 +1,112 @@
+Removed Pin From Net: NetName=5V5_MERGE Pin=F?-1
+Removed Pin From Net: NetName=5V5_FUSE Pin=F?-2
+Removed Pin From Net: NetName=GDNSIG Pin=J?-0
+Removed Pin From Net: NetName=GDNSIG Pin=J?-0
+Removed Pin From Net: NetName=GDNSIG Pin=J?-0
+Removed Pin From Net: NetName=GDNSIG Pin=J?-0
+Removed Pin From Net: NetName=GDNSIG Pin=J?-8
+Change Component DesignItemId : Designator=C? Old DesignItemId=399-1097-1-ND New DesignItemId=478-3726-1-ND
+Change Component DesignItemId : Designator=C? Old DesignItemId=478-3726-1-ND New DesignItemId=399-1097-1-ND
+Change Component DesignItemId : Designator=J? Old DesignItemId=CONN_ETHERNET_MAG_PARJC07-111071A New DesignItemId=CONN_2x2
+Change Component Footprint: Designator=J? Old Footprint=ETHERNET_MAG_ARJC07-111071A New Footprint=CONN_2x2_100MIL_MALE
+Change Component Comment : Designator=J? Old Comment=CONN_ETHERNET_MAG_PARJC07-111071A New Comment=CONN HEADER 2x2POS T/H
+Added Component: Designator=J?(CONN_2x2_100MIL_MALE)
+Added Component: Designator=J?(CONN_2x2_100MIL_MALE)
+Added Component: Designator=J?(CONN_2x2_100MIL_MALE)
+Added Component: Designator=J?(ETHERNET_MAG_ARJC07-111071A)
+Added Pin To Net: NetName=5V5_MERGE Pin=F?-1
+Added Pin To Net: NetName=VBAT_IN Pin=F?-1
+Added Pin To Net: NetName=5V5_FUSE Pin=F?-2
+Added Pin To Net: NetName=VBAT Pin=F?-2
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? CAP_TANT_330UF_6.3V
+Added Member To Class: ClassName=Designator Member=Component C? CAP_TANT_330UF_6.3V
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? 680 µF
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component C? __template_cap
+Added Member To Class: ClassName=PIC Member=Component C? __template_cap
+Added Member To Class: ClassName=PIC Member=Component C? __template_cap
+Added Member To Class: ClassName=PIC Member=Component C? __template_cap
+Added Member To Class: ClassName=PIC Member=Component C? __template_cap
+Added Member To Class: ClassName=PIC Member=Component C? __template_cap
+Added Member To Class: ClassName=Designator Member=Component D? __template_diode_schottky
+Added Member To Class: ClassName=Designator Member=Component D? __template_diode_schottky
+Added Member To Class: ClassName=Designator Member=Component D? __template_diode_schottky
+Added Member To Class: ClassName=Designator Member=Component D? __template_diode_std
+Added Member To Class: ClassName=Designator Member=Component F? __template_fuse
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component J? CONN_ETHERNET_MAG_PARJC07-111071A
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component J? CONN_ETHERNET_MAG_PARJC07-111071A
+Added Member To Class: ClassName=Designator Member=Component L? IND_COILCRAFT_XAL6030-182
+Added Member To Class: ClassName=Designator Member=Component Q? PFET_IRF7329PBFCT-ND
+Added Member To Class: ClassName=Designator Member=Component Q? PFET_IRF7329PBFCT-ND
+Added Member To Class: ClassName=Designator Member=Component Q? NFET_SI1970DH
+Added Member To Class: ClassName=Designator Member=Component Q? NFET_CSD16323Q3
+Added Member To Class: ClassName=Designator Member=Component Q? 85V 50A TO-252
+Added Member To Class: ClassName=Designator Member=Component Q? PFET_IRF7329PBFCT-ND
+Added Member To Class: ClassName=Designator Member=Component Q? PFET_IRF7329PBFCT-ND
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? RES_CURRENT_SENSE_0.002_OHM_1W_1%_1206_SMD
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? RESISTOR .020 OHM 1/4W 1% 0805
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component R? __template_resistor
+Added Member To Class: ClassName=ETHERNET_USB_HUB Member=Component R? __template_resistor
+Added Member To Class: ClassName=Designator Member=Component U? TSENSE_TC74
+Added Member To Class: ClassName=Designator Member=Component U? ISENSE_ACS711
+Added Member To Class: ClassName=Designator Member=Component U? FETDRIVER_LT1910
+Added Member To Class: ClassName=Designator Member=Component U? PIC12F1571-I/MS
+Added Member To Class: ClassName=Designator Member=Component U? BUFFER_SN74AHCT1G125DBVR
+Added Member To Class: ClassName=Designator Member=Component U? LTC1871EMS#PBF
+Added Member To Class: ClassName=Designator Member=Component U? UCC381DP-3
+Added Member To Class: ClassName=Designator Member=Component U? BUCK_TPS54540
+Added Room: Name=Designator

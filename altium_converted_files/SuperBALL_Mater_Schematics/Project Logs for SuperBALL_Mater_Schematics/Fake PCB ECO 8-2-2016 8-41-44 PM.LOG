@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=3V3_LAN Pin=C?-1
+Removed Pin From Net: NetName=GDNSIG Pin=C?-1
+Removed Pin From Net: NetName=GDNSIG Pin=C?-1
+Removed Pin From Net: NetName=GDNSIG Pin=C?-1
+Removed Pin From Net: NetName=GDNSIG Pin=C?-1
+Removed Pin From Net: NetName=GDNSIG Pin=C?-1
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=3V3 Pin=C?-2
+Removed Pin From Net: NetName=GDNSIG Pin=C?-2
+Change Component DesignItemId : Designator=C? Old DesignItemId=399-1097-1-ND New DesignItemId=478-3726-1-ND
+Added Component: Designator=C?(C0603)
+Added Component: Designator=C?(C0603)
+Added Component: Designator=C?(C0603)
+Added Component: Designator=C?(C0603)
+Added Component: Designator=C?(C0603)
+Added Pin To Net: NetName=3V3_LAN Pin=C?-1
+Added Pin To Net: NetName=GDNSIG Pin=C?-1
+Added Pin To Net: NetName=GDNSIG Pin=C?-1
+Added Pin To Net: NetName=GDNSIG Pin=C?-1
+Added Pin To Net: NetName=GDNSIG Pin=C?-1
+Added Pin To Net: NetName=GDNSIG Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=GDNSIG Pin=C?-2
+Added Pin To Net: NetName=5V5_MERGE Pin=F?-1
+Added Pin To Net: NetName=5V5_FUSE Pin=F?-2
+Change Class Name : Old Net Name=Designator New Net Name=USB_CONSOL
+Added Class: Name=Designator
+Added Class: Name=EDISON
+Added Class: Name=ETHERNET_USB_HUB
+Added Class: Name=PIC
+Change Room Name: Old Name=Designator_3 New Name=PIC
+Change Room Scope: Old Scope=InComponentClass('Designator') New Scope=InComponentClass('PIC')
+Change Room Name: Old Name=Designator_4 New Name=USB_CONSOL
+Change Room Scope: Old Scope=InComponentClass('Designator') New Scope=InComponentClass('USB_CONSOL')
+Added Room: Name=EDISON
+Added Room: Name=ETHERNET_USB_HUB
