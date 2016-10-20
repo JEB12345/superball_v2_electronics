@@ -1,4 +1,4 @@
-update=10/20/2016 10:54:19 AM
+update=10/20/2016 1:21:56 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Program Files/KiCad/share/kicad
+LibDir=C:/Program Files/KiCad/share/kicad;C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,3 +58,12 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/EDISON-SchDoc-cache
+LibName31=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/ETHERNET_USB_HUB-SchDoc-cache
+LibName32=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/PIC-SchDoc-cache
+LibName33=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/RF-SchDoc-cache
+LibName34=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Controller-SchDoc-cache
+LibName35=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Master-SchDoc-cache
+LibName36=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Power-SchDoc-cache
+LibName37=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/USB_CONSOL-SchDoc-cache
+LibName38=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/VBAT_PROTECTION_REGS-SchDoc-cache
