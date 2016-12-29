@@ -39,6 +39,7 @@ LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
 LIBS:LMR16020
 LIBS:TPS832130SIL
+LIBS:TPS754
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -294,17 +295,6 @@ Text Label 21450 5930 0    60   ~ 0
 I2C_1_SDA
 Text Label 21450 6040 0    60   ~ 0
 I2C_1_SCL
-$Sheet
-S 2150 2450 820  710 
-U 58643B62
-F0 "Power_conversion" 60
-F1 "Power_conversion.sch" 60
-F2 "V24_in" I L 2150 2670 60 
-F3 "GND" I L 2150 2930 60 
-F4 "V12_out" I R 2970 2550 60 
-F5 "3V3_out" I R 2970 3030 60 
-F6 "V5_out" I R 2970 2810 60 
-$EndSheet
 $Comp
 L VCC #PWR?
 U 1 1 58643DBD
@@ -388,4 +378,15 @@ F 3 "" H 1140 700 50  0000 C CNN
 	1    1140 700 
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 2100 1750 820  710 
+U 58643B62
+F0 "Power_conversion" 60
+F1 "Power_conversion.sch" 60
+F2 "V24_in" I L 2100 1950 60 
+F3 "GND" I L 2100 2250 60 
+F4 "V12_out" O R 2920 1850 60 
+F5 "V5_out" O R 2920 2100 60 
+F6 "3V3_out" O R 2920 2350 60 
+$EndSheet
 $EndSCHEMATC

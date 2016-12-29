@@ -1,4 +1,4 @@
-update=12/28/2016 2:12:36 PM
+update=12/29/2016 11:45:05 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Program Files/KiCad/share/kicad;C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics;../main_master_board
+LibDir=C:/Program Files/KiCad/share/kicad;../main_master_board;../altium_converted_files/SuperBALL_Mater_Schematics
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -69,3 +69,13 @@ LibName37=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_conv
 LibName38=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/VBAT_PROTECTION_REGS-SchDoc-cache
 LibName39=LMR16020
 LibName40=TPS832130SIL
+LibName41=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/EDISON-SchDoc-cache
+LibName42=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/ETHERNET_USB_HUB-SchDoc-cache
+LibName43=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/PIC-SchDoc-cache
+LibName44=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/RF-SchDoc-cache
+LibName45=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Controller-SchDoc-cache
+LibName46=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Master-SchDoc-cache
+LibName47=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Power-SchDoc-cache
+LibName48=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/USB_CONSOL-SchDoc-cache
+LibName49=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/VBAT_PROTECTION_REGS-SchDoc-cache
+LibName50=TPS754
