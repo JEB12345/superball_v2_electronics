@@ -1,4 +1,4 @@
-update=10/20/2016 1:21:56 PM
+update=12/28/2016 2:12:36 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Program Files/KiCad/share/kicad;C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics
+LibDir=C:/Program Files/KiCad/share/kicad;C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics;../main_master_board
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -67,3 +67,5 @@ LibName35=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_conv
 LibName36=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/topsheet_Power-SchDoc-cache
 LibName37=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/USB_CONSOL-SchDoc-cache
 LibName38=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/VBAT_PROTECTION_REGS-SchDoc-cache
+LibName39=LMR16020
+LibName40=TPS832130SIL
