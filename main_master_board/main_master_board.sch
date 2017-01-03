@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:main_master_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -41,6 +42,8 @@ LIBS:LMR16020
 LIBS:TPS832130SIL
 LIBS:TPS754
 LIBS:TPS61089
+LIBS:FDS4935A
+LIBS:Si1900DL
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -380,14 +383,15 @@ F 3 "" H 1140 700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2100 1750 820  710 
+S 2100 1750 1120 740 
 U 58643B62
 F0 "Power_conversion" 60
 F1 "Power_conversion.sch" 60
-F2 "V24_in" I L 2100 1950 60 
-F3 "GND" I L 2100 2250 60 
-F4 "V12_out" O R 2920 1850 60 
-F5 "V5_out" O R 2920 2100 60 
-F6 "3V3_out" O R 2920 2350 60 
+F2 "V24_in" I L 2100 1850 60 
+F3 "GND" I L 2100 2100 60 
+F4 "V12_out" O R 3220 1850 60 
+F5 "V5_out" O R 3220 2100 60 
+F6 "3V3_out" O R 3220 2350 60 
+F7 "Vmain" I L 2100 2340 60 
 $EndSheet
 $EndSCHEMATC
