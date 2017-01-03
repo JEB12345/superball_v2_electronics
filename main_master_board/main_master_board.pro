@@ -1,4 +1,4 @@
-update=12/29/2016 11:45:05 AM
+update=1/2/2017 4:20:51 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -79,3 +79,4 @@ LibName47=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted
 LibName48=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/USB_CONSOL-SchDoc-cache
 LibName49=C:/Users/BB/Documents/GitHub/superball_v2_electronics/altium_converted_files/SuperBALL_Mater_Schematics/VBAT_PROTECTION_REGS-SchDoc-cache
 LibName50=TPS754
+LibName51=TPS61089
