@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:main_master_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,12 +43,76 @@ LIBS:TPS754
 LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
+LIBS:Sensors
+LIBS:TransistorParts
+LIBS:LP3852-3.3
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -387,11 +450,64 @@ S 2100 1750 1120 740
 U 58643B62
 F0 "Power_conversion" 60
 F1 "Power_conversion.sch" 60
-F2 "V24_in" I L 2100 1850 60 
-F3 "GND" I L 2100 2100 60 
-F4 "V12_out" O R 3220 1850 60 
-F5 "V5_out" O R 3220 2100 60 
-F6 "3V3_out" O R 3220 2350 60 
-F7 "Vmain" I L 2100 2340 60 
+F2 "GND" I L 2100 2390 60 
+F3 "V12_out" O R 3220 1850 60 
+F4 "V5_out" O R 3220 2100 60 
+F5 "3V3_out" O R 3220 2350 60 
+F6 "Vmain" I L 2100 1850 60 
+F7 "Vbackup" I L 2100 2100 60 
+$EndSheet
+$Comp
+L Polyfuse F?
+U 1 1 586F5F11
+P 1680 1850
+F 0 "F?" V 1580 1850 50  0000 C CNN
+F 1 "Polyfuse" V 1780 1850 50  0000 C CNN
+F 2 "30R800UH" H 1730 1650 50  0001 L CNN
+F 3 "http://datasheet.octopart.com/30R800UH-Littelfuse-datasheet-8746242.pdf" H 1680 1850 50  0001 C CNN
+	1    1680 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1830 1850 2100 1850
+Wire Wire Line
+	1530 1850 1390 1850
+Wire Wire Line
+	1390 1850 1390 1760
+$Comp
+L +24V #PWR?
+U 1 1 586F6619
+P 1390 1760
+F 0 "#PWR?" H 1390 1610 50  0001 C CNN
+F 1 "+24V" H 1390 1900 50  0000 C CNN
+F 2 "" H 1390 1760 50  0000 C CNN
+F 3 "" H 1390 1760 50  0000 C CNN
+	1    1390 1760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2390 1970 2390
+Wire Wire Line
+	1970 2390 1970 2480
+$Comp
+L GND #PWR?
+U 1 1 586F7F25
+P 1970 2480
+F 0 "#PWR?" H 1970 2230 50  0001 C CNN
+F 1 "GND" H 1970 2330 50  0000 C CNN
+F 2 "" H 1970 2480 50  0000 C CNN
+F 3 "" H 1970 2480 50  0000 C CNN
+	1    1970 2480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2090 2100 1550 2100
+Text Label 1570 2100 0    60   ~ 0
+Vbackup_in
+$Sheet
+S 3870 2000 1240 870 
+U 5870684B
+F0 "Power_Saftey_Switches" 60
+F1 "Power_Saftey_Switches.sch" 60
 $EndSheet
 $EndSCHEMATC
