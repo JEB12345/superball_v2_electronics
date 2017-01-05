@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:main_master_board-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,19 +44,7 @@ LIBS:TPS754
 LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -112,7 +101,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -446,68 +435,71 @@ F 3 "" H 1140 700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2100 1750 1120 740 
+S 3350 1760 1120 740 
 U 58643B62
 F0 "Power_conversion" 60
 F1 "Power_conversion.sch" 60
-F2 "GND" I L 2100 2390 60 
-F3 "V12_out" O R 3220 1850 60 
-F4 "V5_out" O R 3220 2100 60 
-F5 "3V3_out" O R 3220 2350 60 
-F6 "Vmain" I L 2100 1850 60 
-F7 "Vbackup" I L 2100 2100 60 
+F2 "GND" I L 3350 2400 60 
+F3 "V12_out" O R 4470 1860 60 
+F4 "V5_out" O R 4470 2110 60 
+F5 "3V3_out" O R 4470 2360 60 
+F6 "Vmain" I L 3350 1860 60 
+F7 "Vbackup" I L 3350 2110 60 
 $EndSheet
-$Comp
-L Polyfuse F?
-U 1 1 586F5F11
-P 1680 1850
-F 0 "F?" V 1580 1850 50  0000 C CNN
-F 1 "Polyfuse" V 1780 1850 50  0000 C CNN
-F 2 "30R800UH" H 1730 1650 50  0001 L CNN
-F 3 "http://datasheet.octopart.com/30R800UH-Littelfuse-datasheet-8746242.pdf" H 1680 1850 50  0001 C CNN
-	1    1680 1850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1830 1850 2100 1850
+	3350 2400 3220 2400
 Wire Wire Line
-	1530 1850 1390 1850
-Wire Wire Line
-	1390 1850 1390 1760
-$Comp
-L +24V #PWR?
-U 1 1 586F6619
-P 1390 1760
-F 0 "#PWR?" H 1390 1610 50  0001 C CNN
-F 1 "+24V" H 1390 1900 50  0000 C CNN
-F 2 "" H 1390 1760 50  0000 C CNN
-F 3 "" H 1390 1760 50  0000 C CNN
-	1    1390 1760
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 2390 1970 2390
-Wire Wire Line
-	1970 2390 1970 2480
+	3220 2400 3220 2490
 $Comp
 L GND #PWR?
 U 1 1 586F7F25
-P 1970 2480
-F 0 "#PWR?" H 1970 2230 50  0001 C CNN
-F 1 "GND" H 1970 2330 50  0000 C CNN
-F 2 "" H 1970 2480 50  0000 C CNN
-F 3 "" H 1970 2480 50  0000 C CNN
-	1    1970 2480
+P 3220 2490
+F 0 "#PWR?" H 3220 2240 50  0001 C CNN
+F 1 "GND" H 3220 2340 50  0000 C CNN
+F 2 "" H 3220 2490 50  0000 C CNN
+F 3 "" H 3220 2490 50  0000 C CNN
+	1    3220 2490
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2090 2100 1550 2100
-Text Label 1570 2100 0    60   ~ 0
+	3340 2110 2800 2110
+Text Label 2820 2110 0    60   ~ 0
 Vbackup_in
 $Sheet
-S 3870 2000 1240 870 
+S 4840 1680 1240 870 
 U 5870684B
 F0 "Power_Saftey_Switches" 60
 F1 "Power_Saftey_Switches.sch" 60
 $EndSheet
+Wire Wire Line
+	3350 1860 3040 1860
+Text Label 3060 1860 0    60   ~ 0
+Vmain
+$Sheet
+S 1050 1670 1240 890 
+U 586ED0FA
+F0 "Battery_inputs" 60
+F1 "Battery_inputs.sch" 60
+F2 "V12_in" I L 1050 1830 60 
+F3 "Vmain_out" O R 2290 1850 60 
+$EndSheet
+Wire Wire Line
+	2290 1850 2570 1850
+Text Label 2310 1850 0    60   ~ 0
+Vmain
+Wire Wire Line
+	1050 1830 910  1830
+Wire Wire Line
+	910  1830 910  1740
+$Comp
+L +24V #PWR?
+U 1 1 586EE487
+P 910 1740
+F 0 "#PWR?" H 910 1590 50  0001 C CNN
+F 1 "+24V" H 910 1880 50  0000 C CNN
+F 2 "" H 910 1740 50  0000 C CNN
+F 3 "" H 910 1740 50  0000 C CNN
+	1    910  1740
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
