@@ -44,7 +44,19 @@ LIBS:TPS754
 LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
 LIBS:Sensors
+LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -101,7 +113,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -114,40 +126,598 @@ $EndDescr
 $Comp
 L PSMN013-80YS Q?
 U 1 1 5870686A
-P 5660 2430
-F 0 "Q?" H 6110 2530 40  0000 R CNN
-F 1 "PSMN013-80YS" H 6510 2430 40  0000 R TNN
-F 2 "SOT669" H 6110 2330 30  0000 C CNN
-F 3 "" H 5660 2430 60  0000 C CNN
-	1    5660 2430
+P 9160 3090
+F 0 "Q?" H 9610 3190 40  0000 R CNN
+F 1 "PSMN013-80YS" H 10010 3090 40  0000 R TNN
+F 2 "SOT669" H 9610 2990 30  0000 C CNN
+F 3 "" H 9160 3090 60  0000 C CNN
+	1    9160 3090
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6110 2180 6720 2180
-Wire Wire Line
-	6110 2330 6190 2330
-Wire Wire Line
-	6190 2330 6190 2630
-Wire Wire Line
-	6190 2630 6110 2630
-Wire Wire Line
-	6110 2480 6500 2480
-Connection ~ 6190 2480
 $Comp
 L D_Zener_Small D?
 U 1 1 58706EF3
-P 6350 2330
-F 0 "D?" H 6350 2420 50  0000 C CNN
-F 1 "SMP12A" H 6350 2240 50  0000 C CNN
-F 2 "" V 6350 2330 50  0000 C CNN
-F 3 "" V 6350 2330 50  0000 C CNN
-	1    6350 2330
+P 9850 2990
+F 0 "D?" H 9850 3080 50  0000 C CNN
+F 1 "SMP12A" H 9850 2900 50  0000 C CNN
+F 2 "" V 9850 2990 50  0000 C CNN
+F 3 "" V 9850 2990 50  0000 C CNN
+	1    9850 2990
 	0    1    1    0   
 $EndComp
+Text Notes 9990 3030 0    51   ~ 0
+TVS to \nkeep <20V
+$Comp
+L LT1910 Q?
+U 1 1 587029DA
+P 9180 4720
+F 0 "Q?" V 9520 4860 40  0000 R CNN
+F 1 "LT1910" V 9490 4720 40  0000 R TNN
+F 2 "SO_8" V 8870 4620 30  0000 C CNN
+F 3 "" H 9180 4720 60  0000 C CNN
+	1    9180 4720
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58702B64
+P 8590 2840
+F 0 "R?" V 8670 2840 50  0000 C CNN
+F 1 "0.0025" V 8490 2840 50  0000 C CNN
+F 2 "" V 8520 2840 50  0000 C CNN
+F 3 "" H 8590 2840 50  0000 C CNN
+	1    8590 2840
+	1    0    0    -1  
+$EndComp
+Text HLabel 1020 780  0    60   Input ~ 0
+Vmain
+Text Label 1090 780  0    60   ~ 0
+Vmain
+Text Label 8330 2630 0    60   ~ 0
+Vmain
+Text Label 8310 3090 0    60   ~ 0
+Sense
+$Comp
+L D_Small D?
+U 1 1 587037B2
+P 8270 4450
+F 0 "D?" H 8220 4530 50  0000 L CNN
+F 1 "DA2S10100L" H 8030 4370 50  0000 L CNN
+F 2 "" H 8270 4450 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/DA2S10100L-Panasonic-datasheet-13317586.pdf" H 8270 4450 50  0001 C CNN
+	1    8270 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5870381B
+P 8280 4620
+F 0 "R?" V 8360 4620 50  0000 C CNN
+F 1 "5K" V 8280 4620 50  0000 C CNN
+F 2 "" V 8210 4620 50  0000 C CNN
+F 3 "" H 8280 4620 50  0000 C CNN
+	1    8280 4620
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5870390B
+P 8490 4770
+F 0 "C?" H 8500 4840 50  0000 L CNN
+F 1 "48nF" H 8500 4690 50  0000 L CNN
+F 2 "" H 8490 4770 50  0000 C CNN
+F 3 "" H 8490 4770 50  0000 C CNN
+	1    8490 4770
+	1    0    0    -1  
+$EndComp
+Text Label 7810 4620 0    60   ~ 0
+Sense
+Text Label 8200 4920 0    60   ~ 0
+Vmain
+NoConn ~ 8730 4770
+Text HLabel 990  1000 0    60   Input ~ 0
+GND
+Text Label 1030 1000 0    60   ~ 0
+GND
+Text Label 9710 5110 0    60   ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 5870415A
+P 9970 4900
+F 0 "C?" H 9980 4970 50  0000 L CNN
+F 1 "2uF" H 9980 4820 50  0000 L CNN
+F 2 "" H 9970 4900 50  0000 C CNN
+F 3 "" H 9970 4900 50  0000 C CNN
+	1    9970 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 587043AE
+P 9910 4620
+F 0 "R?" V 9990 4620 50  0000 C CNN
+F 1 "1K" V 9910 4620 50  0000 C CNN
+F 2 "" V 9840 4620 50  0000 C CNN
+F 3 "" H 9910 4620 50  0000 C CNN
+	1    9910 4620
+	0    1    1    0   
+$EndComp
+Text Label 10090 4620 0    60   ~ 0
+KS_nFault
+Text Label 9650 4470 0    60   ~ 0
+Motor_en
+$Comp
+L R R?
+U 1 1 58704767
+P 9000 4120
+F 0 "R?" V 9080 4120 50  0000 C CNN
+F 1 "5K" V 9000 4120 50  0000 C CNN
+F 2 "" V 8930 4120 50  0000 C CNN
+F 3 "" H 9000 4120 50  0000 C CNN
+	1    9000 4120
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58704818
+P 9400 4120
+F 0 "R?" V 9480 4120 50  0000 C CNN
+F 1 "5K" V 9400 4120 50  0000 C CNN
+F 2 "" V 9330 4120 50  0000 C CNN
+F 3 "" H 9400 4120 50  0000 C CNN
+	1    9400 4120
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 58705046
+P 9640 4280
+F 0 "C?" V 9590 4360 50  0000 L CNN
+F 1 "100nF" V 9590 4020 50  0000 L CNN
+F 2 "" H 9640 4280 50  0000 C CNN
+F 3 "" H 9640 4280 50  0000 C CNN
+	1    9640 4280
+	0    -1   -1   0   
+$EndComp
+Text Label 9920 4280 0    60   ~ 0
+GND
+Text Label 9900 2840 0    60   ~ 0
+main_gate
+Text Label 9630 4120 0    60   ~ 0
+main_gate
+$Comp
+L D_Small D?
+U 1 1 587057CF
+P 9190 3960
+F 0 "D?" H 9140 4040 50  0000 L CNN
+F 1 "DA2S10100L" H 8950 3880 50  0000 L CNN
+F 2 "" H 9190 3960 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/DA2S10100L-Panasonic-datasheet-13317586.pdf" H 9190 3960 50  0001 C CNN
+	1    9190 3960
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 58705B16
+P 7980 5180
+F 0 "C?" H 7990 5250 50  0000 L CNN
+F 1 "100uF" H 7990 5100 50  0000 L CNN
+F 2 "" H 7980 5180 50  0000 C CNN
+F 3 "" H 7980 5180 50  0000 C CNN
+	1    7980 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 58705C04
+P 8290 5180
+F 0 "C?" H 8300 5250 50  0000 L CNN
+F 1 "100nF" H 8300 5100 50  0000 L CNN
+F 2 "" H 8290 5180 50  0000 C CNN
+F 3 "" H 8290 5180 50  0000 C CNN
+	1    8290 5180
+	1    0    0    -1  
+$EndComp
+Text Label 8160 5420 0    60   ~ 0
+GND
+$Comp
+L 74AHC1G126 U?
+U 1 1 587062D7
+P 3930 3230
+F 0 "U?" H 3830 3380 40  0000 C CNN
+F 1 "74HC1G126" H 3930 3080 40  0000 C CNN
+F 2 "" H 3930 3230 60  0000 C CNN
+F 3 "" H 3930 3230 60  0000 C CNN
+	1    3930 3230
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58707C7E
+P 4480 3230
+F 0 "R?" V 4560 3230 50  0000 C CNN
+F 1 "1K" V 4480 3230 50  0000 C CNN
+F 2 "" V 4410 3230 50  0000 C CNN
+F 3 "" H 4480 3230 50  0000 C CNN
+	1    4480 3230
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58707CF5
+P 3500 3450
+F 0 "R?" V 3580 3450 50  0000 C CNN
+F 1 "10K" V 3500 3450 50  0000 C CNN
+F 2 "" V 3430 3450 50  0000 C CNN
+F 3 "" H 3500 3450 50  0000 C CNN
+	1    3500 3450
+	-1   0    0    1   
+$EndComp
+Text Label 4640 3230 0    60   ~ 0
+KS_physical_in
+Text Label 4030 3350 0    60   ~ 0
+GND
+Text Label 3520 3640 0    60   ~ 0
+GND
+Text HLabel 980  1210 0    60   Input ~ 0
+3V3
+Text Label 1040 1210 0    60   ~ 0
+3V3
+Text Notes 3790 3700 0    60   Italic 0
+Do not get\n74HCT1G126\nvariant
+Text Label 4030 3130 0    60   ~ 0
+3V3
+Text Label 3910 2990 2    60   ~ 0
+KS_watchdog
+Text Label 3450 3230 2    60   ~ 0
+KS_uC
+$Comp
+L R R?
+U 1 1 5870ACF4
+P 4650 4040
+F 0 "R?" V 4730 4040 50  0000 C CNN
+F 1 "10K" V 4650 4040 50  0000 C CNN
+F 2 "" V 4580 4040 50  0000 C CNN
+F 3 "" H 4650 4040 50  0000 C CNN
+	1    4650 4040
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5870AEC8
+P 4650 4250
+F 0 "R?" V 4730 4250 50  0000 C CNN
+F 1 "10K" V 4650 4250 50  0000 C CNN
+F 2 "" V 4580 4250 50  0000 C CNN
+F 3 "" H 4650 4250 50  0000 C CNN
+	1    4650 4250
+	0    -1   -1   0   
+$EndComp
+Text Label 3940 4040 0    60   ~ 0
+KS_watchdog
+Text Label 4490 4250 2    60   ~ 0
+KS_physical_out
+Text Label 4810 4040 0    60   ~ 0
+GND
+Text Label 4810 4250 0    60   ~ 0
+GND
+$Comp
+L PIC12(L)F1571/2 U?
+U 1 1 5870B96B
+P 3900 5690
+F 0 "U?" H 3950 5590 60  0000 C CNN
+F 1 "PIC12(L)F1571/2" H 4300 6240 60  0000 C CNN
+F 2 "" H 3900 5690 60  0000 C CNN
+F 3 "" H 3900 5690 60  0000 C CNN
+	1    3900 5690
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5870C68C
+P 4350 4920
+F 0 "C?" V 4410 5010 50  0000 L CNN
+F 1 "100nF" V 4400 4640 50  0000 L CNN
+F 2 "" H 4388 4770 50  0000 C CNN
+F 3 "" H 4350 4920 50  0000 C CNN
+	1    4350 4920
+	0    -1   -1   0   
+$EndComp
+Text Label 5180 5290 0    60   ~ 0
+GND
+Text Label 3340 5290 0    60   ~ 0
+3V3
+Text Label 3210 5390 0    60   ~ 0
+uC_KS_1
+Text Label 3210 5490 0    60   ~ 0
+uC_KS_2
 Wire Wire Line
-	6350 2430 6350 2480
-Connection ~ 6350 2480
+	9610 2840 9850 2840
 Wire Wire Line
-	6350 2230 6350 2180
-Connection ~ 6350 2180
+	9850 2840 10220 2840
+Wire Wire Line
+	9610 2990 9690 2990
+Wire Wire Line
+	9690 2990 9690 3140
+Wire Wire Line
+	9690 3140 9690 3290
+Wire Wire Line
+	9690 3290 9610 3290
+Wire Wire Line
+	9610 3140 9690 3140
+Wire Wire Line
+	9690 3140 9850 3140
+Wire Wire Line
+	9850 3140 10270 3140
+Connection ~ 9690 3140
+Wire Wire Line
+	9850 3090 9850 3140
+Connection ~ 9850 3140
+Wire Wire Line
+	9850 2890 9850 2840
+Connection ~ 9850 2840
+Wire Wire Line
+	1020 780  1500 780 
+Wire Wire Line
+	8590 2990 8590 3090
+Wire Wire Line
+	8310 3090 8590 3090
+Wire Wire Line
+	8590 3090 8710 3090
+Wire Wire Line
+	8590 2690 8590 2630
+Wire Wire Line
+	8590 2630 8310 2630
+Connection ~ 8590 3090
+Wire Wire Line
+	8430 4620 8490 4620
+Wire Wire Line
+	8490 4620 8730 4620
+Wire Wire Line
+	8490 4450 8490 4620
+Wire Wire Line
+	8490 4620 8490 4670
+Connection ~ 8490 4620
+Wire Wire Line
+	8490 4870 8490 4920
+Wire Wire Line
+	8150 4920 8490 4920
+Wire Wire Line
+	8490 4920 8730 4920
+Connection ~ 8490 4920
+Wire Wire Line
+	8370 4450 8490 4450
+Wire Wire Line
+	7750 4620 8100 4620
+Wire Wire Line
+	8100 4620 8130 4620
+Wire Wire Line
+	8170 4450 8100 4450
+Wire Wire Line
+	8100 4450 8100 4620
+Connection ~ 8100 4620
+Wire Wire Line
+	990  1000 1230 1000
+Wire Wire Line
+	9630 4920 9700 4920
+Wire Wire Line
+	9700 4920 9700 5110
+Wire Wire Line
+	9700 5110 9970 5110
+Wire Wire Line
+	9970 5110 10160 5110
+Wire Wire Line
+	9970 5000 9970 5110
+Connection ~ 9970 5110
+Wire Wire Line
+	9630 4770 9970 4770
+Wire Wire Line
+	9970 4770 9970 4800
+Wire Wire Line
+	9630 4620 9760 4620
+Wire Wire Line
+	10060 4620 10560 4620
+Wire Wire Line
+	9630 4470 10030 4470
+Wire Wire Line
+	8700 4470 8730 4470
+Wire Wire Line
+	8700 3960 8700 4120
+Wire Wire Line
+	8700 4120 8700 4470
+Wire Wire Line
+	8700 4120 8850 4120
+Wire Wire Line
+	9150 4120 9200 4120
+Wire Wire Line
+	9200 4120 9250 4120
+Wire Wire Line
+	9550 4120 9580 4120
+Wire Wire Line
+	9580 4120 10080 4120
+Wire Wire Line
+	9290 3960 9580 3960
+Wire Wire Line
+	9580 3960 9580 4120
+Connection ~ 9580 4120
+Wire Wire Line
+	9090 3960 8700 3960
+Connection ~ 8700 4120
+Wire Wire Line
+	9200 4120 9200 4280
+Wire Wire Line
+	9200 4280 9540 4280
+Connection ~ 9200 4120
+Wire Wire Line
+	9740 4280 10090 4280
+Wire Wire Line
+	7980 5080 7980 5030
+Wire Wire Line
+	7980 5030 8150 5030
+Wire Wire Line
+	8150 5030 8290 5030
+Wire Wire Line
+	8290 5030 8290 5080
+Wire Wire Line
+	8150 4920 8150 5030
+Connection ~ 8150 5030
+Wire Wire Line
+	7980 5280 7980 5330
+Wire Wire Line
+	7980 5330 8140 5330
+Wire Wire Line
+	8140 5330 8290 5330
+Wire Wire Line
+	8290 5330 8290 5280
+Wire Wire Line
+	8140 5330 8140 5420
+Wire Wire Line
+	8140 5420 8340 5420
+Connection ~ 8140 5330
+Wire Wire Line
+	3980 3280 3980 3350
+Wire Wire Line
+	3980 3350 4240 3350
+Wire Wire Line
+	3980 3180 3980 3130
+Wire Wire Line
+	3980 3130 4240 3130
+Wire Wire Line
+	3150 3230 3500 3230
+Wire Wire Line
+	3500 3230 3630 3230
+Wire Wire Line
+	3500 3230 3500 3300
+Wire Wire Line
+	4180 3230 4330 3230
+Wire Wire Line
+	3930 3030 3930 2990
+Wire Wire Line
+	3930 2990 3300 2990
+Connection ~ 3500 3230
+Wire Wire Line
+	3500 3600 3500 3640
+Wire Wire Line
+	3500 3640 3690 3640
+Wire Wire Line
+	4630 3230 5310 3230
+Wire Wire Line
+	980  1210 1300 1210
+Wire Wire Line
+	1300 1210 1300 1200
+Wire Wire Line
+	4500 4040 3910 4040
+Wire Wire Line
+	4500 4250 3910 4250
+Wire Wire Line
+	4800 4040 5010 4040
+Wire Wire Line
+	4800 4250 5010 4250
+Wire Wire Line
+	4500 4920 5150 4920
+Wire Wire Line
+	5150 4920 5150 5290
+Wire Wire Line
+	5100 5290 5150 5290
+Wire Wire Line
+	5150 5290 5350 5290
+Wire Wire Line
+	3310 5290 3540 5290
+Wire Wire Line
+	3540 5290 3600 5290
+Wire Wire Line
+	3540 5290 3540 4920
+Wire Wire Line
+	3540 4920 4200 4920
+Connection ~ 3540 5290
+Connection ~ 5150 5290
+Wire Wire Line
+	3600 5390 3190 5390
+Wire Wire Line
+	3600 5490 3190 5490
+Wire Wire Line
+	3600 5590 3190 5590
+Text Label 3210 5590 0    60   ~ 0
+MCLR_KS
+Text Label 5130 5390 0    60   ~ 0
+PGED_KS
+Text Label 5130 5490 0    60   ~ 0
+PGEC_KS
+Text Label 5130 5590 0    60   ~ 0
+KS_watchdog
+Wire Wire Line
+	5100 5590 5710 5590
+Wire Wire Line
+	5100 5490 5530 5490
+Wire Wire Line
+	5100 5390 5530 5390
+$Comp
+L CONN_01X05 P?
+U 1 1 5870DB97
+P 2260 5530
+F 0 "P?" H 2260 5830 50  0000 C CNN
+F 1 "CONN_01X05" V 2360 5530 50  0000 C CNN
+F 2 "" H 2260 5530 50  0000 C CNN
+F 3 "" H 2260 5530 50  0000 C CNN
+	1    2260 5530
+	-1   0    0    1   
+$EndComp
+Text Label 2490 5730 0    60   ~ 0
+MCLR_KS
+Text Label 2490 5630 0    60   ~ 0
+3V3
+Text Label 2490 5530 0    60   ~ 0
+GND
+Text Label 2490 5430 0    60   ~ 0
+PGED_KS
+Text Label 2490 5330 0    60   ~ 0
+PGEC_KS
+Wire Wire Line
+	2460 5330 2890 5330
+Wire Wire Line
+	2460 5430 2890 5430
+Wire Wire Line
+	2460 5530 2680 5530
+Wire Wire Line
+	2460 5630 2680 5630
+Wire Wire Line
+	2460 5730 2890 5730
+Text Notes 2130 5200 0    60   ~ 0
+KS_uC_programmer
+Text Notes 4500 5800 0    60   ~ 0
+KS_uC
+Text Label 9900 3140 0    60   ~ 0
+Vmotors
+Wire Notes Line
+	480  1460 1660 1460
+Wire Notes Line
+	1660 1460 1660 480 
+Text HLabel 10700 830  2    60   Output ~ 0
+Vmotors
+Wire Wire Line
+	10700 830  10310 830 
+Text Label 10330 830  0    60   ~ 0
+Vmotors
+$Comp
+L SWITCH_SPST SW?
+U 1 1 58711BE2
+P 2270 4400
+F 0 "SW?" H 2270 4550 60  0000 C CNN
+F 1 "SWITCH_SPST" V 2270 4080 60  0000 C CNN
+F 2 "" H 2270 4400 60  0000 C CNN
+F 3 "" H 2270 4400 60  0000 C CNN
+	1    2270 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2270 4600 3040 4600
+Wire Wire Line
+	2270 4200 2970 4200
+Text Label 2300 4600 0    60   ~ 0
+KS_physical_out
+Text Label 2300 4200 0    60   ~ 0
+KS_physical_in
+Text Notes 2260 4080 0    60   ~ 0
+Manual switch to \nturn motors off
 $EndSCHEMATC

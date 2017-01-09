@@ -44,7 +44,19 @@ LIBS:TPS754
 LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
 LIBS:Sensors
+LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -101,7 +113,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -156,13 +168,13 @@ NoConn ~ 18840 1860
 $Comp
 L +3V3 #PWR?
 U 1 1 58094C11
-P 1380 800
-F 0 "#PWR?" H 1380 650 50  0001 C CNN
-F 1 "+3V3" H 1380 940 50  0000 C CNN
-F 2 "" H 1380 800 50  0000 C CNN
-F 3 "" H 1380 800 50  0000 C CNN
-	1    1380 800 
-	-1   0    0    1   
+P 1360 690
+F 0 "#PWR?" H 1360 540 50  0001 C CNN
+F 1 "+3V3" H 1360 830 50  0000 C CNN
+F 2 "" H 1360 690 50  0000 C CNN
+F 3 "" H 1360 690 50  0000 C CNN
+	1    1360 690 
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	18570 970  18570 1530
@@ -246,18 +258,16 @@ Wire Wire Line
 $Comp
 L GND #PWR?
 U 1 1 58094D2E
-P 920 790
-F 0 "#PWR?" H 920 540 50  0001 C CNN
-F 1 "GND" H 920 640 50  0000 C CNN
-F 2 "" H 920 790 50  0000 C CNN
-F 3 "" H 920 790 50  0000 C CNN
-	1    920  790 
+P 1250 1200
+F 0 "#PWR?" H 1250 950 50  0001 C CNN
+F 1 "GND" H 1250 1050 50  0000 C CNN
+F 2 "" H 1250 1200 50  0000 C CNN
+F 3 "" H 1250 1200 50  0000 C CNN
+	1    1250 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1380 700  1380 800 
-Wire Wire Line
-	920  700  920  790 
+	1120 690  1120 790 
 Wire Wire Line
 	18840 4940 18200 4940
 Wire Wire Line
@@ -267,40 +277,16 @@ Wire Wire Line
 Wire Wire Line
 	18840 5050 18200 5050
 $Comp
-L VSS #PWR?
-U 1 1 58224B0D
-P 920 700
-F 0 "#PWR?" H 920 550 50  0001 C CNN
-F 1 "VSS" H 920 850 50  0000 C CNN
-F 2 "" H 920 700 50  0000 C CNN
-F 3 "" H 920 700 50  0000 C CNN
-	1    920  700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L VDD #PWR?
-U 1 1 58224B23
-P 1880 700
-F 0 "#PWR?" H 1880 550 50  0001 C CNN
-F 1 "VDD" H 1880 850 50  0000 C CNN
-F 2 "" H 1880 700 50  0000 C CNN
-F 3 "" H 1880 700 50  0000 C CNN
-	1    1880 700 
-	1    0    0    -1  
-$EndComp
-$Comp
 L +1V8 #PWR?
 U 1 1 58224B39
-P 1140 800
-F 0 "#PWR?" H 1140 650 50  0001 C CNN
-F 1 "+1V8" H 1140 940 50  0000 C CNN
-F 2 "" H 1140 800 50  0000 C CNN
-F 3 "" H 1140 800 50  0000 C CNN
-	1    1140 800 
-	-1   0    0    1   
+P 1570 690
+F 0 "#PWR?" H 1570 540 50  0001 C CNN
+F 1 "+1V8" H 1570 830 50  0000 C CNN
+F 2 "" H 1570 690 50  0000 C CNN
+F 3 "" H 1570 690 50  0000 C CNN
+	1    1570 690 
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1140 700  1140 800 
 $Comp
 L +1V8 #PWR?
 U 1 1 58224C1D
@@ -352,154 +338,232 @@ I2C_1_SDA
 Text Label 21450 6040 0    60   ~ 0
 I2C_1_SCL
 $Comp
-L VCC #PWR?
-U 1 1 58643DBD
-P 660 710
-F 0 "#PWR?" H 660 560 50  0001 C CNN
-F 1 "VCC" H 660 860 50  0000 C CNN
-F 2 "" H 660 710 50  0000 C CNN
-F 3 "" H 660 710 50  0000 C CNN
-	1    660  710 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	660  710  660  810 
-Wire Wire Line
-	1880 700  1880 800 
-Wire Wire Line
-	1610 700  1610 800 
-$Comp
 L +24V #PWR?
 U 1 1 58643E79
-P 660 810
-F 0 "#PWR?" H 660 660 50  0001 C CNN
-F 1 "+24V" H 660 950 50  0000 C CNN
-F 2 "" H 660 810 50  0000 C CNN
-F 3 "" H 660 810 50  0000 C CNN
-	1    660  810 
-	-1   0    0    1   
+P 620 700
+F 0 "#PWR?" H 620 550 50  0001 C CNN
+F 1 "+24V" H 620 840 50  0000 C CNN
+F 2 "" H 620 700 50  0000 C CNN
+F 3 "" H 620 700 50  0000 C CNN
+	1    620  700 
+	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR?
 U 1 1 586440F8
-P 1610 800
-F 0 "#PWR?" H 1610 650 50  0001 C CNN
-F 1 "+5V" H 1610 940 50  0000 C CNN
-F 2 "" H 1610 800 50  0000 C CNN
-F 3 "" H 1610 800 50  0000 C CNN
-	1    1610 800 
-	-1   0    0    1   
+P 1120 690
+F 0 "#PWR?" H 1120 540 50  0001 C CNN
+F 1 "+5V" H 1120 830 50  0000 C CNN
+F 2 "" H 1120 690 50  0000 C CNN
+F 3 "" H 1120 690 50  0000 C CNN
+	1    1120 690 
+	1    0    0    -1  
 $EndComp
 $Comp
 L +12V #PWR?
 U 1 1 5864412C
-P 1880 800
-F 0 "#PWR?" H 1880 650 50  0001 C CNN
-F 1 "+12V" H 1880 940 50  0000 C CNN
-F 2 "" H 1880 800 50  0000 C CNN
-F 3 "" H 1880 800 50  0000 C CNN
-	1    1880 800 
-	-1   0    0    1   
-$EndComp
-$Comp
-L VAA #PWR?
-U 1 1 58644259
-P 1380 700
-F 0 "#PWR?" H 1380 550 50  0001 C CNN
-F 1 "VAA" H 1380 850 50  0000 C CNN
-F 2 "" H 1380 700 50  0000 C CNN
-F 3 "" H 1380 700 50  0000 C CNN
-	1    1380 700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L VEE #PWR?
-U 1 1 5864428D
-P 1610 700
-F 0 "#PWR?" H 1610 550 50  0001 C CNN
-F 1 "VEE" H 1610 850 50  0000 C CNN
-F 2 "" H 1610 700 50  0000 C CNN
-F 3 "" H 1610 700 50  0000 C CNN
-	1    1610 700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L VPP #PWR?
-U 1 1 586442EC
-P 1140 700
-F 0 "#PWR?" H 1140 550 50  0001 C CNN
-F 1 "VPP" H 1140 850 50  0000 C CNN
-F 2 "" H 1140 700 50  0000 C CNN
-F 3 "" H 1140 700 50  0000 C CNN
-	1    1140 700 
+P 890 700
+F 0 "#PWR?" H 890 550 50  0001 C CNN
+F 1 "+12V" H 890 840 50  0000 C CNN
+F 2 "" H 890 700 50  0000 C CNN
+F 3 "" H 890 700 50  0000 C CNN
+	1    890  700 
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 3350 1760 1120 740 
+S 5760 1460 1120 740 
 U 58643B62
 F0 "Power_conversion" 60
 F1 "Power_conversion.sch" 60
-F2 "GND" I L 3350 2400 60 
-F3 "V12_out" O R 4470 1860 60 
-F4 "V5_out" O R 4470 2110 60 
-F5 "3V3_out" O R 4470 2360 60 
-F6 "Vmain" I L 3350 1860 60 
-F7 "Vbackup" I L 3350 2110 60 
+F2 "GND" I L 5760 2100 60 
+F3 "V12_out" O R 6880 1560 60 
+F4 "V5_out" O R 6880 1810 60 
+F5 "3V3_out" O R 6880 2060 60 
+F6 "Vmain" I L 5760 1560 60 
+F7 "Vbackup" I L 5760 1810 60 
 $EndSheet
 Wire Wire Line
-	3350 2400 3220 2400
+	5760 2100 5630 2100
 Wire Wire Line
-	3220 2400 3220 2490
-$Comp
-L GND #PWR?
-U 1 1 586F7F25
-P 3220 2490
-F 0 "#PWR?" H 3220 2240 50  0001 C CNN
-F 1 "GND" H 3220 2340 50  0000 C CNN
-F 2 "" H 3220 2490 50  0000 C CNN
-F 3 "" H 3220 2490 50  0000 C CNN
-	1    3220 2490
-	1    0    0    -1  
-$EndComp
+	5630 2100 5630 2190
 Wire Wire Line
-	3340 2110 2800 2110
-Text Label 2820 2110 0    60   ~ 0
+	5750 1810 5210 1810
+Text Label 5230 1810 0    60   ~ 0
 Vbackup_in
 $Sheet
-S 4840 1680 1240 870 
+S 7250 1380 1240 870 
 U 5870684B
 F0 "Power_Saftey_Switches" 60
 F1 "Power_Saftey_Switches.sch" 60
+F2 "Vmain" I L 7250 1560 60 
+F3 "GND" I L 7250 1790 60 
+F4 "3V3" I L 7250 2000 60 
+F5 "Vmotors" O R 8490 1610 60 
 $EndSheet
 Wire Wire Line
-	3350 1860 3040 1860
-Text Label 3060 1860 0    60   ~ 0
+	5760 1560 5450 1560
+Text Label 5470 1560 0    60   ~ 0
 Vmain
-$Sheet
-S 1050 1670 1240 890 
-U 586ED0FA
-F0 "Battery_inputs" 60
-F1 "Battery_inputs.sch" 60
-F2 "V12_in" I L 1050 1830 60 
-F3 "Vmain_out" O R 2290 1850 60 
-$EndSheet
-Wire Wire Line
-	2290 1850 2570 1850
-Text Label 2310 1850 0    60   ~ 0
-Vmain
-Wire Wire Line
-	1050 1830 910  1830
-Wire Wire Line
-	910  1830 910  1740
 $Comp
-L +24V #PWR?
-U 1 1 586EE487
-P 910 1740
-F 0 "#PWR?" H 910 1590 50  0001 C CNN
-F 1 "+24V" H 910 1880 50  0000 C CNN
-F 2 "" H 910 1740 50  0000 C CNN
-F 3 "" H 910 1740 50  0000 C CNN
-	1    910  1740
+L Polyfuse F?
+U 1 1 587008FC
+P 1670 2430
+F 0 "F?" V 1570 2430 50  0000 C CNN
+F 1 "30R800UH" V 1770 2430 50  0000 C CNN
+F 2 "" H 1720 2230 50  0001 L CNN
+F 3 "http://datasheet.octopart.com/30R800UH-Littelfuse-datasheet-8746242.pdf" H 1670 2430 50  0001 C CNN
+	1    1670 2430
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D?
+U 1 1 58700903
+P 1940 2570
+F 0 "D?" H 2040 2530 50  0000 C CNN
+F 1 "P6SMB30AT3G" H 2080 2690 50  0000 C CNN
+F 2 "" H 1940 2570 50  0000 C CNN
+F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 1940 2570 50  0001 C CNN
+	1    1940 2570
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1820 2430 2460 2430
+Wire Wire Line
+	1940 2430 1940 2470
+Connection ~ 1940 2430
+Wire Wire Line
+	1940 2670 1940 2730
+$Comp
+L GND #PWR?
+U 1 1 5870090E
+P 1940 2730
+F 0 "#PWR?" H 1940 2480 50  0001 C CNN
+F 1 "GND" H 1940 2580 50  0000 C CNN
+F 2 "" H 1940 2730 50  0000 C CNN
+F 3 "" H 1940 2730 50  0000 C CNN
+	1    1940 2730
 	1    0    0    -1  
 $EndComp
+Text Notes 1600 2290 0    60   ~ 0
+Probably should change \nto a replaceable fuse\n154005DRT?
+Text Notes 1300 3050 0    60   ~ 0
+Transient Voltage Suppessor 
+Text Label 2020 2430 0    60   ~ 0
+Vmain
+Text Notes 2130 2930 0    60   ~ 0
+Circuits can take 48V, \nexcept TSV diode
+$Comp
+L D_Schottky D?
+U 1 1 58700918
+P 1990 3690
+F 0 "D?" H 1990 3790 50  0000 C CNN
+F 1 "D_Schottky" H 1990 3590 50  0000 C CNN
+F 2 "DPAK" H 1990 3690 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1990 3690 50  0001 C CNN
+	1    1990 3690
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1520 2430 1230 2430
+Wire Wire Line
+	1840 3690 1520 3690
+Wire Wire Line
+	2140 3690 2490 3690
+Text Label 1240 2430 0    60   ~ 0
+V24_in
+Text Label 2180 3690 0    60   ~ 0
+V_hebi1
+$Comp
+L D_Schottky D?
+U 1 1 58700925
+P 1980 3980
+F 0 "D?" H 1980 4080 50  0000 C CNN
+F 1 "D_Schottky" H 1980 3880 50  0000 C CNN
+F 2 "DPAK" H 1980 3980 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1980 3980 50  0001 C CNN
+	1    1980 3980
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1830 3980 1510 3980
+Wire Wire Line
+	2130 3980 2480 3980
+Text Label 2170 3980 0    60   ~ 0
+V_hebi2
+Text Notes 1550 3520 0    60   ~ 0
+Bettery Reverse\nCurrent Protection
+Wire Wire Line
+	6960 1560 7250 1560
+Text Label 6980 1560 0    60   ~ 0
+Vmain
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 58713441
+P 1120 1140
+F 0 "#FLG?" H 1120 1235 50  0001 C CNN
+F 1 "PWR_FLAG" H 1120 1320 50  0000 C CNN
+F 2 "" H 1120 1140 50  0000 C CNN
+F 3 "" H 1120 1140 50  0000 C CNN
+	1    1120 1140
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5871371D
+P 1120 790
+F 0 "#FLG?" H 1120 885 50  0001 C CNN
+F 1 "PWR_FLAG" H 1120 970 50  0001 C CNN
+F 2 "" H 1120 790 50  0000 C CNN
+F 3 "" H 1120 790 50  0000 C CNN
+	1    1120 790 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	620  700  620  750 
+Wire Wire Line
+	620  750  1570 750 
+Connection ~ 1120 750 
+Wire Wire Line
+	1570 750  1570 690 
+Wire Wire Line
+	1360 690  1360 750 
+Connection ~ 1360 750 
+Wire Wire Line
+	890  700  890  750 
+Connection ~ 890  750 
+$Comp
+L GNDPWR #PWR?
+U 1 1 58714A82
+P 960 1200
+F 0 "#PWR?" H 960 1000 50  0001 C CNN
+F 1 "GNDPWR" H 960 1070 50  0000 C CNN
+F 2 "" H 960 1150 50  0000 C CNN
+F 3 "" H 960 1150 50  0000 C CNN
+	1    960  1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	960  1200 960  1140
+Wire Wire Line
+	960  1140 1250 1140
+Wire Wire Line
+	1250 1140 1250 1200
+Connection ~ 1120 1140
+$Comp
+L GNDPWR #PWR?
+U 1 1 58715465
+P 5630 2190
+F 0 "#PWR?" H 5630 1990 50  0001 C CNN
+F 1 "GNDPWR" H 5630 2060 50  0000 C CNN
+F 2 "" H 5630 2140 50  0000 C CNN
+F 3 "" H 5630 2140 50  0000 C CNN
+	1    5630 2190
+	1    0    0    -1  
+$EndComp
+Text Notes 530  1580 0    60   ~ 0
+Two Grounds to separate \nmotor ground and electronics ground
+Text Label 1560 3690 0    60   ~ 0
+Vmotors
+Text Label 1550 3980 0    60   ~ 0
+Vmotors
 $EndSCHEMATC

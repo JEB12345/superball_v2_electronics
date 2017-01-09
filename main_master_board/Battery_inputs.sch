@@ -44,7 +44,19 @@ LIBS:TPS754
 LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
 LIBS:Sensors
+LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -114,52 +126,52 @@ $EndDescr
 $Comp
 L Polyfuse F?
 U 1 1 586EDB59
-P 2820 1270
-F 0 "F?" V 2720 1270 50  0000 C CNN
-F 1 "30R800UH" V 2920 1270 50  0000 C CNN
-F 2 "" H 2870 1070 50  0001 L CNN
-F 3 "http://datasheet.octopart.com/30R800UH-Littelfuse-datasheet-8746242.pdf" H 2820 1270 50  0001 C CNN
-	1    2820 1270
+P 3140 1310
+F 0 "F?" V 3040 1310 50  0000 C CNN
+F 1 "30R800UH" V 3240 1310 50  0000 C CNN
+F 2 "" H 3190 1110 50  0001 L CNN
+F 3 "http://datasheet.octopart.com/30R800UH-Littelfuse-datasheet-8746242.pdf" H 3140 1310 50  0001 C CNN
+	1    3140 1310
 	0    1    1    0   
 $EndComp
 $Comp
 L ZENERsmall D?
 U 1 1 586EDB68
-P 3090 1410
-F 0 "D?" H 3190 1370 50  0000 C CNN
-F 1 "P6SMB30AT3G" H 3230 1530 50  0000 C CNN
-F 2 "" H 3090 1410 50  0000 C CNN
-F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 3090 1410 50  0001 C CNN
-	1    3090 1410
+P 3410 1450
+F 0 "D?" H 3510 1410 50  0000 C CNN
+F 1 "P6SMB30AT3G" H 3550 1570 50  0000 C CNN
+F 2 "" H 3410 1450 50  0000 C CNN
+F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 3410 1450 50  0001 C CNN
+	1    3410 1450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2970 1270 3610 1270
+	3290 1310 3930 1310
 Wire Wire Line
-	3090 1270 3090 1310
-Connection ~ 3090 1270
+	3410 1310 3410 1350
+Connection ~ 3410 1310
 Wire Wire Line
-	3090 1510 3090 1570
+	3410 1550 3410 1610
 $Comp
 L GND #PWR?
 U 1 1 586EDB74
-P 3090 1570
-F 0 "#PWR?" H 3090 1320 50  0001 C CNN
-F 1 "GND" H 3090 1420 50  0000 C CNN
-F 2 "" H 3090 1570 50  0000 C CNN
-F 3 "" H 3090 1570 50  0000 C CNN
-	1    3090 1570
+P 3410 1610
+F 0 "#PWR?" H 3410 1360 50  0001 C CNN
+F 1 "GND" H 3410 1460 50  0000 C CNN
+F 2 "" H 3410 1610 50  0000 C CNN
+F 3 "" H 3410 1610 50  0000 C CNN
+	1    3410 1610
 	1    0    0    -1  
 $EndComp
-Text Notes 2750 1130 0    60   ~ 0
+Text Notes 3070 1170 0    60   ~ 0
 Probably should change \nto a replaceable fuse\n154005DRT?
-Text Notes 2450 1890 0    60   ~ 0
+Text Notes 2770 1930 0    60   ~ 0
 Transient Voltage Suppessor 
-Text Label 3170 1270 0    60   ~ 0
+Text Label 3490 1310 0    60   ~ 0
 Vmain
-Text Notes 3280 1770 0    60   ~ 0
+Text Notes 3600 1810 0    60   ~ 0
 Circuits can take 48V, \nexcept TSV diode
-Text HLabel 920  1280 0    60   Input ~ 0
+Text HLabel 1240 1320 0    60   Input ~ 0
 V12_in
 Text HLabel 10400 1160 2    60   Output ~ 0
 Vmain_out
@@ -168,49 +180,49 @@ Wire Wire Line
 $Comp
 L D_Schottky D?
 U 1 1 586EEE5D
-P 1170 2230
-F 0 "D?" H 1170 2330 50  0000 C CNN
-F 1 "D_Schottky" H 1170 2130 50  0000 C CNN
-F 2 "DPAK" H 1170 2230 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1170 2230 50  0001 C CNN
-	1    1170 2230
+P 3460 2570
+F 0 "D?" H 3460 2670 50  0000 C CNN
+F 1 "D_Schottky" H 3460 2470 50  0000 C CNN
+F 2 "DPAK" H 3460 2570 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3460 2570 50  0001 C CNN
+	1    3460 2570
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	920  1280 1270 1280
-Text Label 960  1280 0    60   ~ 0
+	1240 1320 1590 1320
+Text Label 1280 1320 0    60   ~ 0
 V24_in
 Wire Wire Line
-	2670 1270 2380 1270
+	2990 1310 2700 1310
 Wire Wire Line
-	1020 2230 700  2230
+	3310 2570 2990 2570
 Wire Wire Line
-	1320 2230 1670 2230
-Text Label 2390 1270 0    60   ~ 0
+	3610 2570 3960 2570
+Text Label 2710 1310 0    60   ~ 0
 V24_in
-Text Label 730  2230 0    60   ~ 0
+Text Label 3020 2570 0    60   ~ 0
 V24_in
-Text Label 1360 2230 0    60   ~ 0
+Text Label 3650 2570 0    60   ~ 0
 V_hebi1
 $Comp
 L D_Schottky D?
 U 1 1 586EF429
-P 1160 2520
-F 0 "D?" H 1160 2620 50  0000 C CNN
-F 1 "D_Schottky" H 1160 2420 50  0000 C CNN
-F 2 "DPAK" H 1160 2520 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1160 2520 50  0001 C CNN
-	1    1160 2520
+P 3450 2860
+F 0 "D?" H 3450 2960 50  0000 C CNN
+F 1 "D_Schottky" H 3450 2760 50  0000 C CNN
+F 2 "DPAK" H 3450 2860 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3450 2860 50  0001 C CNN
+	1    3450 2860
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1010 2520 690  2520
+	3300 2860 2980 2860
 Wire Wire Line
-	1310 2520 1660 2520
-Text Label 720  2520 0    60   ~ 0
+	3600 2860 3950 2860
+Text Label 3010 2860 0    60   ~ 0
 V24_in
-Text Label 1350 2520 0    60   ~ 0
+Text Label 3640 2860 0    60   ~ 0
 V_hebi2
-Text Notes 730  2060 0    60   ~ 0
+Text Notes 3020 2400 0    60   ~ 0
 Bettery Reverse\nCurrent Protection
 $EndSCHEMATC
