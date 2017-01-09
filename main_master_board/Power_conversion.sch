@@ -763,7 +763,7 @@ Text Label 4460 4960 0    60   ~ 0
 v5_ref
 Text Label 3550 4250 0    60   ~ 0
 v5_ref
-Text Notes 5400 4360 0    60   ~ 0
+Text Notes 5350 5070 0    60   ~ 0
 4.2V to 12V Boost
 $Comp
 L FDS4935A U?
@@ -1269,75 +1269,73 @@ Text Label 9820 1910 0    60   ~ 0
 $Comp
 L IC_MCP73831 IC?
 U 1 1 58758461
-P 4150 7150
-F 0 "IC?" H 3950 7375 50  0000 L BNN
-F 1 "IC_MCP73831" H 3950 6850 50  0000 L BNN
-F 2 "dp_devices-SOT-23-5" H 4150 7300 50  0001 C CNN
-F 3 "" H 4150 7150 60  0001 C CNN
-	1    4150 7150
+P 5760 7110
+F 0 "IC?" H 5560 7335 50  0000 L BNN
+F 1 "IC_MCP73831" H 5560 6810 50  0000 L BNN
+F 2 "dp_devices-SOT-23-5" H 5760 7260 50  0001 C CNN
+F 3 "" H 5760 7110 60  0001 C CNN
+	1    5760 7110
 	1    0    0    -1  
 $EndComp
-Text Label 3480 7250 0    60   ~ 0
+Text Label 5090 7210 0    60   ~ 0
 charging
 Text Label 1650 6140 0    60   ~ 0
 GND
 $Comp
 L LED-RESCUE-main_master_board D?
 U 1 1 5875ED3E
-P 3980 7660
-F 0 "D?" H 3980 7760 50  0000 C CNN
-F 1 "GRN_LED" H 3980 7560 50  0000 C CNN
-F 2 "754-1126-1-ND" H 3980 7660 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 3980 7660 50  0001 C CNN
-	1    3980 7660
+P 5590 7620
+F 0 "D?" H 5590 7720 50  0000 C CNN
+F 1 "GRN_LED" H 5590 7520 50  0000 C CNN
+F 2 "754-1126-1-ND" H 5590 7620 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 5590 7620 50  0001 C CNN
+	1    5590 7620
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R?
 U 1 1 5875ED44
-P 3630 7660
-F 0 "R?" V 3710 7660 50  0000 C CNN
-F 1 "200" V 3630 7660 50  0000 C CNN
-F 2 "Rled" V 3560 7660 50  0000 C CNN
-F 3 "" H 3630 7660 50  0000 C CNN
-	1    3630 7660
+P 5240 7620
+F 0 "R?" V 5320 7620 50  0000 C CNN
+F 1 "200" V 5240 7620 50  0000 C CNN
+F 2 "Rled" V 5170 7620 50  0000 C CNN
+F 3 "" H 5240 7620 50  0000 C CNN
+	1    5240 7620
 	0    1    1    0   
 $EndComp
-Text Label 3320 7660 0    60   ~ 0
+Text Label 4930 7620 0    60   ~ 0
 3V3
-Text Label 4160 7660 0    60   ~ 0
+Text Label 5770 7620 0    60   ~ 0
 charging
-Text Label 3430 7420 0    60   ~ 0
+Text Label 5040 7380 0    60   ~ 0
 GND
 $Comp
 L C_Small C?
 U 1 1 58761A6D
-P 3380 7230
-F 0 "C?" H 3390 7300 50  0000 L CNN
-F 1 "4.7uF" V 3280 7130 50  0000 L CNN
-F 2 "" H 3380 7230 50  0000 C CNN
-F 3 "" H 3380 7230 50  0000 C CNN
-	1    3380 7230
+P 4990 7190
+F 0 "C?" H 5000 7260 50  0000 L CNN
+F 1 "4.7uF" V 4890 7090 50  0000 L CNN
+F 2 "" H 4990 7190 50  0000 C CNN
+F 3 "" H 4990 7190 50  0000 C CNN
+	1    4990 7190
 	1    0    0    -1  
 $EndComp
-Text Label 3230 7050 0    60   ~ 0
+Text Label 4840 7010 0    60   ~ 0
 V5
 $Comp
 L R_Small R?
 U 1 1 58763DBB
-P 4730 7150
-F 0 "R?" V 4790 7020 50  0000 L CNN
-F 1 "10K" V 4660 6970 50  0000 L CNN
-F 2 "" H 4730 7150 50  0000 C CNN
-F 3 "" H 4730 7150 50  0000 C CNN
-	1    4730 7150
+P 6340 7110
+F 0 "R?" V 6400 6980 50  0000 L CNN
+F 1 "10K" V 6270 6930 50  0000 L CNN
+F 2 "" H 6340 7110 50  0000 C CNN
+F 3 "" H 6340 7110 50  0000 C CNN
+	1    6340 7110
 	0    -1   -1   0   
 $EndComp
-Text Label 4610 7340 0    60   ~ 0
+Text Label 6220 7300 0    60   ~ 0
 GND
-Text Label 4570 7050 0    60   ~ 0
-V4
-Text Label 4870 7150 0    60   ~ 0
+Text Label 6480 7110 0    60   ~ 0
 charge_on
 Text Label 2620 1160 2    60   ~ 0
 charge_on
@@ -1371,7 +1369,7 @@ Wire Wire Line
 Wire Notes Line
 	500  1400 2350 1400
 Wire Notes Line
-	8670 2000 8670 4100
+	8670 2000 8670 4610
 Connection ~ 780  6560
 Connection ~ 2630 6560
 Connection ~ 2630 7300
@@ -1507,7 +1505,7 @@ Wire Notes Line
 Wire Notes Line
 	9400 2000 9400 500 
 Wire Notes Line
-	4900 4000 4900 5600
+	4900 4000 4900 6500
 Wire Notes Line
 	4900 5600 500  5600
 Wire Notes Line
@@ -1691,8 +1689,6 @@ Wire Notes Line
 	6750 4000 6750 2100
 Wire Notes Line
 	11200 6500 5700 6500
-Wire Notes Line
-	5030 4100 11200 4100
 Wire Wire Line
 	1100 1270 1550 1270
 Wire Wire Line
@@ -1741,9 +1737,7 @@ Wire Wire Line
 	4400 4960 4840 4960
 Connection ~ 4400 4960
 Wire Notes Line
-	5710 6500 5030 6500
-Wire Notes Line
-	5030 6500 5030 4100
+	4770 6500 5710 6500
 Wire Wire Line
 	11110 3530 11110 3830
 Wire Wire Line
@@ -2006,34 +2000,32 @@ Wire Wire Line
 Wire Wire Line
 	10250 1910 9780 1910
 Wire Wire Line
-	3750 7250 3470 7250
+	5360 7210 5080 7210
 Wire Wire Line
-	3280 7660 3480 7660
+	4890 7620 5090 7620
 Wire Wire Line
-	4130 7660 4550 7660
+	5740 7620 6160 7620
 Wire Wire Line
-	3780 7660 3830 7660
+	5390 7620 5440 7620
 Wire Wire Line
-	3380 7420 3650 7420
+	4990 7380 5260 7380
 Wire Wire Line
-	3220 7050 3750 7050
+	4830 7010 5360 7010
 Wire Wire Line
-	3380 7130 3380 7050
-Connection ~ 3380 7050
+	4990 7090 4990 7010
+Connection ~ 4990 7010
 Wire Wire Line
-	3380 7330 3380 7420
+	4990 7290 4990 7380
 Wire Wire Line
-	4550 7150 4630 7150
+	6160 7110 6240 7110
 Wire Wire Line
-	4830 7150 5330 7150
+	6440 7110 6940 7110
 Wire Wire Line
-	4550 7050 4690 7050
+	6160 7210 6190 7210
 Wire Wire Line
-	4550 7250 4580 7250
+	6190 7210 6190 7300
 Wire Wire Line
-	4580 7250 4580 7340
-Wire Wire Line
-	4580 7340 4810 7340
+	6190 7300 6420 7300
 Wire Wire Line
 	2650 1160 2170 1160
 Wire Wire Line
@@ -2044,4 +2036,40 @@ Wire Notes Line
 	4120 1400 4120 480 
 Wire Notes Line
 	2140 1400 2140 480 
+$Comp
+L C_Small C?
+U 1 1 58733778
+P 6470 6820
+F 0 "C?" H 6480 6890 50  0000 L CNN
+F 1 "4.7uF" V 6370 6720 50  0000 L CNN
+F 2 "" H 6470 6820 50  0000 C CNN
+F 3 "" H 6470 6820 50  0000 C CNN
+	1    6470 6820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6160 7010 6200 7010
+Wire Wire Line
+	6200 7010 6200 6680
+Wire Wire Line
+	6200 6680 6690 6680
+Wire Wire Line
+	6470 6680 6470 6720
+Connection ~ 6470 6680
+Wire Wire Line
+	6470 6920 6470 6980
+Wire Wire Line
+	6470 6980 6690 6980
+Text Label 6500 6980 0    60   ~ 0
+GND
+Text Label 6530 6680 0    60   ~ 0
+V4
+Wire Notes Line
+	4770 6500 4770 7780
+Text Notes 4830 6640 0    60   ~ 0
+Single Cell LiPo Charger
+Wire Notes Line
+	8670 4610 4900 4610
+Wire Notes Line
+	8680 4100 11200 4100
 $EndSCHEMATC
