@@ -1,0 +1,11 @@
+Part	Manufacturer	Part Number	Quantity	Price	Footprint	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value
+Cboot	TDK	C1005X7R1H104K	1	0.0172	402						
+Cff	Kemet	C0201C120K3GACTU	1	0.01	201						
+Cin	MuRata	GRM31CR71H225KA88L	1	0.05	1206_190						
+Cout	MuRata	GRM21BR61E475MA12L	1	0.02	805						
+D1	Fairchild Semiconductor	SS24FL	1	0.07	SOD-123F	VFatIo	0.55V	Io	2A	VRRM	40V
+L1	Coilcraft	XAL4030-472MEB	1	0.72	XAL4030	L	4.7uH	DCR	0.04Ohm	IDC	4.5A
+Rfbb	Vishay-Dale	CRCW040210K0FKED	1	0.01	402	Resistance	10kOhm	Tolerance	1%	Power	0.063W
+Rfbt	Vishay-Dale	CRCW0402150KFKED	1	0.01	402	Resistance	150kOhm	Tolerance	1%	Power	0.063W
+Rt	Vishay-Dale	CRCW040210K5FKED	1	0.01	402	Resistance	10.5kOhm	Tolerance	1%	Power	0.063W
+U1	Texas Instruments	LMR16020PDDAR	1	1.82	DDA0008E_N						
