@@ -1,0 +1,341 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FDS4935A
+LIBS:LMR16020
+LIBS:LP3852-3.3
+LIBS:main_master_board-cache
+LIBS:main_master_board-rescue
+LIBS:Si1900DL
+LIBS:TPS754
+LIBS:TPS61089
+LIBS:TPS832130SIL
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3160 1390 2350 1680
+U 5876FF98
+F0 "Power_conversion" 60
+F1 "../main_master_board/Power_conversion.sch" 60
+F2 "Vmain" I L 3160 1560 60 
+F3 "GND24" I L 3160 2950 60 
+F4 "V12_out" O R 5510 1580 60 
+F5 "V5_out" O R 5510 1800 60 
+F6 "3V3_out" O R 5510 1960 60 
+F7 "Vbackup" I L 3160 1800 60 
+F8 "V12_cur" O R 5510 2160 60 
+F9 "V12_volt" O R 5510 2350 60 
+F10 "V5_cur" O R 5510 2520 60 
+F11 "V5_volt" O R 5510 2650 60 
+F12 "3V3_cur" O R 5510 2790 60 
+F13 "3V3_volt" O R 5510 2940 60 
+F14 "GND" O R 5510 3030 60 
+$EndSheet
+$Comp
+L CONN_02X05 P?
+U 1 1 587735A7
+P 1630 3030
+F 0 "P?" H 1630 3330 50  0000 C CNN
+F 1 "CONN_02X05" H 1630 2730 50  0000 C CNN
+F 2 "" H 1630 1830 50  0001 C CNN
+F 3 "" H 1630 1830 50  0000 C CNN
+	1    1630 3030
+	1    0    0    -1  
+$EndComp
+Text Label 1350 2830 2    60   ~ 0
+V24_in
+Text Label 1910 3230 0    60   ~ 0
+V24_in
+$Comp
+L GNDPWR #PWR?
+U 1 1 587735B0
+P 1300 3300
+F 0 "#PWR?" H 1300 3100 50  0001 C CNN
+F 1 "GNDPWR" H 1300 3170 50  0000 C CNN
+F 2 "" H 1300 3250 50  0000 C CNN
+F 3 "" H 1300 3250 50  0000 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 587735B6
+P 2080 2650
+F 0 "#PWR?" H 2080 2450 50  0001 C CNN
+F 1 "GNDPWR" H 2080 2520 50  0000 C CNN
+F 2 "" H 2080 2600 50  0000 C CNN
+F 3 "" H 2080 2600 50  0000 C CNN
+	1    2080 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1380 2830 1040 2830
+Wire Wire Line
+	1880 3230 2210 3230
+Wire Wire Line
+	1880 2830 1910 2830
+Wire Wire Line
+	1910 2830 1910 2650
+Wire Wire Line
+	1910 2650 2080 2650
+Wire Wire Line
+	1380 3230 1300 3230
+Wire Wire Line
+	1300 3230 1300 3300
+Wire Wire Line
+	1380 2930 950  2930
+Text Label 960  2930 0    60   ~ 0
+signal_1s
+Wire Wire Line
+	1380 3030 950  3030
+Wire Wire Line
+	1380 3130 950  3130
+Text Label 970  3030 0    60   ~ 0
+signal_3s
+Text Label 970  3130 0    60   ~ 0
+signal_5s
+Text Label 1890 2930 0    60   ~ 0
+signal_2s
+Wire Wire Line
+	1880 2930 2310 2930
+Wire Wire Line
+	1880 3030 2310 3030
+Wire Wire Line
+	1880 3130 2310 3130
+Text Label 1890 3030 0    60   ~ 0
+signal_4s
+Text Label 1890 3130 0    60   ~ 0
+signal_6s
+Text Notes 1270 2610 0    60   ~ 0
+Molex Nano-Fit
+$Comp
+L CONN_01X02 P?
+U 1 1 587735D0
+P 1200 3850
+F 0 "P?" H 1200 4000 50  0000 C CNN
+F 1 "Vbackup" V 1300 3850 50  0000 C CNN
+F 2 "" H 1200 3850 50  0001 C CNN
+F 3 "" H 1200 3850 50  0000 C CNN
+	1    1200 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 3800 1910 3800
+Text Label 1410 3800 0    60   ~ 0
+Vbackup_in
+$Comp
+L GND #PWR?
+U 1 1 587735D9
+P 1450 3920
+F 0 "#PWR?" H 1450 3670 50  0001 C CNN
+F 1 "GND" H 1450 3770 50  0000 C CNN
+F 2 "" H 1450 3920 50  0000 C CNN
+F 3 "" H 1450 3920 50  0000 C CNN
+	1    1450 3920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3900 1450 3900
+Wire Wire Line
+	1450 3900 1450 3920
+$Comp
+L RJ45 J?
+U 1 1 587735E1
+P 1680 5280
+F 0 "J?" H 1880 5780 50  0000 C CNN
+F 1 "RJ45" H 1530 5780 50  0000 C CNN
+F 2 "" H 1680 5280 50  0001 C CNN
+F 3 "" H 1680 5280 50  0000 C CNN
+	1    1680 5280
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 587735E8
+P 10010 3310
+F 0 "P?" H 10010 3460 50  0000 C CNN
+F 1 "Hebi_1" V 10110 3310 50  0000 C CNN
+F 2 "" H 10010 3310 50  0001 C CNN
+F 3 "" H 10010 3310 50  0000 C CNN
+	1    10010 3310
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 587735EF
+P 10010 3750
+F 0 "P?" H 10010 3900 50  0000 C CNN
+F 1 "Hebi_2" V 10110 3750 50  0000 C CNN
+F 2 "" H 10010 3750 50  0001 C CNN
+F 3 "" H 10010 3750 50  0000 C CNN
+	1    10010 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10210 3260 10580 3260
+Text Label 10230 3260 0    60   ~ 0
+V_hebi1
+$Comp
+L GNDPWR #PWR?
+U 1 1 587735F8
+P 10270 3390
+F 0 "#PWR?" H 10270 3190 50  0001 C CNN
+F 1 "GNDPWR" H 10270 3260 50  0000 C CNN
+F 2 "" H 10270 3340 50  0000 C CNN
+F 3 "" H 10270 3340 50  0000 C CNN
+	1    10270 3390
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 587735FE
+P 10260 3830
+F 0 "#PWR?" H 10260 3630 50  0001 C CNN
+F 1 "GNDPWR" H 10260 3700 50  0000 C CNN
+F 2 "" H 10260 3780 50  0000 C CNN
+F 3 "" H 10260 3780 50  0000 C CNN
+	1    10260 3830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10210 3800 10260 3800
+Wire Wire Line
+	10260 3800 10260 3830
+Wire Wire Line
+	10210 3360 10270 3360
+Wire Wire Line
+	10270 3360 10270 3390
+Text Label 10240 3700 0    60   ~ 0
+V_hebi2
+Wire Wire Line
+	10210 3700 10590 3700
+$Comp
+L D_Schottky D?
+U 1 1 5877360A
+P 10080 4750
+F 0 "D?" H 10080 4850 50  0000 C CNN
+F 1 "D_Schottky" H 10080 4650 50  0000 C CNN
+F 2 "DPAK" H 10080 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 10080 4750 50  0001 C CNN
+	1    10080 4750
+	-1   0    0    1   
+$EndComp
+Text Label 10270 4750 0    60   ~ 0
+V_hebi1
+$Comp
+L D_Schottky D?
+U 1 1 58773612
+P 10070 5040
+F 0 "D?" H 10070 5140 50  0000 C CNN
+F 1 "D_Schottky" H 10070 4940 50  0000 C CNN
+F 2 "DPAK" H 10070 5040 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 10070 5040 50  0001 C CNN
+	1    10070 5040
+	-1   0    0    1   
+$EndComp
+Text Label 10260 5040 0    60   ~ 0
+V_hebi2
+Text Notes 9640 4580 0    60   ~ 0
+Bettery Reverse\nCurrent Protection
+Text Label 9650 4750 0    60   ~ 0
+Vmotors
+Text Label 9640 5040 0    60   ~ 0
+Vmotors
+Wire Wire Line
+	9930 4750 9610 4750
+Wire Wire Line
+	10230 4750 10580 4750
+Wire Wire Line
+	9920 5040 9600 5040
+Wire Wire Line
+	10220 5040 10570 5040
+$EndSCHEMATC
