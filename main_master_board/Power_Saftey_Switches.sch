@@ -109,6 +109,7 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:TPS61232DRC
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -666,7 +667,7 @@ U 1 1 58711BE2
 P 2950 1680
 F 0 "SW1" H 2950 1830 60  0000 C CNN
 F 1 "SWITCH_SPST" V 2950 1360 60  0000 C CNN
-F 2 "molex_microclasp:55935-0210" H 2950 1680 60  0001 C CNN
+F 2 "molex_microclasp2:microclasp_vdrx2" H 2950 1680 60  0001 C CNN
 F 3 "" H 2950 1680 60  0000 C CNN
 	1    2950 1680
 	0    -1   -1   0   

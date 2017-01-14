@@ -109,6 +109,7 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:TPS61232DRC
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
