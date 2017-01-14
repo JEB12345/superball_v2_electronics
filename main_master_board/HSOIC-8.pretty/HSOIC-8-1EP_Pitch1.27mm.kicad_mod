@@ -1,4 +1,4 @@
-(module HSOIC-8-1EP_Pitch1.27mm (layer F.Cu) (tedit 5874249D)
+(module HSOIC-8-1EP_Pitch1.27mm (layer F.Cu) (tedit 58795913)
   (descr "8-Lead Thermally Enhanced Plastic Small Outline (SE) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)")
   (tags "SOIC 1.27")
   (attr smd)
@@ -40,6 +40,12 @@
   (pad 8 smd rect (at 2.875 -1.905) (size 2.2 0.6) (layers F.Cu F.Paste F.Mask))
   (pad 9 smd rect (at -0.6 -0.9) (size 1.2 1.8) (layers F.Cu F.Paste F.Mask)
     (solder_paste_margin_ratio -0.2))
+  (pad "" thru_hole circle (at 0.65 0) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at -0.65 0) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at -0.65 -1.3) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 0.65 -1.3) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at 0.65 1.3) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
+  (pad "" thru_hole circle (at -0.65 1.3) (size 0.33 0.33) (drill 0.33) (layers *.Cu *.Mask))
   (model Housings_SOIC.3dshapes/SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))

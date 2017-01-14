@@ -1,0 +1,11 @@
+Part	Manufacturer	Part Number	Quantity	Price	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value	Footprint
+"Cboot"	"Kemet"	"C0805C104K5RACTU"	"1"	"0.01"	""	""	""	""	""	""	"0805"
+"Cin"	"TDK"	"C1005X5R1V225K050BC"	"1"	"0.06"	""	""	""	""	""	""	"0402_065"
+"Cout"	"TDK"	"C2012X5R1A336M125AC"	"1"	"0.29"	""	""	""	""	""	""	"0805"
+"D1"	"Fairchild Semiconductor"	"SS24FL"	"1"	"0.07"	"VFatIo"	"0.55V"	"Io"	"2A"	"VRRM"	"40V"	"SOD-123F"
+"L1"	"Bourns"	"SRN8040-150M"	"1"	"0.22"	"L"	"15uH"	"DCR"	"0.07Ohm"	"IDC"	"2.4A"	"SRN8040"
+"Rfbb"	"Yageo America"	"RC0603FR-0712KL"	"1"	"0.01"	"Resistance"	"12kOhm"	"Tolerance"	"1%"	"Power"	"0.1W"	"0603"
+"Rfbt"	"Yageo America"	"RC0603FR-0768KL"	"1"	"0.01"	"Resistance"	"68kOhm"	"Tolerance"	"1%"	"Power"	"0.1W"	"0603"
+"Rt"	"Vishay-Dale"	"CRCW040245K3FKED"	"1"	"0.01"	"Resistance"	"45.3kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
+"U1"	"Texas Instruments"	"LMR16030PDDAR"	"1"	"1.95"	""	""	""	""	""	""	"DDA0008E_N"
+"Cff"	"Kemet"	"C0805C270J5GACTU"	"1"	"0.01"	""	""	""	""	""	""	"0805"

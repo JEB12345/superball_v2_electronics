@@ -1,0 +1,6 @@
+Part	Manufacturer	Part Number	Quantity	Price	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value	Footprint
+"Cin"	"Taiyo Yuden"	"JMK212BJ226MG-T"	"1"	"0.05"	""	""	""	""	""	""	"0805"
+"Cout"	"TDK"	"C3216JB1A476M"	"1"	"0.3412"	""	""	""	""	""	""	"1206"
+"Css"	"MuRata"	"GRM155R71C153KA01D"	"1"	"0.01"	""	""	""	""	""	""	"0402"
+"L1"	"Vishay-Dale"	"IHLP2020BZER1R0M11"	"1"	"0.99"	"L"	"1uH"	"DCR"	"0.018Ohm"	"IDC"	"7A"	"IHLP-2020BZ"
+"U1"	"Texas Instruments"	"TPS61232DRCR"	"1"	"0.95"	""	""	""	""	""	""	"DRC0010G"

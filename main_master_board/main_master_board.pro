@@ -1,4 +1,4 @@
-update=1/12/2017 4:42:21 PM
+update=1/13/2017 3:33:10 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -198,3 +198,4 @@ LibName166=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/SBv1_Power
 LibName167=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/SBv1_PowerBoard_Library/xal5050-562meb
 LibName168=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/SBv1_PowerBoard_Library/xal6030-182mec
 LibName169=C:/Users/BB/Documents/GitHub/superball_v2_electronics/DWM100_breakout_library/decaWave
+LibName170=TPS61232DRC
