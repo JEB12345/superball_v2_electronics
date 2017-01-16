@@ -38,10 +38,7 @@ LIBS:topsheet_Master-SchDoc-cache
 LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
-LIBS:LMR16020
-LIBS:TPS832130SIL
 LIBS:TPS754
-LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Amplifiers
@@ -109,13 +106,19 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:conn_2x50
+LIBS:conn_open_q_x2
+LIBS:LMR16020
+LIBS:TPS61089
 LIBS:TPS61232DRC
+LIBS:TPS832130SIL
+LIBS:SS4-50-3.00-X-D
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -622,8 +625,9 @@ U 1 1 5870DB97
 P 3930 5620
 F 0 "P11" H 3930 5920 50  0000 C CNN
 F 1 "CONN_01X05" V 4030 5620 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x05" H 3930 5620 50  0001 C CNN
+F 2 "SMD_pinheader:01x05_pinheader_SMD" H 3930 5620 50  0001 C CNN
 F 3 "" H 3930 5620 50  0000 C CNN
+F 4 "http://www.digikey.com/product-detail/en/3m/961105-6300-AR-PR/3M9487CT-ND/2071622" H 3930 5620 60  0001 C CNN "Field4"
 	1    3930 5620
 	-1   0    0    1   
 $EndComp
@@ -688,7 +692,7 @@ U 1 1 5873E944
 P 4260 1490
 F 0 "P12" H 4260 1590 50  0000 C CNN
 F 1 "motors_en" V 4360 1490 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 4260 1490 50  0001 C CNN
+F 2 "SMD_Packages:1Pin" H 4260 1490 50  0001 C CNN
 F 3 "" H 4260 1490 50  0000 C CNN
 	1    4260 1490
 	0    -1   -1   0   
@@ -716,7 +720,7 @@ U 1 1 5874161C
 P 3080 2240
 F 0 "P10" H 3080 2340 50  0000 C CNN
 F 1 "watchdog" V 3180 2240 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 3080 2240 50  0001 C CNN
+F 2 "SMD_Packages:1Pin" H 3080 2240 50  0001 C CNN
 F 3 "" H 3080 2240 50  0000 C CNN
 	1    3080 2240
 	0    -1   -1   0   
@@ -730,7 +734,7 @@ U 1 1 58741B78
 P 2980 2980
 F 0 "P9" H 2980 3080 50  0000 C CNN
 F 1 "uC_KS" V 3080 2980 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 2980 2980 50  0001 C CNN
+F 2 "SMD_Packages:1Pin" H 2980 2980 50  0001 C CNN
 F 3 "" H 2980 2980 50  0000 C CNN
 	1    2980 2980
 	0    1    1    0   

@@ -38,10 +38,7 @@ LIBS:topsheet_Master-SchDoc-cache
 LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
-LIBS:LMR16020
-LIBS:TPS832130SIL
 LIBS:TPS754
-LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Amplifiers
@@ -109,13 +106,19 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:conn_2x50
+LIBS:conn_open_q_x2
+LIBS:LMR16020
+LIBS:TPS61089
 LIBS:TPS61232DRC
+LIBS:TPS832130SIL
+LIBS:SS4-50-3.00-X-D
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -202,13 +205,11 @@ F4 "3V3_out" O R 2580 4530 60
 F5 "Vmain" I L 1470 4030 60 
 F6 "Vbackup" I L 1470 4280 60 
 F7 "GND24" I L 1470 5480 60 
-F8 "V12_cur" O R 2580 4690 60 
-F9 "V12_volt" O R 2580 4820 60 
-F10 "V5_cur" O R 2580 4960 60 
-F11 "V5_volt" O R 2580 5080 60 
-F12 "3V3_cur" O R 2580 5210 60 
-F13 "3V3_volt" O R 2580 5360 60 
-F14 "GND" O R 2580 5500 60 
+F8 "V5_cur" O R 2580 4960 60 
+F9 "V5_volt" O R 2580 5080 60 
+F10 "3V3_cur" O R 2580 5210 60 
+F11 "3V3_volt" O R 2580 5360 60 
+F12 "GND" O R 2580 5500 60 
 $EndSheet
 Text Label 940  4280 0    60   ~ 0
 Vbackup_in
@@ -228,17 +229,6 @@ F9 "GND24" I L 7630 3900 60
 $EndSheet
 Text Label 1180 4030 0    60   ~ 0
 Vmain
-$Comp
-L Polyfuse F1
-U 1 1 587008FC
-P 3100 970
-F 0 "F1" V 3000 970 50  0000 C CNN
-F 1 "3413.0328.22" V 3200 970 50  0000 C CNN
-F 2 "dp_devices:dp_devices-C1206" H 3150 770 50  0001 L CNN
-F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" H 3100 970 50  0001 C CNN
-	1    3100 970 
-	0    1    1    0   
-$EndComp
 $Comp
 L ZENERsmall D1
 U 1 1 58700903
@@ -261,44 +251,14 @@ F 3 "" H 3370 1270 50  0000 C CNN
 	1    3370 1270
 	1    0    0    -1  
 $EndComp
-Text Notes 3030 830  0    60   ~ 0
-Probably should change \nto a replaceable fuse\n154005DRT?
 Text Notes 2730 1590 0    60   ~ 0
 Transient Voltage Suppessor 
 Text Label 3450 970  0    60   ~ 0
 Vmain
 Text Notes 3560 1470 0    60   ~ 0
 Circuits can take 48V, \nexcept TSV diode
-$Comp
-L D_Schottky D3
-U 1 1 58700918
-P 10100 3470
-F 0 "D3" H 10100 3570 50  0000 C CNN
-F 1 "D_Schottky" H 10100 3370 50  0000 C CNN
-F 2 "TO-220-3:D-Pack-3" H 10100 3470 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 10100 3470 50  0001 C CNN
-	1    10100 3470
-	-1   0    0    1   
-$EndComp
 Text Label 2670 970  0    60   ~ 0
 V24_in
-Text Label 10290 3470 0    60   ~ 0
-V_hebi1
-$Comp
-L D_Schottky D2
-U 1 1 58700925
-P 10090 3760
-F 0 "D2" H 10090 3860 50  0000 C CNN
-F 1 "D_Schottky" H 10090 3660 50  0000 C CNN
-F 2 "TO-220-3:D-Pack-3" H 10090 3760 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 10090 3760 50  0001 C CNN
-	1    10090 3760
-	-1   0    0    1   
-$EndComp
-Text Label 10280 3760 0    60   ~ 0
-V_hebi2
-Text Notes 9660 3300 0    60   ~ 0
-Bettery Reverse\nCurrent Protection
 Text Label 7360 3190 0    60   ~ 0
 Vmain
 $Comp
@@ -336,10 +296,6 @@ F 3 "" H 960 1150 50  0000 C CNN
 $EndComp
 Text Notes 530  1580 0    60   ~ 0
 Two Grounds to separate \nmotor ground and electronics ground
-Text Label 9670 3470 0    60   ~ 0
-Vmotors
-Text Label 9660 3760 0    60   ~ 0
-Vmotors
 Text Label 2620 4030 0    60   ~ 0
 V12
 Text Label 2620 4280 0    60   ~ 0
@@ -370,10 +326,6 @@ F 3 "" H 2800 5610 50  0000 C CNN
 	1    2800 5610
 	1    0    0    -1  
 $EndComp
-Text Label 2610 4690 0    60   ~ 0
-V12_cur
-Text Label 2610 4820 0    60   ~ 0
-V12_volt
 Text Label 2610 4960 0    60   ~ 0
 V5_cur
 Text Label 2610 5080 0    60   ~ 0
@@ -415,23 +367,23 @@ KS_uC
 $Comp
 L CONN_01X01 P7
 U 1 1 58767C4C
-P 10920 670
-F 0 "P7" H 10920 770 50  0000 C CNN
-F 1 "Mounting Holes" V 11020 790 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10920 670 50  0001 C CNN
-F 3 "" H 10920 670 50  0000 C CNN
-	1    10920 670 
+P 10920 610
+F 0 "P7" H 10920 710 50  0000 C CNN
+F 1 "Mounting Holes" V 11020 710 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10920 610 50  0001 C CNN
+F 3 "" H 10920 610 50  0000 C CNN
+	1    10920 610 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L CONN_01X01 P5
 U 1 1 58767F4D
-P 10700 670
-F 0 "P5" H 10700 770 50  0000 C CNN
-F 1 "Mounting Holes" V 10800 670 50  0001 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10700 670 50  0001 C CNN
-F 3 "" H 10700 670 50  0000 C CNN
-	1    10700 670 
+P 10700 610
+F 0 "P5" H 10700 710 50  0000 C CNN
+F 1 "Mounting Holes" V 10800 610 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 10700 610 50  0001 C CNN
+F 3 "" H 10700 610 50  0000 C CNN
+	1    10700 610 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -456,6 +408,38 @@ F 3 "" H 10700 1100 50  0000 C CNN
 	1    10700 1100
 	0    1    1    0   
 $EndComp
+$Sheet
+S 4900 1960 1740 1620
+U 5878C64D
+F0 "uC_and_Sensors" 60
+F1 "uC_and_Sensors.sch" 60
+$EndSheet
+$Sheet
+S 2730 2150 1300 1140
+U 5876BF8A
+F0 "main_connectors" 60
+F1 "../connectors.sch" 60
+F2 "V24_in" O R 4030 2380 60 
+F3 "Vbackup_in" O R 4030 2570 60 
+F4 "Vmotors" I L 2730 2390 60 
+$EndSheet
+$Sheet
+S 4590 4800 1950 1590
+U 587AA41C
+F0 "snapdragon_edison" 60
+F1 "snapdragon_edison.sch" 60
+$EndSheet
+$Comp
+L Fuse F1
+U 1 1 587AE04C
+P 3100 970
+F 0 "F1" V 3180 970 50  0000 C CNN
+F 1 "3413.0328.22" V 3025 970 50  0000 C CNN
+F 2 "dp_devices:dp_devices-C1206" V 3030 970 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" H 3100 970 50  0001 C CNN
+	1    3100 970 
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	1120 690  1120 790 
 Wire Wire Line
@@ -471,14 +455,6 @@ Wire Wire Line
 	3370 1210 3370 1270
 Wire Wire Line
 	2950 970  2660 970 
-Wire Wire Line
-	9950 3470 9630 3470
-Wire Wire Line
-	10250 3470 10600 3470
-Wire Wire Line
-	9940 3760 9620 3760
-Wire Wire Line
-	10240 3760 10590 3760
 Wire Wire Line
 	7340 3190 7630 3190
 Wire Wire Line
@@ -522,10 +498,6 @@ Wire Wire Line
 Wire Wire Line
 	2580 4960 3080 4960
 Wire Wire Line
-	2580 4820 3080 4820
-Wire Wire Line
-	2580 4690 3080 4690
-Wire Wire Line
 	8950 3240 9330 3240
 Wire Wire Line
 	7630 4020 7520 4020
@@ -549,44 +521,25 @@ Wire Wire Line
 	1230 5620 1230 5480
 Wire Wire Line
 	1230 5480 1470 5480
+Wire Wire Line
+	10700 860  11140 860 
+Wire Wire Line
+	10700 810  10700 900 
+Connection ~ 10700 860 
+Wire Wire Line
+	10920 810  10920 900 
+Connection ~ 10920 860 
 $Comp
-L NRF24L01+ U1
-U 1 1 58784E3D
-P 8820 6320
-F 0 "U1" H 8870 6270 60  0000 C CNN
-F 1 "NRF24L01+" H 9070 6770 60  0000 C CNN
-F 2 "pinhead:pinhead-2X04%2f90" H 8820 6320 60  0001 C CNN
-F 3 "" H 8820 6320 60  0000 C CNN
-	1    8820 6320
+L GND #PWR015
+U 1 1 587B1461
+P 11140 940
+F 0 "#PWR015" H 11140 690 50  0001 C CNN
+F 1 "GND" H 11140 790 50  0000 C CNN
+F 2 "" H 11140 940 50  0000 C CNN
+F 3 "" H 11140 940 50  0000 C CNN
+	1    11140 940 
 	1    0    0    -1  
 $EndComp
-Text Notes 9060 5060 0    60   ~ 0
-Dummy place holders
-Wire Notes Line
-	11210 4920 8330 4920
-Wire Notes Line
-	8330 4920 8330 6520
-$Sheet
-S 4360 3080 1740 1620
-U 5878C64D
-F0 "uC_and_Sensors" 60
-F1 "uC_and_Sensors.sch" 60
-$EndSheet
-$Sheet
-S 2730 2150 1300 1140
-U 5876BF8A
-F0 "main_connectors" 60
-F1 "../connectors.sch" 60
-$EndSheet
-$Comp
-L RJ45 J1
-U 1 1 5876EB4E
-P 10400 5770
-F 0 "J1" H 10600 6270 50  0000 C CNN
-F 1 "RJ45" H 10250 6270 50  0000 C CNN
-F 2 "RJ45-SMD:TE-338088-outline" H 10400 5770 50  0001 C CNN
-F 3 "" H 10400 5770 50  0000 C CNN
-	1    10400 5770
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	11140 860  11140 940 
 $EndSCHEMATC

@@ -38,10 +38,7 @@ LIBS:topsheet_Master-SchDoc-cache
 LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
-LIBS:LMR16020
-LIBS:TPS832130SIL
 LIBS:TPS754
-LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Amplifiers
@@ -109,13 +106,19 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:conn_2x50
+LIBS:conn_open_q_x2
+LIBS:LMR16020
+LIBS:TPS61089
 LIBS:TPS61232DRC
+LIBS:TPS832130SIL
+LIBS:SS4-50-3.00-X-D
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -136,46 +139,21 @@ F 3 "" H 2310 1320 50  0000 C CNN
 	1    2310 2520
 	1    0    0    -1  
 $EndComp
-Text Label 2030 2320 2    60   ~ 0
+Text Label 2590 2320 0    60   ~ 0
 V24_in
-Text Label 2590 2720 0    60   ~ 0
+Text Label 2020 2720 2    60   ~ 0
 V24_in
-$Comp
-L GNDPWR #PWR015
-U 1 1 5876C3CF
-P 1980 2790
-F 0 "#PWR015" H 1980 2590 50  0001 C CNN
-F 1 "GNDPWR" H 1980 2660 50  0000 C CNN
-F 2 "" H 1980 2740 50  0000 C CNN
-F 3 "" H 1980 2740 50  0000 C CNN
-	1    1980 2790
-	1    0    0    -1  
-$EndComp
 $Comp
 L GNDPWR #PWR016
 U 1 1 5876C3D5
-P 2760 2140
-F 0 "#PWR016" H 2760 1940 50  0001 C CNN
-F 1 "GNDPWR" H 2760 2010 50  0000 C CNN
-F 2 "" H 2760 2090 50  0000 C CNN
-F 3 "" H 2760 2090 50  0000 C CNN
-	1    2760 2140
+P 1840 2170
+F 0 "#PWR016" H 1840 1970 50  0001 C CNN
+F 1 "GNDPWR" H 1840 2040 50  0000 C CNN
+F 2 "" H 1840 2120 50  0000 C CNN
+F 3 "" H 1840 2120 50  0000 C CNN
+	1    1840 2170
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2060 2320 1720 2320
-Wire Wire Line
-	2560 2720 2890 2720
-Wire Wire Line
-	2560 2320 2590 2320
-Wire Wire Line
-	2590 2320 2590 2140
-Wire Wire Line
-	2590 2140 2760 2140
-Wire Wire Line
-	2060 2720 1980 2720
-Wire Wire Line
-	1980 2720 1980 2790
 Wire Wire Line
 	2060 2420 1630 2420
 Text Label 1640 2420 0    60   ~ 0
@@ -292,4 +270,89 @@ Text Label 3980 3740 0    60   ~ 0
 V_hebi2
 Wire Wire Line
 	3950 3740 4330 3740
+Text HLabel 10340 1150 2    60   Output ~ 0
+V24_in
+Text HLabel 10340 1440 2    60   Output ~ 0
+Vbackup_in
+$Comp
+L D_Schottky D3
+U 1 1 587AC4FF
+P 3960 4550
+F 0 "D3" H 3960 4650 50  0000 C CNN
+F 1 "D_Schottky" H 3960 4450 50  0000 C CNN
+F 2 "TO-220-3:D-Pack-3" H 3960 4550 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3960 4550 50  0001 C CNN
+	1    3960 4550
+	-1   0    0    1   
+$EndComp
+Text Label 4150 4550 0    60   ~ 0
+V_hebi1
+$Comp
+L D_Schottky D2
+U 1 1 587AC507
+P 3950 4840
+F 0 "D2" H 3950 4940 50  0000 C CNN
+F 1 "D_Schottky" H 3950 4740 50  0000 C CNN
+F 2 "TO-220-3:D-Pack-3" H 3950 4840 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3950 4840 50  0001 C CNN
+	1    3950 4840
+	-1   0    0    1   
+$EndComp
+Text Label 4140 4840 0    60   ~ 0
+V_hebi2
+Text Notes 3520 4380 0    60   ~ 0
+Bettery Reverse\nCurrent Protection
+Text Label 3530 4550 0    60   ~ 0
+Vmotors
+Text Label 3520 4840 0    60   ~ 0
+Vmotors
+Wire Wire Line
+	3810 4550 3490 4550
+Wire Wire Line
+	4110 4550 4460 4550
+Wire Wire Line
+	3800 4840 3480 4840
+Wire Wire Line
+	4100 4840 4450 4840
+$Comp
+L GNDPWR #PWR020
+U 1 1 5876C3CF
+P 2680 2770
+F 0 "#PWR020" H 2680 2570 50  0001 C CNN
+F 1 "GNDPWR" H 2680 2640 50  0000 C CNN
+F 2 "" H 2680 2720 50  0000 C CNN
+F 3 "" H 2680 2720 50  0000 C CNN
+	1    2680 2770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2560 2720 2680 2720
+Wire Wire Line
+	2680 2720 2680 2770
+Wire Wire Line
+	2060 2720 1730 2720
+Wire Wire Line
+	2060 2320 2020 2320
+Wire Wire Line
+	2020 2320 2020 2140
+Wire Wire Line
+	2020 2140 1840 2140
+Wire Wire Line
+	1840 2140 1840 2170
+Wire Wire Line
+	2560 2320 2890 2320
+Wire Wire Line
+	10340 1150 10000 1150
+Wire Wire Line
+	10340 1440 9800 1440
+Text Label 10300 1440 2    60   ~ 0
+Vbackup_in
+Text Label 10300 1150 2    60   ~ 0
+V24_in
+Text HLabel 1030 800  0    60   Input ~ 0
+Vmotors
+Wire Wire Line
+	1030 800  1430 800 
+Text Label 1050 800  0    60   ~ 0
+Vmotors
 $EndSCHEMATC

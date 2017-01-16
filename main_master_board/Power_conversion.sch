@@ -38,10 +38,7 @@ LIBS:topsheet_Master-SchDoc-cache
 LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
-LIBS:LMR16020
-LIBS:TPS832130SIL
 LIBS:TPS754
-LIBS:TPS61089
 LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Amplifiers
@@ -109,13 +106,19 @@ LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
 LIBS:decaWave
+LIBS:conn_2x50
+LIBS:conn_open_q_x2
+LIBS:LMR16020
+LIBS:TPS61089
 LIBS:TPS61232DRC
+LIBS:TPS832130SIL
+LIBS:SS4-50-3.00-X-D
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""

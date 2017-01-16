@@ -116,9 +116,9 @@ LIBS:SS4-50-3.00-X-D
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -129,73 +129,61 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DSPIC33EP512GP806-I/PT U15
-U 1 1 5876829B
-P 10250 3850
-F 0 "U15" H 10250 3850 60  0000 L BNN
-F 1 "DSPIC33EP512GP806-I/PT" H 10250 -440 60  0000 L BNN
-F 2 "dp_devices:dp_devices-TQFP-64-10X10" H 10250 3850 60  0001 C CNN
-F 3 "" H 10250 3850 60  0000 C CNN
-	1    10250 3850
+L RJ45 J1
+U 1 1 587AAA8E
+P 10080 5460
+F 0 "J1" H 10280 5960 50  0000 C CNN
+F 1 "RJ45" H 9930 5960 50  0000 C CNN
+F 2 "RJ45-SMD:TE-338088" H 10080 5460 50  0001 C CNN
+F 3 "" H 10080 5460 50  0000 C CNN
+	1    10080 5460
 	1    0    0    -1  
 $EndComp
 $Comp
-L DWM1000 U16
-U 1 1 58782FE7
-P 6580 2630
-F 0 "U16" H 7330 3730 60  0000 C CNN
-F 1 "DWM1000" H 5880 3730 60  0000 C CNN
-F 2 "decaWave:dmw1000" H 6580 2680 60  0001 C CNN
-F 3 "" H 6580 2680 60  0000 C CNN
-	1    6580 2630
+L CONN_02X35 P13
+U 1 1 587B5F3B
+P 1760 4000
+F 0 "P13" H 1760 5800 50  0000 C CNN
+F 1 "Edison" V 1760 4000 50  0000 C CNN
+F 2 "Edison:Edison" H 1760 3750 50  0001 C CNN
+F 3 "" H 1760 3750 50  0000 C CNN
+	1    1760 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 940  860  0    60   Input ~ 0
+3V3
+Text HLabel 940  1090 0    60   Input ~ 0
+V4
+Text HLabel 940  1300 0    60   Input ~ 0
+GND
+Text HLabel 10670 820  2    60   Output ~ 0
+I2C_SDA
+Text HLabel 10660 970  2    60   Output ~ 0
+I2C_SCL
+Text HLabel 10650 1150 2    60   Output ~ 0
+UART_RX
+Text HLabel 10670 1310 2    60   Output ~ 0
+UART_TX
+$Comp
+L SS4-50-3.00-X-D J2
+U 1 1 587D4887
+P 4020 1310
+F 0 "J2" H 4220 -3770 45  0000 L BNN
+F 1 "J2000" H 4220 1440 45  0000 L BNN
+F 2 "SS4-50-3.00-X-D:SS4-50-3.00-X-D-SS4-50-3.00-X-D" H 4020 1310 60  0001 C CNN
+F 3 "" H 4020 1310 60  0001 C CNN
+	1    4020 1310
 	1    0    0    -1  
 $EndComp
 $Comp
-L NRF24L01+ U1
-U 1 1 587A92F3
-P 6120 5500
-F 0 "U1" H 6170 5450 60  0000 C CNN
-F 1 "NRF24L01+" H 6370 5950 60  0000 C CNN
-F 2 "nRF2401:mini-nRF2401-SMD" H 6120 5500 60  0001 C CNN
-F 3 "" H 6120 5500 60  0000 C CNN
-F 4 "FTR-108-02-S-S" H 6120 5500 60  0001 C CNN "Field4"
-	1    6120 5500
+L SS4-50-3.00-X-D J3
+U 1 1 587D492B
+P 6200 1340
+F 0 "J3" H 6400 -3740 45  0000 L BNN
+F 1 "J2001" H 6400 1470 45  0000 L BNN
+F 2 "Open-Q:Open-Q_410" H 6200 1340 60  0001 C CNN
+F 3 "" H 6200 1340 60  0001 C CNN
+	1    6200 1340
 	1    0    0    -1  
 $EndComp
-Text HLabel 1060 670  0    60   Input ~ 0
-3V3
-Text HLabel 1060 800  0    60   Input ~ 0
-GND
-Text HLabel 1060 1000 0    60   Input ~ 0
-v5_cur
-Text HLabel 1060 1110 0    60   Input ~ 0
-v5_volt
-Text HLabel 1060 1230 0    60   Input ~ 0
-3v3_cur
-Text HLabel 1060 1370 0    60   Input ~ 0
-3v3_volt
-Wire Wire Line
-	1060 670  1360 670 
-Text Label 1110 670  0    60   ~ 0
-3V3
-Text Label 1110 800  0    60   ~ 0
-GND
-Wire Wire Line
-	1060 800  1360 800 
-Text Label 1110 1000 0    60   ~ 0
-v5_cur
-Text Label 1110 1110 0    60   ~ 0
-v5_volt
-Text Label 1110 1230 0    60   ~ 0
-3v3_cur
-Text Label 1110 1370 0    60   ~ 0
-3v3_volt
-Wire Wire Line
-	1060 1000 1420 1000
-Wire Wire Line
-	1060 1110 1440 1110
-Wire Wire Line
-	1060 1230 1460 1230
-Wire Wire Line
-	1060 1370 1490 1370
 $EndSCHEMATC
