@@ -31,13 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:EDISON-SchDoc-cache
 LIBS:ETHERNET_USB_HUB-SchDoc-cache
-LIBS:PIC-SchDoc-cache
 LIBS:RF-SchDoc-cache
-LIBS:topsheet_Controller-SchDoc-cache
 LIBS:topsheet_Master-SchDoc-cache
-LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
+LIBS:PIC-SchDoc-cache
+LIBS:topsheet_Controller-SchDoc-cache
+LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
@@ -113,6 +113,62 @@ LIBS:TPS61089
 LIBS:TPS61232DRC
 LIBS:TPS832130SIL
 LIBS:SS4-50-3.00-X-D
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -226,6 +282,8 @@ F6 "uC_KS_1" I L 7630 3480 60
 F7 "uC_KS_2" I L 7630 3610 60 
 F8 "KS_uC" I L 7630 3740 60 
 F9 "GND24" I L 7630 3900 60 
+F10 "vmotor_en_signal" O R 8950 3350 60 
+F11 "ks_nFault_signal" O R 8950 3475 60 
 $EndSheet
 Text Label 1180 4030 0    60   ~ 0
 Vmain
@@ -413,6 +471,15 @@ S 4900 1960 1740 1620
 U 5878C64D
 F0 "uC_and_Sensors" 60
 F1 "uC_and_Sensors.sch" 60
+F2 "3V3" I L 4900 2100 60 
+F3 "GND" I L 4900 3475 60 
+F4 "v5_cur" I L 4900 2250 60 
+F5 "v5_volt" I L 4900 2400 60 
+F6 "3v3_cur" I L 4900 2575 60 
+F7 "3v3_volt" I L 4900 2750 60 
+F8 "reset_dsPIC" I L 4900 2900 60 
+F9 "vmotor_en_signal" O L 4900 3050 60 
+F10 "ks_nFault_signal" O L 4900 3200 60 
 $EndSheet
 $Sheet
 S 2730 2150 1300 1140
@@ -441,13 +508,17 @@ F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1120 690  1120 790 
+	1120 690  1120 750 
+Wire Wire Line
+	1120 750  1120 790 
 Wire Wire Line
 	1470 4280 920  4280
 Wire Wire Line
 	1470 4030 1160 4030
 Wire Wire Line
-	3250 970  3890 970 
+	3250 970  3370 970 
+Wire Wire Line
+	3370 970  3890 970 
 Wire Wire Line
 	3370 970  3370 1010
 Connection ~ 3370 970 
@@ -460,7 +531,13 @@ Wire Wire Line
 Wire Wire Line
 	620  700  620  750 
 Wire Wire Line
-	620  750  1570 750 
+	620  750  890  750 
+Wire Wire Line
+	890  750  1120 750 
+Wire Wire Line
+	1120 750  1360 750 
+Wire Wire Line
+	1360 750  1570 750 
 Connection ~ 1120 750 
 Wire Wire Line
 	1570 750  1570 690 
@@ -473,7 +550,9 @@ Connection ~ 890  750
 Wire Wire Line
 	960  1200 960  1140
 Wire Wire Line
-	960  1140 1250 1140
+	960  1140 1120 1140
+Wire Wire Line
+	1120 1140 1250 1140
 Wire Wire Line
 	1250 1140 1250 1200
 Connection ~ 1120 1140
@@ -522,12 +601,18 @@ Wire Wire Line
 Wire Wire Line
 	1230 5480 1470 5480
 Wire Wire Line
-	10700 860  11140 860 
+	10700 860  10920 860 
 Wire Wire Line
-	10700 810  10700 900 
+	10920 860  11140 860 
+Wire Wire Line
+	10700 810  10700 860 
+Wire Wire Line
+	10700 860  10700 900 
 Connection ~ 10700 860 
 Wire Wire Line
-	10920 810  10920 900 
+	10920 810  10920 860 
+Wire Wire Line
+	10920 860  10920 900 
 Connection ~ 10920 860 
 $Comp
 L GND #PWR015
@@ -542,4 +627,12 @@ F 3 "" H 11140 940 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	11140 860  11140 940 
+Wire Wire Line
+	8950 3350 9750 3350
+Text Label 8975 3350 0    60   ~ 0
+vmotor_en_signal
+Text Label 8975 3475 0    60   ~ 0
+ks_nFault_signal
+Wire Wire Line
+	8950 3475 9725 3475
 $EndSCHEMATC

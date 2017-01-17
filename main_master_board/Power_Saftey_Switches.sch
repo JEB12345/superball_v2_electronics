@@ -31,13 +31,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:EDISON-SchDoc-cache
 LIBS:ETHERNET_USB_HUB-SchDoc-cache
-LIBS:PIC-SchDoc-cache
 LIBS:RF-SchDoc-cache
-LIBS:topsheet_Controller-SchDoc-cache
 LIBS:topsheet_Master-SchDoc-cache
-LIBS:topsheet_Power-SchDoc-cache
 LIBS:USB_CONSOL-SchDoc-cache
 LIBS:VBAT_PROTECTION_REGS-SchDoc-cache
+LIBS:PIC-SchDoc-cache
+LIBS:topsheet_Controller-SchDoc-cache
+LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
@@ -113,6 +113,62 @@ LIBS:TPS61089
 LIBS:TPS61232DRC
 LIBS:TPS832130SIL
 LIBS:SS4-50-3.00-X-D
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -438,15 +494,23 @@ uC_KS_1
 Text Label 4880 5580 0    60   ~ 0
 uC_KS_2
 Wire Wire Line
-	7720 1590 8330 1590
+	7720 1590 7960 1590
+Wire Wire Line
+	7960 1590 8330 1590
 Wire Wire Line
 	7720 1740 7800 1740
 Wire Wire Line
-	7800 1740 7800 2040
+	7800 1740 7800 1890
+Wire Wire Line
+	7800 1890 7800 2040
 Wire Wire Line
 	7800 2040 7720 2040
 Wire Wire Line
-	7720 1890 8380 1890
+	7720 1890 7800 1890
+Wire Wire Line
+	7800 1890 7960 1890
+Wire Wire Line
+	7960 1890 8380 1890
 Connection ~ 7800 1890
 Wire Wire Line
 	7960 1840 7960 1890
@@ -459,26 +523,36 @@ Wire Wire Line
 Wire Wire Line
 	6700 1740 6700 1840
 Wire Wire Line
-	6420 1840 6820 1840
+	6420 1840 6700 1840
+Wire Wire Line
+	6700 1840 6820 1840
 Wire Wire Line
 	6700 1440 6700 1380
 Wire Wire Line
 	6700 1380 6420 1380
 Connection ~ 6700 1840
 Wire Wire Line
-	6540 3370 6840 3370
+	6540 3370 6600 3370
 Wire Wire Line
-	6600 3200 6600 3420
+	6600 3370 6840 3370
+Wire Wire Line
+	6600 3200 6600 3370
+Wire Wire Line
+	6600 3370 6600 3420
 Connection ~ 6600 3370
 Wire Wire Line
 	6600 3620 6600 3670
 Wire Wire Line
-	6260 3670 6840 3670
+	6260 3670 6600 3670
+Wire Wire Line
+	6600 3670 6840 3670
 Connection ~ 6600 3670
 Wire Wire Line
 	6480 3200 6600 3200
 Wire Wire Line
-	5860 3370 6240 3370
+	5860 3370 6210 3370
+Wire Wire Line
+	6210 3370 6240 3370
 Wire Wire Line
 	6280 3200 6210 3200
 Wire Wire Line
@@ -491,7 +565,9 @@ Wire Wire Line
 Wire Wire Line
 	7810 3670 7810 3860
 Wire Wire Line
-	7810 3860 8440 3860
+	7810 3860 8080 3860
+Wire Wire Line
+	8080 3860 8440 3860
 Wire Wire Line
 	8080 3750 8080 3860
 Connection ~ 8080 3860
@@ -508,13 +584,19 @@ Wire Wire Line
 Wire Wire Line
 	6810 3220 6840 3220
 Wire Wire Line
-	6810 2710 6810 3220
+	6810 2710 6810 2870
+Wire Wire Line
+	6810 2870 6810 3220
 Wire Wire Line
 	6810 2870 6960 2870
 Wire Wire Line
-	7260 2870 7360 2870
+	7260 2870 7310 2870
 Wire Wire Line
-	7660 2870 8190 2870
+	7310 2870 7360 2870
+Wire Wire Line
+	7660 2870 7690 2870
+Wire Wire Line
+	7690 2870 8190 2870
 Wire Wire Line
 	7400 2710 7690 2710
 Wire Wire Line
@@ -533,7 +615,9 @@ Wire Wire Line
 Wire Wire Line
 	6090 3830 6090 3780
 Wire Wire Line
-	6090 3780 6400 3780
+	6090 3780 6260 3780
+Wire Wire Line
+	6260 3780 6400 3780
 Wire Wire Line
 	6400 3780 6400 3830
 Wire Wire Line
@@ -542,7 +626,9 @@ Connection ~ 6260 3780
 Wire Wire Line
 	6090 4030 6090 4080
 Wire Wire Line
-	6090 4080 6400 4080
+	6090 4080 6250 4080
+Wire Wire Line
+	6250 4080 6400 4080
 Wire Wire Line
 	6400 4080 6400 4030
 Wire Wire Line
@@ -559,7 +645,11 @@ Wire Wire Line
 Wire Wire Line
 	3790 2630 4050 2630
 Wire Wire Line
-	2890 2730 3440 2730
+	2890 2730 2980 2730
+Wire Wire Line
+	2980 2730 3310 2730
+Wire Wire Line
+	3310 2730 3440 2730
 Wire Wire Line
 	3310 2730 3310 2800
 Wire Wire Line
@@ -567,7 +657,9 @@ Wire Wire Line
 Wire Wire Line
 	3740 2490 3740 2530
 Wire Wire Line
-	2890 2490 3740 2490
+	2890 2490 3080 2490
+Wire Wire Line
+	3080 2490 3740 2490
 Connection ~ 3310 2730
 Wire Wire Line
 	3310 3100 3310 3140
@@ -590,9 +682,13 @@ Wire Wire Line
 Wire Wire Line
 	6820 5010 6820 5380
 Wire Wire Line
-	6770 5380 7020 5380
+	6770 5380 6820 5380
 Wire Wire Line
-	4980 5380 5270 5380
+	6820 5380 7020 5380
+Wire Wire Line
+	4980 5380 5210 5380
+Wire Wire Line
+	5210 5380 5270 5380
 Wire Wire Line
 	5210 5380 5210 5010
 Wire Wire Line
@@ -659,11 +755,11 @@ Text Label 8010 1890 0    60   ~ 0
 Vmotors
 Wire Notes Line
 	1660 1460 1660 480 
-Text HLabel 10700 830  2    60   Output ~ 0
+Text HLabel 10325 630  2    60   Output ~ 0
 Vmotors
 Wire Wire Line
-	10700 830  10310 830 
-Text Label 10330 830  0    60   ~ 0
+	10325 630  9935 630 
+Text Label 9955 630  0    60   ~ 0
 Vmotors
 $Comp
 L SWITCH_SPST SW1
@@ -677,7 +773,9 @@ F 3 "" H 2950 1680 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 1880 4840 1880
+	2950 1880 4260 1880
+Wire Wire Line
+	4260 1880 4840 1880
 Wire Wire Line
 	2950 1480 3650 1480
 Text Label 2980 1880 0    60   ~ 0
@@ -748,14 +846,22 @@ Wire Wire Line
 	1030 1480 1480 1480
 Text Label 1090 1480 0    60   ~ 0
 KS_uC
-Wire Notes Line
-	10210 480  10210 1080
-Wire Notes Line
-	10210 1080 11210 1080
 Text HLabel 1030 1010 0    60   Input ~ 0
 GND
 Wire Wire Line
 	1030 1010 1350 1010
 Text Label 1070 1010 0    60   ~ 0
 GND
+Text HLabel 10325 775  2    60   Output ~ 0
+vmotor_en_signal
+Wire Wire Line
+	10325 775  9850 775 
+Text Label 10300 775  2    60   ~ 0
+Motors_en
+Text HLabel 10325 950  2    60   Output ~ 0
+ks_nFault_signal
+Wire Wire Line
+	10325 950  9825 950 
+Text Label 10300 950  2    60   ~ 0
+KS_nFault
 $EndSCHEMATC
