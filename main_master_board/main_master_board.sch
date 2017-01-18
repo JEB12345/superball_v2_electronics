@@ -41,19 +41,7 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -105,7 +93,6 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
-LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -116,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -135,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -143,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -164,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:main_master_board-cache
 EELAYER 25 0
@@ -508,17 +490,13 @@ F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1120 690  1120 750 
-Wire Wire Line
-	1120 750  1120 790 
+	1120 690  1120 790 
 Wire Wire Line
 	1470 4280 920  4280
 Wire Wire Line
 	1470 4030 1160 4030
 Wire Wire Line
-	3250 970  3370 970 
-Wire Wire Line
-	3370 970  3890 970 
+	3250 970  3890 970 
 Wire Wire Line
 	3370 970  3370 1010
 Connection ~ 3370 970 
@@ -531,13 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	620  700  620  750 
 Wire Wire Line
-	620  750  890  750 
-Wire Wire Line
-	890  750  1120 750 
-Wire Wire Line
-	1120 750  1360 750 
-Wire Wire Line
-	1360 750  1570 750 
+	620  750  1570 750 
 Connection ~ 1120 750 
 Wire Wire Line
 	1570 750  1570 690 
@@ -550,9 +522,7 @@ Connection ~ 890  750
 Wire Wire Line
 	960  1200 960  1140
 Wire Wire Line
-	960  1140 1120 1140
-Wire Wire Line
-	1120 1140 1250 1140
+	960  1140 1250 1140
 Wire Wire Line
 	1250 1140 1250 1200
 Connection ~ 1120 1140
@@ -601,18 +571,12 @@ Wire Wire Line
 Wire Wire Line
 	1230 5480 1470 5480
 Wire Wire Line
-	10700 860  10920 860 
+	10700 860  11140 860 
 Wire Wire Line
-	10920 860  11140 860 
-Wire Wire Line
-	10700 810  10700 860 
-Wire Wire Line
-	10700 860  10700 900 
+	10700 810  10700 900 
 Connection ~ 10700 860 
 Wire Wire Line
-	10920 810  10920 860 
-Wire Wire Line
-	10920 860  10920 900 
+	10920 810  10920 900 
 Connection ~ 10920 860 
 $Comp
 L GND #PWR015
