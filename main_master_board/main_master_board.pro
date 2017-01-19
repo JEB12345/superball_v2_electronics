@@ -1,4 +1,4 @@
-update=1/17/2017 12:20:38 PM
+update=1/18/2017 8:53:23 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -288,3 +288,4 @@ LibName256=library/Xicor
 LibName257=library/xilinx
 LibName258=library/zetex
 LibName259=library/Zilog
+LibName260=Library/conn_2x45

@@ -41,7 +41,19 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
 LIBS:Sensors
+LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -93,6 +105,7 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +116,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +135,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +143,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,9 +164,12 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
+LIBS:conn_2x45
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -198,30 +217,36 @@ Text HLabel 10670 820  2    60   Output ~ 0
 I2C_SDA
 Text HLabel 10660 970  2    60   Output ~ 0
 I2C_SCL
-Text HLabel 10650 1150 2    60   Output ~ 0
-UART_RX
-Text HLabel 10670 1310 2    60   Output ~ 0
-UART_TX
+Text HLabel 10250 1175 2    60   Output ~ 0
+prog_UART_RX
+Text HLabel 10250 1300 2    60   Output ~ 0
+prog_UART_TX
 $Comp
-L SS4-50-3.00-X-D J2
-U 1 1 587D4887
-P 4020 1310
-F 0 "J2" H 4220 -3770 45  0000 L BNN
-F 1 "J2000" H 4220 1440 45  0000 L BNN
-F 2 "SS4-50-3.00-X-D:SS4-50-3.00-X-D-SS4-50-3.00-X-D" H 4020 1310 60  0001 C CNN
-F 3 "" H 4020 1310 60  0001 C CNN
-	1    4020 1310
+L conn_2x45 U17
+U 1 1 587F9E5E
+P 4585 3420
+F 0 "U17" H 4585 3320 50  0000 C CNN
+F 1 "conn_2x45" H 4585 3520 50  0000 C CNN
+F 2 "Variscite:DART-SD410" H 4585 3420 50  0001 C CNN
+F 3 "DOCUMENTATION" H 4585 3420 50  0001 C CNN
+	1    4585 3420
 	1    0    0    -1  
 $EndComp
 $Comp
-L SS4-50-3.00-X-D J3
-U 1 1 587D492B
-P 6200 1340
-F 0 "J3" H 6400 -3740 45  0000 L BNN
-F 1 "J2001" H 6400 1470 45  0000 L BNN
-F 2 "Variscite:DART-SD410" H 6200 1340 60  0001 C CNN
-F 3 "" H 6200 1340 60  0001 C CNN
-	1    6200 1340
+L conn_2x45 U18
+U 1 1 587F9F89
+P 6945 3420
+F 0 "U18" H 6945 3320 50  0000 C CNN
+F 1 "conn_2x45" H 6945 3520 50  0000 C CNN
+F 2 "MODULE" H 6945 3420 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6945 3420 50  0001 C CNN
+	1    6945 3420
 	1    0    0    -1  
 $EndComp
+Text HLabel 10250 1750 2    60   Output ~ 0
+reset_dsPIC
+Text HLabel 10250 1425 2    60   Output ~ 0
+prog_~UART_CTS
+Text HLabel 10250 1550 2    60   Output ~ 0
+prog_~UART_RTS
 $EndSCHEMATC

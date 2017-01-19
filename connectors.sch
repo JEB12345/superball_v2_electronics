@@ -41,7 +41,19 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
+LIBS:Amplifiers
+LIBS:Connectors
+LIBS:DataStorage
+LIBS:Diodes
+LIBS:Microprocessors
+LIBS:MiscellaneousDevices
+LIBS:Passives
+LIBS:PMOD
+LIBS:PowerComponents
+LIBS:RepeaterParts
+LIBS:RF_OEM_Parts
 LIBS:Sensors
+LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -93,6 +105,7 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +116,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +135,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +143,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,9 +164,12 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
+LIBS:conn_2x45
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -182,10 +201,10 @@ V24_in
 Text Label 2020 2720 2    60   ~ 0
 V24_in
 $Comp
-L GNDPWR #PWR016
+L GNDPWR #PWR017
 U 1 1 5876C3D5
 P 1840 2170
-F 0 "#PWR016" H 1840 1970 50  0001 C CNN
+F 0 "#PWR017" H 1840 1970 50  0001 C CNN
 F 1 "GNDPWR" H 1840 2040 50  0000 C CNN
 F 2 "" H 1840 2120 50  0000 C CNN
 F 3 "" H 1840 2120 50  0000 C CNN
@@ -234,10 +253,10 @@ Wire Wire Line
 Text Label 2090 3290 0    60   ~ 0
 Vbackup_in
 $Comp
-L GND #PWR017
+L GND #PWR018
 U 1 1 5876C3F8
 P 2130 3410
-F 0 "#PWR017" H 2130 3160 50  0001 C CNN
+F 0 "#PWR018" H 2130 3160 50  0001 C CNN
 F 1 "GND" H 2130 3260 50  0000 C CNN
 F 2 "" H 2130 3410 50  0000 C CNN
 F 3 "" H 2130 3410 50  0000 C CNN
@@ -275,10 +294,10 @@ Wire Wire Line
 Text Label 3970 3300 0    60   ~ 0
 V_hebi1
 $Comp
-L GNDPWR #PWR018
+L GNDPWR #PWR019
 U 1 1 5876E2BA
 P 4010 3430
-F 0 "#PWR018" H 4010 3230 50  0001 C CNN
+F 0 "#PWR019" H 4010 3230 50  0001 C CNN
 F 1 "GNDPWR" H 4010 3300 50  0000 C CNN
 F 2 "" H 4010 3380 50  0000 C CNN
 F 3 "" H 4010 3380 50  0000 C CNN
@@ -286,10 +305,10 @@ F 3 "" H 4010 3380 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR019
+L GNDPWR #PWR020
 U 1 1 5876E2C0
 P 4000 3870
-F 0 "#PWR019" H 4000 3670 50  0001 C CNN
+F 0 "#PWR020" H 4000 3670 50  0001 C CNN
 F 1 "GNDPWR" H 4000 3740 50  0000 C CNN
 F 2 "" H 4000 3820 50  0000 C CNN
 F 3 "" H 4000 3820 50  0000 C CNN
@@ -353,10 +372,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 4840 4450 4840
 $Comp
-L GNDPWR #PWR020
+L GNDPWR #PWR021
 U 1 1 5876C3CF
 P 2680 2770
-F 0 "#PWR020" H 2680 2570 50  0001 C CNN
+F 0 "#PWR021" H 2680 2570 50  0001 C CNN
 F 1 "GNDPWR" H 2680 2640 50  0000 C CNN
 F 2 "" H 2680 2720 50  0000 C CNN
 F 3 "" H 2680 2720 50  0000 C CNN
