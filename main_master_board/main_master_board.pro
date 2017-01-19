@@ -1,4 +1,4 @@
-update=1/19/2017 7:13:13 AM
+update=1/19/2017 1:32:40 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Program Files/KiCad/share/kicad;../main_master_board;../altium_converted_files/SuperBALL_Mater_Schematics;C:/Users/BB/Documents/GitHub/KiCad-Libraries/symbols;C:/Users/BB/Documents/GitHub/superball_v2_electronics/SBv1_PowerBoard_Library;Library
+LibDir=C:/Program Files/KiCad/share/kicad;../main_master_board;../altium_converted_files/SuperBALL_Mater_Schematics;Library;../../EDALibraries/KiCad/Schematics
 [eeschema/libraries]
 LibName1=main_master_board-rescue
 LibName2=power
@@ -289,3 +289,15 @@ LibName257=library/xilinx
 LibName258=library/zetex
 LibName259=library/Zilog
 LibName260=Library/conn_2x45
+LibName261=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Aesthetics
+LibName262=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Connectors
+LibName263=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Discrete_Semiconductor
+LibName264=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Displays
+LibName265=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Frequency_Control
+LibName266=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_IC_Analog
+LibName267=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_IC_Digital
+LibName268=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_IC_Power
+LibName269=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_LEDs
+LibName270=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Passives
+LibName271=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Sensors
+LibName272=C:/Users/jebruce/Documents/GitHub/EDALibraries/KiCad/Schematics/MF_Switches

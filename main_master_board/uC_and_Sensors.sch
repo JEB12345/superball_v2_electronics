@@ -152,6 +152,18 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:Zilog
 LIBS:conn_2x45
+LIBS:MF_Aesthetics
+LIBS:MF_Connectors
+LIBS:MF_Discrete_Semiconductor
+LIBS:MF_Displays
+LIBS:MF_Frequency_Control
+LIBS:MF_IC_Analog
+LIBS:MF_IC_Digital
+LIBS:MF_IC_Power
+LIBS:MF_LEDs
+LIBS:MF_Passives
+LIBS:MF_Sensors
+LIBS:MF_Switches
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END

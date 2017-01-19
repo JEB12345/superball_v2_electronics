@@ -152,24 +152,12 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:Zilog
 LIBS:conn_2x45
-LIBS:MF_Aesthetics
-LIBS:MF_Connectors
-LIBS:MF_Discrete_Semiconductor
-LIBS:MF_Displays
-LIBS:MF_Frequency_Control
-LIBS:MF_IC_Analog
-LIBS:MF_IC_Digital
-LIBS:MF_IC_Power
-LIBS:MF_LEDs
-LIBS:MF_Passives
-LIBS:MF_Sensors
-LIBS:MF_Switches
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -179,70 +167,62 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 10670 820  2    60   Output ~ 0
-I2C_SDA
-Text HLabel 10660 970  2    60   Output ~ 0
-I2C_SCL
-Text HLabel 10250 1175 2    60   Output ~ 0
-prog_UART_RX
-Text HLabel 10250 1300 2    60   Output ~ 0
-prog_UART_TX
 $Comp
-L conn_2x45 U17
-U 1 1 587F9E5E
-P 4585 3420
-F 0 "U17" H 4585 3320 50  0000 C CNN
-F 1 "conn_2x45" H 4585 3520 50  0000 C CNN
-F 2 "Variscite:DART-SD410" H 4585 3420 50  0001 C CNN
-F 3 "DOCUMENTATION" H 4585 3420 50  0001 C CNN
-	1    4585 3420
+L CONN_01X04 P?
+U 1 1 58812BA0
+P 3975 2150
+F 0 "P?" H 3975 2400 50  0000 C CNN
+F 1 "CONN_01X04" V 4075 2150 50  0000 C CNN
+F 2 "microclasp_4:microclasp_4" H 3975 2150 50  0001 C CNN
+F 3 "" H 3975 2150 50  0000 C CNN
+	1    3975 2150
 	1    0    0    -1  
 $EndComp
-$Comp
-L conn_2x45 U18
-U 1 1 587F9F89
-P 6945 3420
-F 0 "U18" H 6945 3320 50  0000 C CNN
-F 1 "conn_2x45" H 6945 3520 50  0000 C CNN
-F 2 "MODULE" H 6945 3420 50  0001 C CNN
-F 3 "DOCUMENTATION" H 6945 3420 50  0001 C CNN
-	1    6945 3420
-	1    0    0    -1  
-$EndComp
-Text HLabel 10250 1750 2    60   Output ~ 0
-reset_dsPIC
-Text HLabel 10250 1425 2    60   Output ~ 0
-prog_~UART_CTS
-Text HLabel 10250 1550 2    60   Output ~ 0
-prog_~UART_RTS
-$Comp
-L USB_MICRO_RIGHT J?
-U 1 1 5881A5FD
-P 8950 2550
-F 0 "J?" H 8750 3000 45  0000 L BNN
-F 1 "USB_MICRO_RIGHT" H 8750 2900 45  0000 L BNN
-F 2 "MF_Connectors_MICROUSB-RIGHT" H 8980 2700 20  0001 C CNN
-F 3 "" H 8950 2550 60  0000 C CNN
-	1    8950 2550
-	-1   0    0    1   
-$EndComp
-$Comp
-L SD_CARD_SLOT_MICRO_RIGHT SD?
-U 1 1 5881A889
-P 8950 3425
-F 0 "SD?" H 8950 3575 45  0000 L BNN
-F 1 "SD_CARD_SLOT_MICRO_RIGHT" H 8950 3475 45  0000 L BNN
-F 2 "MF_Connectors_MF-MICROSD" H 8980 3575 20  0001 C CNN
-F 3 "" H 8950 3425 60  0000 C CNN
-	1    8950 3425
-	1    0    0    -1  
-$EndComp
-Text HLabel 1075 775  0    60   Input ~ 0
-3V3
-Text HLabel 1075 900  0    60   Input ~ 0
-V4
-Text HLabel 1075 1025 0    60   Input ~ 0
+Text Label 3750 2000 2    60   ~ 0
 GND
-Text HLabel 1075 650  0    60   Input ~ 0
-V5
+Text Label 3750 2100 2    60   ~ 0
+3V3
+Text Label 3750 2200 2    60   ~ 0
+uC_SCL
+Text Label 3750 2300 2    60   ~ 0
+uC_SDA
+Text Notes 3050 1700 0    60   ~ 0
+AMS5600 Magnetic Rotary \nSensor Support\n
+$Comp
+L CONN_01X04 P?
+U 1 1 58812BAC
+P 3950 2850
+F 0 "P?" H 3950 3100 50  0000 C CNN
+F 1 "CONN_01X04" V 4050 2850 50  0000 C CNN
+F 2 "microclasp_4:microclasp_4" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0000 C CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+Text Label 3725 2700 2    60   ~ 0
+GND
+Text Label 3725 2800 2    60   ~ 0
+3V3
+Text Label 3725 2900 2    60   ~ 0
+uC_SCL
+Text Label 3725 3000 2    60   ~ 0
+uC_SDA
+Text Notes 2925 2525 0    60   ~ 0
+TCS3472 Color Sensor Support\n
+Wire Wire Line
+	3775 2000 3550 2000
+Wire Wire Line
+	3775 2100 3575 2100
+Wire Wire Line
+	3200 2200 3775 2200
+Wire Wire Line
+	3025 2300 3775 2300
+Wire Wire Line
+	3750 2700 3525 2700
+Wire Wire Line
+	3750 2800 3550 2800
+Wire Wire Line
+	3750 2900 3400 2900
+Wire Wire Line
+	3750 3000 3400 3000
 $EndSCHEMATC
