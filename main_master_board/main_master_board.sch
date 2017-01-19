@@ -41,19 +41,7 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -105,7 +93,6 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
-LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -116,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -135,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -143,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -164,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:main_master_board-cache
@@ -267,6 +249,7 @@ F9 "V5_volt" O R 4930 3030 60
 F10 "3V3_cur" O R 4930 3160 60 
 F11 "3V3_volt" O R 4930 3310 60 
 F12 "GND" O R 4930 3450 60 
+F13 "Switch_on" I L 3820 2400 60 
 $EndSheet
 Text Label 3290 2230 0    60   ~ 0
 Vbackup_in
@@ -285,39 +268,11 @@ F8 "KS_uC" I L 7455 1740 60
 F9 "GND24" I L 7455 1900 60 
 F10 "vmotor_en_signal" O R 8775 1350 60 
 F11 "ks_nFault_signal" O R 8775 1475 60 
+F12 "KS_physical_in" O R 8775 1600 60 
+F13 "KS_physical_out" I L 7455 1825 60 
 $EndSheet
 Text Label 3530 1980 0    60   ~ 0
 Vmain
-$Comp
-L ZENERsmall D1
-U 1 1 58700903
-P 3370 1110
-F 0 "D1" H 3470 1070 50  0000 C CNN
-F 1 "P6SMB30AT3G" H 3510 1230 50  0000 C CNN
-F 2 "Diodes_SMD:SMB_Standard" H 3370 1110 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 3370 1110 50  0001 C CNN
-	1    3370 1110
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 5870090E
-P 3370 1270
-F 0 "#PWR07" H 3370 1020 50  0001 C CNN
-F 1 "GND" H 3370 1120 50  0000 C CNN
-F 2 "" H 3370 1270 50  0000 C CNN
-F 3 "" H 3370 1270 50  0000 C CNN
-	1    3370 1270
-	1    0    0    -1  
-$EndComp
-Text Notes 2730 1590 0    60   ~ 0
-Transient Voltage Suppessor 
-Text Label 3450 970  0    60   ~ 0
-Vmain
-Text Notes 3560 1470 0    60   ~ 0
-Circuits can take 48V, \nexcept TSV diode
-Text Label 2670 970  0    60   ~ 0
-V24_in
 Text Label 7185 1190 0    60   ~ 0
 Vmain
 $Comp
@@ -488,6 +443,8 @@ F14 "prog_UART_RX" I L 6600 5225 60
 F15 "prog_UART_TX" I L 6600 5325 60 
 F16 "prog_~UART_CTS" I L 6600 5425 60 
 F17 "prog_~UART_RTS" I L 6600 5525 60 
+F18 "uC_SDA" O R 8325 4325 60 
+F19 "uC_SCL" O R 8325 4450 60 
 $EndSheet
 $Sheet
 S 1130 2250 1300 1140
@@ -497,6 +454,14 @@ F1 "../connectors.sch" 60
 F2 "V24_in" O R 2430 2480 60 
 F3 "Vbackup_in" O R 2430 2670 60 
 F4 "Vmotors" I L 1130 2490 60 
+F5 "3V3" I L 1130 2600 60 
+F6 "GND" I L 1130 3275 60 
+F7 "uC_SDA" I L 1130 2725 60 
+F8 "uC_SCL" I L 1130 2850 60 
+F9 "KS_pysical_in" I L 1130 3000 60 
+F10 "KS_pysical_out" O R 2430 2800 60 
+F11 "V4" I L 1130 2650 60 
+F12 "Switch_on" O R 2430 2975 60 
 $EndSheet
 $Sheet
 S 1450 4650 1400 1750
@@ -514,32 +479,12 @@ F9 "prog_UART_TX" O R 2850 5400 60
 F10 "prog_~UART_CTS" O R 2850 5200 60 
 F11 "prog_~UART_RTS" O R 2850 5100 60 
 $EndSheet
-$Comp
-L Fuse F1
-U 1 1 587AE04C
-P 3100 970
-F 0 "F1" V 3180 970 50  0000 C CNN
-F 1 "3413.0328.22" V 3025 970 50  0000 C CNN
-F 2 "dp_devices:dp_devices-C1206" V 3030 970 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" H 3100 970 50  0001 C CNN
-	1    3100 970 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1120 690  1120 790 
 Wire Wire Line
 	3820 2230 3270 2230
 Wire Wire Line
 	3820 1980 3510 1980
-Wire Wire Line
-	3250 970  3890 970 
-Wire Wire Line
-	3370 970  3370 1010
-Connection ~ 3370 970 
-Wire Wire Line
-	3370 1210 3370 1270
-Wire Wire Line
-	2950 970  2660 970 
 Wire Wire Line
 	7165 1190 7455 1190
 Wire Wire Line
@@ -710,4 +655,24 @@ Wire Wire Line
 	6600 4400 6225 4400
 Wire Wire Line
 	6600 4575 6200 4575
+Text Label 2875 5400 0    60   ~ 0
+prog_tx
+Text Label 2875 5300 0    60   ~ 0
+prog_rx
+Text Label 2875 5200 0    60   ~ 0
+prog_cts
+Text Label 2875 5100 0    60   ~ 0
+prog_rts
+Wire Wire Line
+	2850 5100 3250 5100
+Wire Wire Line
+	2850 5200 3250 5200
+Wire Wire Line
+	2850 5400 3225 5400
+Wire Wire Line
+	2850 5300 3225 5300
+Text Label 2875 5525 0    60   ~ 0
+reset_dsPIC
+Wire Wire Line
+	2850 5525 3400 5525
 $EndSCHEMATC

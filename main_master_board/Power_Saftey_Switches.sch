@@ -41,19 +41,7 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -105,7 +93,6 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
-LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -116,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -135,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -143,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -164,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:main_master_board-cache
@@ -722,27 +704,10 @@ Wire Wire Line
 	10325 630  9935 630 
 Text Label 9955 630  0    60   ~ 0
 Vmotors
-$Comp
-L SWITCH_SPST SW1
-U 1 1 58711BE2
-P 2950 1680
-F 0 "SW1" H 2950 1830 60  0000 C CNN
-F 1 "SWITCH_SPST" V 2950 1360 60  0000 C CNN
-F 2 "molex_microclasp2:microclasp_vdrx2" H 2950 1680 60  0001 C CNN
-F 3 "" H 2950 1680 60  0000 C CNN
-	1    2950 1680
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2950 1880 4840 1880
-Wire Wire Line
-	2950 1480 3650 1480
 Text Label 2980 1880 0    60   ~ 0
 KS_physical_out
-Text Label 2980 1480 0    60   ~ 0
-KS_physical_in
-Text Notes 2940 1360 0    60   ~ 0
-Manual switch to \nturn motors off
 $Comp
 L CONN_01X01 P12
 U 1 1 5873E944
@@ -823,4 +788,16 @@ Wire Wire Line
 	10325 950  9825 950 
 Text Label 10300 950  2    60   ~ 0
 KS_nFault
+Text HLabel 10325 1175 2    60   Output ~ 0
+KS_physical_in
+Text HLabel 1300 1725 0    60   Input ~ 0
+KS_physical_out
+Wire Wire Line
+	1300 1725 2050 1725
+Text Label 1325 1725 0    60   ~ 0
+KS_physical_out
+Wire Wire Line
+	9625 1175 10325 1175
+Text Label 10300 1175 2    60   ~ 0
+KS_physical_in
 $EndSCHEMATC

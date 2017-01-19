@@ -41,19 +41,7 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -105,7 +93,6 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
-LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -116,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -135,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -143,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -164,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:main_master_board-cache
@@ -185,17 +167,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RJ45 J1
-U 1 1 587AAA8E
-P 10080 5460
-F 0 "J1" H 10280 5960 50  0000 C CNN
-F 1 "RJ45" H 9930 5960 50  0000 C CNN
-F 2 "RJ45-SMD:TE-338088" H 10080 5460 50  0001 C CNN
-F 3 "" H 10080 5460 50  0000 C CNN
-	1    10080 5460
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_02X35 P13
 U 1 1 587B5F3B

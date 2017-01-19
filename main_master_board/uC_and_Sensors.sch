@@ -41,19 +41,7 @@ LIBS:topsheet_Power-SchDoc-cache
 LIBS:TPS754
 LIBS:FDS4935A
 LIBS:Si1900DL
-LIBS:Amplifiers
-LIBS:Connectors
-LIBS:DataStorage
-LIBS:Diodes
-LIBS:Microprocessors
-LIBS:MiscellaneousDevices
-LIBS:Passives
-LIBS:PMOD
-LIBS:PowerComponents
-LIBS:RepeaterParts
-LIBS:RF_OEM_Parts
 LIBS:Sensors
-LIBS:TransistorParts
 LIBS:LP3852-3.3
 LIBS:0s102011ma1qn1
 LIBS:74LVC1G17
@@ -105,7 +93,6 @@ LIBS:tps54540
 LIBS:vs-mbrb1635pbf
 LIBS:xal5050-562meb
 LIBS:xal6030-182mec
-LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -116,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -135,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -143,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -164,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:main_master_board-cache
@@ -860,9 +842,11 @@ NoConn ~ 8700 1975
 NoConn ~ 9100 1975
 NoConn ~ 9200 1975
 $Comp
-L LED D7
+L LED-RESCUE-main_master_board D7
 U 1 1 587FD80A
 P 9775 2350
+AR Path="/587FD80A" Ref="D7"  Part="1" 
+AR Path="/5878C64D/587FD80A" Ref="D7"  Part="1" 
 F 0 "D7" H 9775 2450 50  0000 C CNN
 F 1 "LED" H 9775 2250 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 9775 2350 50  0001 C CNN
@@ -871,9 +855,11 @@ F 3 "" H 9775 2350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED D16
+L LED-RESCUE-main_master_board D16
 U 1 1 587FDA5E
 P 9775 2625
+AR Path="/587FDA5E" Ref="D16"  Part="1" 
+AR Path="/5878C64D/587FDA5E" Ref="D16"  Part="1" 
 F 0 "D16" H 9775 2725 50  0000 C CNN
 F 1 "LED" H 9775 2525 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 9775 2625 50  0001 C CNN
@@ -963,101 +949,43 @@ uC_SCL
 Text Label 12895 6335 0    60   ~ 0
 uC_SDA
 Wire Wire Line
-	12870 6225 13225 6225
+	13700 6225 12870 6225
 Wire Wire Line
-	12870 6335 13230 6335
-$Comp
-L CONN_01X04 P15
-U 1 1 5880D5C7
-P 12875 1175
-F 0 "P15" H 12875 1425 50  0000 C CNN
-F 1 "CONN_01X04" V 12975 1175 50  0000 C CNN
-F 2 "microclasp_4:microclasp_4" H 12875 1175 50  0001 C CNN
-F 3 "" H 12875 1175 50  0000 C CNN
-	1    12875 1175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12675 1025 12450 1025
-Text Label 12650 1025 2    60   ~ 0
-GND
-Text Label 12650 1125 2    60   ~ 0
-3V3
-Wire Wire Line
-	12675 1125 12475 1125
-Text Label 12650 1225 2    60   ~ 0
-uC_SCL
-Text Label 12650 1325 2    60   ~ 0
-uC_SDA
-Wire Wire Line
-	12100 1225 12675 1225
-Wire Wire Line
-	11925 1325 12675 1325
+	13875 6335 12870 6335
 $Comp
 L R R23
 U 1 1 58810FC4
-P 12100 1050
-F 0 "R23" V 12180 1050 50  0000 C CNN
-F 1 "1K" V 12100 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 12030 1050 50  0001 C CNN
-F 3 "" H 12100 1050 50  0000 C CNN
-	1    12100 1050
-	1    0    0    -1  
+P 13700 6025
+F 0 "R23" V 13780 6025 50  0000 C CNN
+F 1 "1K" V 13700 6025 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 13630 6025 50  0001 C CNN
+F 3 "" H 13700 6025 50  0000 C CNN
+	1    13700 6025
+	-1   0    0    -1  
 $EndComp
 $Comp
 L R R16
 U 1 1 58811199
-P 11925 1050
-F 0 "R16" V 12005 1050 50  0000 C CNN
-F 1 "1K" V 11925 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 11855 1050 50  0001 C CNN
-F 3 "" H 11925 1050 50  0000 C CNN
-	1    11925 1050
-	1    0    0    -1  
+P 13875 6025
+F 0 "R16" V 13955 6025 50  0000 C CNN
+F 1 "1K" V 13875 6025 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 13805 6025 50  0001 C CNN
+F 3 "" H 13875 6025 50  0000 C CNN
+	1    13875 6025
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	12100 1200 12100 1225
+	13700 6175 13700 6225
 Wire Wire Line
-	11925 1325 11925 1200
+	13875 6175 13875 6335
 Wire Wire Line
-	11925 900  11925 850 
+	13875 5875 13875 5825
 Wire Wire Line
-	11925 850  12100 850 
+	13875 5825 13700 5825
 Wire Wire Line
-	12100 850  12100 900 
-Text Label 11950 850  0    60   ~ 0
+	13700 5825 13700 5875
+Text Label 13850 5825 2    60   ~ 0
 3V3
-Text Notes 11950 725  0    60   ~ 0
-AMS5600 Magnetic Rotary \nSensor Support\n
-$Comp
-L CONN_01X04 P14
-U 1 1 58814DFF
-P 12850 1875
-F 0 "P14" H 12850 2125 50  0000 C CNN
-F 1 "CONN_01X04" V 12950 1875 50  0000 C CNN
-F 2 "microclasp_4:microclasp_4" H 12850 1875 50  0001 C CNN
-F 3 "" H 12850 1875 50  0000 C CNN
-	1    12850 1875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12650 1725 12425 1725
-Text Label 12625 1725 2    60   ~ 0
-GND
-Text Label 12625 1825 2    60   ~ 0
-3V3
-Wire Wire Line
-	12650 1825 12450 1825
-Text Label 12625 1925 2    60   ~ 0
-uC_SCL
-Text Label 12625 2025 2    60   ~ 0
-uC_SDA
-Wire Wire Line
-	12650 1925 12300 1925
-Wire Wire Line
-	12650 2025 12300 2025
-Text Notes 11825 1550 0    60   ~ 0
-TCS3472 Color Sensor Support\n
 Text HLabel 1350 2275 0    60   Input ~ 0
 prog_UART_RX
 Text HLabel 1350 2400 0    60   Input ~ 0
@@ -1074,4 +1002,16 @@ Wire Wire Line
 	1350 2525 1950 2525
 Wire Wire Line
 	1350 2650 1950 2650
+Text HLabel 15400 1350 2    60   Output ~ 0
+uC_SDA
+Text HLabel 15400 1475 2    60   Output ~ 0
+uC_SCL
+Wire Wire Line
+	15400 1350 15050 1350
+Text Label 15375 1350 2    60   ~ 0
+uC_SDA
+Text Label 15375 1475 2    60   ~ 0
+uC_SCL
+Wire Wire Line
+	15400 1475 15050 1475
 $EndSCHEMATC
