@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -164,12 +120,21 @@ LIBS:MF_LEDs
 LIBS:MF_Passives
 LIBS:MF_Sensors
 LIBS:MF_Switches
+LIBS:TDP6E001RSER
+LIBS:esd7c5
+LIBS:lan9512
+LIBS:FPF1203LUCX
+LIBS:MIC2026
+LIBS:tps82084sil
+LIBS:AS1360
+LIBS:SN74LV4T125
+LIBS:SN74LV1T125
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -195,10 +160,10 @@ V24_in
 Text Label 2020 2720 2    60   ~ 0
 V24_in
 $Comp
-L GNDPWR #PWR016
+L GNDPWR #PWR17
 U 1 1 5876C3D5
 P 1840 2170
-F 0 "#PWR016" H 1840 1970 50  0001 C CNN
+F 0 "#PWR17" H 1840 1970 50  0001 C CNN
 F 1 "GNDPWR" H 1840 2040 50  0000 C CNN
 F 2 "" H 1840 2120 50  0000 C CNN
 F 3 "" H 1840 2120 50  0000 C CNN
@@ -233,10 +198,10 @@ $EndComp
 Text Label 2090 3290 0    60   ~ 0
 Vbackup_in
 $Comp
-L GND #PWR017
+L GND #PWR18
 U 1 1 5876C3F8
 P 2130 3410
-F 0 "#PWR017" H 2130 3160 50  0001 C CNN
+F 0 "#PWR18" H 2130 3160 50  0001 C CNN
 F 1 "GND" H 2130 3260 50  0000 C CNN
 F 2 "" H 2130 3410 50  0000 C CNN
 F 3 "" H 2130 3410 50  0000 C CNN
@@ -246,50 +211,50 @@ $EndComp
 $Comp
 L CONN_01X02 P3
 U 1 1 5876E2AA
-P 3750 3350
-F 0 "P3" H 3750 3500 50  0000 C CNN
-F 1 "Hebi_1" V 3850 3350 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3750 3350 50  0001 C CNN
-F 3 "" H 3750 3350 50  0000 C CNN
-	1    3750 3350
+P 1575 4100
+F 0 "P3" H 1575 4250 50  0000 C CNN
+F 1 "Hebi_1" V 1675 4100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1575 4100 50  0001 C CNN
+F 3 "" H 1575 4100 50  0000 C CNN
+	1    1575 4100
 	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X02 P4
 U 1 1 5876E2B1
-P 3750 3790
-F 0 "P4" H 3750 3940 50  0000 C CNN
-F 1 "Hebi_2" V 3850 3790 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3750 3790 50  0001 C CNN
-F 3 "" H 3750 3790 50  0000 C CNN
-	1    3750 3790
+P 1575 4540
+F 0 "P4" H 1575 4690 50  0000 C CNN
+F 1 "Hebi_2" V 1675 4540 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1575 4540 50  0001 C CNN
+F 3 "" H 1575 4540 50  0000 C CNN
+	1    1575 4540
 	-1   0    0    1   
 $EndComp
-Text Label 3970 3300 0    60   ~ 0
+Text Label 1795 4050 0    60   ~ 0
 V_hebi1
 $Comp
-L GNDPWR #PWR018
+L GNDPWR #PWR16
 U 1 1 5876E2BA
-P 4010 3430
-F 0 "#PWR018" H 4010 3230 50  0001 C CNN
-F 1 "GNDPWR" H 4010 3300 50  0000 C CNN
-F 2 "" H 4010 3380 50  0000 C CNN
-F 3 "" H 4010 3380 50  0000 C CNN
-	1    4010 3430
+P 1835 4180
+F 0 "#PWR16" H 1835 3980 50  0001 C CNN
+F 1 "GNDPWR" H 1835 4050 50  0000 C CNN
+F 2 "" H 1835 4130 50  0000 C CNN
+F 3 "" H 1835 4130 50  0000 C CNN
+	1    1835 4180
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR019
+L GNDPWR #PWR15
 U 1 1 5876E2C0
-P 4000 3870
-F 0 "#PWR019" H 4000 3670 50  0001 C CNN
-F 1 "GNDPWR" H 4000 3740 50  0000 C CNN
-F 2 "" H 4000 3820 50  0000 C CNN
-F 3 "" H 4000 3820 50  0000 C CNN
-	1    4000 3870
+P 1825 4620
+F 0 "#PWR15" H 1825 4420 50  0001 C CNN
+F 1 "GNDPWR" H 1825 4490 50  0000 C CNN
+F 2 "" H 1825 4570 50  0000 C CNN
+F 3 "" H 1825 4570 50  0000 C CNN
+	1    1825 4620
 	1    0    0    -1  
 $EndComp
-Text Label 3980 3740 0    60   ~ 0
+Text Label 1805 4490 0    60   ~ 0
 V_hebi2
 Text HLabel 10340 1150 2    60   Output ~ 0
 V24_in
@@ -298,40 +263,40 @@ Vbackup_in
 $Comp
 L D_Schottky D3
 U 1 1 587AC4FF
-P 3960 4550
-F 0 "D3" H 3960 4650 50  0000 C CNN
-F 1 "D_Schottky" H 3960 4450 50  0000 C CNN
-F 2 "TO-220-3:D-Pack-3" H 3960 4550 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3960 4550 50  0001 C CNN
-	1    3960 4550
+P 1785 5300
+F 0 "D3" H 1785 5400 50  0000 C CNN
+F 1 "D_Schottky" H 1785 5200 50  0000 C CNN
+F 2 "TO-220-3:D-Pack-3" H 1785 5300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1785 5300 50  0001 C CNN
+	1    1785 5300
 	-1   0    0    1   
 $EndComp
-Text Label 4150 4550 0    60   ~ 0
+Text Label 1975 5300 0    60   ~ 0
 V_hebi1
 $Comp
 L D_Schottky D2
 U 1 1 587AC507
-P 3950 4840
-F 0 "D2" H 3950 4940 50  0000 C CNN
-F 1 "D_Schottky" H 3950 4740 50  0000 C CNN
-F 2 "TO-220-3:D-Pack-3" H 3950 4840 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3950 4840 50  0001 C CNN
-	1    3950 4840
+P 1775 5590
+F 0 "D2" H 1775 5690 50  0000 C CNN
+F 1 "D_Schottky" H 1775 5490 50  0000 C CNN
+F 2 "TO-220-3:D-Pack-3" H 1775 5590 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 1775 5590 50  0001 C CNN
+	1    1775 5590
 	-1   0    0    1   
 $EndComp
-Text Label 4140 4840 0    60   ~ 0
+Text Label 1965 5590 0    60   ~ 0
 V_hebi2
-Text Notes 3520 4380 0    60   ~ 0
+Text Notes 1345 5130 0    60   ~ 0
 Bettery Reverse\nCurrent Protection
-Text Label 3530 4550 0    60   ~ 0
+Text Label 1355 5300 0    60   ~ 0
 Vmotors
-Text Label 3520 4840 0    60   ~ 0
+Text Label 1345 5590 0    60   ~ 0
 Vmotors
 $Comp
-L GNDPWR #PWR020
+L GNDPWR #PWR19
 U 1 1 5876C3CF
 P 2680 2770
-F 0 "#PWR020" H 2680 2570 50  0001 C CNN
+F 0 "#PWR19" H 2680 2570 50  0001 C CNN
 F 1 "GNDPWR" H 2680 2640 50  0000 C CNN
 F 2 "" H 2680 2720 50  0000 C CNN
 F 3 "" H 2680 2720 50  0000 C CNN
@@ -381,25 +346,25 @@ Wire Wire Line
 Wire Wire Line
 	2130 3390 2130 3410
 Wire Wire Line
-	3950 3300 4320 3300
+	1775 4050 2145 4050
 Wire Wire Line
-	3950 3840 4000 3840
+	1775 4590 1825 4590
 Wire Wire Line
-	4000 3840 4000 3870
+	1825 4590 1825 4620
 Wire Wire Line
-	3950 3400 4010 3400
+	1775 4150 1835 4150
 Wire Wire Line
-	4010 3400 4010 3430
+	1835 4150 1835 4180
 Wire Wire Line
-	3950 3740 4330 3740
+	1775 4490 2155 4490
 Wire Wire Line
-	3810 4550 3490 4550
+	1635 5300 1315 5300
 Wire Wire Line
-	4110 4550 4460 4550
+	1935 5300 2285 5300
 Wire Wire Line
-	3800 4840 3480 4840
+	1625 5590 1305 5590
 Wire Wire Line
-	4100 4840 4450 4840
+	1925 5590 2275 5590
 Wire Wire Line
 	2560 2720 2680 2720
 Wire Wire Line
@@ -431,24 +396,24 @@ Wire Wire Line
 $Comp
 L SWITCH_SPST SW1
 U 1 1 58817B83
-P 6875 2900
-F 0 "SW1" H 6875 3050 60  0000 C CNN
-F 1 "SWITCH_SPST" V 6875 2580 60  0000 C CNN
-F 2 "molex_microclasp2:microclasp_vdrx2" H 6875 2900 60  0001 C CNN
-F 3 "" H 6875 2900 60  0000 C CNN
-	1    6875 2900
+P 4700 2250
+F 0 "SW1" H 4700 2400 60  0000 C CNN
+F 1 "SWITCH_SPST" V 4700 1930 60  0000 C CNN
+F 2 "microclasp:microclasp_2" H 4700 2250 60  0001 C CNN
+F 3 "" H 4700 2250 60  0000 C CNN
+	1    4700 2250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6875 2700 7575 2700
-Text Label 6905 3100 0    60   ~ 0
+	4700 2050 5400 2050
+Text Label 4730 2450 0    60   ~ 0
 KS_physical_out
-Text Label 6905 2700 0    60   ~ 0
+Text Label 4730 2050 0    60   ~ 0
 KS_physical_in
-Text Notes 6865 2580 0    60   ~ 0
+Text Notes 4690 1930 0    60   ~ 0
 Manual switch to \nturn motors off
 Wire Wire Line
-	6875 3100 7650 3100
+	4700 2450 5475 2450
 Wire Wire Line
 	1000 1725 1400 1725
 Text HLabel 1200 1900 0    60   Input ~ 0
@@ -466,27 +431,27 @@ Wire Wire Line
 $Comp
 L SWITCH_DPDT S1
 U 1 1 5881AA8A
-P 5350 1925
-F 0 "S1" V 5230 1575 60  0000 C CNN
-F 1 "SWITCH_DPDT" V 5230 2025 60  0000 C CNN
-F 2 "microclasp:microclasp_3" H 5350 1925 60  0001 C CNN
-F 3 "" H 5350 1925 60  0000 C CNN
-	1    5350 1925
+P 5150 875
+F 0 "S1" V 5030 525 60  0000 C CNN
+F 1 "SWITCH_DPDT" V 5030 975 60  0000 C CNN
+F 2 "microclasp:microclasp_3" H 5150 875 60  0001 C CNN
+F 3 "" H 5150 875 60  0000 C CNN
+	1    5150 875 
 	0    1    1    0   
 $EndComp
-Text Label 5030 1925 2    60   ~ 0
+Text Label 4830 875  2    60   ~ 0
 V4
-Text Label 5670 1925 0    60   ~ 0
+Text Label 5470 875  0    60   ~ 0
 GND
 Wire Wire Line
-	5050 1925 4850 1925
+	4850 875  4650 875 
 Wire Wire Line
-	5650 1925 5870 1925
+	5450 875  5670 875 
 Wire Wire Line
-	5350 2025 5350 2200
+	5150 975  5150 1150
 Wire Wire Line
-	5350 2200 5875 2200
-Text Label 5400 2200 0    60   ~ 0
+	5150 1150 5675 1150
+Text Label 5200 1150 0    60   ~ 0
 Switch_on
 Text HLabel 1000 1125 0    60   Input ~ 0
 V4
@@ -501,17 +466,6 @@ Wire Wire Line
 Text Label 10325 1850 2    60   ~ 0
 Switch_on
 $Comp
-L RJ45 J1
-U 1 1 5881C2C5
-P 1925 4750
-F 0 "J1" H 2125 5250 50  0000 C CNN
-F 1 "RJ45" H 1775 5250 50  0000 C CNN
-F 2 "RJ45-SMD:TE-338088" H 1925 4750 50  0001 C CNN
-F 3 "" H 1925 4750 50  0000 C CNN
-	1    1925 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L ZENERsmall D1
 U 1 1 58821700
 P 3220 1060
@@ -523,10 +477,10 @@ F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-531482
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR021
+L GND #PWR20
 U 1 1 58821707
 P 3220 1220
-F 0 "#PWR021" H 3220 970 50  0001 C CNN
+F 0 "#PWR20" H 3220 970 50  0001 C CNN
 F 1 "GND" H 3220 1070 50  0000 C CNN
 F 2 "" H 3220 1220 50  0000 C CNN
 F 3 "" H 3220 1220 50  0000 C CNN
@@ -561,4 +515,15 @@ Wire Wire Line
 	3220 1160 3220 1220
 Wire Wire Line
 	2800 920  2510 920 
+$Comp
+L CONN_02X15 P13
+U 1 1 5888E472
+P 7550 3850
+F 0 "P13" H 7550 4650 50  0000 C CNN
+F 1 "CONN_02X15" V 7550 3850 50  0000 C CNN
+F 2 "" H 7550 2700 50  0001 C CNN
+F 3 "" H 7550 2700 50  0000 C CNN
+	1    7550 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

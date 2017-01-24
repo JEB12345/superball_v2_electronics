@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -164,12 +120,21 @@ LIBS:MF_LEDs
 LIBS:MF_Passives
 LIBS:MF_Sensors
 LIBS:MF_Switches
+LIBS:TDP6E001RSER
+LIBS:esd7c5
+LIBS:lan9512
+LIBS:FPF1203LUCX
+LIBS:MIC2026
+LIBS:tps82084sil
+LIBS:AS1360
+LIBS:SN74LV4T125
+LIBS:SN74LV1T125
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -180,10 +145,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +3V3 #PWR01
+L +3V3 #PWR7
 U 1 1 58094C11
 P 1360 690
-F 0 "#PWR01" H 1360 540 50  0001 C CNN
+F 0 "#PWR7" H 1360 540 50  0001 C CNN
 F 1 "+3V3" H 1360 830 50  0000 C CNN
 F 2 "" H 1360 690 50  0000 C CNN
 F 3 "" H 1360 690 50  0000 C CNN
@@ -191,10 +156,10 @@ F 3 "" H 1360 690 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR5
 U 1 1 58094D2E
 P 1250 1200
-F 0 "#PWR02" H 1250 950 50  0001 C CNN
+F 0 "#PWR5" H 1250 950 50  0001 C CNN
 F 1 "GND" H 1250 1050 50  0000 C CNN
 F 2 "" H 1250 1200 50  0000 C CNN
 F 3 "" H 1250 1200 50  0000 C CNN
@@ -202,10 +167,10 @@ F 3 "" H 1250 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR03
+L +1V8 #PWR8
 U 1 1 58224B39
 P 1570 690
-F 0 "#PWR03" H 1570 540 50  0001 C CNN
+F 0 "#PWR8" H 1570 540 50  0001 C CNN
 F 1 "+1V8" H 1570 830 50  0000 C CNN
 F 2 "" H 1570 690 50  0000 C CNN
 F 3 "" H 1570 690 50  0000 C CNN
@@ -213,10 +178,10 @@ F 3 "" H 1570 690 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR04
+L +24V #PWR1
 U 1 1 58643E79
 P 620 700
-F 0 "#PWR04" H 620 550 50  0001 C CNN
+F 0 "#PWR1" H 620 550 50  0001 C CNN
 F 1 "+24V" H 620 840 50  0000 C CNN
 F 2 "" H 620 700 50  0000 C CNN
 F 3 "" H 620 700 50  0000 C CNN
@@ -224,10 +189,10 @@ F 3 "" H 620 700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR05
+L +5V #PWR4
 U 1 1 586440F8
 P 1120 690
-F 0 "#PWR05" H 1120 540 50  0001 C CNN
+F 0 "#PWR4" H 1120 540 50  0001 C CNN
 F 1 "+5V" H 1120 830 50  0000 C CNN
 F 2 "" H 1120 690 50  0000 C CNN
 F 3 "" H 1120 690 50  0000 C CNN
@@ -235,10 +200,10 @@ F 3 "" H 1120 690 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR06
+L +12V #PWR2
 U 1 1 5864412C
 P 890 700
-F 0 "#PWR06" H 890 550 50  0001 C CNN
+F 0 "#PWR2" H 890 550 50  0001 C CNN
 F 1 "+12V" H 890 840 50  0000 C CNN
 F 2 "" H 890 700 50  0000 C CNN
 F 3 "" H 890 700 50  0000 C CNN
@@ -288,10 +253,10 @@ Vmain
 Text Label 7185 1190 0    60   ~ 0
 Vmain
 $Comp
-L PWR_FLAG #FLG07
+L PWR_FLAG #FLG2
 U 1 1 58713441
 P 1120 1140
-F 0 "#FLG07" H 1120 1235 50  0001 C CNN
+F 0 "#FLG2" H 1120 1235 50  0001 C CNN
 F 1 "PWR_FLAG" H 1120 1320 50  0000 C CNN
 F 2 "" H 1120 1140 50  0000 C CNN
 F 3 "" H 1120 1140 50  0000 C CNN
@@ -299,10 +264,10 @@ F 3 "" H 1120 1140 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG08
+L PWR_FLAG #FLG1
 U 1 1 5871371D
 P 1120 790
-F 0 "#FLG08" H 1120 885 50  0001 C CNN
+F 0 "#FLG1" H 1120 885 50  0001 C CNN
 F 1 "PWR_FLAG" H 1120 970 50  0001 C CNN
 F 2 "" H 1120 790 50  0000 C CNN
 F 3 "" H 1120 790 50  0000 C CNN
@@ -310,10 +275,10 @@ F 3 "" H 1120 790 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDPWR #PWR09
+L GNDPWR #PWR3
 U 1 1 58714A82
 P 960 1200
-F 0 "#PWR09" H 960 1000 50  0001 C CNN
+F 0 "#PWR3" H 960 1000 50  0001 C CNN
 F 1 "GNDPWR" H 960 1070 50  0000 C CNN
 F 2 "" H 960 1150 50  0000 C CNN
 F 3 "" H 960 1150 50  0000 C CNN
@@ -331,10 +296,10 @@ Text Label 4970 2480 0    60   ~ 0
 Text Label 7205 1330 0    60   ~ 0
 3V3
 $Comp
-L GNDPWR #PWR010
+L GNDPWR #PWR9
 U 1 1 58756896
 P 3580 3570
-F 0 "#PWR010" H 3580 3370 50  0001 C CNN
+F 0 "#PWR9" H 3580 3370 50  0001 C CNN
 F 1 "GNDPWR" H 3580 3440 50  0000 C CNN
 F 2 "" H 3580 3520 50  0000 C CNN
 F 3 "" H 3580 3520 50  0000 C CNN
@@ -342,10 +307,10 @@ F 3 "" H 3580 3520 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR10
 U 1 1 58756928
 P 5150 3560
-F 0 "#PWR011" H 5150 3310 50  0001 C CNN
+F 0 "#PWR10" H 5150 3310 50  0001 C CNN
 F 1 "GND" H 5150 3410 50  0000 C CNN
 F 2 "" H 5150 3560 50  0000 C CNN
 F 3 "" H 5150 3560 50  0000 C CNN
@@ -363,10 +328,10 @@ Text Label 4960 3310 0    60   ~ 0
 Text Label 8795 1240 0    60   ~ 0
 Vmotors
 $Comp
-L GND #PWR012
+L GND #PWR13
 U 1 1 5875B134
 P 7345 2080
-F 0 "#PWR012" H 7345 1830 50  0001 C CNN
+F 0 "#PWR13" H 7345 1830 50  0001 C CNN
 F 1 "GND" H 7345 1930 50  0000 C CNN
 F 2 "" H 7345 2080 50  0000 C CNN
 F 3 "" H 7345 2080 50  0000 C CNN
@@ -374,10 +339,10 @@ F 3 "" H 7345 2080 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR013
+L GNDPWR #PWR12
 U 1 1 5875E5EF
 P 7095 2100
-F 0 "#PWR013" H 7095 1900 50  0001 C CNN
+F 0 "#PWR12" H 7095 1900 50  0001 C CNN
 F 1 "GNDPWR" H 7095 1970 50  0000 C CNN
 F 2 "" H 7095 2050 50  0000 C CNN
 F 3 "" H 7095 2050 50  0000 C CNN
@@ -435,28 +400,30 @@ F 3 "" H 10700 1100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 6600 3785 1725 1965
+S 6600 3785 1775 2515
 U 5878C64D
 F0 "uC_and_Sensors" 60
 F1 "uC_and_Sensors.sch" 60
 F2 "3V3" I L 6600 3925 60 
-F3 "GND" I L 6600 5675 60 
+F3 "GND" I L 6600 6175 60 
 F4 "v5_cur" I L 6600 4075 60 
 F5 "v5_volt" I L 6600 4225 60 
 F6 "3v3_cur" I L 6600 4400 60 
 F7 "3v3_volt" I L 6600 4575 60 
 F8 "reset_dsPIC" I L 6600 4725 60 
-F9 "uC_KS_1" O R 8325 3925 60 
-F10 "uC_KS_2" O R 8325 4050 60 
-F11 "KS_uC" O R 8325 4175 60 
+F9 "uC_KS_1" O R 8375 3925 60 
+F10 "uC_KS_2" O R 8375 4050 60 
+F11 "KS_uC" O R 8375 4175 60 
 F12 "vmotor_en_signal" I L 6600 4875 60 
 F13 "ks_nFault_signal" I L 6600 5025 60 
 F14 "prog_UART_RX" I L 6600 5225 60 
 F15 "prog_UART_TX" I L 6600 5325 60 
-F16 "prog_~UART_CTS" I L 6600 5425 60 
-F17 "prog_~UART_RTS" I L 6600 5525 60 
-F18 "uC_SDA" O R 8325 4325 60 
-F19 "uC_SCL" O R 8325 4450 60 
+F16 "sensor_SDA" O R 8375 4575 60 
+F17 "sensor_SCL" O R 8375 4675 60 
+F18 "uC_MOSI" I L 6600 5500 60 
+F19 "uC_MISO" I L 6600 5600 60 
+F20 "uC_CS" I L 6600 5700 60 
+F21 "uC_CLK" I L 6600 5800 60 
 $EndSheet
 $Sheet
 S 1130 2250 1300 1140
@@ -483,16 +450,89 @@ F1 "snapdragon_edison.sch" 60
 F2 "3V3" I L 1450 4775 60 
 F3 "V4" I L 1450 4925 60 
 F4 "GND" I L 1450 6125 60 
-F5 "I2C_SDA" O R 2850 4775 60 
-F6 "I2C_SCL" O R 2850 4900 60 
-F7 "reset_dsPIC" O R 2850 5525 60 
-F8 "prog_UART_RX" O R 2850 5300 60 
-F9 "prog_UART_TX" O R 2850 5400 60 
-F10 "prog_~UART_CTS" O R 2850 5200 60 
-F11 "prog_~UART_RTS" O R 2850 5100 60 
+F5 "reset_dsPIC" O R 2850 5725 60 
+F6 "prog_UART_RX" O R 2850 5475 60 
+F7 "prog_UART_TX" O R 2850 5575 60 
+F8 "V5" I L 1450 5075 60 
+F9 "uC_MOSI" O R 2850 4775 60 
+F10 "uC_MISO" O R 2850 4875 60 
+F11 "uC_CS" O R 2850 4975 60 
+F12 "uC_CLK" O R 2850 5075 60 
+F13 "uC_GPIO1" I L 1450 5400 60 
+F14 "uC_GPIO2" I L 1450 5500 60 
+F15 "sensor_I2C_SDA" B R 2850 5200 60 
+F16 "sensor_I2C_SCL" B R 2850 5300 60 
 $EndSheet
+$Comp
+L GND #PWR14
+U 1 1 587B1461
+P 11140 940
+F 0 "#PWR14" H 11140 690 50  0001 C CNN
+F 1 "GND" H 11140 790 50  0000 C CNN
+F 2 "" H 11140 940 50  0000 C CNN
+F 3 "" H 11140 940 50  0000 C CNN
+	1    11140 940 
+	1    0    0    -1  
+$EndComp
+Text Label 6575 4875 2    60   ~ 0
+vmotor_en_signal
+Text Label 6575 5025 2    60   ~ 0
+ks_nFault_signal
+Text Label 6575 3925 2    60   ~ 0
+3V3
+Text Label 6575 4075 2    60   ~ 0
+V5_cur
+Text Label 6575 4225 2    60   ~ 0
+V5_volt
+Text Label 6575 4400 2    60   ~ 0
+3V3_cur
+Text Label 6575 4575 2    60   ~ 0
+3V3_volt
+Text Label 6575 4725 2    60   ~ 0
+reset_dsPIC
+Text Label 6575 5325 2    60   ~ 0
+prog_rx
+Text Label 6575 5225 2    60   ~ 0
+prog_tx
+$Comp
+L GND #PWR11
+U 1 1 588455B7
+P 6500 6225
+F 0 "#PWR11" H 6500 5975 50  0001 C CNN
+F 1 "GND" H 6500 6075 50  0000 C CNN
+F 2 "" H 6500 6225 50  0000 C CNN
+F 3 "" H 6500 6225 50  0000 C CNN
+	1    6500 6225
+	1    0    0    -1  
+$EndComp
+Text Label 8400 3925 0    60   ~ 0
+uC_KS_1
+Text Label 8400 4050 0    60   ~ 0
+uC_KS_2
+Text Label 8400 4175 0    60   ~ 0
+KS_uC
+Text Label 2875 5575 0    60   ~ 0
+prog_tx
+Text Label 2875 5475 0    60   ~ 0
+prog_rx
+Text Label 2875 5725 0    60   ~ 0
+reset_dsPIC
+Text Label 2875 4775 0    60   ~ 0
+uC_MOSI
+Text Label 2875 4875 0    60   ~ 0
+uC_MISO
+Text Label 2875 4975 0    60   ~ 0
+uC_CS
+Text Label 2875 5075 0    60   ~ 0
+uC_CLK
+Text Label 2875 5200 0    60   ~ 0
+sensor_SDA
+Text Label 2875 5300 0    60   ~ 0
+sensor_SCL
 Wire Wire Line
-	1120 690  1120 790 
+	1120 690  1120 750 
+Wire Wire Line
+	1120 750  1120 790 
 Wire Wire Line
 	3820 2230 3270 2230
 Wire Wire Line
@@ -502,7 +542,13 @@ Wire Wire Line
 Wire Wire Line
 	620  700  620  750 
 Wire Wire Line
-	620  750  1570 750 
+	620  750  890  750 
+Wire Wire Line
+	890  750  1120 750 
+Wire Wire Line
+	1120 750  1360 750 
+Wire Wire Line
+	1360 750  1570 750 
 Connection ~ 1120 750 
 Wire Wire Line
 	1570 750  1570 690 
@@ -515,7 +561,9 @@ Connection ~ 890  750
 Wire Wire Line
 	960  1200 960  1140
 Wire Wire Line
-	960  1140 1250 1140
+	960  1140 1120 1140
+Wire Wire Line
+	1120 1140 1250 1140
 Wire Wire Line
 	1250 1140 1250 1200
 Connection ~ 1120 1140
@@ -564,99 +612,41 @@ Wire Wire Line
 Wire Wire Line
 	3580 3430 3820 3430
 Wire Wire Line
-	10700 860  11140 860 
+	10700 860  10920 860 
 Wire Wire Line
-	10700 810  10700 900 
+	10920 860  11140 860 
+Wire Wire Line
+	10700 810  10700 860 
+Wire Wire Line
+	10700 860  10700 900 
 Connection ~ 10700 860 
 Wire Wire Line
-	10920 810  10920 900 
+	10920 810  10920 860 
+Wire Wire Line
+	10920 860  10920 900 
 Connection ~ 10920 860 
-$Comp
-L GND #PWR014
-U 1 1 587B1461
-P 11140 940
-F 0 "#PWR014" H 11140 690 50  0001 C CNN
-F 1 "GND" H 11140 790 50  0000 C CNN
-F 2 "" H 11140 940 50  0000 C CNN
-F 3 "" H 11140 940 50  0000 C CNN
-	1    11140 940 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11140 860  11140 940 
 Wire Wire Line
 	6600 4875 5800 4875
-Text Label 6575 4875 2    60   ~ 0
-vmotor_en_signal
-Text Label 6575 5025 2    60   ~ 0
-ks_nFault_signal
 Wire Wire Line
 	6600 5025 5825 5025
-Text Label 6575 3925 2    60   ~ 0
-3V3
-Text Label 6575 4075 2    60   ~ 0
-V5_cur
-Text Label 6575 4225 2    60   ~ 0
-V5_volt
-Text Label 6575 4400 2    60   ~ 0
-3V3_cur
-Text Label 6575 4575 2    60   ~ 0
-3V3_volt
-Text Label 6575 4725 2    60   ~ 0
-reset_dsPIC
 Wire Wire Line
 	6600 4725 6050 4725
-Text Label 6575 5225 2    60   ~ 0
-prog_rx
-Text Label 6575 5325 2    60   ~ 0
-prog_tx
-Text Label 6575 5425 2    60   ~ 0
-prog_cts
-Text Label 6575 5525 2    60   ~ 0
-prog_rts
 Wire Wire Line
-	6600 5525 6200 5525
-Wire Wire Line
-	6600 5425 6200 5425
+	6600 5325 6225 5325
 Wire Wire Line
 	6600 5225 6225 5225
 Wire Wire Line
-	6600 5325 6225 5325
-Text Label 2875 4775 0    60   ~ 0
-cpu_SDA
-Text Label 2875 4900 0    60   ~ 0
-cpu_SCL
+	6600 6175 6500 6175
 Wire Wire Line
-	2850 4775 3275 4775
+	6500 6175 6500 6225
 Wire Wire Line
-	2850 4900 3275 4900
-$Comp
-L GND #PWR015
-U 1 1 588455B7
-P 6500 5725
-F 0 "#PWR015" H 6500 5475 50  0001 C CNN
-F 1 "GND" H 6500 5575 50  0000 C CNN
-F 2 "" H 6500 5725 50  0000 C CNN
-F 3 "" H 6500 5725 50  0000 C CNN
-	1    6500 5725
-	1    0    0    -1  
-$EndComp
+	8375 3925 8800 3925
 Wire Wire Line
-	6600 5675 6500 5675
+	8375 4050 8800 4050
 Wire Wire Line
-	6500 5675 6500 5725
-Text Label 8350 3925 0    60   ~ 0
-uC_KS_1
-Text Label 8350 4050 0    60   ~ 0
-uC_KS_2
-Text Label 8350 4175 0    60   ~ 0
-KS_uC
-Wire Wire Line
-	8325 3925 8750 3925
-Wire Wire Line
-	8325 4050 8750 4050
-Wire Wire Line
-	8325 4175 8650 4175
+	8375 4175 8700 4175
 Wire Wire Line
 	6600 3925 6400 3925
 Wire Wire Line
@@ -667,24 +657,73 @@ Wire Wire Line
 	6600 4400 6225 4400
 Wire Wire Line
 	6600 4575 6200 4575
-Text Label 2875 5400 0    60   ~ 0
-prog_tx
-Text Label 2875 5300 0    60   ~ 0
-prog_rx
-Text Label 2875 5200 0    60   ~ 0
-prog_cts
-Text Label 2875 5100 0    60   ~ 0
-prog_rts
 Wire Wire Line
-	2850 5100 3250 5100
+	2850 5575 3225 5575
 Wire Wire Line
-	2850 5200 3250 5200
+	2850 5475 3225 5475
 Wire Wire Line
-	2850 5400 3225 5400
+	2850 5725 3400 5725
 Wire Wire Line
-	2850 5300 3225 5300
-Text Label 2875 5525 0    60   ~ 0
-reset_dsPIC
+	2850 4775 3275 4775
 Wire Wire Line
-	2850 5525 3400 5525
+	2850 4875 3275 4875
+Wire Wire Line
+	2850 4975 3175 4975
+Wire Wire Line
+	2850 5075 3225 5075
+Wire Wire Line
+	2850 5200 3400 5200
+Wire Wire Line
+	2850 5300 3400 5300
+$Comp
+L GND #PWR6
+U 1 1 5889E95F
+P 1300 6225
+F 0 "#PWR6" H 1300 5975 50  0001 C CNN
+F 1 "GND" H 1300 6075 50  0000 C CNN
+F 2 "" H 1300 6225 50  0000 C CNN
+F 3 "" H 1300 6225 50  0000 C CNN
+	1    1300 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6125 1300 6125
+Wire Wire Line
+	1300 6125 1300 6225
+Text Label 1425 4775 2    60   ~ 0
+3V3
+Text Label 1425 4925 2    60   ~ 0
+Vbackup_in
+Text Label 1425 5075 2    60   ~ 0
+V5
+Wire Wire Line
+	1450 4775 1225 4775
+Wire Wire Line
+	1450 4925 925  4925
+Wire Wire Line
+	1450 5075 1300 5075
+Text Label 6575 5500 2    60   ~ 0
+uC_MOSI
+Text Label 6575 5600 2    60   ~ 0
+uC_MISO
+Text Label 6575 5700 2    60   ~ 0
+uC_CS
+Text Label 6575 5800 2    60   ~ 0
+uC_CLK
+Wire Wire Line
+	6600 5500 6175 5500
+Wire Wire Line
+	6600 5600 6175 5600
+Wire Wire Line
+	6600 5700 6275 5700
+Wire Wire Line
+	6600 5800 6225 5800
+Text Label 8400 4575 0    60   ~ 0
+sensor_SDA
+Text Label 8400 4675 0    60   ~ 0
+sensor_SCL
+Wire Wire Line
+	8375 4575 8925 4575
+Wire Wire Line
+	8375 4675 8925 4675
 $EndSCHEMATC

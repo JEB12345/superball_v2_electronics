@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -164,12 +120,21 @@ LIBS:MF_LEDs
 LIBS:MF_Passives
 LIBS:MF_Sensors
 LIBS:MF_Switches
+LIBS:TDP6E001RSER
+LIBS:esd7c5
+LIBS:lan9512
+LIBS:FPF1203LUCX
+LIBS:MIC2026
+LIBS:tps82084sil
+LIBS:AS1360
+LIBS:SN74LV4T125
+LIBS:SN74LV1T125
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -310,124 +275,124 @@ GND
 $Comp
 L R R11
 U 1 1 587DCA56
-P 1575 3075
-F 0 "R11" V 1655 3075 50  0000 C CNN
-F 1 "10k" V 1575 3075 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1505 3075 50  0001 C CNN
-F 3 "" H 1575 3075 50  0000 C CNN
-	1    1575 3075
+P 1825 5975
+F 0 "R11" V 1905 5975 50  0000 C CNN
+F 1 "10k" V 1825 5975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1755 5975 50  0001 C CNN
+F 3 "" H 1825 5975 50  0000 C CNN
+	1    1825 5975
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R13
 U 1 1 587DCA97
-P 1850 3375
-F 0 "R13" V 1930 3375 50  0000 C CNN
-F 1 "470" V 1850 3375 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1780 3375 50  0001 C CNN
-F 3 "" H 1850 3375 50  0000 C CNN
-	1    1850 3375
+P 2100 6275
+F 0 "R13" V 2180 6275 50  0000 C CNN
+F 1 "470" V 2100 6275 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2030 6275 50  0001 C CNN
+F 3 "" H 2100 6275 50  0000 C CNN
+	1    2100 6275
 	0    1    1    0   
 $EndComp
 $Comp
 L C C13
 U 1 1 587DCB0B
-P 1575 3675
-F 0 "C13" H 1600 3775 50  0000 L CNN
-F 1 "100nF" H 1600 3575 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1613 3525 50  0001 C CNN
-F 3 "" H 1575 3675 50  0000 C CNN
-	1    1575 3675
+P 1825 6575
+F 0 "C13" H 1850 6675 50  0000 L CNN
+F 1 "100nF" H 1850 6475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1863 6425 50  0001 C CNN
+F 3 "" H 1825 6575 50  0000 C CNN
+	1    1825 6575
 	1    0    0    -1  
 $EndComp
-Text Label 1600 2800 0    60   ~ 0
+Text Label 1850 5700 0    60   ~ 0
 3V3
-Text Label 1375 3925 0    60   ~ 0
+Text Label 1625 6825 0    60   ~ 0
 GND
 Text Label 8890 6995 0    60   ~ 0
 ~MCLR
-Text Label 2025 3375 0    60   ~ 0
+Text Label 2275 6275 0    60   ~ 0
 ~MCLR
-Text Label 1150 3375 0    60   ~ 0
+Text Label 1400 6275 0    60   ~ 0
 mclr_gnd
 $Comp
 L Si1900DL U9
 U 1 1 587DE67A
-P 1750 4375
-F 0 "U9" H 1750 4175 50  0000 C CNN
-F 1 "Si1900DL" H 1750 4575 50  0000 C CNN
-F 2 "NASA_IRG_SSB:SOT323-6" H 1550 4175 50  0001 C CNN
-F 3 "DOCUMENTATION" H 2150 4175 50  0001 C CNN
-	1    1750 4375
+P 2000 7275
+F 0 "U9" H 2000 7075 50  0000 C CNN
+F 1 "Si1900DL" H 2000 7475 50  0000 C CNN
+F 2 "NASA_IRG_SSB:SOT323-6" H 1800 7075 50  0001 C CNN
+F 3 "DOCUMENTATION" H 2400 7075 50  0001 C CNN
+	1    2000 7275
 	1    0    0    -1  
 $EndComp
-Text Label 2275 4275 0    60   ~ 0
+Text Label 2525 7175 0    60   ~ 0
 mclr_gnd
-Text Label 1225 4275 2    60   ~ 0
+Text Label 1475 7175 2    60   ~ 0
 GND
 Text HLabel 1100 1575 0    60   Input ~ 0
 reset_dsPIC
 Text Label 1125 1575 0    60   ~ 0
 reset_dsPIC
-Text Label 1225 4375 2    60   ~ 0
+Text Label 1475 7275 2    60   ~ 0
 reset_dsPIC
 $Comp
 L MCSMT-G5030A1-3712 L2
 U 1 1 587E0392
-P 1675 5500
-F 0 "L2" H 1825 5800 60  0000 C CNN
-F 1 "MCSMT-G5030A1-3712" H 2225 5300 60  0000 C CNN
-F 2 "MCSMT-G5030A1-3712:MCSMT-G5030A1-3712" H 1675 5500 60  0001 C CNN
-F 3 "" H 1675 5500 60  0000 C CNN
-	1    1675 5500
+P 1925 8400
+F 0 "L2" H 2075 8700 60  0000 C CNN
+F 1 "MCSMT-G5030A1-3712" H 2475 8200 60  0000 C CNN
+F 2 "MCSMT-G5030A1-3712:MCSMT-G5030A1-3712" H 1925 8400 60  0001 C CNN
+F 3 "" H 1925 8400 60  0000 C CNN
+	1    1925 8400
 	1    0    0    -1  
 $EndComp
 $Comp
 L D_Small D5
 U 1 1 587E2835
-P 1555 5175
-F 0 "D5" H 1505 5255 50  0000 L CNN
-F 1 "DA2S10100L" H 1355 5105 39  0000 L CNN
-F 2 "SSMini2-F5-B:SSMini2-F5-B" H 1555 5175 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/DA2S10100L-Panasonic-datasheet-13317586.pdf" H 1555 5175 50  0001 C CNN
-	1    1555 5175
+P 1805 8075
+F 0 "D5" H 1755 8155 50  0000 L CNN
+F 1 "DA2S10100L" H 1605 8005 39  0000 L CNN
+F 2 "SSMini2-F5-B:SSMini2-F5-B" H 1805 8075 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/DA2S10100L-Panasonic-datasheet-13317586.pdf" H 1805 8075 50  0001 C CNN
+	1    1805 8075
 	0    -1   -1   0   
 $EndComp
-Text Label 1425 4950 0    60   ~ 0
+Text Label 1675 7850 0    60   ~ 0
 3V3
 $Comp
 L R R12
 U 1 1 587E39E4
-P 1775 5550
-F 0 "R12" V 1855 5550 50  0000 C CNN
-F 1 "50" V 1775 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1705 5550 50  0001 C CNN
-F 3 "" H 1775 5550 50  0000 C CNN
-	1    1775 5550
+P 2025 8450
+F 0 "R12" V 2105 8450 50  0000 C CNN
+F 1 "50" V 2025 8450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1955 8450 50  0001 C CNN
+F 3 "" H 2025 8450 50  0000 C CNN
+	1    2025 8450
 	0    1    1    0   
 $EndComp
-Text Label 1950 5550 0    60   ~ 0
+Text Label 2200 8450 0    60   ~ 0
 buzz_gnd
-Text Label 2275 4375 0    60   ~ 0
+Text Label 2525 7275 0    60   ~ 0
 buzzer
-Text Label 2275 4475 0    60   ~ 0
+Text Label 2525 7375 0    60   ~ 0
 GND
-Text Label 1225 4475 2    60   ~ 0
+Text Label 1475 7375 2    60   ~ 0
 buzz_gnd
 $Comp
 L C C9
 U 1 1 587E534C
-P 1125 5300
-F 0 "C9" H 1150 5400 50  0000 L CNN
-F 1 "10uF" H 1150 5200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1163 5150 50  0001 C CNN
-F 3 "" H 1125 5300 50  0000 C CNN
-	1    1125 5300
+P 1375 8200
+F 0 "C9" H 1400 8300 50  0000 L CNN
+F 1 "10uF" H 1400 8100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1413 8050 50  0001 C CNN
+F 3 "" H 1375 8200 50  0000 C CNN
+	1    1375 8200
 	1    0    0    -1  
 $EndComp
-Text Label 975  5025 0    60   ~ 0
+Text Label 1225 7925 0    60   ~ 0
 3V3
-Text Label 1100 5525 2    60   ~ 0
+Text Label 1350 8425 2    60   ~ 0
 GND
 Text HLabel 1375 1800 0    60   Input ~ 0
 vmotor_en_signal
@@ -548,64 +513,64 @@ Connection ~ 10635 8145
 Connection ~ 10635 7995
 Connection ~ 10635 8745
 Wire Wire Line
-	1575 3225 1575 3525
+	1825 6125 1825 6425
 Wire Wire Line
-	1125 3375 1700 3375
-Connection ~ 1575 3375
+	1375 6275 1950 6275
+Connection ~ 1825 6275
 Wire Wire Line
-	2000 3375 2275 3375
+	2250 6275 2525 6275
 Wire Wire Line
-	1575 2925 1575 2800
+	1825 5825 1825 5700
 Wire Wire Line
-	1575 2800 1800 2800
+	1825 5700 2050 5700
 Wire Wire Line
-	1575 3825 1575 3925
+	1825 6725 1825 6825
 Wire Wire Line
-	1575 3925 1375 3925
+	1825 6825 1625 6825
 Wire Wire Line
 	9130 6995 8800 6995
 Wire Wire Line
-	1250 4375 700  4375
+	1500 7275 950  7275
 Wire Wire Line
-	1250 4275 1025 4275
+	1500 7175 1275 7175
 Wire Wire Line
-	2250 4275 2675 4275
+	2500 7175 2925 7175
 Wire Wire Line
 	1100 1575 1650 1575
 Wire Wire Line
-	1555 5000 1675 5000
+	1805 7900 1925 7900
 Wire Wire Line
-	1555 5000 1555 5075
+	1805 7900 1805 7975
 Wire Wire Line
-	1555 5275 1555 5400
+	1805 8175 1805 8300
 Wire Wire Line
-	1555 5400 1675 5400
+	1805 8300 1925 8300
 Wire Wire Line
-	1575 5000 1575 4950
+	1825 7900 1825 7850
 Wire Wire Line
-	1575 4950 1400 4950
-Connection ~ 1575 5000
+	1825 7850 1650 7850
+Connection ~ 1825 7900
 Wire Wire Line
-	1575 5400 1575 5550
+	1825 8300 1825 8450
 Wire Wire Line
-	1575 5550 1625 5550
-Connection ~ 1575 5400
+	1825 8450 1875 8450
+Connection ~ 1825 8300
 Wire Wire Line
-	1925 5550 2375 5550
+	2175 8450 2625 8450
 Wire Wire Line
-	2250 4375 2575 4375
+	2500 7275 2825 7275
 Wire Wire Line
-	2250 4475 2475 4475
+	2500 7375 2725 7375
 Wire Wire Line
-	1250 4475 800  4475
+	1500 7375 1050 7375
 Wire Wire Line
-	1125 5150 1125 5025
+	1375 8050 1375 7925
 Wire Wire Line
-	1125 5025 950  5025
+	1375 7925 1200 7925
 Wire Wire Line
-	1125 5450 1125 5525
+	1375 8350 1375 8425
 Wire Wire Line
-	1125 5525 925  5525
+	1375 8425 1175 8425
 Wire Wire Line
 	1375 1800 2150 1800
 Wire Wire Line
@@ -957,9 +922,9 @@ Wire Wire Line
 Text Label 12880 3915 0    60   ~ 0
 buzzer
 Text Label 12895 6225 0    60   ~ 0
-uC_SCL
+sensor_SCL
 Text Label 12895 6335 0    60   ~ 0
-uC_SDA
+sensor_SDA
 Wire Wire Line
 	13700 6225 12870 6225
 Wire Wire Line
@@ -1003,27 +968,181 @@ prog_UART_RX
 Text HLabel 1350 2400 0    60   Input ~ 0
 prog_UART_TX
 Wire Wire Line
-	1350 2275 1950 2275
-Wire Wire Line
-	1350 2400 1950 2400
-Text HLabel 1350 2525 0    60   Input ~ 0
-prog_~UART_CTS
-Text HLabel 1350 2650 0    60   Input ~ 0
-prog_~UART_RTS
-Wire Wire Line
-	1350 2525 1950 2525
-Wire Wire Line
-	1350 2650 1950 2650
-Text HLabel 15400 1350 2    60   Output ~ 0
+	13625 5895 13625 5740
+Text HLabel 15400 1625 2    60   Output ~ 0
+sensor_SDA
+Text HLabel 15400 1750 2    60   Output ~ 0
+sensor_SCL
+Text Label 15375 1625 2    60   ~ 0
 uC_SDA
-Text HLabel 15400 1475 2    60   Output ~ 0
+Text Label 15375 1750 2    60   ~ 0
 uC_SCL
 Wire Wire Line
-	15400 1350 15050 1350
-Text Label 15375 1350 2    60   ~ 0
-uC_SDA
-Text Label 15375 1475 2    60   ~ 0
-uC_SCL
+	15400 1625 15050 1625
 Wire Wire Line
-	15400 1475 15050 1475
+	15400 1750 15050 1750
+Text HLabel 1325 2750 0    60   Input ~ 0
+uC_MOSI
+Text HLabel 1325 2850 0    60   Input ~ 0
+uC_MISO
+Text HLabel 1325 2950 0    60   Input ~ 0
+uC_CS
+Text HLabel 1325 3050 0    60   Input ~ 0
+uC_CLK
+Text Label 1350 2750 0    60   ~ 0
+uC_MOSI
+Text Label 1350 2850 0    60   ~ 0
+uC_MISO
+Text Label 1350 2950 0    60   ~ 0
+uC_CS
+Text Label 1350 3050 0    60   ~ 0
+uC_CLK
+Wire Wire Line
+	1325 2750 1750 2750
+Wire Wire Line
+	1325 2850 1750 2850
+Wire Wire Line
+	1325 2950 1625 2950
+Wire Wire Line
+	1325 3050 1700 3050
+Text HLabel 15425 1300 2    60   Output ~ 0
+uC_GPIO1
+Text HLabel 15425 1425 2    60   Output ~ 0
+uC_GPIO2
+Text Label 9100 4575 2    60   ~ 0
+RB8
+Text Label 9100 4685 2    60   ~ 0
+RB9
+Text Label 9100 4795 2    60   ~ 0
+RB10
+Text Label 9100 4905 2    60   ~ 0
+RB11
+Text Label 9105 5015 2    60   ~ 0
+RB12
+Text Label 9105 5675 2    60   ~ 0
+RD1
+Text Label 9090 5785 2    60   ~ 0
+RD2
+Text Label 9105 5895 2    60   ~ 0
+RD3
+Text Label 9105 6005 2    60   ~ 0
+RD4
+Text Label 9110 6115 2    60   ~ 0
+RD5
+Text Label 9110 6225 2    60   ~ 0
+RD6
+Text Label 9105 6555 2    60   ~ 0
+RD9
+Text Label 9105 6665 2    60   ~ 0
+RD10
+Text Label 9105 6775 2    60   ~ 0
+RD11
+Text Label 12905 6005 0    60   ~ 0
+RF6
+Text Label 12900 5675 0    60   ~ 0
+RF3
+Text Label 12895 5565 0    60   ~ 0
+RF2
+Text Label 12895 4905 0    60   ~ 0
+RE5
+Text Label 9105 3695 2    60   ~ 0
+RB0
+Text Label 9105 3805 2    60   ~ 0
+RB1
+Wire Wire Line
+	1350 2400 2025 2400
+Wire Wire Line
+	1350 2275 2025 2275
+Text Label 9105 5345 2    60   ~ 0
+uC_MOSI
+Text Label 9105 5565 2    60   ~ 0
+uC_MISO
+Text Label 9105 5125 2    60   ~ 0
+uC_CS
+Text Label 9105 5235 2    60   ~ 0
+uC_CLK
+Wire Wire Line
+	9130 5345 8705 5345
+Wire Wire Line
+	9130 5565 8705 5565
+Wire Wire Line
+	9130 5125 8830 5125
+Wire Wire Line
+	9130 5235 8755 5235
+Text Label 1375 2400 0    60   ~ 0
+uC_UART_RX
+Text Label 1375 2275 0    60   ~ 0
+uC_UART_TX
+Text Notes 1025 2650 0    60   ~ 0
+uC_Slave SPI
+Text Notes 8675 5025 3    60   ~ 0
+uC_Slave SPI
+Text Label 12895 4025 0    60   ~ 0
+reset_dsPIC
+Text Label 12895 3695 0    60   ~ 0
+vmotor_en_signal
+Text Label 12895 3805 0    60   ~ 0
+ks_nFault_signal
+Wire Wire Line
+	12870 4025 13420 4025
+Wire Wire Line
+	12870 3695 13645 3695
+Wire Wire Line
+	12870 3805 13645 3805
+Text Label 12895 5785 0    60   ~ 0
+RF4
+Text Label 12890 5895 0    60   ~ 0
+RF5
+Wire Wire Line
+	12870 5565 13080 5565
+Wire Wire Line
+	12870 5675 13090 5675
+Wire Wire Line
+	12870 5785 13090 5785
+Wire Wire Line
+	12870 5895 13080 5895
+Wire Wire Line
+	12870 6005 13085 6005
+Wire Wire Line
+	12870 4905 13100 4905
+Wire Wire Line
+	9130 6445 8455 6445
+Wire Wire Line
+	9130 6335 8455 6335
+Text Label 9105 6445 2    60   ~ 0
+uC_UART_RX
+Text Label 9105 6335 2    60   ~ 0
+uC_UART_TX
+Wire Wire Line
+	9130 6775 8860 6775
+Wire Wire Line
+	9130 6665 8860 6665
+Wire Wire Line
+	9130 6555 8900 6555
+Wire Wire Line
+	9130 6225 8910 6225
+Wire Wire Line
+	9130 6115 8900 6115
+Wire Wire Line
+	9130 6005 8905 6005
+Wire Wire Line
+	9130 5895 8900 5895
+Wire Wire Line
+	9130 5785 8900 5785
+Wire Wire Line
+	9130 5675 8900 5675
+Wire Wire Line
+	8855 5015 9130 5015
+Wire Wire Line
+	9130 4905 8850 4905
+Wire Wire Line
+	9130 4795 8850 4795
+Wire Wire Line
+	9130 4685 8895 4685
+Wire Wire Line
+	9130 4575 8900 4575
+Wire Wire Line
+	9130 3805 8915 3805
+Wire Wire Line
+	9130 3695 8920 3695
 $EndSCHEMATC
