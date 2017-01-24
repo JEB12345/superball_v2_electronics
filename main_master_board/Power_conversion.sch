@@ -43,7 +43,56 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:decaWave
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -54,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -73,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -81,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -102,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -134,7 +178,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -307,37 +351,37 @@ GND
 $Comp
 L R R33
 U 1 1 58669BFA
-P 10020 4450
-F 0 "R33" V 10100 4450 50  0000 C CNN
-F 1 "200" V 10020 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9950 4450 50  0000 C CNN
-F 3 "" H 10020 4450 50  0000 C CNN
-	1    10020 4450
+P 10370 4450
+F 0 "R33" V 10450 4450 50  0000 C CNN
+F 1 "200" V 10370 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10300 4450 50  0000 C CNN
+F 3 "" H 10370 4450 50  0000 C CNN
+	1    10370 4450
 	0    1    1    0   
 $EndComp
 $Comp
 L LED-RESCUE-main_master_board D?
 U 1 1 5866D243
-P 1515 6200
+P 1165 6200
 AR Path="/5866D243" Ref="D?"  Part="1" 
 AR Path="/58643B62/5866D243" Ref="D4"  Part="1" 
 AR Path="/5876FF98/5866D243" Ref="D4"  Part="1" 
-F 0 "D4" H 1515 6300 50  0000 C CNN
-F 1 "GRN_LED" H 1515 6100 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 1515 6200 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 1515 6200 50  0001 C CNN
-	1    1515 6200
+F 0 "D4" H 1165 6300 50  0000 C CNN
+F 1 "GRN_LED" H 1165 6100 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 1165 6200 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 1165 6200 50  0001 C CNN
+	1    1165 6200
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R3
 U 1 1 5866D24A
-P 1165 6200
-F 0 "R3" V 1245 6200 50  0000 C CNN
-F 1 "200" V 1165 6200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1095 6200 50  0000 C CNN
-F 3 "" H 1165 6200 50  0000 C CNN
-	1    1165 6200
+P 1515 6200
+F 0 "R3" V 1595 6200 50  0000 C CNN
+F 1 "10" V 1515 6200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1445 6200 50  0000 C CNN
+F 3 "" H 1515 6200 50  0000 C CNN
+	1    1515 6200
 	0    1    1    0   
 $EndComp
 Text HLabel 1075 1050 0    60   Input ~ 0
@@ -345,40 +389,14 @@ Vbackup
 Text Label 1125 1050 0    60   ~ 0
 Vbackup
 $Comp
-L R R34
-U 1 1 586BFF78
-P 10625 5910
-F 0 "R34" V 10705 5910 50  0000 C CNN
-F 1 "267K" V 10625 5910 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10555 5910 50  0000 C CNN
-F 3 "" H 10625 5910 50  0000 C CNN
-	1    10625 5910
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R35
-U 1 1 586C095E
-P 10625 6260
-F 0 "R35" V 10705 6260 50  0000 C CNN
-F 1 "102K" V 10625 6260 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10555 6260 50  0000 C CNN
-F 3 "" H 10625 6260 50  0000 C CNN
-	1    10625 6260
-	1    0    0    -1  
-$EndComp
-Text Label 10675 6080 0    60   ~ 0
-P_ref_boo
-Text Label 9420 4450 0    60   ~ 0
-P_ref_boo
-$Comp
 L LED-RESCUE-main_master_board D11
 U 1 1 586C4FFA
-P 6220 2450
-F 0 "D11" H 6220 2550 50  0000 C CNN
-F 1 "BLUE_LED" H 6220 2350 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 6220 2450 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 6220 2450 50  0001 C CNN
-	1    6220 2450
+P 5870 2450
+F 0 "D11" H 5870 2550 50  0000 C CNN
+F 1 "BLUE_LED" H 5870 2350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5870 2450 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 5870 2450 50  0001 C CNN
+	1    5870 2450
 	-1   0    0    1   
 $EndComp
 Text Label 6470 2450 0    60   ~ 0
@@ -386,16 +404,14 @@ GND
 $Comp
 L R R21
 U 1 1 586C5001
-P 5870 2450
-F 0 "R21" V 5950 2450 50  0000 C CNN
-F 1 "200" V 5870 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5800 2450 50  0000 C CNN
-F 3 "" H 5870 2450 50  0000 C CNN
-	1    5870 2450
+P 6220 2450
+F 0 "R21" V 6300 2450 50  0000 C CNN
+F 1 "200" V 6220 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6150 2450 50  0001 C CNN
+F 3 "" H 6220 2450 50  0000 C CNN
+	1    6220 2450
 	0    1    1    0   
 $EndComp
-Text Label 5270 2450 0    60   ~ 0
-P_ref_buc
 Text Label 6260 3350 0    60   ~ 0
 P_ref_buc
 Text Label 2100 3750 0    60   ~ 0
@@ -403,12 +419,12 @@ P_ref_buc
 $Comp
 L LED-RESCUE-main_master_board D12
 U 1 1 586C9705
-P 10370 4450
-F 0 "D12" H 10370 4550 50  0000 C CNN
-F 1 "BLUE_LED" H 10370 4350 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 10370 4450 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 10370 4450 50  0001 C CNN
-	1    10370 4450
+P 10020 4450
+F 0 "D12" H 10020 4550 50  0000 C CNN
+F 1 "BLUE_LED" H 10020 4350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 10020 4450 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 10020 4450 50  0001 C CNN
+	1    10020 4450
 	-1   0    0    1   
 $EndComp
 Text Label 855  6200 0    60   ~ 0
@@ -481,8 +497,6 @@ F 3 "" H 9220 3330 50  0000 C CNN
 $EndComp
 Text Label 9400 3030 0    60   ~ 0
 PFET_ON
-Text Label 8760 3130 0    60   ~ 0
-P_ref_buc
 Text Label 9020 3600 0    60   ~ 0
 GND
 Text Label 1770 3000 0    60   ~ 0
@@ -862,8 +876,6 @@ F 3 "" H 6470 6820 50  0000 C CNN
 $EndComp
 Text Label 6500 6980 0    60   ~ 0
 GND
-Text Label 6530 6680 0    60   ~ 0
-V4
 Text Notes 4830 6640 0    60   ~ 0
 Single Cell LiPo Charger
 Text Label 3750 3800 0    60   ~ 0
@@ -1136,11 +1148,6 @@ Wire Notes Line
 	6750 4000 6750 2100
 Wire Notes Line
 	11200 6500 5700 6500
-Wire Wire Line
-	10625 6060 10625 6110
-Wire Wire Line
-	10625 6080 10965 6080
-Connection ~ 10625 6080
 Wire Wire Line
 	5220 2450 5720 2450
 Wire Wire Line
@@ -1416,7 +1423,7 @@ Connection ~ 6200 3800
 Wire Wire Line
 	10260 1170 9750 1170
 Wire Wire Line
-	6695 6450 10745 6450
+	6695 6450 10475 6450
 Wire Wire Line
 	7655 6030 7595 6030
 Wire Wire Line
@@ -1486,7 +1493,7 @@ Wire Wire Line
 	10115 6030 10115 5730
 Connection ~ 10115 5730
 Wire Wire Line
-	10275 6200 10275 6450
+	10275 6450 10275 6200
 Connection ~ 10275 6450
 Wire Wire Line
 	10275 5900 10275 5730
@@ -1496,12 +1503,6 @@ Wire Wire Line
 Text Label 7645 5530 2    60   ~ 0
 Switch_on
 NoConn ~ 7655 5680
-Wire Wire Line
-	10625 5760 10625 5730
-Connection ~ 10625 5730
-Wire Wire Line
-	10625 6410 10625 6450
-Connection ~ 10625 6450
 Text Label 10705 5730 0    60   ~ 0
 V5_BACKUP
 Text Label 10540 2550 0    60   ~ 0
@@ -1712,4 +1713,49 @@ Wire Wire Line
 	10250 1300 9750 1300
 Text Label 9875 1300 0    60   ~ 0
 V4
+Text Label 5300 2450 0    60   ~ 0
+V5_MAIN
+Text Label 9850 4450 2    60   ~ 0
+V5_BACKUP
+Text Label 6535 6680 0    60   ~ 0
+Vbackup
+$Comp
+L LED D17
+U 1 1 588AAACC
+P 3300 4175
+F 0 "D17" H 3300 4275 50  0000 C CNN
+F 1 "ORG_LED" H 3300 4075 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3300 4175 50  0001 C CNN
+F 3 "" H 3300 4175 50  0000 C CNN
+	1    3300 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R34
+U 1 1 588AB24C
+P 3750 4175
+F 0 "R34" V 3830 4175 50  0000 C CNN
+F 1 "100" V 3750 4175 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3680 4175 50  0001 C CNN
+F 3 "" H 3750 4175 50  0000 C CNN
+	1    3750 4175
+	0    1    1    0   
+$EndComp
+Text Label 3975 4175 0    60   ~ 0
+GND
+Wire Wire Line
+	3900 4175 4175 4175
+Wire Wire Line
+	3500 4175 3600 4175
+Wire Wire Line
+	3100 4175 2850 4175
+Text Label 2950 4175 0    60   ~ 0
+V4
+Wire Wire Line
+	9155 5630 9205 5630
+Wire Wire Line
+	9205 5630 9205 5730
+Connection ~ 9205 5730
+Text Label 8760 3130 0    60   ~ 0
+P_ref_buc
 $EndSCHEMATC

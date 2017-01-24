@@ -43,7 +43,56 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:decaWave
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -54,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -73,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -81,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -102,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -134,7 +178,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 7
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -744,13 +788,7 @@ Connection ~ 8450 4530
 Text Label 8120 4530 2    60   ~ 0
 GND
 Wire Wire Line
-	10050 1175 10500 1175
-Text Label 10075 1175 0    60   ~ 0
-DWM_CLK
-Text Label 10075 1275 0    60   ~ 0
-DWM_MISO
-Text Label 10075 1375 0    60   ~ 0
-DWM_MOSI
+	10050 1175 10625 1175
 Text Label 10075 1475 0    60   ~ 0
 DWM_CS
 Text Label 10075 975  0    60   ~ 0
@@ -758,9 +796,9 @@ DWM_IRQ
 Wire Wire Line
 	10050 1475 10450 1475
 Wire Wire Line
-	10050 1375 10550 1375
+	10050 1375 10625 1375
 Wire Wire Line
-	10050 1275 10550 1275
+	10050 1275 10625 1275
 Wire Wire Line
 	10050 975  10475 975 
 Wire Wire Line
@@ -1009,12 +1047,10 @@ Text HLabel 15425 1300 2    60   Output ~ 0
 uC_GPIO1
 Text HLabel 15425 1425 2    60   Output ~ 0
 uC_GPIO2
-Text Label 9100 4575 2    60   ~ 0
-RB8
 Text Label 9100 4685 2    60   ~ 0
-RB9
+uC_GPIO2
 Text Label 9100 4795 2    60   ~ 0
-RB10
+rgb_b
 Text Label 9100 4905 2    60   ~ 0
 RB11
 Text Label 9105 5015 2    60   ~ 0
@@ -1029,14 +1065,8 @@ Text Label 9105 6005 2    60   ~ 0
 RD4
 Text Label 9110 6115 2    60   ~ 0
 RD5
-Text Label 9110 6225 2    60   ~ 0
-RD6
-Text Label 9105 6555 2    60   ~ 0
+Text Label 9110 6555 2    60   ~ 0
 RD9
-Text Label 9105 6665 2    60   ~ 0
-RD10
-Text Label 9105 6775 2    60   ~ 0
-RD11
 Text Label 12905 6005 0    60   ~ 0
 RF6
 Text Label 12900 5675 0    60   ~ 0
@@ -1046,9 +1076,9 @@ RF2
 Text Label 12895 4905 0    60   ~ 0
 RE5
 Text Label 9105 3695 2    60   ~ 0
-RB0
+rgb_r
 Text Label 9105 3805 2    60   ~ 0
-RB1
+rgb_g
 Wire Wire Line
 	1350 2400 2025 2400
 Wire Wire Line
@@ -1077,14 +1107,10 @@ Text Notes 1025 2650 0    60   ~ 0
 uC_Slave SPI
 Text Notes 8675 5025 3    60   ~ 0
 uC_Slave SPI
-Text Label 12895 4025 0    60   ~ 0
-reset_dsPIC
 Text Label 12895 3695 0    60   ~ 0
 vmotor_en_signal
 Text Label 12895 3805 0    60   ~ 0
 ks_nFault_signal
-Wire Wire Line
-	12870 4025 13420 4025
 Wire Wire Line
 	12870 3695 13645 3695
 Wire Wire Line
@@ -1114,13 +1140,7 @@ uC_UART_RX
 Text Label 9105 6335 2    60   ~ 0
 uC_UART_TX
 Wire Wire Line
-	9130 6775 8860 6775
-Wire Wire Line
-	9130 6665 8860 6665
-Wire Wire Line
-	9130 6555 8900 6555
-Wire Wire Line
-	9130 6225 8910 6225
+	9130 6555 8910 6555
 Wire Wire Line
 	9130 6115 8900 6115
 Wire Wire Line
@@ -1138,11 +1158,269 @@ Wire Wire Line
 Wire Wire Line
 	9130 4795 8850 4795
 Wire Wire Line
-	9130 4685 8895 4685
+	8665 4685 9130 4685
 Wire Wire Line
-	9130 4575 8900 4575
+	8665 4575 9130 4575
 Wire Wire Line
 	9130 3805 8915 3805
 Wire Wire Line
 	9130 3695 8920 3695
+Text Label 12900 4025 0    60   ~ 0
+uC_status
+Wire Wire Line
+	12870 4025 13150 4025
+Text Label 10075 1175 0    60   ~ 0
+DWM_CLK
+Text Label 10075 1275 0    60   ~ 0
+DWM_MISO
+Text Label 10075 1375 0    60   ~ 0
+DWM_MOSI
+Text Notes 13425 4750 0    39   ~ 0
+Trace impedence of 50-75 ohms
+Text Notes 10700 1275 0    39   ~ 0
+Trace impedence of 50-75 ohms
+Text Label 8755 6225 0    60   ~ 0
+uC_KS_1
+Text Label 8755 6665 0    60   ~ 0
+uC_KS_2
+Text Label 8855 6775 0    60   ~ 0
+KS_uC
+Wire Wire Line
+	8805 6775 9130 6775
+Wire Wire Line
+	8730 6665 9130 6665
+Wire Wire Line
+	8730 6225 9130 6225
+Text Label 9100 4575 2    60   ~ 0
+uC_GPIO1
+Text Label 15390 1425 2    60   ~ 0
+uC_GPIO2
+Text Label 15380 1300 2    60   ~ 0
+uC_GPIO1
+Wire Wire Line
+	15425 1300 14950 1300
+Wire Wire Line
+	15425 1425 14950 1425
+$Comp
+L RGB_LED U29
+U 1 1 58888F0E
+P 4200 3500
+F 0 "U29" H 4200 3300 50  0000 C CNN
+F 1 "RGB_LED" H 4200 3700 50  0000 C CNN
+F 2 "Kingbright:APFA2507QBDSEEZGKC" H 4200 3500 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APFA2507QBDSEEZGKC.pdf" H 4200 3500 50  0001 C CNN
+	1    4200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L RGB_LED U30
+U 1 1 5888FD0B
+P 4200 4200
+F 0 "U30" H 4200 4000 50  0000 C CNN
+F 1 "RGB_LED" H 4200 4400 50  0000 C CNN
+F 2 "Kingbright:APFA2507QBDSEEZGKC" H 4200 4200 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APFA2507QBDSEEZGKC.pdf" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Text Label 3725 3425 2    60   ~ 0
+3V3
+Wire Wire Line
+	3800 4200 3900 4200
+Wire Wire Line
+	3800 3425 3800 4200
+Wire Wire Line
+	3800 3425 3550 3425
+Wire Wire Line
+	3900 3500 3800 3500
+Connection ~ 3800 3500
+$Comp
+L R R56
+U 1 1 58891909
+P 4725 3400
+F 0 "R56" V 4775 3550 50  0000 C CNN
+F 1 "43.2" V 4725 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4655 3400 50  0001 C CNN
+F 3 "" H 4725 3400 50  0000 C CNN
+	1    4725 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R57
+U 1 1 588940B7
+P 4725 3500
+F 0 "R57" V 4775 3650 50  0000 C CNN
+F 1 "10" V 4725 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4655 3500 50  0001 C CNN
+F 3 "" H 4725 3500 50  0000 C CNN
+	1    4725 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R58
+U 1 1 5889412F
+P 4725 3600
+F 0 "R58" V 4775 3750 50  0000 C CNN
+F 1 "10" V 4725 3600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4655 3600 50  0001 C CNN
+F 3 "" H 4725 3600 50  0000 C CNN
+	1    4725 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3400 4575 3400
+Wire Wire Line
+	4500 3500 4575 3500
+Wire Wire Line
+	4500 3600 4575 3600
+$Comp
+L R R35
+U 1 1 58895ECD
+P 4700 4100
+F 0 "R35" V 4750 4250 50  0000 C CNN
+F 1 "43.2" V 4700 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4630 4100 50  0001 C CNN
+F 3 "" H 4700 4100 50  0000 C CNN
+	1    4700 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R54
+U 1 1 58895ED3
+P 4700 4200
+F 0 "R54" V 4750 4350 50  0000 C CNN
+F 1 "4" V 4700 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4630 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0000 C CNN
+	1    4700 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R55
+U 1 1 58895ED9
+P 4700 4300
+F 0 "R55" V 4750 4450 50  0000 C CNN
+F 1 "4" V 4700 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4630 4300 50  0001 C CNN
+F 3 "" H 4700 4300 50  0000 C CNN
+	1    4700 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Si1900DL U32
+U 1 1 58896AFD
+P 5675 3850
+F 0 "U32" H 5675 3650 50  0000 C CNN
+F 1 "Si1900DL" H 5675 4050 50  0000 C CNN
+F 2 "NASA_IRG_SSB:SOT323-6" H 5475 3650 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6075 3650 50  0001 C CNN
+	1    5675 3850
+	1    0    0    -1  
+$EndComp
+Text Label 5150 3750 2    60   ~ 0
+GND
+Text Label 6200 3950 0    60   ~ 0
+GND
+Wire Wire Line
+	5175 3750 4950 3750
+Wire Wire Line
+	6175 3950 6400 3950
+Wire Wire Line
+	4500 4100 4550 4100
+Wire Wire Line
+	4500 4200 4550 4200
+Wire Wire Line
+	4500 4300 4550 4300
+Wire Wire Line
+	4875 3400 5225 3400
+Wire Wire Line
+	4875 3500 5225 3500
+Wire Wire Line
+	4875 3600 5225 3600
+Text Label 4925 3400 0    60   ~ 0
+RGB_R
+Text Label 4925 3500 0    60   ~ 0
+RGB_G
+Text Label 4925 3600 0    60   ~ 0
+RGB_B
+Wire Wire Line
+	4850 4100 5200 4100
+Wire Wire Line
+	4850 4200 5200 4200
+Wire Wire Line
+	4850 4300 5200 4300
+Text Label 4900 4100 0    60   ~ 0
+RGB_R
+Text Label 4900 4200 0    60   ~ 0
+RGB_G
+Text Label 4900 4300 0    60   ~ 0
+RGB_B
+Wire Wire Line
+	6175 3750 6525 3750
+Text Label 6225 3750 0    60   ~ 0
+RGB_R
+Wire Wire Line
+	5175 3950 4825 3950
+Text Label 5125 3950 2    60   ~ 0
+RGB_G
+$Comp
+L Si1900DL U31
+U 1 1 5889B253
+P 5650 4625
+F 0 "U31" H 5650 4425 50  0000 C CNN
+F 1 "Si1900DL" H 5650 4825 50  0000 C CNN
+F 2 "NASA_IRG_SSB:SOT323-6" H 5450 4425 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6050 4425 50  0001 C CNN
+	1    5650 4625
+	1    0    0    -1  
+$EndComp
+Text Label 6175 4725 0    60   ~ 0
+GND
+Wire Wire Line
+	6150 4725 6375 4725
+Text Label 5125 4525 2    60   ~ 0
+GND
+Wire Wire Line
+	5150 4525 4925 4525
+Wire Wire Line
+	6150 4525 6500 4525
+Text Label 6200 4525 0    60   ~ 0
+RGB_B
+$Comp
+L Led_Small D18
+U 1 1 5889BDBA
+P 4200 4725
+F 0 "D18" H 4150 4850 50  0000 L CNN
+F 1 "uC_status" H 4025 4625 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 4200 4725 50  0001 C CNN
+F 3 "" V 4200 4725 50  0000 C CNN
+	1    4200 4725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4725 3850 4725
+Wire Wire Line
+	3850 4725 3850 4575
+Wire Wire Line
+	3850 4575 3650 4575
+Text Label 3825 4575 2    60   ~ 0
+3V3
+Wire Wire Line
+	4300 4725 5150 4725
+Text Label 6175 4625 0    60   ~ 0
+uC_status
+Text Label 5125 4625 2    60   ~ 0
+rgb_b
+Text Label 6200 3850 0    60   ~ 0
+rgb_g
+Text Label 5150 3850 2    60   ~ 0
+rgb_r
+Wire Wire Line
+	5150 4625 4875 4625
+Wire Wire Line
+	6150 4625 6625 4625
+Wire Wire Line
+	5175 3850 4925 3850
+Wire Wire Line
+	6175 3850 6450 3850
 $EndSCHEMATC
