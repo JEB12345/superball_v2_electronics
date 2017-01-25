@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -290,7 +246,7 @@ U 1 1 58658B5C
 P 5700 3250
 F 0 "C14" H 5725 3350 50  0000 L CNN
 F 1 "33uF" H 5725 3150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 5600 3350 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 5600 3300 50  0000 C CNN
 F 3 "" H 5700 3250 50  0000 C CNN
 F 4 "1.69mOhms" H 5900 3050 60  0000 C CNN "Resistance"
 F 5 "C2012X5R1A336M125AC" H 5700 3250 60  0001 C CNN "Field5"
@@ -893,7 +849,7 @@ P 3050 3150
 F 0 "U4" H 3000 2700 50  0000 C CNN
 F 1 "LMR16030" H 3050 3600 50  0000 C CNN
 F 2 "HSOIC-8:HSOIC-8-1EP_Pitch1.27mm" H 2650 2700 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3450 2700 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/LMR16030PDDA/296-44513-5-ND/" H 3450 2700 50  0001 C CNN
 	1    3050 3150
 	1    0    0    -1  
 $EndComp
@@ -1720,9 +1676,11 @@ V5_BACKUP
 Text Label 6535 6680 0    60   ~ 0
 Vbackup
 $Comp
-L LED D17
+L LED-RESCUE-main_master_board D17
 U 1 1 588AAACC
 P 3300 4175
+AR Path="/588AAACC" Ref="D17"  Part="1" 
+AR Path="/58643B62/588AAACC" Ref="D17"  Part="1" 
 F 0 "D17" H 3300 4275 50  0000 C CNN
 F 1 "ORG_LED" H 3300 4075 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 3300 4175 50  0001 C CNN
