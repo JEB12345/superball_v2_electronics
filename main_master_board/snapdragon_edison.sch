@@ -43,7 +43,56 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:decaWave
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -54,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -73,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -81,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -102,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -164,7 +208,7 @@ U 1 1 5881673F
 P 3250 3000
 F 0 "U17" H 3250 2900 50  0000 C CNN
 F 1 "J1" H 3250 3100 50  0000 C CNN
-F 2 "MODULE" H 3250 3000 50  0001 C CNN
+F 2 "Variscite:DART-SD410" H 3250 3000 50  0001 C CNN
 F 3 "DOCUMENTATION" H 3250 3000 50  0001 C CNN
 	1    3250 3000
 	1    0    0    -1  
@@ -175,7 +219,7 @@ U 1 1 588167B7
 P 5700 3000
 F 0 "U18" H 5700 2900 50  0000 C CNN
 F 1 "J2" H 5700 3100 50  0000 C CNN
-F 2 "MODULE" H 5700 3000 50  0001 C CNN
+F 2 "Hirose:DF40HC(3.0)-90DS-0.4V(51)" H 5700 3000 50  0001 C CNN
 F 3 "DOCUMENTATION" H 5700 3000 50  0001 C CNN
 	1    5700 3000
 	1    0    0    -1  
@@ -2130,7 +2174,7 @@ U 1 1 588B9226
 P 11650 1175
 F 0 "U28" H 11650 925 50  0000 C CNN
 F 1 "SN74LV1T125" H 11650 1425 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SC-70" H 11650 1175 50  0001 C CNN
+F 2 "SO-70:SO-70" H 11650 1175 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74lv1t125.pdf" H 11650 1175 50  0001 C CNN
 	1    11650 1175
 	1    0    0    -1  
@@ -2173,4 +2217,38 @@ Text Notes 7550 900  0    39   ~ 0
 Trace impedence of 50-75 ohms
 Text Notes 13650 1325 0    39   ~ 0
 Trace impedence of 50-75 ohms
+$Comp
+L LED D19
+U 1 1 5889689C
+P 1050 3000
+F 0 "D19" H 1050 3100 50  0000 C CNN
+F 1 "LED" H 1050 2900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 1050 3000 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/lumex-opto-components-inc/SML-LX0603SRW-TR/67-1551-1-ND/304364" H 1050 3000 50  0001 C CNN
+	1    1050 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R59
+U 1 1 588974DF
+P 1450 3000
+F 0 "R59" V 1530 3000 50  0000 C CNN
+F 1 "10" V 1450 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1380 3000 50  0001 C CNN
+F 3 "" H 1450 3000 50  0001 C CNN
+	1    1450 3000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1250 3000 1300 3000
+Wire Wire Line
+	850  3000 575  3000
+Text Label 800  3000 2    60   ~ 0
+1V8
+Wire Wire Line
+	1600 3000 2050 3000
+Text Label 1625 3000 0    60   ~ 0
+PM_MPP4
+Text Notes 1000 2850 0    60   ~ 0
+Status LED
 $EndSCHEMATC
