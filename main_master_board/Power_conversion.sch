@@ -178,7 +178,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -1760,4 +1760,42 @@ Wire Wire Line
 Connection ~ 9205 5730
 Text Label 8760 3130 0    60   ~ 0
 P_ref_buc
+$Comp
+L C C54
+U 1 1 58933091
+P 4300 1550
+F 0 "C54" H 4325 1650 50  0000 L CNN
+F 1 "680uF" H 4325 1450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 4338 1400 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/nichicon/UCL1A681MNL1GS/493-3909-1-ND/2300336" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C55
+U 1 1 589344EC
+P 4600 1550
+F 0 "C55" H 4625 1650 50  0000 L CNN
+F 1 "680uF" H 4625 1450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 4638 1400 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/nichicon/UCL1A681MNL1GS/493-3909-1-ND/2300336" H 4600 1550 50  0001 C CNN
+	1    4600 1550
+	1    0    0    -1  
+$EndComp
+Text Label 4400 1350 0    60   ~ 0
+V5
+Wire Wire Line
+	4600 1400 4600 1350
+Wire Wire Line
+	4600 1350 4300 1350
+Wire Wire Line
+	4300 1350 4300 1400
+Wire Wire Line
+	4300 1700 4300 1850
+Wire Wire Line
+	4300 1850 4600 1850
+Wire Wire Line
+	4600 1850 4600 1700
+Text Label 4350 1850 0    60   ~ 0
+GND
 $EndSCHEMATC

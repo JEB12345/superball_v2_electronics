@@ -178,7 +178,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -680,10 +680,10 @@ $EndComp
 Text Label 1225 6175 2    60   ~ 0
 GND
 $Comp
-L +3.3VA #PWR017
+L +3.3VA #PWR019
 U 1 1 58837660
 P 3025 5775
-F 0 "#PWR017" H 3025 5625 50  0001 C CNN
+F 0 "#PWR019" H 3025 5625 50  0001 C CNN
 F 1 "+3.3VA" H 3025 5915 50  0000 C CNN
 F 2 "" H 3025 5775 50  0000 C CNN
 F 3 "" H 3025 5775 50  0000 C CNN
@@ -766,10 +766,10 @@ Text Label 1200 6475 2    60   ~ 0
 Text Label 1200 6800 2    60   ~ 0
 GND
 $Comp
-L +1V8 #PWR018
+L +1V8 #PWR020
 U 1 1 5884251A
 P 875 7125
-F 0 "#PWR018" H 875 6975 50  0001 C CNN
+F 0 "#PWR020" H 875 6975 50  0001 C CNN
 F 1 "+1V8" H 875 7265 50  0000 C CNN
 F 2 "" H 875 7125 50  0000 C CNN
 F 3 "" H 875 7125 50  0000 C CNN
@@ -864,10 +864,10 @@ LAN9512 Power Filtering
 Text Label 4450 5575 2    60   ~ 0
 3V3
 $Comp
-L +3.3VA #PWR019
+L +3.3VA #PWR021
 U 1 1 5884804C
 P 7725 5500
-F 0 "#PWR019" H 7725 5350 50  0001 C CNN
+F 0 "#PWR021" H 7725 5350 50  0001 C CNN
 F 1 "+3.3VA" H 7725 5640 50  0000 C CNN
 F 2 "" H 7725 5500 50  0000 C CNN
 F 3 "" H 7725 5500 50  0000 C CNN
@@ -875,10 +875,10 @@ F 3 "" H 7725 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR020
+L +1V8 #PWR022
 U 1 1 58849901
 P 4400 6225
-F 0 "#PWR020" H 4400 6075 50  0001 C CNN
+F 0 "#PWR022" H 4400 6075 50  0001 C CNN
 F 1 "+1V8" H 4400 6365 50  0000 C CNN
 F 2 "" H 4400 6225 50  0000 C CNN
 F 3 "" H 4400 6225 50  0000 C CNN
@@ -1111,10 +1111,10 @@ F 3 "" H 10550 8900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3VA #PWR021
+L +3.3VA #PWR023
 U 1 1 5885B0EB
 P 10325 8100
-F 0 "#PWR021" H 10325 7950 50  0001 C CNN
+F 0 "#PWR023" H 10325 7950 50  0001 C CNN
 F 1 "+3.3VA" H 10325 8240 50  0000 C CNN
 F 2 "" H 10325 8100 50  0000 C CNN
 F 3 "" H 10325 8100 50  0000 C CNN
@@ -1195,12 +1195,271 @@ NoConn ~ 7575 9575
 NoConn ~ 7575 9675
 NoConn ~ 7575 9775
 NoConn ~ 7575 9875
-$Sheet
-S 13000 4225 2825 1875
-U 5886B988
-F0 "expansion_board" 60
-F1 "expansion_board.sch" 60
-$EndSheet
+Text HLabel 14700 1450 2    60   Output ~ 0
+uC_MOSI
+Text HLabel 14700 1550 2    60   Input ~ 0
+uC_MISO
+Text HLabel 14700 1650 2    60   Output ~ 0
+uC_CS
+Text HLabel 14700 1750 2    60   Output ~ 0
+uC_CLK
+Text Label 8500 1125 2    60   ~ 0
+SPI1_CS_N
+Text Label 9850 2900 0    60   ~ 0
+SPI1_MISO_3V3
+Text Label 8500 1225 2    60   ~ 0
+SPI1_CLK
+Text Label 8500 1025 2    60   ~ 0
+SPI1_MOSI
+Text HLabel 14700 900  2    60   BiDi ~ 0
+sensor_I2C_SDA
+Text HLabel 14700 1000 2    60   BiDi ~ 0
+sensor_I2C_SCL
+Text Label 8600 1325 2    60   ~ 0
+UART1_TX
+Text Label 9850 3000 0    60   ~ 0
+UART1_RX_3V3
+Text Label 9575 4600 0    60   ~ 0
+I2C0_SCL
+Text Label 8525 4400 2    60   ~ 0
+I2C0_SDA
+Text Label 11025 1175 2    60   ~ 0
+GPIO_21
+$Comp
+L AS1360 U24
+U 1 1 58892383
+P 1350 1525
+F 0 "U24" H 1475 1250 60  0000 C CNN
+F 1 "AS1360" H 1350 1625 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1325 1525 60  0001 C CNN
+F 3 "www.digikey.com/product-detail/en/AS1360-18-T/AS1360-18-TCT-ND/" H 1325 1525 60  0001 C CNN
+	1    1350 1525
+	1    0    0    -1  
+$EndComp
+Text Label 1400 2025 0    60   ~ 0
+GND
+Text Label 925  1525 2    60   ~ 0
+V5
+Text Label 1775 1525 0    60   ~ 0
+1V8
+$Comp
+L C_Small C56
+U 1 1 5889A75E
+P 875 1750
+F 0 "C56" H 885 1820 50  0000 L CNN
+F 1 "1uF" H 885 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 875 1750 50  0001 C CNN
+F 3 "" H 875 1750 50  0000 C CNN
+	1    875  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C57
+U 1 1 5889A815
+P 1825 1750
+F 0 "C57" H 1835 1820 50  0000 L CNN
+F 1 "1uF" H 1835 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1825 1750 50  0001 C CNN
+F 3 "" H 1825 1750 50  0000 C CNN
+	1    1825 1750
+	1    0    0    -1  
+$EndComp
+Text Notes 1850 1925 0    39   ~ 0
+Tantalum
+Text Notes 900  1925 0    39   ~ 0
+Tantalum
+$Comp
+L SN74LV4T125 U26
+U 1 1 5889D039
+P 9225 1350
+F 0 "U26" H 9325 1025 50  0000 C CNN
+F 1 "SN74LV4T125" H 9525 1800 50  0000 C CNN
+F 2 "VQFN-14:VQFN-14" H 8850 1025 50  0001 C CNN
+F 3 "https://www.mcmaster.com/#8587k4/=161k4ux" H 8725 950 50  0001 C CNN
+	1    9225 1350
+	1    0    0    -1  
+$EndComp
+Text Label 9300 625  0    60   ~ 0
+3V3
+Text Label 9350 1975 0    60   ~ 0
+GND
+Text Label 9175 2475 2    60   ~ 0
+1V8
+Text Label 9075 3850 2    60   ~ 0
+GND
+Text Notes 9325 800  0    39   ~ 0
+Up Converter\n1V8 -> 3V3
+Text Notes 9125 2675 2    39   ~ 0
+Down Converter\n3V3 -> 1V8
+$Comp
+L Si1900DL U25
+U 1 1 588A6BF9
+P 9050 4500
+F 0 "U25" H 9050 4300 50  0000 C CNN
+F 1 "Si1900DL" H 9050 4700 50  0000 C CNN
+F 2 "NASA_IRG_SSB:SOT323-6" H 8850 4300 50  0001 C CNN
+F 3 "DOCUMENTATION" H 9450 4300 50  0001 C CNN
+	1    9050 4500
+	1    0    0    -1  
+$EndComp
+Text Label 8225 3950 2    60   ~ 0
+1V8
+$Comp
+L R R67
+U 1 1 588A7404
+P 8050 4150
+F 0 "R67" V 8130 4150 50  0000 C CNN
+F 1 "1K" V 8050 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7980 4150 50  0001 C CNN
+F 3 "" H 8050 4150 50  0000 C CNN
+	1    8050 4150
+	1    0    0    -1  
+$EndComp
+Text Label 8525 4500 2    60   ~ 0
+1V8
+Text Label 9575 4500 0    60   ~ 0
+1V8
+Text Label 10350 4250 0    60   ~ 0
+1V8
+Text Label 9575 4400 0    60   ~ 0
+I2C0_SDA_3V3
+$Comp
+L R R68
+U 1 1 588A762E
+P 10300 4425
+F 0 "R68" V 10380 4425 50  0000 C CNN
+F 1 "1K" V 10300 4425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 10230 4425 50  0001 C CNN
+F 3 "" H 10300 4425 50  0000 C CNN
+	1    10300 4425
+	1    0    0    -1  
+$EndComp
+Text Label 8525 4600 2    60   ~ 0
+I2C0_SCL_3V3
+$Comp
+L SN74LV4T125 U27
+U 1 1 588A01BB
+P 9225 3225
+F 0 "U27" H 9325 2900 50  0000 C CNN
+F 1 "SN74LV4T125" H 9525 3675 50  0000 C CNN
+F 2 "VQFN-14:VQFN-14" H 8850 2900 50  0001 C CNN
+F 3 "https://www.mcmaster.com/#8587k4/=161k4ux" H 8725 2825 50  0001 C CNN
+	1    9225 3225
+	-1   0    0    -1  
+$EndComp
+Text Label 14675 900  2    60   ~ 0
+I2C0_SDA_3V3
+Text Label 14675 1000 2    60   ~ 0
+I2C0_SCL_3V3
+Text Label 14675 1450 2    60   ~ 0
+SPI1_MOSI_3V3
+Text Label 14675 1650 2    60   ~ 0
+SPI1_CS_N_3V3
+Text Label 14675 1750 2    60   ~ 0
+SPI1_CLK_3V3
+Text Label 14050 2050 0    60   ~ 0
+UART1_TX_3V3
+Text HLabel 1175 2425 0    60   Input ~ 0
+uC_GPIO1
+Text HLabel 1175 2550 0    60   Input ~ 0
+uC_GPIO2
+Text Label 1225 2425 0    60   ~ 0
+uC_GPIO1
+Text Label 1225 2550 0    60   ~ 0
+uC_GPIO2
+Text Label 9875 3100 0    60   ~ 0
+uC_GPIO1
+Text Label 9875 3200 0    60   ~ 0
+uC_GPIO2
+Text Label 8600 2900 2    60   ~ 0
+SPI1_MISO
+Text Label 8600 3000 2    60   ~ 0
+UART1_RX
+Text Label 8600 3100 2    60   ~ 0
+GPIO_106
+Text Label 8600 3200 2    60   ~ 0
+GPIO_116
+Text Label 9850 1025 0    60   ~ 0
+SPI1_MOSI_3V3
+Text Label 9850 1125 0    60   ~ 0
+SPI1_CS_N_3V3
+Text Label 9850 1225 0    60   ~ 0
+SPI1_CLK_3V3
+Text Label 9850 1325 0    60   ~ 0
+UART1_TX_3V3
+Text Label 14675 1550 2    60   ~ 0
+SPI1_MISO_3V3
+Text Label 14675 1950 2    60   ~ 0
+UART1_RX_3V3
+$Comp
+L SN74LV1T125 U28
+U 1 1 588B9226
+P 11650 1175
+F 0 "U28" H 11650 925 50  0000 C CNN
+F 1 "SN74LV1T125" H 11650 1425 50  0000 C CNN
+F 2 "SO-70:SO-70" H 11650 1175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lv1t125.pdf" H 11650 1175 50  0001 C CNN
+	1    11650 1175
+	1    0    0    -1  
+$EndComp
+Text Label 11025 1075 2    60   ~ 0
+GND
+Text Label 11025 1275 2    60   ~ 0
+GND
+Text Label 12275 1175 0    60   ~ 0
+3V3
+Text Label 12275 1275 0    60   ~ 0
+uC_reset
+Text Label 14675 2175 2    60   ~ 0
+uC_reset
+Text Notes 11450 850  0    39   ~ 0
+Up Converter\n1V8 -> 3V3
+Text Notes 7550 900  0    39   ~ 0
+Trace impedence of 50-75 ohms
+Text Notes 13650 1325 0    39   ~ 0
+Trace impedence of 50-75 ohms
+$Comp
+L LED D19
+U 1 1 5889689C
+P 1050 3000
+F 0 "D19" H 1050 3100 50  0000 C CNN
+F 1 "LED" H 1050 2900 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 1050 3000 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/lumex-opto-components-inc/SML-LX0603SRW-TR/67-1551-1-ND/304364" H 1050 3000 50  0001 C CNN
+	1    1050 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R59
+U 1 1 588974DF
+P 1450 3000
+F 0 "R59" V 1530 3000 50  0000 C CNN
+F 1 "10" V 1450 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1380 3000 50  0001 C CNN
+F 3 "" H 1450 3000 50  0001 C CNN
+	1    1450 3000
+	0    -1   1    0   
+$EndComp
+Text Label 800  3000 2    60   ~ 0
+1V8
+Text Label 1625 3000 0    60   ~ 0
+PM_MPP4
+Text Notes 1000 2850 0    60   ~ 0
+Status LED
+Text Label 14675 3675 2    60   ~ 0
+SDC2_DATA_0
+Text Label 14675 3775 2    60   ~ 0
+SDC2_DATA_1
+Text Label 14675 3175 2    60   ~ 0
+SDC2_DATA_2
+Text Label 14675 3275 2    60   ~ 0
+SDC2_DATA_3
+Text Label 14675 3375 2    60   ~ 0
+SDC2_CMD
+Text Label 14675 3575 2    60   ~ 0
+SDC2_CLK
+Text Label 14675 3475 2    60   ~ 0
+VREG_L11_SDC
 Wire Notes Line
 	9150 6900 8675 6900
 Wire Notes Line
@@ -1835,22 +2094,6 @@ Wire Wire Line
 	3750 800  3975 800 
 Wire Wire Line
 	2525 800  2750 800 
-Text HLabel 14700 1450 2    60   Output ~ 0
-uC_MOSI
-Text HLabel 14700 1550 2    60   Input ~ 0
-uC_MISO
-Text HLabel 14700 1650 2    60   Output ~ 0
-uC_CS
-Text HLabel 14700 1750 2    60   Output ~ 0
-uC_CLK
-Text Label 8500 1125 2    60   ~ 0
-SPI1_CS_N
-Text Label 9850 2900 0    60   ~ 0
-SPI1_MISO_3V3
-Text Label 8500 1225 2    60   ~ 0
-SPI1_CLK
-Text Label 8500 1025 2    60   ~ 0
-SPI1_MOSI
 Wire Wire Line
 	8025 1025 8625 1025
 Wire Wire Line
@@ -1859,77 +2102,24 @@ Wire Wire Line
 	10525 2900 9825 2900
 Wire Wire Line
 	8025 1125 8625 1125
-Text HLabel 14700 900  2    60   BiDi ~ 0
-sensor_I2C_SDA
-Text HLabel 14700 1000 2    60   BiDi ~ 0
-sensor_I2C_SCL
-Text Label 8600 1325 2    60   ~ 0
-UART1_TX
-Text Label 9850 3000 0    60   ~ 0
-UART1_RX_3V3
 Wire Wire Line
 	9825 3000 10500 3000
 Wire Wire Line
 	8625 1325 8175 1325
-Text Label 9575 4600 0    60   ~ 0
-I2C0_SCL
-Text Label 8525 4400 2    60   ~ 0
-I2C0_SDA
 Wire Wire Line
 	8050 4400 8550 4400
 Wire Wire Line
 	9550 4600 10300 4600
-Text Label 11025 1175 2    60   ~ 0
-GPIO_21
 Wire Wire Line
 	11050 1175 10650 1175
-$Comp
-L AS1360 U24
-U 1 1 58892383
-P 1350 1525
-F 0 "U24" H 1475 1250 60  0000 C CNN
-F 1 "AS1360" H 1350 1625 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 1325 1525 60  0001 C CNN
-F 3 "www.digikey.com/product-detail/en/AS1360-18-T/AS1360-18-TCT-ND/" H 1325 1525 60  0001 C CNN
-	1    1350 1525
-	1    0    0    -1  
-$EndComp
-Text Label 1400 2025 0    60   ~ 0
-GND
 Wire Wire Line
 	1350 1950 1350 2025
 Wire Wire Line
 	875  2025 1825 2025
-Text Label 925  1525 2    60   ~ 0
-V5
 Wire Wire Line
 	800  1525 950  1525
-Text Label 1775 1525 0    60   ~ 0
-1V8
 Wire Wire Line
 	1750 1525 1950 1525
-$Comp
-L C_Small C56
-U 1 1 5889A75E
-P 875 1750
-F 0 "C56" H 885 1820 50  0000 L CNN
-F 1 "1uF" H 885 1670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 875 1750 50  0001 C CNN
-F 3 "" H 875 1750 50  0000 C CNN
-	1    875  1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C57
-U 1 1 5889A815
-P 1825 1750
-F 0 "C57" H 1835 1820 50  0000 L CNN
-F 1 "1uF" H 1835 1670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1825 1750 50  0001 C CNN
-F 3 "" H 1825 1750 50  0000 C CNN
-	1    1825 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	875  1525 875  1650
 Connection ~ 875  1525
@@ -1941,69 +2131,18 @@ Wire Wire Line
 Wire Wire Line
 	1825 1650 1825 1525
 Connection ~ 1825 1525
-Text Notes 1850 1925 0    39   ~ 0
-Tantalum
-Text Notes 900  1925 0    39   ~ 0
-Tantalum
-$Comp
-L SN74LV4T125 U26
-U 1 1 5889D039
-P 9225 1350
-F 0 "U26" H 9325 1025 50  0000 C CNN
-F 1 "SN74LV4T125" H 9525 1800 50  0000 C CNN
-F 2 "VQFN-14:VQFN-14" H 8850 1025 50  0001 C CNN
-F 3 "https://www.mcmaster.com/#8587k4/=161k4ux" H 8725 950 50  0001 C CNN
-	1    9225 1350
-	1    0    0    -1  
-$EndComp
-Text Label 9300 625  0    60   ~ 0
-3V3
 Wire Wire Line
 	9225 650  9225 625 
 Wire Wire Line
 	9225 625  9475 625 
-Text Label 9350 1975 0    60   ~ 0
-GND
 Wire Wire Line
 	9900 1975 8525 1975
-Text Label 9175 2475 2    60   ~ 0
-1V8
 Wire Wire Line
 	9225 2525 9225 2475
 Wire Wire Line
 	9225 2475 9000 2475
-Text Label 9075 3850 2    60   ~ 0
-GND
 Wire Wire Line
 	9900 3850 8550 3850
-Text Notes 9325 800  0    39   ~ 0
-Up Converter\n1V8 -> 3V3
-Text Notes 9125 2675 2    39   ~ 0
-Down Converter\n3V3 -> 1V8
-$Comp
-L Si1900DL U25
-U 1 1 588A6BF9
-P 9050 4500
-F 0 "U25" H 9050 4300 50  0000 C CNN
-F 1 "Si1900DL" H 9050 4700 50  0000 C CNN
-F 2 "NASA_IRG_SSB:SOT323-6" H 8850 4300 50  0001 C CNN
-F 3 "DOCUMENTATION" H 9450 4300 50  0001 C CNN
-	1    9050 4500
-	1    0    0    -1  
-$EndComp
-Text Label 8225 3950 2    60   ~ 0
-1V8
-$Comp
-L R R67
-U 1 1 588A7404
-P 8050 4150
-F 0 "R67" V 8130 4150 50  0000 C CNN
-F 1 "1K" V 8050 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7980 4150 50  0001 C CNN
-F 3 "" H 8050 4150 50  0000 C CNN
-	1    8050 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10300 4250 10525 4250
 Wire Wire Line
@@ -2012,66 +2151,22 @@ Wire Wire Line
 	8050 3950 8050 4000
 Wire Wire Line
 	8050 3950 8250 3950
-Text Label 8525 4500 2    60   ~ 0
-1V8
-Text Label 9575 4500 0    60   ~ 0
-1V8
 Wire Wire Line
 	9550 4500 9750 4500
-Text Label 10350 4250 0    60   ~ 0
-1V8
 Wire Wire Line
 	8550 4500 8350 4500
-Text Label 9575 4400 0    60   ~ 0
-I2C0_SDA_3V3
-$Comp
-L R R68
-U 1 1 588A762E
-P 10300 4425
-F 0 "R68" V 10380 4425 50  0000 C CNN
-F 1 "1K" V 10300 4425 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 10230 4425 50  0001 C CNN
-F 3 "" H 10300 4425 50  0000 C CNN
-	1    10300 4425
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10300 4250 10300 4275
 Wire Wire Line
 	10300 4600 10300 4575
 Wire Wire Line
 	9550 4400 10200 4400
-Text Label 8525 4600 2    60   ~ 0
-I2C0_SCL_3V3
 Wire Wire Line
 	8550 4600 7875 4600
-$Comp
-L SN74LV4T125 U27
-U 1 1 588A01BB
-P 9225 3225
-F 0 "U27" H 9325 2900 50  0000 C CNN
-F 1 "SN74LV4T125" H 9525 3675 50  0000 C CNN
-F 2 "VQFN-14:VQFN-14" H 8850 2900 50  0001 C CNN
-F 3 "https://www.mcmaster.com/#8587k4/=161k4ux" H 8725 2825 50  0001 C CNN
-	1    9225 3225
-	-1   0    0    -1  
-$EndComp
-Text Label 14675 900  2    60   ~ 0
-I2C0_SDA_3V3
-Text Label 14675 1000 2    60   ~ 0
-I2C0_SCL_3V3
 Wire Wire Line
 	14700 900  14025 900 
 Wire Wire Line
 	14700 1000 14025 1000
-Text Label 14675 1450 2    60   ~ 0
-SPI1_MOSI_3V3
-Text Label 14675 1650 2    60   ~ 0
-SPI1_CS_N_3V3
-Text Label 14675 1750 2    60   ~ 0
-SPI1_CLK_3V3
-Text Label 14050 2050 0    60   ~ 0
-UART1_TX_3V3
 Wire Wire Line
 	14700 1450 13975 1450
 Wire Wire Line
@@ -2094,38 +2189,18 @@ Wire Wire Line
 Wire Wire Line
 	9825 1525 9900 1525
 Connection ~ 9900 1525
-Text HLabel 1175 2425 0    60   Input ~ 0
-uC_GPIO1
-Text HLabel 1175 2550 0    60   Input ~ 0
-uC_GPIO2
 Wire Wire Line
 	1175 2425 1700 2425
 Wire Wire Line
 	1175 2550 1700 2550
-Text Label 1225 2425 0    60   ~ 0
-uC_GPIO1
-Text Label 1225 2550 0    60   ~ 0
-uC_GPIO2
 Wire Wire Line
 	9825 3100 10350 3100
 Wire Wire Line
 	9825 3200 10350 3200
-Text Label 9875 3100 0    60   ~ 0
-uC_GPIO1
-Text Label 9875 3200 0    60   ~ 0
-uC_GPIO2
-Text Label 8600 2900 2    60   ~ 0
-SPI1_MISO
-Text Label 8600 3000 2    60   ~ 0
-UART1_RX
 Wire Wire Line
 	8625 2900 8125 2900
 Wire Wire Line
 	8625 3000 8150 3000
-Text Label 8600 3100 2    60   ~ 0
-GPIO_106
-Text Label 8600 3200 2    60   ~ 0
-GPIO_116
 Wire Wire Line
 	8625 3100 8175 3100
 Wire Wire Line
@@ -2144,14 +2219,6 @@ Wire Wire Line
 Wire Wire Line
 	9825 3400 9900 3400
 Connection ~ 9900 3400
-Text Label 9850 1025 0    60   ~ 0
-SPI1_MOSI_3V3
-Text Label 9850 1125 0    60   ~ 0
-SPI1_CS_N_3V3
-Text Label 9850 1225 0    60   ~ 0
-SPI1_CLK_3V3
-Text Label 9850 1325 0    60   ~ 0
-UART1_TX_3V3
 Wire Wire Line
 	9825 1025 10550 1025
 Wire Wire Line
@@ -2160,43 +2227,16 @@ Wire Wire Line
 	9825 1225 10500 1225
 Wire Wire Line
 	9825 1325 10500 1325
-Text Label 14675 1550 2    60   ~ 0
-SPI1_MISO_3V3
 Wire Wire Line
 	14000 1550 14700 1550
-Text Label 14675 1950 2    60   ~ 0
-UART1_RX_3V3
 Wire Wire Line
 	14700 1950 14025 1950
-$Comp
-L SN74LV1T125 U28
-U 1 1 588B9226
-P 11650 1175
-F 0 "U28" H 11650 925 50  0000 C CNN
-F 1 "SN74LV1T125" H 11650 1425 50  0000 C CNN
-F 2 "SO-70:SO-70" H 11650 1175 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lv1t125.pdf" H 11650 1175 50  0001 C CNN
-	1    11650 1175
-	1    0    0    -1  
-$EndComp
-Text Label 11025 1075 2    60   ~ 0
-GND
-Text Label 11025 1275 2    60   ~ 0
-GND
-Text Label 12275 1175 0    60   ~ 0
-3V3
 Wire Wire Line
 	12250 1175 12450 1175
-Text Label 12275 1275 0    60   ~ 0
-uC_reset
 Wire Wire Line
 	12250 1275 12675 1275
-Text Label 14675 2175 2    60   ~ 0
-uC_reset
 Wire Wire Line
 	14700 2175 14275 2175
-Text Notes 11450 850  0    39   ~ 0
-Up Converter\n1V8 -> 3V3
 Wire Wire Line
 	11050 1075 10825 1075
 Wire Wire Line
@@ -2213,42 +2253,204 @@ Connection ~ 9200 1975
 Wire Wire Line
 	9275 1925 9275 1975
 Connection ~ 9275 1975
-Text Notes 7550 900  0    39   ~ 0
-Trace impedence of 50-75 ohms
-Text Notes 13650 1325 0    39   ~ 0
-Trace impedence of 50-75 ohms
-$Comp
-L LED D19
-U 1 1 5889689C
-P 1050 3000
-F 0 "D19" H 1050 3100 50  0000 C CNN
-F 1 "LED" H 1050 2900 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 1050 3000 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/lumex-opto-components-inc/SML-LX0603SRW-TR/67-1551-1-ND/304364" H 1050 3000 50  0001 C CNN
-	1    1050 3000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L R R59
-U 1 1 588974DF
-P 1450 3000
-F 0 "R59" V 1530 3000 50  0000 C CNN
-F 1 "10" V 1450 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1380 3000 50  0001 C CNN
-F 3 "" H 1450 3000 50  0001 C CNN
-	1    1450 3000
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	1250 3000 1300 3000
 Wire Wire Line
 	850  3000 575  3000
-Text Label 800  3000 2    60   ~ 0
-1V8
 Wire Wire Line
 	1600 3000 2050 3000
-Text Label 1625 3000 0    60   ~ 0
-PM_MPP4
-Text Notes 1000 2850 0    60   ~ 0
-Status LED
+Wire Bus Line
+	14350 8925 15250 8925
+Entry Wire Line
+	14425 8925 14525 9025
+Entry Wire Line
+	14550 8925 14650 9025
+Entry Wire Line
+	14675 8925 14775 9025
+Text Label 14675 3950 2    60   ~ 0
+PRTCTL2
+Wire Wire Line
+	14525 9025 14525 9050
+Text Label 14675 4050 2    60   ~ 0
+USBDP2
+Text Label 14675 4150 2    60   ~ 0
+USBDM2
+Wire Wire Line
+	14650 9025 14650 9150
+Wire Wire Line
+	14775 9025 14775 9275
+Text Label 14775 8925 0    60   ~ 0
+USB2_BUS
+Wire Bus Line
+	14350 9425 15250 9425
+Entry Wire Line
+	14425 9425 14525 9525
+Entry Wire Line
+	14550 9425 14650 9525
+Entry Wire Line
+	14675 9425 14775 9525
+Text Label 14675 4325 2    60   ~ 0
+PRTCTL3
+Wire Wire Line
+	14525 9525 14525 9550
+Text Label 14675 4425 2    60   ~ 0
+USBDP3
+Text Label 14675 4525 2    60   ~ 0
+USBDM3
+Wire Wire Line
+	14650 9525 14650 9650
+Wire Wire Line
+	14775 9525 14775 9775
+Text Label 14775 9425 0    60   ~ 0
+USB3_BUS
+Wire Bus Line
+	14700 8050 15925 8050
+Entry Wire Line
+	14800 8050 14900 8150
+Entry Wire Line
+	14875 8050 14975 8150
+Entry Wire Line
+	14950 8050 15050 8150
+Entry Wire Line
+	15025 8050 15125 8150
+Entry Wire Line
+	15100 8050 15200 8150
+Entry Wire Line
+	15175 8050 15275 8150
+Entry Wire Line
+	15250 8050 15350 8150
+Wire Wire Line
+	14975 8250 14975 8150
+Wire Wire Line
+	15050 8350 15050 8150
+Wire Wire Line
+	15125 8450 15125 8150
+Wire Wire Line
+	15200 8550 15200 8150
+Wire Wire Line
+	15275 8650 15275 8150
+Wire Wire Line
+	15350 8750 15350 8150
+Text Label 15325 8050 0    60   ~ 0
+SD_Card_BUS
+Text Label 14675 2875 2    60   ~ 0
+I2C1_SCL
+Text Label 14675 2975 2    60   ~ 0
+I2C1_SDA
+Text Label 14675 2475 2    60   ~ 0
+UART0_TX
+Text Label 14675 2575 2    60   ~ 0
+UART0_RTS_N
+Text Label 14675 2675 2    60   ~ 0
+UART0_RX
+Text Label 14675 2775 2    60   ~ 0
+UART0_CTS_N
+Wire Bus Line
+	14625 7250 15700 7250
+Text Label 15675 7250 2    60   ~ 0
+410_comm_gpio
+Entry Wire Line
+	14675 7250 14775 7350
+Entry Wire Line
+	14725 7250 14825 7350
+Entry Wire Line
+	14775 7250 14875 7350
+Entry Wire Line
+	14825 7250 14925 7350
+Entry Wire Line
+	14875 7250 14975 7350
+Entry Wire Line
+	14950 7250 15050 7350
+Wire Wire Line
+	14825 7450 14825 7350
+Wire Wire Line
+	14875 7550 14875 7350
+Wire Wire Line
+	14925 7650 14925 7350
+Wire Wire Line
+	14975 7775 14975 7350
+Wire Wire Line
+	15050 7875 15050 7350
+Text HLabel 14700 2350 2    60   Output ~ 0
+1V8
+Text Label 14675 2350 2    60   ~ 0
+1V8
+Wire Wire Line
+	14700 2350 14475 2350
+Text HLabel 14700 2475 2    60   Output ~ 0
+UART0_TX
+Text HLabel 14700 2575 2    60   Output ~ 0
+UART0_RTS_N
+Text HLabel 14700 2675 2    60   Output ~ 0
+UART0_RX
+Text HLabel 14700 2775 2    60   Output ~ 0
+UART0_CTS_N
+Text HLabel 14700 2875 2    60   Output ~ 0
+I2C1_SCL
+Text HLabel 14700 2975 2    60   Output ~ 0
+I2C1_SDA
+Text HLabel 14700 3175 2    60   Output ~ 0
+SDC2_DATA_2
+Text HLabel 14700 3275 2    60   Output ~ 0
+SDC2_DATA_3
+Text HLabel 14700 3375 2    60   Output ~ 0
+SDC2_CMD
+Text HLabel 14700 3475 2    60   Output ~ 0
+VREG_L11_SDC
+Text HLabel 14700 3575 2    60   Output ~ 0
+SDC2_CLK
+Text HLabel 14700 3675 2    60   Output ~ 0
+SDC2_DATA_0
+Text HLabel 14700 3775 2    60   Output ~ 0
+SDC2_DATA_1
+Text HLabel 14700 3950 2    60   Output ~ 0
+PRTCTL2
+Text HLabel 14700 4050 2    60   Output ~ 0
+USBDP2
+Text HLabel 14700 4150 2    60   Output ~ 0
+USBDM2
+Text HLabel 14700 4325 2    60   Output ~ 0
+PRTCTL3
+Text HLabel 14700 4425 2    60   Output ~ 0
+USBDP3
+Text HLabel 14700 4525 2    60   Output ~ 0
+USBDM3
+Wire Wire Line
+	14700 2475 14225 2475
+Wire Wire Line
+	14700 2575 14050 2575
+Wire Wire Line
+	14700 2675 14225 2675
+Wire Wire Line
+	14700 2775 14075 2775
+Wire Wire Line
+	14700 2875 14250 2875
+Wire Wire Line
+	14700 2975 14250 2975
+Wire Wire Line
+	14700 3175 14075 3175
+Wire Wire Line
+	14700 3275 14075 3275
+Wire Wire Line
+	14700 3375 14175 3375
+Wire Wire Line
+	14700 3475 14000 3475
+Wire Wire Line
+	14700 3575 14225 3575
+Wire Wire Line
+	14700 3675 14050 3675
+Wire Wire Line
+	14700 3775 14075 3775
+Wire Wire Line
+	14700 3950 14275 3950
+Wire Wire Line
+	14700 4050 14300 4050
+Wire Wire Line
+	14700 4150 14300 4150
+Wire Wire Line
+	14700 4325 14275 4325
+Wire Wire Line
+	14700 4425 14300 4425
+Wire Wire Line
+	14700 4525 14300 4525
 $EndSCHEMATC

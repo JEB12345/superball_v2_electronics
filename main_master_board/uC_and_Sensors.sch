@@ -178,7 +178,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -1421,4 +1421,88 @@ Wire Wire Line
 	5175 3850 4925 3850
 Wire Wire Line
 	6175 3850 6450 3850
+Text Label 15400 2125 2    60   ~ 0
+RD1
+Text Label 15385 2225 2    60   ~ 0
+RD2
+Text Label 15400 2325 2    60   ~ 0
+RD3
+Text Label 15400 2425 2    60   ~ 0
+RD4
+Text Label 15405 2525 2    60   ~ 0
+RD5
+Wire Wire Line
+	15425 2525 15195 2525
+Wire Wire Line
+	15425 2425 15200 2425
+Wire Wire Line
+	15425 2325 15195 2325
+Wire Wire Line
+	15425 2225 15195 2225
+Wire Wire Line
+	15425 2125 15195 2125
+Text Label 15395 1925 2    60   ~ 0
+RB11
+Text Label 15400 2025 2    60   ~ 0
+RB12
+Wire Wire Line
+	15150 2025 15425 2025
+Wire Wire Line
+	15425 1925 15145 1925
+Text Label 15405 2625 2    60   ~ 0
+RD9
+Wire Wire Line
+	15425 2625 15205 2625
+Text Label 15400 3225 2    60   ~ 0
+RF6
+Text Label 15395 2925 2    60   ~ 0
+RF3
+Text Label 15400 2825 2    60   ~ 0
+RF2
+Text Label 15400 3025 2    60   ~ 0
+RF4
+Text Label 15405 3125 2    60   ~ 0
+RF5
+Wire Wire Line
+	15425 2825 15215 2825
+Wire Wire Line
+	15425 2925 15205 2925
+Wire Wire Line
+	15425 3025 15205 3025
+Wire Wire Line
+	15425 3125 15215 3125
+Wire Wire Line
+	15425 3225 15210 3225
+Text Label 15220 2725 0    60   ~ 0
+RE5
+Wire Wire Line
+	15195 2725 15425 2725
+Text HLabel 15425 2125 2    60   Output ~ 0
+RD1
+Text HLabel 15425 2225 2    60   Output ~ 0
+RD2
+Text HLabel 15425 2325 2    60   Output ~ 0
+RD3
+Text HLabel 15425 2425 2    60   Output ~ 0
+RD4
+Text HLabel 15425 2525 2    60   Output ~ 0
+RD5
+Text HLabel 15425 1925 2    60   Output ~ 0
+RB11
+Text HLabel 15425 2025 2    60   Output ~ 0
+RB12
+Text HLabel 15425 2625 2    60   Output ~ 0
+RBD9
+Text HLabel 15425 2825 2    60   Output ~ 0
+RF2
+Text HLabel 15425 2925 2    60   Output ~ 0
+RF3
+Text HLabel 15425 3025 2    60   Output ~ 0
+RF4
+Text HLabel 15425 3125 2    60   Output ~ 0
+RF5
+Text HLabel 15425 3225 2    60   Output ~ 0
+RF6
+Text HLabel 15425 2725 2    60   Output ~ 0
+RE5
 $EndSCHEMATC
