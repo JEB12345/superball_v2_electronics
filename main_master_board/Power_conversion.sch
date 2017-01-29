@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -391,12 +347,12 @@ Vbackup
 $Comp
 L LED-RESCUE-main_master_board D11
 U 1 1 586C4FFA
-P 5870 2450
-F 0 "D11" H 5870 2550 50  0000 C CNN
-F 1 "BLUE_LED" H 5870 2350 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 5870 2450 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 5870 2450 50  0001 C CNN
-	1    5870 2450
+P 5820 2450
+F 0 "D11" H 5820 2550 50  0000 C CNN
+F 1 "BLUE_LED" H 5820 2350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5820 2450 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 5820 2450 50  0001 C CNN
+	1    5820 2450
 	-1   0    0    1   
 $EndComp
 Text Label 6470 2450 0    60   ~ 0
@@ -419,12 +375,12 @@ P_ref_buc
 $Comp
 L LED-RESCUE-main_master_board D12
 U 1 1 586C9705
-P 10020 4450
-F 0 "D12" H 10020 4550 50  0000 C CNN
-F 1 "BLUE_LED" H 10020 4350 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 10020 4450 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 10020 4450 50  0001 C CNN
-	1    10020 4450
+P 9970 4450
+F 0 "D12" H 9970 4550 50  0000 C CNN
+F 1 "BLUE_LED" H 9970 4350 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9970 4450 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 9970 4450 50  0001 C CNN
+	1    9970 4450
 	-1   0    0    1   
 $EndComp
 Text Label 855  6200 0    60   ~ 0
@@ -793,7 +749,7 @@ P 5760 7110
 F 0 "IC1" H 5560 7335 50  0000 L BNN
 F 1 "IC_MCP73831" H 5560 6810 50  0000 L BNN
 F 2 "dp_devices:dp_devices-SOT-23-5" H 5760 7260 50  0001 C CNN
-F 3 "" H 5760 7110 60  0001 C CNN
+F 3 "www.digikey.com/product-detail/en/MCP73831T-2ATI%2FOT/MCP73831T-2ATI%2FOTCT-ND/" H 5760 7110 60  0001 C CNN
 	1    5760 7110
 	1    0    0    -1  
 $EndComp
@@ -804,12 +760,12 @@ GND
 $Comp
 L LED-RESCUE-main_master_board D9
 U 1 1 5875ED3E
-P 5590 7620
-F 0 "D9" H 5590 7720 50  0000 C CNN
-F 1 "GRN_LED" H 5590 7520 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 5590 7620 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 5590 7620 50  0001 C CNN
-	1    5590 7620
+P 5640 7620
+F 0 "D9" H 5640 7720 50  0000 C CNN
+F 1 "GRN_LED" H 5640 7520 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5640 7620 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 5640 7620 50  0001 C CNN
+	1    5640 7620
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -818,14 +774,12 @@ U 1 1 5875ED44
 P 5240 7620
 F 0 "R18" V 5320 7620 50  0000 C CNN
 F 1 "200" V 5240 7620 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5170 7620 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5170 7620 50  0001 C CNN
 F 3 "" H 5240 7620 50  0000 C CNN
 	1    5240 7620
 	0    1    1    0   
 $EndComp
-Text Label 4930 7620 0    60   ~ 0
-3V3
-Text Label 5770 7620 0    60   ~ 0
+Text Label 5870 7620 0    60   ~ 0
 charging
 Text Label 5040 7380 0    60   ~ 0
 GND
@@ -936,7 +890,7 @@ P 8405 5680
 F 0 "U3" H 8405 5180 50  0000 C CNN
 F 1 "TPS61232DRC" H 8405 6130 50  0000 C CNN
 F 2 "Housings_DFN_QFN:DFN-10-1EP_3x3mm_Pitch0.5mm" H 8005 5180 50  0001 C CNN
-F 3 "DOCUMENTATION" H 8905 5180 50  0001 C CNN
+F 3 "www.digikey.com/product-detail/en/TPS61232DRCT/296-37990-1-ND/" H 8905 5180 50  0001 C CNN
 F 4 "d" H 8405 5680 60  0001 C CNN "Field4"
 F 5 "TPS61232DRCR" H 8405 5680 60  0001 C CNN "Field5"
 	1    8405 5680
@@ -961,7 +915,7 @@ U 1 1 587D69F1
 P 7145 5780
 F 0 "C2" H 7170 5880 50  0000 L CNN
 F 1 "22uF" H 7170 5680 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7075 5670 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 7075 5670 50  0001 C CNN
 F 3 "" H 7145 5780 50  0000 C CNN
 F 4 "6.3V" H 7145 5780 60  0001 C CNN "Voltage"
 F 5 "JMK212BJ226MG-T" H 7145 5780 60  0001 C CNN "Field5"
@@ -974,7 +928,7 @@ U 1 1 587D7420
 P 7365 6100
 F 0 "C3" H 7390 6200 50  0000 L CNN
 F 1 "15nF" H 7390 6000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7285 6010 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7285 6010 50  0001 C CNN
 F 3 "" H 7365 6100 50  0000 C CNN
 F 4 "16V" H 7365 6100 60  0001 C CNN "Voltage"
 F 5 "GRM155R71C153KA01D" H 7365 6100 60  0001 C CNN "Field5"
@@ -1126,7 +1080,7 @@ Wire Wire Line
 	6200 2900 6200 3000
 Connection ~ 6200 2900
 Wire Wire Line
-	9370 4450 9870 4450
+	9270 4450 9770 4450
 Wire Wire Line
 	10520 4450 10820 4450
 Wire Wire Line
@@ -1149,11 +1103,7 @@ Wire Notes Line
 Wire Notes Line
 	11200 6500 5700 6500
 Wire Wire Line
-	5220 2450 5720 2450
-Wire Wire Line
 	6370 2450 6670 2450
-Wire Wire Line
-	6020 2450 6070 2450
 Wire Notes Line
 	4770 6500 5710 6500
 Wire Wire Line
@@ -1364,7 +1314,7 @@ Wire Wire Line
 Wire Wire Line
 	4890 7620 5090 7620
 Wire Wire Line
-	5740 7620 6160 7620
+	5840 7620 6260 7620
 Wire Wire Line
 	5390 7620 5440 7620
 Wire Wire Line
@@ -1500,8 +1450,6 @@ Wire Wire Line
 Connection ~ 10275 5730
 Wire Wire Line
 	7655 5530 7225 5530
-Text Label 7645 5530 2    60   ~ 0
-Switch_on
 NoConn ~ 7655 5680
 Text Label 10705 5730 0    60   ~ 0
 V5_BACKUP
@@ -1715,7 +1663,7 @@ Text Label 9875 1300 0    60   ~ 0
 V4
 Text Label 5300 2450 0    60   ~ 0
 V5_MAIN
-Text Label 9850 4450 2    60   ~ 0
+Text Label 9750 4450 2    60   ~ 0
 V5_BACKUP
 Text Label 6535 6680 0    60   ~ 0
 Vbackup
@@ -1798,4 +1746,41 @@ Wire Wire Line
 	4600 1850 4600 1700
 Text Label 4350 1850 0    60   ~ 0
 GND
+Wire Wire Line
+	6070 2450 6020 2450
+Wire Wire Line
+	5620 2450 5270 2450
+Text Label 6050 6075 0    60   ~ 0
+Switch_on
+Text Label 6500 6425 2    60   ~ 0
+charge_on
+$Comp
+L R R60
+U 1 1 588C10DA
+P 5925 6250
+F 0 "R60" V 6005 6250 50  0000 C CNN
+F 1 "10K" V 5925 6250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5855 6250 50  0001 C CNN
+F 3 "" H 5925 6250 50  0000 C CNN
+	1    5925 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 6425 5925 6425
+Wire Wire Line
+	5925 6425 5925 6400
+Wire Wire Line
+	5925 6100 5925 6075
+Wire Wire Line
+	5925 6075 6500 6075
+Text Label 7630 5530 2    60   ~ 0
+charge_on
+Text Notes 5800 5925 0    60   ~ 0
+Vbackup Buck EN\nLiPo Charger ~EN\n
+Wire Notes Line
+	6600 5700 5725 5700
+Wire Notes Line
+	5725 5700 5725 6500
+Text Label 4950 7620 0    60   ~ 0
+V5
 $EndSCHEMATC
