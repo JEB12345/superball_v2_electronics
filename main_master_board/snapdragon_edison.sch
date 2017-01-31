@@ -43,7 +43,56 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:decaWave
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -54,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -73,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -81,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -102,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -514,9 +558,9 @@ L RJ45 J2
 U 1 1 5882BEF6
 P 11300 8900
 F 0 "J2" H 11500 9400 50  0000 C CNN
-F 1 "J0C-0005NLT" H 11150 9400 50  0000 C CNN
-F 2 "Pulse_Electronics:J0C" H 11300 8900 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/J0C-0005NLT/553-2067-1-ND/3687443?curr=usd&WT.z_cid=ref_octopart_dkc_buynow&site=us" H 11300 8900 50  0001 C CNN
+F 1 "JD2-0011NL" H 11150 9400 50  0000 C CNN
+F 2 "Pulse_Electronics:JD2-0011NL" H 11300 8900 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/JD2-0011NL/553-2609-ND/5305032?curr=usd&WT.z_cid=ref_octopart_dkc_buynow&site=usdetail/en/J0C-0005NLT/553-2067-1-ND/3687443?curr=usd&WT.z_cid=ref_octopart_dkc_buynow&site=us" H 11300 8900 50  0001 C CNN
 	1    11300 8900
 	0    1    1    0   
 $EndComp
@@ -2217,80 +2261,18 @@ Wire Wire Line
 	850  3000 575  3000
 Wire Wire Line
 	1600 3000 2050 3000
-Wire Bus Line
-	14350 8925 15250 8925
-Entry Wire Line
-	14425 8925 14525 9025
-Entry Wire Line
-	14550 8925 14650 9025
-Entry Wire Line
-	14675 8925 14775 9025
 Text Label 14675 3950 2    60   ~ 0
 PRTCTL2
-Wire Wire Line
-	14525 9025 14525 9050
 Text Label 14675 4050 2    60   ~ 0
 USBDP2
 Text Label 14675 4150 2    60   ~ 0
 USBDM2
-Wire Wire Line
-	14650 9025 14650 9150
-Wire Wire Line
-	14775 9025 14775 9275
-Text Label 14775 8925 0    60   ~ 0
-USB2_BUS
-Wire Bus Line
-	14350 9425 15250 9425
-Entry Wire Line
-	14425 9425 14525 9525
-Entry Wire Line
-	14550 9425 14650 9525
-Entry Wire Line
-	14675 9425 14775 9525
 Text Label 14675 4325 2    60   ~ 0
 PRTCTL3
-Wire Wire Line
-	14525 9525 14525 9550
 Text Label 14675 4425 2    60   ~ 0
 USBDP3
 Text Label 14675 4525 2    60   ~ 0
 USBDM3
-Wire Wire Line
-	14650 9525 14650 9650
-Wire Wire Line
-	14775 9525 14775 9775
-Text Label 14775 9425 0    60   ~ 0
-USB3_BUS
-Wire Bus Line
-	14700 8050 15925 8050
-Entry Wire Line
-	14800 8050 14900 8150
-Entry Wire Line
-	14875 8050 14975 8150
-Entry Wire Line
-	14950 8050 15050 8150
-Entry Wire Line
-	15025 8050 15125 8150
-Entry Wire Line
-	15100 8050 15200 8150
-Entry Wire Line
-	15175 8050 15275 8150
-Entry Wire Line
-	15250 8050 15350 8150
-Wire Wire Line
-	14975 8250 14975 8150
-Wire Wire Line
-	15050 8350 15050 8150
-Wire Wire Line
-	15125 8450 15125 8150
-Wire Wire Line
-	15200 8550 15200 8150
-Wire Wire Line
-	15275 8650 15275 8150
-Wire Wire Line
-	15350 8750 15350 8150
-Text Label 15325 8050 0    60   ~ 0
-SD_Card_BUS
 Text Label 14675 2875 2    60   ~ 0
 I2C1_SCL
 Text Label 14675 2975 2    60   ~ 0
@@ -2303,32 +2285,6 @@ Text Label 14675 2675 2    60   ~ 0
 UART0_RX
 Text Label 14675 2775 2    60   ~ 0
 UART0_CTS_N
-Wire Bus Line
-	14625 7250 15700 7250
-Text Label 15675 7250 2    60   ~ 0
-410_comm_gpio
-Entry Wire Line
-	14675 7250 14775 7350
-Entry Wire Line
-	14725 7250 14825 7350
-Entry Wire Line
-	14775 7250 14875 7350
-Entry Wire Line
-	14825 7250 14925 7350
-Entry Wire Line
-	14875 7250 14975 7350
-Entry Wire Line
-	14950 7250 15050 7350
-Wire Wire Line
-	14825 7450 14825 7350
-Wire Wire Line
-	14875 7550 14875 7350
-Wire Wire Line
-	14925 7650 14925 7350
-Wire Wire Line
-	14975 7775 14975 7350
-Wire Wire Line
-	15050 7875 15050 7350
 Text HLabel 14700 2350 2    60   Output ~ 0
 1V8
 Text Label 14675 2350 2    60   ~ 0
