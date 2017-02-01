@@ -1,4 +1,4 @@
-update=1/27/2017 10:30:21 AM
+update=1/31/2017 4:36:54 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -322,3 +322,5 @@ LibName290=Library/tps82084sil
 LibName291=Library/AS1360
 LibName292=Library/SN74LV4T125
 LibName293=Library/SN74LV1T125
+LibName294=Library/Si1077X
+LibName295=Library/LTC2955-1
