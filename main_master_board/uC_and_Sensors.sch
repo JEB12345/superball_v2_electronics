@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -1065,14 +1021,10 @@ Text Label 9105 6005 2    60   ~ 0
 RD4
 Text Label 9110 6115 2    60   ~ 0
 RD5
-Text Label 9110 6555 2    60   ~ 0
-RD9
 Text Label 12905 6005 0    60   ~ 0
 RF6
 Text Label 12900 5675 0    60   ~ 0
 RF3
-Text Label 12895 5565 0    60   ~ 0
-RF2
 Text Label 12895 4905 0    60   ~ 0
 RE5
 Text Label 9105 3695 2    60   ~ 0
@@ -1120,7 +1072,7 @@ RF4
 Text Label 12890 5895 0    60   ~ 0
 RF5
 Wire Wire Line
-	12870 5565 13080 5565
+	12870 5565 13200 5565
 Wire Wire Line
 	12870 5675 13090 5675
 Wire Wire Line
@@ -1140,7 +1092,7 @@ uC_UART_RX
 Text Label 9105 6335 2    60   ~ 0
 uC_UART_TX
 Wire Wire Line
-	9130 6555 8910 6555
+	8525 6555 9130 6555
 Wire Wire Line
 	9130 6115 8900 6115
 Wire Wire Line
@@ -1451,34 +1403,26 @@ Wire Wire Line
 	15150 2025 15425 2025
 Wire Wire Line
 	15425 1925 15145 1925
-Text Label 15405 2625 2    60   ~ 0
-RD9
-Wire Wire Line
-	15425 2625 15205 2625
-Text Label 15400 3225 2    60   ~ 0
+Text Label 15400 3025 2    60   ~ 0
 RF6
-Text Label 15395 2925 2    60   ~ 0
+Text Label 15395 2725 2    60   ~ 0
 RF3
 Text Label 15400 2825 2    60   ~ 0
-RF2
-Text Label 15400 3025 2    60   ~ 0
 RF4
-Text Label 15405 3125 2    60   ~ 0
+Text Label 15405 2925 2    60   ~ 0
 RF5
 Wire Wire Line
-	15425 2825 15215 2825
+	15425 2725 15205 2725
 Wire Wire Line
-	15425 2925 15205 2925
+	15425 2825 15205 2825
 Wire Wire Line
-	15425 3025 15205 3025
+	15425 2925 15215 2925
 Wire Wire Line
-	15425 3125 15215 3125
-Wire Wire Line
-	15425 3225 15210 3225
-Text Label 15220 2725 0    60   ~ 0
+	15425 3025 15210 3025
+Text Label 15220 2625 0    60   ~ 0
 RE5
 Wire Wire Line
-	15195 2725 15425 2725
+	15195 2625 15425 2625
 Text HLabel 15425 2125 2    60   Output ~ 0
 RD1
 Text HLabel 15425 2225 2    60   Output ~ 0
@@ -1493,18 +1437,30 @@ Text HLabel 15425 1925 2    60   Output ~ 0
 RB11
 Text HLabel 15425 2025 2    60   Output ~ 0
 RB12
-Text HLabel 15425 2625 2    60   Output ~ 0
-RBD9
-Text HLabel 15425 2825 2    60   Output ~ 0
-RF2
-Text HLabel 15425 2925 2    60   Output ~ 0
-RF3
-Text HLabel 15425 3025 2    60   Output ~ 0
-RF4
-Text HLabel 15425 3125 2    60   Output ~ 0
-RF5
-Text HLabel 15425 3225 2    60   Output ~ 0
-RF6
 Text HLabel 15425 2725 2    60   Output ~ 0
+RF3
+Text HLabel 15425 2825 2    60   Output ~ 0
+RF4
+Text HLabel 15425 2925 2    60   Output ~ 0
+RF5
+Text HLabel 15425 3025 2    60   Output ~ 0
+RF6
+Text HLabel 15425 2625 2    60   Output ~ 0
 RE5
+Text HLabel 1325 3200 0    60   Input ~ 0
+shutdown_int
+Text Label 1350 3200 0    60   ~ 0
+shutdown_int
+Wire Wire Line
+	1325 3200 1950 3200
+Text Label 9110 6555 2    60   ~ 0
+shutdown_int
+Text Label 12895 5565 0    60   ~ 0
+uC_kill
+Text HLabel 15425 3200 2    60   Output ~ 0
+uC_kill
+Text Label 15400 3200 2    60   ~ 0
+uC_kill
+Wire Wire Line
+	15425 3200 15075 3200
 $EndSCHEMATC
