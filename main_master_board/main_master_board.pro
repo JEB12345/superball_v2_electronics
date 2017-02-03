@@ -1,4 +1,4 @@
-update=1/31/2017 4:36:54 PM
+update=2/2/2017 1:10:43 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -324,3 +324,13 @@ LibName292=Library/SN74LV4T125
 LibName293=Library/SN74LV1T125
 LibName294=Library/Si1077X
 LibName295=Library/LTC2955-1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

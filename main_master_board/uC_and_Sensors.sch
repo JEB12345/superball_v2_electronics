@@ -1463,4 +1463,35 @@ Text Label 15400 3200 2    60   ~ 0
 uC_kill
 Wire Wire Line
 	15425 3200 15075 3200
+$Comp
+L CONN_01X05 P14
+U 1 1 589408D8
+P 5000 5875
+F 0 "P14" H 5000 6175 50  0000 C CNN
+F 1 "CONN_01X05" V 5100 5875 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch1.27mm" H 5000 5875 50  0001 C CNN
+F 3 "" H 5000 5875 50  0000 C CNN
+	1    5000 5875
+	-1   0    0    1   
+$EndComp
+Text Label 5225 6075 0    60   ~ 0
+~MCLR
+Text Label 5225 5975 0    60   ~ 0
+3V3
+Text Label 5225 5875 0    60   ~ 0
+GND
+Text Label 5225 5775 0    60   ~ 0
+PGED1
+Text Label 5225 5675 0    60   ~ 0
+PGEC1
+Wire Wire Line
+	5200 5675 5525 5675
+Wire Wire Line
+	5200 5775 5525 5775
+Wire Wire Line
+	5200 5875 5425 5875
+Wire Wire Line
+	5200 5975 5425 5975
+Wire Wire Line
+	5200 6075 5475 6075
 $EndSCHEMATC
