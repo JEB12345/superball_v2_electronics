@@ -1,4 +1,4 @@
-update=2/2/2017 1:10:43 PM
+update=2/3/2017 3:35:36 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=C:/Program Files/KiCad/share/kicad;../main_master_board;../altium_converted_files/SuperBALL_Mater_Schematics;Library;../../EDALibraries/KiCad/Schematics
@@ -324,13 +334,4 @@ LibName292=Library/SN74LV4T125
 LibName293=Library/SN74LV1T125
 LibName294=Library/Si1077X
 LibName295=Library/LTC2955-1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName296=Library/antenna
