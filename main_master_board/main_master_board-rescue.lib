@@ -1,24 +1,17 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# LED-RESCUE-main_master_board
+# Antenna-RESCUE-main_master_board
 #
-DEF LED-RESCUE-main_master_board D 0 40 Y N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "LED-RESCUE-main_master_board" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-$FPLIST
- LED-*
- LED_*
-$ENDFPLIST
+DEF Antenna-RESCUE-main_master_board U 0 40 Y Y 1 F N
+F0 "U" 0 -125 60 H V C CNN
+F1 "Antenna-RESCUE-main_master_board" 0 125 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
 DRAW
-P 2 0 1 0 -50 50 -50 -50 N
-P 3 0 1 0 -80 -25 -125 -65 -120 -40 N
-P 3 0 1 0 -65 -40 -110 -80 -105 -55 N
-P 3 0 1 0 50 50 -50 0 50 -50 F
-X K 1 -200 0 150 R 40 40 1 1 P
-X A 2 200 0 150 L 40 40 1 1 P
+S -150 75 150 -75 0 1 0 N
+X FB 1 350 0 200 L 50 50 1 1 I
+X MP 2 -350 0 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

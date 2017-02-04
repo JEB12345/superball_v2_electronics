@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -2445,17 +2401,6 @@ PWR3
 Text Label 14675 3950 2    60   ~ 0
 PWR2
 $Comp
-L Antenna U23
-U 1 1 58995623
-P 13975 8100
-F 0 "U23" H 13975 7975 60  0000 C CNN
-F 1 "Antenna" H 13975 8225 60  0000 C CNN
-F 2 "antenna:FR05-S1-NO-104B" H 13975 8100 60  0001 C CNN
-F 3 "http://www.richardsonrfpd.com/pages/Product-Details.aspx?productId=921210" H 13975 8100 60  0001 C CNN
-	1    13975 8100
-	1    0    0    -1  
-$EndComp
-$Comp
 L L L6
 U 1 1 58995B96
 P 14450 8325
@@ -2528,4 +2473,15 @@ Wire Wire Line
 	15875 8050 15875 8575
 Text Label 15100 8575 0    60   ~ 0
 GND
+$Comp
+L antenna U23
+U 1 1 58965192
+P 13975 8100
+F 0 "U23" H 13975 7975 60  0000 C CNN
+F 1 "antenna" H 13975 8225 60  0000 C CNN
+F 2 "antenna:FR05-S1-NO-104B" H 13975 8100 60  0001 C CNN
+F 3 "" H 13975 8100 60  0001 C CNN
+	1    13975 8100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

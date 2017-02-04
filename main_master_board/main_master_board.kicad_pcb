@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.5)
 
   (general
     (links 641)
@@ -8892,11 +8892,11 @@
 
   (module antenna:FR05-S1-NO-104B locked (layer F.Cu) (tedit 5895215C) (tstamp 5898B402)
     (at 141.9225 150.622 354)
-    (path /587AA41C/58995623)
+    (path /587AA41C/58965192)
     (fp_text reference U23 (at 1 -4 354) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Antenna (at 0 4 354) (layer F.Fab)
+    (fp_text value antenna (at 0 4 354) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.5 -3) (end 3 -1.5) (layer F.SilkS) (width 0.15))
@@ -9018,7 +9018,7 @@
     (fp_arc (start 0 0) (end 1.5 -1) (angle 33.69006753) (layer F.SilkS) (width 0.15))
     (fp_arc (start 0.5 0) (end -1.75 0) (angle 26.56503979) (layer F.SilkS) (width 0.15))
     (fp_line (start 1.5 -1) (end -1.5 -1) (layer F.SilkS) (width 0.15))
-    (fp_text user * (at -3 0 180) (layer F.SilkS)
+    (fp_text user * (at -2.346 -0.2315 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_arc (start 0.5 0) (end -1.75 0) (angle 26.56503979) (layer F.SilkS) (width 0.15))
