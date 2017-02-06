@@ -417,7 +417,7 @@ BOOT_CONFIG_3
 Text Label 6225 2100 0    60   ~ 0
 GPIO_20
 Text Label 6225 2300 0    60   ~ 0
-USB_HS_D_M
+USB_HS_D_N
 Text Label 6225 2400 0    60   ~ 0
 USB_HS_D_P
 Text Label 5175 2400 2    60   ~ 0
@@ -639,10 +639,10 @@ $EndComp
 Text Label 1225 6175 2    60   ~ 0
 GND
 $Comp
-L +3.3VA #PWR26
+L +3.3VA #PWR025
 U 1 1 58837660
 P 3025 5775
-F 0 "#PWR26" H 3025 5625 50  0001 C CNN
+F 0 "#PWR025" H 3025 5625 50  0001 C CNN
 F 1 "+3.3VA" H 3025 5915 50  0000 C CNN
 F 2 "" H 3025 5775 50  0000 C CNN
 F 3 "" H 3025 5775 50  0000 C CNN
@@ -725,10 +725,10 @@ Text Label 1200 6475 2    60   ~ 0
 Text Label 1200 6800 2    60   ~ 0
 GND
 $Comp
-L +1V8 #PWR25
+L +1V8 #PWR026
 U 1 1 5884251A
 P 875 7125
-F 0 "#PWR25" H 875 6975 50  0001 C CNN
+F 0 "#PWR026" H 875 6975 50  0001 C CNN
 F 1 "+1V8" H 875 7265 50  0000 C CNN
 F 2 "" H 875 7125 50  0000 C CNN
 F 3 "" H 875 7125 50  0000 C CNN
@@ -823,10 +823,10 @@ LAN9512 Power Filtering
 Text Label 4450 5575 2    60   ~ 0
 3V3
 $Comp
-L +3.3VA #PWR28
+L +3.3VA #PWR027
 U 1 1 5884804C
 P 7725 5500
-F 0 "#PWR28" H 7725 5350 50  0001 C CNN
+F 0 "#PWR027" H 7725 5350 50  0001 C CNN
 F 1 "+3.3VA" H 7725 5640 50  0000 C CNN
 F 2 "" H 7725 5500 50  0000 C CNN
 F 3 "" H 7725 5500 50  0000 C CNN
@@ -834,10 +834,10 @@ F 3 "" H 7725 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR27
+L +1V8 #PWR028
 U 1 1 58849901
 P 4400 6225
-F 0 "#PWR27" H 4400 6075 50  0001 C CNN
+F 0 "#PWR028" H 4400 6075 50  0001 C CNN
 F 1 "+1V8" H 4400 6365 50  0000 C CNN
 F 2 "" H 4400 6225 50  0000 C CNN
 F 3 "" H 4400 6225 50  0000 C CNN
@@ -865,18 +865,14 @@ Text Label 4600 7350 2    60   ~ 0
 PRTCTL2
 Text Label 4600 7475 2    60   ~ 0
 PRTCTL3
-Text Label 7600 6950 0    60   ~ 0
-USBDP0
-Text Label 7600 7075 0    60   ~ 0
-USBDM0
 Text Label 7600 7350 0    60   ~ 0
-USBDP2
+USBDP2_P
 Text Label 7600 7475 0    60   ~ 0
-USBDM2
+USBDM2_N
 Text Label 7600 7650 0    60   ~ 0
-USBDP3
+USBDP3_P
 Text Label 7600 7775 0    60   ~ 0
-USBPM3
+USBPM3_N
 $Comp
 L R R30
 U 1 1 5884DB99
@@ -904,13 +900,13 @@ $EndComp
 Text Label 3925 8625 2    60   ~ 0
 3V3
 Text Label 7600 8475 0    60   ~ 0
-RXP
+RX_P
 Text Label 7600 8575 0    60   ~ 0
-RXN
+RX_N
 Text Label 7600 8725 0    60   ~ 0
-TXP
+TX_P
 Text Label 7600 8825 0    60   ~ 0
-TXN
+TX_N
 NoConn ~ 4625 9100
 NoConn ~ 4625 9475
 Text Label 4600 9225 2    60   ~ 0
@@ -1053,9 +1049,9 @@ F 3 "" H 3875 6950 50  0000 C CNN
 $EndComp
 Text Label 3700 6950 2    60   ~ 0
 3V3
-Text Label 8000 7075 0    60   ~ 0
-USB_HS_D_M
-Text Label 8000 6950 0    60   ~ 0
+Text Label 7600 7075 0    60   ~ 0
+USB_HS_D_N
+Text Label 7600 6950 0    60   ~ 0
 USB_HS_D_P
 NoConn ~ 10850 9150
 $Comp
@@ -1070,10 +1066,10 @@ F 3 "" H 10550 8900 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3VA #PWR29
+L +3.3VA #PWR029
 U 1 1 5885B0EB
 P 10325 8100
-F 0 "#PWR29" H 10325 7950 50  0001 C CNN
+F 0 "#PWR029" H 10325 7950 50  0001 C CNN
 F 1 "+3.3VA" H 10325 8240 50  0000 C CNN
 F 2 "" H 10325 8100 50  0000 C CNN
 F 3 "" H 10325 8100 50  0000 C CNN
@@ -1128,14 +1124,10 @@ F 3 "" H 9950 8375 50  0000 C CNN
 $EndComp
 Text Notes 10025 8250 0    39   ~ 0
 place near lan9512
-Text Label 10700 8550 0    60   ~ 0
-TXP
-Text Label 10700 8650 0    60   ~ 0
-TXN
-Text Label 10700 8750 0    60   ~ 0
-RXP
-Text Label 10700 9050 0    60   ~ 0
-RXN
+Text Label 10675 8750 0    60   ~ 0
+RX_P
+Text Label 10675 9050 0    60   ~ 0
+RX_N
 Text Label 10825 9250 2    60   ~ 0
 GND
 Text Notes 8025 8375 0    39   ~ 0
@@ -1197,8 +1189,6 @@ F 3 "www.digikey.com/product-detail/en/AS1360-18-T/AS1360-18-TCT-ND/" H 1325 152
 $EndComp
 Text Label 1400 2025 0    60   ~ 0
 GND
-Text Label 925  1525 2    60   ~ 0
-V5
 Text Label 1775 1525 0    60   ~ 0
 1V8
 $Comp
@@ -2221,13 +2211,13 @@ Wire Wire Line
 Wire Wire Line
 	1600 3000 2050 3000
 Text Label 14675 4050 2    60   ~ 0
-USBDP2
+USBDP2_P
 Text Label 14675 4150 2    60   ~ 0
-USBDM2
+USBDM2_N
 Text Label 14675 4425 2    60   ~ 0
-USBDP3
+USBDP3_P
 Text Label 14675 4525 2    60   ~ 0
-USBDM3
+USBDM3_N
 Text Label 14675 2875 2    60   ~ 0
 I2C1_SCL
 Text Label 14675 2975 2    60   ~ 0
@@ -2484,4 +2474,10 @@ F 3 "" H 13975 8100 60  0001 C CNN
 	1    13975 8100
 	1    0    0    -1  
 $EndComp
+Text Label 825  1525 0    60   ~ 0
+V4
+Text Label 10675 8550 0    60   ~ 0
+TX_P
+Text Label 10675 8650 0    60   ~ 0
+TX_N
 $EndSCHEMATC
