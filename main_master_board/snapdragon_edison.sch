@@ -866,13 +866,13 @@ PRTCTL2
 Text Label 4600 7475 2    60   ~ 0
 PRTCTL3
 Text Label 7600 7350 0    60   ~ 0
-USBDP2_P
+USBD2_P
 Text Label 7600 7475 0    60   ~ 0
-USBDM2_N
+USBD2_N
 Text Label 7600 7650 0    60   ~ 0
-USBDP3_P
+USBD3_P
 Text Label 7600 7775 0    60   ~ 0
-USBPM3_N
+USBD3_N
 $Comp
 L R R30
 U 1 1 5884DB99
@@ -2210,14 +2210,6 @@ Wire Wire Line
 	850  3000 575  3000
 Wire Wire Line
 	1600 3000 2050 3000
-Text Label 14675 4050 2    60   ~ 0
-USBDP2_P
-Text Label 14675 4150 2    60   ~ 0
-USBDM2_N
-Text Label 14675 4425 2    60   ~ 0
-USBDP3_P
-Text Label 14675 4525 2    60   ~ 0
-USBDM3_N
 Text Label 14675 2875 2    60   ~ 0
 I2C1_SCL
 Text Label 14675 2975 2    60   ~ 0
@@ -2480,4 +2472,12 @@ Text Label 10675 8550 0    60   ~ 0
 TX_P
 Text Label 10675 8650 0    60   ~ 0
 TX_N
+Text Label 14675 4050 2    60   ~ 0
+USBD2_P
+Text Label 14675 4150 2    60   ~ 0
+USBD2_N
+Text Label 14675 4425 2    60   ~ 0
+USBD3_P
+Text Label 14675 4525 2    60   ~ 0
+USBD3_N
 $EndSCHEMATC

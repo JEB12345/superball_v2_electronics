@@ -804,14 +804,6 @@ Text Label 11025 5325 0    60   ~ 0
 SDC2_CLK
 Text Label 11025 5225 0    60   ~ 0
 VREG_L11_SDC
-Text Label 11025 5775 0    60   ~ 0
-USBDP2_P
-Text Label 11025 5875 0    60   ~ 0
-USBDM2_N
-Text Label 11025 6125 0    60   ~ 0
-USBDP3_P
-Text Label 11025 6225 0    60   ~ 0
-USBDM3_N
 Text Label 11025 4700 0    60   ~ 0
 I2C1_SCL
 Text Label 11025 4800 0    60   ~ 0
@@ -838,12 +830,6 @@ Text Label 7525 6250 0    60   ~ 0
 SDC2_CLK
 Text Label 7525 6150 0    60   ~ 0
 VREG_L11_SDC
-Text Label 6975 6050 2    60   ~ 0
-USBDM2_N
-Text Label 6975 6250 2    60   ~ 0
-USBDP3_P
-Text Label 6975 6350 2    60   ~ 0
-USBDM3_N
 Text Label 6975 4000 2    60   ~ 0
 UART0_TX
 Text Label 6975 4100 2    60   ~ 0
@@ -1306,17 +1292,17 @@ Wire Wire Line
 Wire Wire Line
 	7500 6450 8125 6450
 Wire Wire Line
-	7000 5950 6600 5950
-Wire Wire Line
-	7000 6050 6600 6050
-Wire Wire Line
-	7000 6150 6575 6150
-Wire Wire Line
-	7000 6250 6600 6250
-Wire Wire Line
 	7000 6350 6600 6350
 Wire Wire Line
 	7000 5850 6600 5850
+Wire Wire Line
+	7000 5950 6575 5950
+Wire Wire Line
+	7000 6050 6600 6050
+Wire Wire Line
+	7000 6150 6600 6150
+Wire Wire Line
+	7000 6250 6600 6250
 Wire Wire Line
 	15105 5625 15335 5625
 Wire Wire Line
@@ -1655,11 +1641,9 @@ Text Label 11025 5675 0    60   ~ 0
 PWR2
 Text Label 11025 6025 0    60   ~ 0
 PWR3
-Text Label 6975 5850 2    60   ~ 0
+Text Label 6975 6250 2    60   ~ 0
 PWR2
-Text Label 6975 5950 2    60   ~ 0
-USBDP2_P
-Text Label 6975 6150 2    60   ~ 0
+Text Label 6975 6350 2    60   ~ 0
 PWR3
 Text Label 6975 4600 2    60   ~ 0
 sensor_SDA
@@ -1685,4 +1669,20 @@ Wire Wire Line
 	7500 4000 7950 4000
 Wire Wire Line
 	7500 4100 7950 4100
+Text Label 11025 5775 0    60   ~ 0
+USBD2_P
+Text Label 11025 5875 0    60   ~ 0
+USBD2_N
+Text Label 11025 6125 0    60   ~ 0
+USBD3_P
+Text Label 11025 6225 0    60   ~ 0
+USBD3_N
+Text Label 6975 5950 2    60   ~ 0
+USBD2_P
+Text Label 6975 5850 2    60   ~ 0
+USBD2_N
+Text Label 6975 6150 2    60   ~ 0
+USBD3_P
+Text Label 6975 6050 2    60   ~ 0
+USBD3_N
 $EndSCHEMATC
