@@ -1685,4 +1685,45 @@ Text Label 6975 6150 2    60   ~ 0
 USBD3_P
 Text Label 6975 6050 2    60   ~ 0
 USBD3_N
+$Comp
+L Ferrite_Bead_Small L8
+U 1 1 589D34C8
+P 1100 975
+F 0 "L8" V 1175 1025 50  0000 L CNN
+F 1 "2.0A/0.05 DCR" V 975 800 50  0000 L CNN
+F 2 "dp_devices2:dp_devices-C603" V 1030 975 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/BLM18PG121SN1D/490-1037-1-ND/" H 1100 975 50  0001 C CNN
+	1    1100 975 
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDPWR #PWR025
+U 1 1 589DB72C
+P 925 1075
+F 0 "#PWR025" H 925 875 50  0001 C CNN
+F 1 "GNDPWR" H 925 945 50  0000 C CNN
+F 2 "" H 925 1025 50  0000 C CNN
+F 3 "" H 925 1025 50  0000 C CNN
+	1    925  1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 589DB9F6
+P 1300 1075
+F 0 "#PWR026" H 1300 825 50  0001 C CNN
+F 1 "GND" H 1300 925 50  0000 C CNN
+F 2 "" H 1300 1075 50  0000 C CNN
+F 3 "" H 1300 1075 50  0000 C CNN
+	1    1300 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	925  1075 925  975 
+Wire Wire Line
+	925  975  1000 975 
+Wire Wire Line
+	1200 975  1300 975 
+Wire Wire Line
+	1300 975  1300 1075
 $EndSCHEMATC
