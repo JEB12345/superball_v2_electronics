@@ -315,8 +315,6 @@ Text Label 2725 5200 2    60   ~ 0
 APQ_RESIN_N
 Text Label 3775 5200 0    60   ~ 0
 GPIO_29
-Text Label 14700 6175 2    60   ~ 0
-GPIO_30
 Text Label 3775 4900 0    60   ~ 0
 GPIO_26
 Text Label 3775 4800 0    60   ~ 0
@@ -361,8 +359,6 @@ NoConn ~ 2750 1900
 NoConn ~ 2750 2000
 NoConn ~ 2750 2100
 NoConn ~ 2750 2200
-Text Label 2725 1800 2    60   ~ 0
-USB_VBUS
 NoConn ~ 2750 2400
 NoConn ~ 2750 2500
 NoConn ~ 2750 2700
@@ -1907,8 +1903,6 @@ Wire Wire Line
 	2750 2800 2525 2800
 Wire Wire Line
 	2525 3000 2750 3000
-Wire Wire Line
-	2750 1800 2250 1800
 Connection ~ 2700 1000
 Wire Wire Line
 	2700 1100 2750 1100
@@ -2325,11 +2319,11 @@ GPIO108
 Text HLabel 14725 5875 2    60   Output ~ 0
 GPIO27
 Text HLabel 14725 6075 2    60   Output ~ 0
-GPIO26
+GPIO106
 Text HLabel 14725 5975 2    60   Output ~ 0
 GPIO28
 Text HLabel 14725 6175 2    60   Output ~ 0
-GPIO30
+GPIO112
 Text Label 14700 4975 2    60   ~ 0
 GPIO_114
 Text Label 14700 5075 2    60   ~ 0
@@ -2366,8 +2360,6 @@ Wire Wire Line
 	14725 5375 14325 5375
 Wire Wire Line
 	14725 5275 14325 5275
-Text Label 14700 6075 2    60   ~ 0
-GPIO_26
 Text Label 14700 5975 2    60   ~ 0
 GPIO_28
 Text Label 14700 5875 2    60   ~ 0
@@ -2481,10 +2473,10 @@ USBD3_P
 Text Label 14675 4525 2    60   ~ 0
 USBD3_N
 $Comp
-L +1V8 #PWR?
+L +1V8 #PWR032
 U 1 1 589E2381
 P 2000 1475
-F 0 "#PWR?" H 2000 1325 50  0001 C CNN
+F 0 "#PWR032" H 2000 1325 50  0001 C CNN
 F 1 "+1V8" H 2000 1615 50  0000 C CNN
 F 2 "" H 2000 1475 50  0000 C CNN
 F 3 "" H 2000 1475 50  0000 C CNN
@@ -2493,4 +2485,12 @@ F 3 "" H 2000 1475 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	2000 1525 2000 1475
+Text Label 14700 6175 2    60   ~ 0
+GPIO_112
+Text Label 14700 6075 2    60   ~ 0
+GPIO_106
+Wire Wire Line
+	2750 1800 2250 1800
+Text Label 2725 1800 2    60   ~ 0
+USB_VBUS
 $EndSCHEMATC

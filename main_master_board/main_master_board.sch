@@ -784,11 +784,11 @@ F41 "GPIO50" O R 11000 7200 60
 F42 "GPIO69" O R 11000 7300 60 
 F43 "GPIO108" O R 11000 7400 60 
 F44 "GPIO27" O R 11000 7500 60 
-F45 "GPIO26" O R 11000 7600 60 
-F46 "GPIO28" O R 11000 7700 60 
-F47 "GPIO30" O R 11000 7800 60 
-F48 "PWR2" O R 11000 5675 60 
-F49 "PWR3" O R 11000 6025 60 
+F45 "GPIO28" O R 11000 7700 60 
+F46 "PWR2" O R 11000 5675 60 
+F47 "PWR3" O R 11000 6025 60 
+F48 "GPIO112" O R 11000 7800 60 
+F49 "GPIO106" O R 11000 7600 60 
 $EndSheet
 Text Label 11025 5425 0    60   ~ 0
 SDC2_DATA_0
@@ -816,19 +816,7 @@ Text Label 11025 4500 0    60   ~ 0
 UART0_RX
 Text Label 11025 4600 0    60   ~ 0
 UART0_CTS_N
-Text Label 7525 6350 0    60   ~ 0
-SDC2_DATA_0
-Text Label 7525 6450 0    60   ~ 0
-SDC2_DATA_1
 Text Label 7525 5850 0    60   ~ 0
-SDC2_DATA_2
-Text Label 7525 5950 0    60   ~ 0
-SDC2_DATA_3
-Text Label 7525 6050 0    60   ~ 0
-SDC2_CMD
-Text Label 7525 6250 0    60   ~ 0
-SDC2_CLK
-Text Label 7525 6150 0    60   ~ 0
 VREG_L11_SDC
 Text Label 6975 4000 2    60   ~ 0
 UART0_TX
@@ -1037,9 +1025,6 @@ Wire Wire Line
 Wire Wire Line
 	15550 835  15550 925 
 Connection ~ 15550 885 
-Wire Wire Line
-	15770 835  15770 925 
-Connection ~ 15770 885 
 Wire Wire Line
 	15990 885  15990 965 
 Wire Wire Line
@@ -1278,19 +1263,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 4300 6375 4300
 Wire Wire Line
-	7500 5850 8125 5850
-Wire Wire Line
-	7500 5950 8125 5950
-Wire Wire Line
-	7500 6050 8025 6050
-Wire Wire Line
-	7500 6150 8200 6150
-Wire Wire Line
-	7500 6250 7975 6250
-Wire Wire Line
-	7500 6350 8150 6350
-Wire Wire Line
-	7500 6450 8125 6450
+	7500 5850 8200 5850
 Wire Wire Line
 	7000 6350 6600 6350
 Wire Wire Line
@@ -1534,7 +1507,7 @@ Text Label 6975 4900 2    60   ~ 0
 Wire Wire Line
 	7000 4900 6800 4900
 Text Label 11025 7800 0    60   ~ 0
-GPIO_30
+GPIO_112
 Wire Wire Line
 	11000 7800 11400 7800
 Text Label 11025 6600 0    60   ~ 0
@@ -1573,9 +1546,9 @@ Wire Wire Line
 	11000 7000 11400 7000
 Wire Wire Line
 	11000 6900 11400 6900
-Text Label 11025 7700 0    60   ~ 0
-GPIO_26
 Text Label 11025 7600 0    60   ~ 0
+GPIO_106
+Text Label 11025 7700 0    60   ~ 0
 GPIO_28
 Text Label 11025 7500 0    60   ~ 0
 GPIO_27
@@ -1585,8 +1558,6 @@ Wire Wire Line
 	11000 7600 11400 7600
 Wire Wire Line
 	11000 7700 11400 7700
-Text Label 6975 6650 2    60   ~ 0
-GPIO_30
 Wire Wire Line
 	7000 6650 6600 6650
 Text Label 7525 4200 0    60   ~ 0
@@ -1625,11 +1596,9 @@ Wire Wire Line
 	7500 4600 7900 4600
 Wire Wire Line
 	7500 4500 7900 4500
-Text Label 6975 4800 2    60   ~ 0
-GPIO_26
-Text Label 7525 6650 0    60   ~ 0
-GPIO_28
 Text Label 7525 6550 0    60   ~ 0
+GPIO_28
+Text Label 7525 6650 0    60   ~ 0
 GPIO_27
 Wire Wire Line
 	7500 6550 7900 6550
@@ -1641,9 +1610,9 @@ Text Label 11025 5675 0    60   ~ 0
 PWR2
 Text Label 11025 6025 0    60   ~ 0
 PWR3
-Text Label 6975 6250 2    60   ~ 0
-PWR2
 Text Label 6975 6350 2    60   ~ 0
+PWR2
+Text Label 6975 6250 2    60   ~ 0
 PWR3
 Text Label 6975 4600 2    60   ~ 0
 sensor_SDA
@@ -1726,4 +1695,34 @@ Wire Wire Line
 	1200 975  1300 975 
 Wire Wire Line
 	1300 975  1300 1075
+NoConn ~ 15770 925 
+NoConn ~ 15770 835 
+Text Label 7525 6250 0    60   ~ 0
+SDC2_DATA_0
+Text Label 7525 6150 0    60   ~ 0
+SDC2_DATA_1
+Text Label 7525 6350 0    60   ~ 0
+SDC2_DATA_2
+Text Label 7525 6450 0    60   ~ 0
+SDC2_DATA_3
+Text Label 7525 6050 0    60   ~ 0
+SDC2_CMD
+Text Label 7525 5950 0    60   ~ 0
+SDC2_CLK
+Wire Wire Line
+	7500 5950 8000 5950
+Wire Wire Line
+	7500 6050 8000 6050
+Wire Wire Line
+	7500 6150 8125 6150
+Wire Wire Line
+	7500 6250 8125 6250
+Wire Wire Line
+	7500 6350 8125 6350
+Wire Wire Line
+	7500 6450 8125 6450
+Text Label 6975 6650 2    60   ~ 0
+GPIO_112
+Text Label 6975 4800 2    60   ~ 0
+GPIO_106
 $EndSCHEMATC
