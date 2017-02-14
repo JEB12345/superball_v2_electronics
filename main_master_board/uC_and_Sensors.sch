@@ -43,7 +43,56 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:decaWave
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:TPS2113A
+LIBS:tps54540
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -54,7 +103,6 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -73,7 +121,6 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
-LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -81,7 +128,6 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
-LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -102,10 +148,8 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
-LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
-LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -699,7 +743,7 @@ Text Label 9105 3805 2    60   ~ 0
 rgb_g
 Text Label 9105 5345 2    60   ~ 0
 uC_MOSI
-Text Label 9105 5565 2    60   ~ 0
+Text Label 8635 5565 2    60   ~ 0
 uC_MISO
 Text Label 9105 5125 2    60   ~ 0
 uC_CS
@@ -711,7 +755,7 @@ Text Label 1375 2275 0    60   ~ 0
 uC_UART_TX
 Text Notes 1025 2650 0    60   ~ 0
 uC_Slave SPI
-Text Notes 8675 5025 3    60   ~ 0
+Text Notes 8685 4900 3    60   ~ 0
 uC_Slave SPI
 Text Label 12895 3695 0    60   ~ 0
 vmotor_en_signal
@@ -1067,15 +1111,7 @@ Wire Wire Line
 Wire Wire Line
 	9015 8595 10960 8595
 Wire Wire Line
-	11160 8595 11490 8595
-Wire Wire Line
-	11490 8595 11490 8445
-Connection ~ 11490 8445
-Wire Wire Line
-	11490 7895 11490 8440
-Connection ~ 11490 8295
-Connection ~ 11490 8145
-Connection ~ 11490 7995
+	11160 8595 11740 8595
 Wire Wire Line
 	11490 7895 11720 7895
 Wire Wire Line
@@ -1334,7 +1370,7 @@ Wire Wire Line
 Wire Wire Line
 	9130 5345 8705 5345
 Wire Wire Line
-	9130 5565 8705 5565
+	8660 5565 8235 5565
 Wire Wire Line
 	9130 5125 8830 5125
 Wire Wire Line
@@ -1508,4 +1544,25 @@ Wire Wire Line
 	9975 2350 10025 2350
 Wire Wire Line
 	9975 2625 10025 2625
+Text Label 11550 8595 0    60   ~ 0
+3V3
+Connection ~ 11490 8445
+Wire Wire Line
+	11490 7895 11490 8445
+Connection ~ 11490 8295
+Connection ~ 11490 8145
+Connection ~ 11490 7995
+$Comp
+L R R64
+U 1 1 58A3588B
+P 8810 5565
+F 0 "R64" V 8890 5565 50  0000 C CNN
+F 1 "30" V 8810 5565 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8740 5565 50  0001 C CNN
+F 3 "" H 8810 5565 50  0000 C CNN
+	1    8810 5565
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8960 5565 9130 5565
 $EndSCHEMATC
