@@ -43,56 +43,7 @@ LIBS:FDS4935A
 LIBS:Si1900DL
 LIBS:Sensors
 LIBS:LP3852-3.3
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:TPS2113A
-LIBS:tps54540
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
+LIBS:decaWave
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
 LIBS:LMR16020
@@ -103,6 +54,7 @@ LIBS:SS4-50-3.00-X-D
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:battery_management
@@ -121,6 +73,7 @@ LIBS:ir
 LIBS:Lattice
 LIBS:logo
 LIBS:maxim
+LIBS:mechanical
 LIBS:microchip_dspic33dsc
 LIBS:microchip_pic10mcu
 LIBS:microchip_pic12mcu
@@ -128,6 +81,7 @@ LIBS:microchip_pic16mcu
 LIBS:microchip_pic18mcu
 LIBS:microchip_pic32mcu
 LIBS:motor_drivers
+LIBS:motors
 LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp_armmcu
@@ -148,8 +102,10 @@ LIBS:switches
 LIBS:transf
 LIBS:ttl_ieee
 LIBS:video
+LIBS:wiznet
 LIBS:Worldsemi
 LIBS:Xicor
+LIBS:zetex
 LIBS:Zilog
 LIBS:conn_2x45
 LIBS:MF_Aesthetics
@@ -465,14 +421,14 @@ Text Label 9115 4355 2    60   ~ 0
 PGEC1
 Text Label 9120 4465 2    60   ~ 0
 PGED1
-Text Label 12885 6445 0    60   ~ 0
+Text Label 12890 6665 0    60   ~ 0
 RF_SCK
-Text Label 12885 6555 0    60   ~ 0
+Text Label 12895 5125 0    60   ~ 0
 RF_MISO
-Text Label 12885 6665 0    60   ~ 0
+Text Label 12895 6445 0    60   ~ 0
 RF_MOSI
 Text Label 4425 1025 2    60   ~ 0
-RF_GND
+GND
 Text Label 4400 1125 2    60   ~ 0
 RF_CE
 Text Label 4400 1225 2    60   ~ 0
@@ -500,9 +456,9 @@ F 3 "" H 6200 1225 50  0000 C CNN
 $EndComp
 Text Label 6225 1500 0    60   ~ 0
 GND
-Text Label 12900 6775 0    60   ~ 0
+Text Label 12895 5015 0    60   ~ 0
 RF_IRQ
-Text Label 12895 5125 0    60   ~ 0
+Text Label 12890 6775 0    60   ~ 0
 RF_CE
 Text Label 8820 3915 0    60   ~ 0
 v5_cur
@@ -512,7 +468,7 @@ Text Label 8780 4135 0    60   ~ 0
 3v3_cur
 Text Label 8750 4245 0    60   ~ 0
 3v3_volt
-Text Label 12895 5015 0    60   ~ 0
+Text Label 12895 6555 0    60   ~ 0
 RF_CSN
 $Comp
 L C_Small C20
@@ -635,11 +591,11 @@ Text Label 10050 2750 0    60   ~ 0
 GND
 Text Label 12895 4465 0    60   ~ 0
 DWM_CLK
-Text Label 12895 4795 0    60   ~ 0
+Text Label 12895 4575 0    60   ~ 0
 DWM_MISO
 Text Label 12895 4685 0    60   ~ 0
 DWM_MOSI
-Text Label 12895 4575 0    60   ~ 0
+Text Label 12895 4795 0    60   ~ 0
 DWM_CS
 Text Label 12900 4355 0    60   ~ 0
 DWM_IRQ
@@ -898,22 +854,10 @@ Text Label 5150 3750 2    60   ~ 0
 GND
 Text Label 6200 3950 0    60   ~ 0
 GND
-Text Label 4925 3400 0    60   ~ 0
-RGB_R
-Text Label 4925 3500 0    60   ~ 0
-RGB_G
-Text Label 4925 3600 0    60   ~ 0
-RGB_B
-Text Label 4900 4100 0    60   ~ 0
-RGB_R
-Text Label 4900 4200 0    60   ~ 0
-RGB_G
-Text Label 4900 4300 0    60   ~ 0
-RGB_B
-Text Label 6225 3750 0    60   ~ 0
-RGB_R
+Text Label 4950 3400 0    60   ~ 0
+RGB_R_led
 Text Label 5125 3950 2    60   ~ 0
-RGB_G
+RGB_G_led
 $Comp
 L Si1900DL U31
 U 1 1 5889B253
@@ -930,7 +874,7 @@ GND
 Text Label 5125 4525 2    60   ~ 0
 GND
 Text Label 6200 4525 0    60   ~ 0
-RGB_B
+RGB_B_led
 $Comp
 L Led_Small D18
 U 1 1 5889BDBA
@@ -1565,4 +1509,16 @@ F 3 "" H 8810 5565 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	8960 5565 9130 5565
+Text Label 4950 3600 0    60   ~ 0
+RGB_B_led
+Text Label 6200 3750 0    60   ~ 0
+RGB_R_led
+Text Label 4950 3500 0    60   ~ 0
+RGB_G_led
+Text Label 4925 4100 0    60   ~ 0
+RGB_R_led
+Text Label 4925 4300 0    60   ~ 0
+RGB_B_led
+Text Label 4925 4200 0    60   ~ 0
+RGB_G_led
 $EndSCHEMATC
