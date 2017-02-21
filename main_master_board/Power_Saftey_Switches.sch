@@ -694,7 +694,7 @@ U 1 1 5873E944
 P 4260 1490
 F 0 "P12" H 4260 1590 50  0000 C CNN
 F 1 "motors_en" V 4360 1490 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 4260 1490 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 4260 1490 50  0001 C CNN
 F 3 "" H 4260 1490 50  0000 C CNN
 	1    4260 1490
 	0    -1   -1   0   
@@ -722,7 +722,7 @@ U 1 1 5874161C
 P 3080 2240
 F 0 "P10" H 3080 2340 50  0000 C CNN
 F 1 "watchdog" V 3180 2240 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 3080 2240 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 3080 2240 50  0001 C CNN
 F 3 "" H 3080 2240 50  0000 C CNN
 	1    3080 2240
 	0    -1   -1   0   
@@ -736,7 +736,7 @@ U 1 1 58741B78
 P 2980 2980
 F 0 "P9" H 2980 3080 50  0000 C CNN
 F 1 "uC_KS" V 3080 2980 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2980 2980 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 2980 2980 50  0001 C CNN
 F 3 "" H 2980 2980 50  0000 C CNN
 	1    2980 2980
 	0    1    1    0   

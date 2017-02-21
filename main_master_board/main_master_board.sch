@@ -777,18 +777,18 @@ F34 "USBDM3" O R 11000 6225 60
 F35 "GPIO105" O R 11000 6600 60 
 F36 "GPIO114" O R 11000 6700 60 
 F37 "GPIO113" O R 11000 6800 60 
-F38 "GPIO52" O R 11000 6900 60 
-F39 "GPIO49" O R 11000 7000 60 
-F40 "GPIO51" O R 11000 7100 60 
-F41 "GPIO50" O R 11000 7200 60 
-F42 "GPIO69" O R 11000 7300 60 
-F43 "GPIO108" O R 11000 7400 60 
-F44 "GPIO27" O R 11000 7500 60 
-F45 "GPIO28" O R 11000 7700 60 
-F46 "PWR2" O R 11000 5675 60 
-F47 "PWR3" O R 11000 6025 60 
-F48 "GPIO112" O R 11000 7800 60 
-F49 "GPIO106" O R 11000 7600 60 
+F38 "GPIO51" O R 11000 7200 60 
+F39 "GPIO50" O R 11000 7100 60 
+F40 "GPIO69" O R 11000 7300 60 
+F41 "GPIO108" O R 11000 7400 60 
+F42 "GPIO27" O R 11000 7500 60 
+F43 "GPIO28" O R 11000 7700 60 
+F44 "PWR2" O R 11000 5675 60 
+F45 "PWR3" O R 11000 6025 60 
+F46 "GPIO112" O R 11000 7800 60 
+F47 "GPIO106" O R 11000 7600 60 
+F48 "GPIO13" O R 11000 7000 60 
+F49 "GPIO12" O R 11000 6900 60 
 $EndSheet
 Text Label 11025 5425 0    60   ~ 0
 SDC2_DATA_0
@@ -818,13 +818,13 @@ Text Label 11025 4600 0    60   ~ 0
 UART0_CTS_N
 Text Label 7525 5850 0    60   ~ 0
 VREG_L11_SDC
-Text Label 6975 4000 2    60   ~ 0
-UART0_TX
-Text Label 6975 4100 2    60   ~ 0
-UART0_RTS_N
-Text Label 6975 4200 2    60   ~ 0
-UART0_RX
 Text Label 6975 4300 2    60   ~ 0
+UART0_TX
+Text Label 6975 4200 2    60   ~ 0
+UART0_RTS_N
+Text Label 6975 4100 2    60   ~ 0
+UART0_RX
+Text Label 6975 4000 2    60   ~ 0
 UART0_CTS_N
 Text Label 15130 5225 0    60   ~ 0
 RD1
@@ -850,27 +850,27 @@ Text Label 15125 6225 0    60   ~ 0
 RF5
 Text Label 15310 5825 2    60   ~ 0
 RE5
-Text Label 7525 7050 0    60   ~ 0
+Text Label 7525 5000 0    60   ~ 0
 RD1
-Text Label 6960 6850 2    60   ~ 0
+Text Label 6960 5000 2    60   ~ 0
 RD2
-Text Label 6975 6950 2    60   ~ 0
+Text Label 6975 5100 2    60   ~ 0
 RD3
-Text Label 6975 7050 2    60   ~ 0
+Text Label 6975 5200 2    60   ~ 0
 RD4
-Text Label 7520 5000 0    60   ~ 0
+Text Label 7520 5200 0    60   ~ 0
 RD5
 Text Label 7530 6850 0    60   ~ 0
 RB11
 Text Label 7525 6950 0    60   ~ 0
 RB12
-Text Label 6975 5200 2    60   ~ 0
+Text Label 6975 6850 2    60   ~ 0
 RF6
-Text Label 7530 5200 0    60   ~ 0
+Text Label 6970 6950 2    60   ~ 0
 RF3
-Text Label 6975 5000 2    60   ~ 0
+Text Label 7525 7050 0    60   ~ 0
 RF4
-Text Label 6980 5100 2    60   ~ 0
+Text Label 6980 7050 2    60   ~ 0
 RF5
 Text Label 7705 5100 2    60   ~ 0
 RE5
@@ -909,7 +909,7 @@ F 1 "LTC2955-1" H 1725 5150 50  0000 C CNN
 F 2 "TSOT-23:TSOT-23-8" H 1425 4550 50  0001 C CNN
 F 3 "http://www.digikey.com/product-detail/en/LTC2955ITS8-1%2523TRMPBF/LTC2955ITS8-1%2523TRMPBFCT-ND/3065188" H 2125 4550 50  0001 C CNN
 	1    1725 4850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 2375 4800 0    60   ~ 0
 Switch_on
@@ -1255,13 +1255,13 @@ Wire Wire Line
 Wire Wire Line
 	11000 5675 11400 5675
 Wire Wire Line
-	7000 4000 6525 4000
+	7000 4300 6525 4300
 Wire Wire Line
-	7000 4100 6350 4100
+	7000 4200 6350 4200
 Wire Wire Line
-	7000 4200 6525 4200
+	7000 4100 6525 4100
 Wire Wire Line
-	7000 4300 6375 4300
+	7000 4000 6375 4000
 Wire Wire Line
 	7500 5850 8200 5850
 Wire Wire Line
@@ -1301,27 +1301,27 @@ Wire Wire Line
 Wire Wire Line
 	15335 5825 15105 5825
 Wire Wire Line
+	7500 5200 7730 5200
+Wire Wire Line
+	7000 5200 6775 5200
+Wire Wire Line
+	7000 5100 6770 5100
+Wire Wire Line
+	7000 5000 6770 5000
+Wire Wire Line
 	7500 5000 7730 5000
-Wire Wire Line
-	7000 7050 6775 7050
-Wire Wire Line
-	7000 6950 6770 6950
-Wire Wire Line
-	7000 6850 6770 6850
-Wire Wire Line
-	7500 7050 7730 7050
 Wire Wire Line
 	7775 6950 7500 6950
 Wire Wire Line
 	7500 6850 7780 6850
 Wire Wire Line
-	7500 5200 7720 5200
+	7000 6950 6780 6950
 Wire Wire Line
-	7000 5000 6780 5000
+	7500 7050 7720 7050
 Wire Wire Line
-	7000 5100 6790 5100
+	7000 7050 6790 7050
 Wire Wire Line
-	7000 5200 6785 5200
+	7000 6850 6785 6850
 Wire Wire Line
 	7730 5100 7500 5100
 Wire Wire Line
@@ -1348,10 +1348,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 4900 3050 4925
 Connection ~ 3050 4900
-Wire Wire Line
-	2325 5000 2450 5000
-Wire Wire Line
-	2450 5000 2450 5025
 Wire Wire Line
 	2450 5425 2450 5475
 Wire Wire Line
@@ -1523,9 +1519,9 @@ Wire Wire Line
 Wire Wire Line
 	11000 6800 11450 6800
 Text Label 11025 6900 0    60   ~ 0
-GPIO_52
+GPIO_12
 Text Label 11025 7000 0    60   ~ 0
-GPIO_49
+GPIO_13
 Text Label 11025 7100 0    60   ~ 0
 GPIO_50
 Text Label 11025 7200 0    60   ~ 0
@@ -1560,42 +1556,28 @@ Wire Wire Line
 	11000 7700 11400 7700
 Wire Wire Line
 	7000 6650 6600 6650
-Text Label 7525 4200 0    60   ~ 0
+Text Label 6975 4500 2    60   ~ 0
 GPIO_114
-Text Label 7525 4300 0    60   ~ 0
+Text Label 6975 4400 2    60   ~ 0
 GPIO_105
-Text Label 7525 4400 0    60   ~ 0
-GPIO_113
 Wire Wire Line
 	7950 4200 7500 4200
 Wire Wire Line
 	7500 4300 7950 4300
 Wire Wire Line
 	7500 4400 7950 4400
-Text Label 7525 4500 0    60   ~ 0
-GPIO_52
-Text Label 7525 4600 0    60   ~ 0
-GPIO_49
-Text Label 7525 4700 0    60   ~ 0
+Text Label 7525 4000 0    60   ~ 0
 GPIO_50
-Text Label 7525 4800 0    60   ~ 0
+Text Label 7525 4100 0    60   ~ 0
 GPIO_51
-Text Label 6975 4400 2    60   ~ 0
+Text Label 7525 4200 0    60   ~ 0
 GPIO_69
-Text Label 6975 4500 2    60   ~ 0
+Text Label 7525 4500 0    60   ~ 0
 GPIO_108
 Wire Wire Line
 	7000 4500 6525 4500
 Wire Wire Line
 	7000 4400 6600 4400
-Wire Wire Line
-	7500 4800 7900 4800
-Wire Wire Line
-	7500 4700 7900 4700
-Wire Wire Line
-	7500 4600 7900 4600
-Wire Wire Line
-	7500 4500 7900 4500
 Text Label 7525 6550 0    60   ~ 0
 GPIO_28
 Text Label 7525 6650 0    60   ~ 0
@@ -1604,8 +1586,6 @@ Wire Wire Line
 	7500 6550 7900 6550
 Wire Wire Line
 	7500 6650 7900 6650
-Wire Wire Line
-	7000 4800 6600 4800
 Text Label 11025 5675 0    60   ~ 0
 PWR2
 Text Label 11025 6025 0    60   ~ 0
@@ -1630,10 +1610,6 @@ Wire Wire Line
 	7000 6450 6450 6450
 Wire Wire Line
 	7000 6550 6450 6550
-Text Label 7525 4000 0    60   ~ 0
-I2C1_SCL
-Text Label 7525 4100 0    60   ~ 0
-I2C1_SDA
 Wire Wire Line
 	7500 4000 7950 4000
 Wire Wire Line
@@ -1723,6 +1699,18 @@ Wire Wire Line
 	7500 6450 8125 6450
 Text Label 6975 6650 2    60   ~ 0
 GPIO_112
-Text Label 6975 4800 2    60   ~ 0
-GPIO_106
+Text Label 7525 4300 0    60   ~ 0
+GPIO_12
+Text Label 7525 4400 0    60   ~ 0
+GPIO_13
+Wire Wire Line
+	7500 4500 7900 4500
+NoConn ~ 7500 4600
+NoConn ~ 7500 4700
+NoConn ~ 7500 4800
+NoConn ~ 7000 4800
+Wire Wire Line
+	2325 5000 2450 5000
+Wire Wire Line
+	2450 5000 2450 5025
 $EndSCHEMATC

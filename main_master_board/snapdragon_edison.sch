@@ -279,7 +279,7 @@ Text Label 5175 2000 2    60   ~ 0
 UART0_RTS_N
 Text Label 5175 2100 2    60   ~ 0
 UART0_RX
-Text Label 5175 2200 2    60   ~ 0
+Text Label 5200 2200 2    60   ~ 0
 UART0_CTS_N
 Text Label 2725 3900 2    60   ~ 0
 SPI0_CLK
@@ -1935,7 +1935,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 3200 2125 3200
 Wire Wire Line
-	5175 2200 4575 2200
+	5200 2200 4600 2200
 Wire Wire Line
 	5200 2100 4725 2100
 Wire Wire Line
@@ -2305,9 +2305,9 @@ GPIO114
 Text HLabel 14725 5175 2    60   Output ~ 0
 GPIO113
 Text HLabel 14725 5275 2    60   Output ~ 0
-GPIO52
+GPIO13
 Text HLabel 14725 5375 2    60   Output ~ 0
-GPIO49
+GPIO12
 Text HLabel 14725 5575 2    60   Output ~ 0
 GPIO51
 Text HLabel 14725 5475 2    60   Output ~ 0
@@ -2337,9 +2337,9 @@ Wire Wire Line
 Wire Wire Line
 	14725 5175 14275 5175
 Text Label 14700 5275 2    60   ~ 0
-GPIO_52
+GPIO_13
 Text Label 14700 5375 2    60   ~ 0
-GPIO_49
+GPIO_12
 Text Label 14700 5475 2    60   ~ 0
 GPIO_50
 Text Label 14700 5575 2    60   ~ 0
