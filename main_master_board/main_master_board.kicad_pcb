@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.5)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
     (links 643)
     (no_connects 1)
-    (area 103.782779 57.203599 193.219421 152.803757)
+    (area 89.629398 44.261998 207.229401 165.745203)
     (thickness 1.6)
     (drawings 550)
     (tracks 5257)
@@ -6344,6 +6344,11 @@
       (net 1 GND))
     (pad 2 thru_hole circle (at 1 0 270) (size 1.5 1.5) (drill 0.8) (layers *.Cu *.Mask)
       (net 7 /Vbackup_in))
+    (model C:/Users/jebruce/Documents/GrabCAD/SUPERBall/SuperBall_V2/Electronics/KiCAD_models/microclasp_2pin_vert.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 0.3937 0.3937 0.3937))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module PowerDI:PowerDI (layer B.Cu) (tedit 5887FA68) (tstamp 5887FE5F)
