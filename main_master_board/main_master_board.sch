@@ -894,15 +894,15 @@ Text Label 15125 6225 0    60   ~ 0
 RF5
 Text Label 15310 5825 2    60   ~ 0
 RE5
-Text Label 7525 5000 0    60   ~ 0
-RD1
-Text Label 6960 5000 2    60   ~ 0
-RD2
 Text Label 6975 5100 2    60   ~ 0
+RD1
+Text Label 6970 5200 2    60   ~ 0
+RD2
+Text Label 7525 5000 0    60   ~ 0
 RD3
-Text Label 6975 5200 2    60   ~ 0
+Text Label 7520 5100 0    60   ~ 0
 RD4
-Text Label 7520 5200 0    60   ~ 0
+Text Label 7700 5200 2    60   ~ 0
 RD5
 Text Label 7530 6850 0    60   ~ 0
 RB11
@@ -916,7 +916,7 @@ Text Label 7525 7050 0    60   ~ 0
 RF4
 Text Label 6980 7050 2    60   ~ 0
 RF5
-Text Label 7705 5100 2    60   ~ 0
+Text Label 6810 5000 0    60   ~ 0
 RE5
 $Comp
 L PSMN013-80YS Q3
@@ -1345,15 +1345,15 @@ Wire Wire Line
 Wire Wire Line
 	15335 5825 15105 5825
 Wire Wire Line
-	7500 5200 7730 5200
-Wire Wire Line
-	7000 5200 6775 5200
-Wire Wire Line
-	7000 5100 6770 5100
-Wire Wire Line
 	7000 5000 6770 5000
 Wire Wire Line
+	7500 5200 7725 5200
+Wire Wire Line
+	7500 5100 7730 5100
+Wire Wire Line
 	7500 5000 7730 5000
+Wire Wire Line
+	7000 5200 6770 5200
 Wire Wire Line
 	7775 6950 7500 6950
 Wire Wire Line
@@ -1367,7 +1367,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 6850 6785 6850
 Wire Wire Line
-	7730 5100 7500 5100
+	6770 5100 7000 5100
 Wire Wire Line
 	2025 5900 2635 5900
 Wire Wire Line
