@@ -586,7 +586,7 @@ L D_Schottky D2
 U 1 1 588D50A2
 P 3810 3350
 F 0 "D2" H 3810 3450 50  0000 C CNN
-F 1 "D_Schottky" H 3810 3250 50  0000 C CNN
+F 1 "PDS760Q-13" H 3810 3250 50  0000 C CNN
 F 2 "PowerDI:PowerDI" H 3810 3350 50  0001 C CNN
 F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3810 3350 50  0001 C CNN
 	1    3810 3350
@@ -599,7 +599,7 @@ L D_Schottky D1
 U 1 1 588D50AA
 P 3800 3640
 F 0 "D1" H 3800 3740 50  0000 C CNN
-F 1 "D_Schottky" H 3800 3540 50  0000 C CNN
+F 1 "PDS760Q-13" H 3800 3540 50  0000 C CNN
 F 2 "PowerDI:PowerDI" H 3800 3640 50  0001 C CNN
 F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3800 3640 50  0001 C CNN
 	1    3800 3640
