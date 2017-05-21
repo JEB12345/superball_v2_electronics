@@ -1,0 +1,537 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:antenna
+LIBS:AS1360
+LIBS:conn_2x45
+LIBS:conn_2x50
+LIBS:conn_open_q_x2
+LIBS:esd7c5
+LIBS:FDS4935A
+LIBS:FPF1203LUCX
+LIBS:lan9512
+LIBS:LMR16020
+LIBS:LP3852-3.3
+LIBS:LTC2955-1
+LIBS:MIC2026
+LIBS:Si1077X
+LIBS:Si1900DL
+LIBS:SN74LV1T125
+LIBS:SN74LV4T125
+LIBS:TDP6E001RSER
+LIBS:tps82084sil
+LIBS:TPS754
+LIBS:TPS61089
+LIBS:TPS61232DRC
+LIBS:TPS832130SIL
+LIBS:0s102011ma1qn1
+LIBS:74LVC1G17
+LIBS:74V1T126
+LIBS:acs711klctr-12ab-t
+LIBS:AD7192
+LIBS:AD7193
+LIBS:am-hrr30-xxx
+LIBS:aon7528
+LIBS:AP7363
+LIBS:AS1359
+LIBS:csd16323q3
+LIBS:dmn2004dmk
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:fds6898az
+LIBS:ina197
+LIBS:irf7329pbf
+LIBS:ld1117
+LIBS:lm3478
+LIBS:lm3481
+LIBS:lt1910
+LIBS:ltc1871
+LIBS:ltc1982
+LIBS:MAG3110
+LIBS:mcp1700
+LIBS:mcp73831
+LIBS:mcsmt-g5030a1-3712
+LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:nrf24l01+
+LIBS:pds1040l
+LIBS:pic12f1571
+LIBS:pinhead
+LIBS:psmn013-80ys
+LIBS:RESISTOR_ARRAY
+LIBS:rf803d
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
+LIBS:ssc54
+LIBS:sw_push_4
+LIBS:tc74
+LIBS:tps54540
+LIBS:TPS2113A
+LIBS:vs-mbrb1635pbf
+LIBS:xal5050-562meb
+LIBS:xal6030-182mec
+LIBS:ld29150dt50r
+LIBS:ncp59151ds50r4g
+LIBS:pinhd-2x23
+LIBS:power_24_to_5-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C3
+U 1 1 5921D482
+P 6050 2600
+F 0 "C3" H 6075 2700 50  0000 L CNN
+F 1 "27pF" H 6075 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5950 2700 50  0000 C CNN
+F 3 "" H 6050 2600 50  0000 C CNN
+F 4 "0.161Ohm" H 5950 2500 60  0000 C CNN "Resistance"
+F 5 "C0805C270J5GACTU" H 6050 2600 60  0001 C CNN "Field5"
+	1    6050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5921D48B
+P 2300 2600
+F 0 "C1" H 2325 2700 50  0000 L CNN
+F 1 "2.2uF" H 2325 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2150 2770 50  0000 C CNN
+F 3 "" H 2300 2600 50  0001 C CNN
+F 4 "5.92mOhms" H 2000 2500 60  0000 C CNN "Resistance"
+F 5 "C1005X5R1V225K050BC" H 2300 2600 60  0001 C CNN "Field5"
+	1    2300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5921D494
+P 2600 3000
+F 0 "R1" V 2680 3000 50  0000 C CNN
+F 1 "45.3K" V 2600 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2530 3000 50  0000 C CNN
+F 3 "" H 2600 3000 50  0000 C CNN
+F 4 "d" V 2600 3000 60  0001 C CNN "Field4"
+F 5 "CRCW040245K3FKED" V 2600 3000 60  0001 C CNN "Field5"
+	1    2600 3000
+	1    0    0    -1  
+$EndComp
+Text Label 1940 3250 0    60   ~ 0
+GND24
+$Comp
+L C C2
+U 1 1 5921D49E
+P 5300 2100
+F 0 "C2" V 5350 2200 50  0000 L CNN
+F 1 "100nF" V 5350 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" V 5250 2300 50  0000 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc%5Fcommercial%5Fgeneral%5Fen.pdf" H 5300 2100 50  0001 C CNN
+F 4 "64mOhms" V 5150 2100 60  0000 C CNN "Resistance"
+F 5 "C0805C104K5RACTU" V 5300 2100 60  0001 C CNN "Field5"
+	1    5300 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5921D4A7
+P 6450 2600
+F 0 "R3" V 6530 2600 50  0000 C CNN
+F 1 "68K" V 6450 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6380 2600 50  0000 C CNN
+F 3 "" H 6450 2600 50  0000 C CNN
+F 4 "d" V 6450 2600 60  0001 C CNN "Field4"
+F 5 "RC0603FR-0768KL" V 6450 2600 60  0001 C CNN "Field5"
+	1    6450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5921D4B0
+P 6450 3000
+F 0 "R4" V 6530 3000 50  0000 C CNN
+F 1 "12K" V 6450 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6380 3000 50  0000 C CNN
+F 3 "" H 6450 3000 50  0000 C CNN
+F 4 "d" V 6450 3000 60  0001 C CNN "Field4"
+F 5 "RC0603FR-0712KL" V 6450 3000 60  0001 C CNN "Field5"
+	1    6450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5921D4B9
+P 6800 2700
+F 0 "C4" H 6825 2800 50  0000 L CNN
+F 1 "33uF" H 6825 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6700 2750 50  0000 C CNN
+F 3 "" H 6800 2700 50  0000 C CNN
+F 4 "1.69mOhms" H 7000 2500 60  0000 C CNN "Resistance"
+F 5 "C2012X5R1A336M125AC" H 6800 2700 60  0001 C CNN "Field5"
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L1
+U 1 1 5921D4C2
+P 5850 2350
+F 0 "L1" V 5800 2350 50  0000 C CNN
+F 1 "15uH" V 5925 2350 50  0000 C CNN
+F 2 "Bourns:Bourns-8040" H 5850 2350 50  0001 C CNN
+F 3 "" H 5850 2350 50  0000 C CNN
+F 4 "0.07 Ohm" V 5700 2400 60  0000 C CNN "Resistance"
+F 5 "SRN8040-150M" V 5850 2350 60  0001 C CNN "Field5"
+	1    5850 2350
+	0    1    1    0   
+$EndComp
+Text Label 5600 2950 0    60   ~ 0
+GND
+$Comp
+L D_Schottky D1
+U 1 1 5921D4CC
+P 5550 2650
+F 0 "D1" H 5550 2750 50  0000 C CNN
+F 1 "0.55V" H 5550 2550 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 5550 2650 50  0001 C CNN
+F 3 "" H 5550 2650 50  0000 C CNN
+F 4 "2A" H 5400 2600 60  0000 C CNN "Current"
+F 5 "SS24FL" H 5550 2650 60  0001 C CNN "Field5"
+	1    5550 2650
+	0    1    1    0   
+$EndComp
+Text Label 2050 2300 0    60   ~ 0
+V24
+Text Notes 1650 1750 0    60   ~ 0
+24V to 12V Buck
+$Comp
+L R R2
+U 1 1 5921D4D5
+P 3150 3050
+F 0 "R2" V 3230 3050 50  0000 C CNN
+F 1 "10K" V 3150 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" H 3320 2820 50  0000 C CNN
+F 3 "" H 3150 3050 50  0000 C CNN
+	1    3150 3050
+	1    0    0    -1  
+$EndComp
+Text Label 7570 1900 0    60   ~ 0
+GND
+$Comp
+L R R7
+U 1 1 5921D4E4
+P 7320 1900
+F 0 "R7" V 7400 1900 50  0000 C CNN
+F 1 "200" V 7320 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7250 1900 50  0001 C CNN
+F 3 "" H 7320 1900 50  0000 C CNN
+	1    7320 1900
+	0    1    1    0   
+$EndComp
+Text Label 7360 2800 0    60   ~ 0
+P_ref_buc
+Text Label 3200 3200 0    60   ~ 0
+P_ref_buc
+Text Label 2870 2450 0    60   ~ 0
+Switch_on
+Text Label 4850 3250 0    60   ~ 0
+GND
+$Comp
+L LMR16030 U1
+U 1 1 5921D4EF
+P 4150 2600
+F 0 "U1" H 4100 2150 50  0000 C CNN
+F 1 "LMR16030" H 4150 3050 50  0000 C CNN
+F 2 "HSOIC-8:HSOIC-8-1EP_Pitch1.27mm" H 3750 2150 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/LMR16030PDDA/296-44513-5-ND/" H 4550 2150 50  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+Text Label 7350 2350 0    60   ~ 0
+V5_MAIN
+$Comp
+L R R5
+U 1 1 5921D4F7
+P 7300 2600
+F 0 "R5" V 7380 2600 50  0000 C CNN
+F 1 "102K" V 7300 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7230 2600 50  0000 C CNN
+F 3 "" H 7300 2600 50  0000 C CNN
+	1    7300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5921D4FE
+P 7300 3000
+F 0 "R6" V 7380 3000 50  0000 C CNN
+F 1 "196K" V 7300 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 7230 3000 50  0000 C CNN
+F 3 "" H 7300 3000 50  0000 C CNN
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+Text Label 3130 2850 2    60   ~ 0
+PG_v5_main
+Text Label 6400 1900 0    60   ~ 0
+V5_MAIN
+$Comp
+L LED D2
+U 1 1 5921D4DC
+P 6920 1900
+F 0 "D2" H 6920 2000 50  0000 C CNN
+F 1 "BLUE_LED" H 6920 1800 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 6920 1900 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VLMB1310-GS08/VLMB1310-GS08CT-ND" H 6920 1900 50  0001 C CNN
+	1    6920 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J2
+U 1 1 5921D2BF
+P 1330 2300
+F 0 "J2" H 1330 2400 50  0000 C CNN
+F 1 "24_in" V 1430 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1330 2300 50  0001 C CNN
+F 3 "" H 1330 2300 50  0001 C CNN
+	1    1330 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J3
+U 1 1 5921D5CA
+P 1340 3250
+F 0 "J3" H 1340 3350 50  0000 C CNN
+F 1 "GND_in" V 1440 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1340 3250 50  0001 C CNN
+F 3 "" H 1340 3250 50  0001 C CNN
+	1    1340 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J4
+U 1 1 5921D7AB
+P 7740 3790
+F 0 "J4" H 7740 3890 50  0000 C CNN
+F 1 "PGood_out" V 7840 3790 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 7740 3790 50  0001 C CNN
+F 3 "" H 7740 3790 50  0001 C CNN
+	1    7740 3790
+	1    0    0    -1  
+$EndComp
+Text Label 7510 3790 2    60   ~ 0
+PG_v5_main
+$Comp
+L CONN_01X01 J6
+U 1 1 5921DF5F
+P 8110 2350
+F 0 "J6" H 8110 2450 50  0000 C CNN
+F 1 "5_out" V 8210 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8110 2350 50  0001 C CNN
+F 3 "" H 8110 2350 50  0001 C CNN
+	1    8110 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J7
+U 1 1 5921E0F9
+P 8140 3250
+F 0 "J7" H 8140 3350 50  0000 C CNN
+F 1 "GND_out" V 8240 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8140 3250 50  0001 C CNN
+F 3 "" H 8140 3250 50  0001 C CNN
+	1    8140 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J5
+U 1 1 5921E339
+P 8100 2800
+F 0 "J5" H 8100 2900 50  0000 C CNN
+F 1 "ref_out" V 8200 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 8100 2800 50  0001 C CNN
+F 3 "" H 8100 2800 50  0001 C CNN
+	1    8100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J1
+U 1 1 5921E4C9
+P 830 2720
+F 0 "J1" H 830 2820 50  0000 C CNN
+F 1 "Switch_in" V 930 2720 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 830 2720 50  0001 C CNN
+F 3 "" H 830 2720 50  0001 C CNN
+	1    830  2720
+	-1   0    0    1   
+$EndComp
+Text Label 1060 2720 0    60   ~ 0
+Switch_on
+$Comp
+L Ferrite_Bead_Small L2
+U 1 1 592281B4
+P 4020 3250
+F 0 "L2" V 4095 3300 50  0000 L CNN
+F 1 "Ferrite_Bead_Small" V 4180 3140 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" V 3950 3250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/BLM18PG121SN1D/490-1037-1-ND/" H 4020 3250 50  0001 C CNN
+	1    4020 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2750 2600 2750
+Wire Wire Line
+	2600 2750 2600 2850
+Wire Wire Line
+	2600 3250 2600 3150
+Connection ~ 2600 3250
+Wire Wire Line
+	1530 2300 3300 2300
+Wire Wire Line
+	2300 2300 2300 2450
+Wire Wire Line
+	2300 2750 2300 3250
+Connection ~ 2300 3250
+Wire Wire Line
+	2800 2450 3300 2450
+Wire Wire Line
+	5050 2750 4950 2750
+Wire Wire Line
+	5050 2750 5050 3250
+Connection ~ 5050 3250
+Wire Wire Line
+	4950 2900 5050 2900
+Connection ~ 5050 2900
+Wire Wire Line
+	4950 2300 5000 2300
+Wire Wire Line
+	5000 2300 5000 2100
+Wire Wire Line
+	5000 2100 5150 2100
+Wire Wire Line
+	4950 2450 5000 2450
+Wire Wire Line
+	5000 2450 5000 2350
+Wire Wire Line
+	5000 2350 5700 2350
+Wire Wire Line
+	6000 2350 7910 2350
+Wire Wire Line
+	5550 2500 5550 2350
+Connection ~ 5550 2350
+Wire Wire Line
+	6050 2450 6050 2350
+Connection ~ 6050 2350
+Wire Wire Line
+	6450 2350 6450 2450
+Connection ~ 6450 2350
+Wire Wire Line
+	6800 2350 6800 2550
+Connection ~ 6800 2350
+Wire Wire Line
+	6800 3250 6800 2850
+Wire Wire Line
+	6450 3250 6450 3150
+Connection ~ 6450 3250
+Wire Wire Line
+	6450 2750 6450 2850
+Wire Wire Line
+	6050 2750 6050 3050
+Wire Wire Line
+	6050 3050 5250 3050
+Wire Wire Line
+	5250 3050 5250 2600
+Wire Wire Line
+	5250 2600 4950 2600
+Wire Wire Line
+	6050 2800 6450 2800
+Connection ~ 6450 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	5550 2800 5550 2950
+Wire Wire Line
+	5550 2950 5750 2950
+Wire Wire Line
+	5650 2100 5450 2100
+Wire Wire Line
+	5650 2350 5650 2100
+Connection ~ 5650 2350
+Connection ~ 2300 2300
+Wire Wire Line
+	3250 2900 3300 2900
+Wire Wire Line
+	3250 2850 3250 2900
+Wire Wire Line
+	2750 2850 3250 2850
+Wire Wire Line
+	3150 2900 3150 2850
+Connection ~ 3150 2850
+Wire Wire Line
+	3150 3200 3500 3200
+Connection ~ 6800 3250
+Wire Wire Line
+	7300 2350 7300 2450
+Connection ~ 7300 2350
+Connection ~ 7300 2800
+Wire Wire Line
+	7300 2800 7900 2800
+Wire Wire Line
+	7300 2750 7300 2850
+Wire Wire Line
+	7470 1900 7770 1900
+Wire Wire Line
+	1540 3250 3920 3250
+Wire Wire Line
+	4120 3250 7940 3250
+Wire Wire Line
+	7300 3150 7300 3250
+Connection ~ 7300 3250
+Wire Wire Line
+	7070 1900 7170 1900
+Wire Wire Line
+	6370 1900 6770 1900
+Wire Wire Line
+	7540 3790 7060 3790
+Wire Wire Line
+	1030 2720 1490 2720
+$EndSCHEMATC
