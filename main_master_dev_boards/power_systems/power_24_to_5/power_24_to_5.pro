@@ -1,4 +1,4 @@
-update=Fri 19 May 2017 02:48:12 PM PDT
+update=5/22/2017 8:38:54 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../main_master_board/Library;../../SBv1_SensorBoard_Library;../../SBv1_PowerBoard_Library;../../altium_converted_files/SuperBALL_Mater_Schematics
+LibDir=../../../main_master_board;../../../main_master_board/Library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -153,3 +153,4 @@ LibName121=/home/jonathan/Projects/SBv2/Electronics/superball_v2_electronics/SBv
 LibName122=/home/jonathan/Projects/SBv2/Electronics/superball_v2_electronics/SBv1_SensorBoard_Library/sn65hvd232
 LibName123=/home/jonathan/Projects/SBv2/Electronics/superball_v2_electronics/SBv1_SensorBoard_Library/sw_push_4
 LibName124=/home/jonathan/Projects/SBv2/Electronics/superball_v2_electronics/SBv1_SensorBoard_Library/TPS2113A
+LibName125=main_master_board-cache
