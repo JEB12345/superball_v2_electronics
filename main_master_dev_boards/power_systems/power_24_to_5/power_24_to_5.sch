@@ -483,8 +483,6 @@ F 3 "" H 5500 4405 50  0000 C CNN
 	1    5500 4405
 	0    1    1    0   
 $EndComp
-Text Label 4710 4405 0    60   ~ 0
-3V3
 $Comp
 L LP3852-3.3 U3
 U 1 1 59235EC4
@@ -612,4 +610,6 @@ F 3 "" H 7120 4825 50  0001 C CNN
 	1    7120 4825
 	1    0    0    -1  
 $EndComp
+Text Label 4865 4405 2    60   ~ 0
+3V3_out
 $EndSCHEMATC
