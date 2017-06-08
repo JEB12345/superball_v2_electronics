@@ -28,82 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:antenna
-LIBS:AS1360
-LIBS:conn_2x45
-LIBS:conn_2x50
-LIBS:conn_open_q_x2
-LIBS:esd7c5
-LIBS:FDS4935A
-LIBS:FPF1203LUCX
-LIBS:lan9512
-LIBS:LMR16020
-LIBS:LP3852-3.3
-LIBS:LTC2955-1
-LIBS:MIC2026
-LIBS:Si1077X
-LIBS:Si1900DL
-LIBS:SN74LV1T125
-LIBS:SN74LV4T125
-LIBS:TDP6E001RSER
-LIBS:tps82084sil
-LIBS:TPS754
-LIBS:TPS61089
-LIBS:TPS61232DRC
-LIBS:TPS832130SIL
-LIBS:0s102011ma1qn1
-LIBS:74LVC1G17
-LIBS:74V1T126
-LIBS:acs711klctr-12ab-t
-LIBS:AD7192
-LIBS:AD7193
-LIBS:am-hrr30-xxx
-LIBS:aon7528
-LIBS:AP7363
-LIBS:AS1359
-LIBS:csd16323q3
-LIBS:dmn2004dmk
-LIBS:dp_devices
-LIBS:DSPIC33E128MC506
-LIBS:fds6898az
-LIBS:ina197
-LIBS:irf7329pbf
-LIBS:ld1117
-LIBS:lm3478
-LIBS:lm3481
-LIBS:lt1910
-LIBS:ltc1871
-LIBS:ltc1982
-LIBS:MAG3110
-LIBS:mcp1700
-LIBS:mcp73831
-LIBS:mcsmt-g5030a1-3712
-LIBS:microchip_can
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:MPU-6000_MPU-6050
-LIBS:MPU-9150
-LIBS:nrf24l01+
-LIBS:pds1040l
-LIBS:pic12f1571
-LIBS:pinhead
-LIBS:psmn013-80ys
-LIBS:RESISTOR_ARRAY
-LIBS:rf803d
-LIBS:RGB_LED
-LIBS:Si1970DH
-LIBS:sn65hvd232
-LIBS:ssc54
-LIBS:sw_push_4
-LIBS:tc74
-LIBS:tps54540
-LIBS:TPS2113A
-LIBS:vs-mbrb1635pbf
-LIBS:xal5050-562meb
-LIBS:xal6030-182mec
-LIBS:ld29150dt50r
-LIBS:ncp59151ds50r4g
-LIBS:pinhd-2x23
 LIBS:main_master_board-cache
 LIBS:power_24_to_5-cache
 EELAYER 25 0
@@ -121,29 +45,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C C3
-U 1 1 5921D482
-P 6050 2600
-F 0 "C3" H 6075 2700 50  0000 L CNN
-F 1 "27pF" H 6075 2500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5950 2700 50  0000 C CNN
-F 3 "" H 6050 2600 50  0000 C CNN
-F 4 "0.161Ohm" H 5950 2500 60  0000 C CNN "Resistance"
-F 5 "C0805C270J5GACTU" H 6050 2600 60  0001 C CNN "Field5"
-	1    6050 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C1
 U 1 1 5921D48B
-P 2300 2600
-F 0 "C1" H 2325 2700 50  0000 L CNN
-F 1 "2.2uF" H 2325 2500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2150 2770 50  0000 C CNN
-F 3 "" H 2300 2600 50  0001 C CNN
-F 4 "5.92mOhms" H 2000 2500 60  0000 C CNN "Resistance"
-F 5 "C1005X5R1V225K050BC" H 2300 2600 60  0001 C CNN "Field5"
-	1    2300 2600
+P 1945 2680
+F 0 "C1" H 1970 2780 50  0000 L CNN
+F 1 "2.2uF" H 1970 2580 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1795 2850 50  0001 C CNN
+F 3 "" H 1945 2680 50  0001 C CNN
+F 4 "5.92mOhms" H 1645 2580 60  0001 C CNN "Resistance"
+F 5 "C1005X5R1V225K050BC" H 1945 2680 60  0001 C CNN "Field5"
+	1    1945 2680
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,15 +62,15 @@ L R R1
 U 1 1 5921D494
 P 2600 3000
 F 0 "R1" V 2680 3000 50  0000 C CNN
-F 1 "45.3K" V 2600 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2530 3000 50  0000 C CNN
+F 1 "49.9K" V 2600 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2530 3000 50  0001 C CNN
 F 3 "" H 2600 3000 50  0000 C CNN
 F 4 "d" V 2600 3000 60  0001 C CNN "Field4"
 F 5 "CRCW040245K3FKED" V 2600 3000 60  0001 C CNN "Field5"
 	1    2600 3000
 	1    0    0    -1  
 $EndComp
-Text Label 1940 3250 0    60   ~ 0
+Text Label 1555 3250 0    60   ~ 0
 GND24
 $Comp
 L C C2
@@ -167,7 +78,7 @@ U 1 1 5921D49E
 P 5300 2100
 F 0 "C2" V 5350 2200 50  0000 L CNN
 F 1 "100nF" V 5350 1800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" V 5250 2300 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" V 5250 2300 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc%5Fcommercial%5Fgeneral%5Fen.pdf" H 5300 2100 50  0001 C CNN
 F 4 "64mOhms" V 5150 2100 60  0000 C CNN "Resistance"
 F 5 "C0805C104K5RACTU" V 5300 2100 60  0001 C CNN "Field5"
@@ -177,40 +88,27 @@ $EndComp
 $Comp
 L R R3
 U 1 1 5921D4A7
-P 6450 2600
-F 0 "R3" V 6530 2600 50  0000 C CNN
-F 1 "68K" V 6450 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6380 2600 50  0000 C CNN
-F 3 "" H 6450 2600 50  0000 C CNN
-F 4 "d" V 6450 2600 60  0001 C CNN "Field4"
-F 5 "RC0603FR-0768KL" V 6450 2600 60  0001 C CNN "Field5"
-	1    6450 2600
+P 6905 2590
+F 0 "R3" V 6985 2590 50  0000 C CNN
+F 1 "100K" V 6905 2590 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6835 2590 50  0001 C CNN
+F 3 "" H 6905 2590 50  0000 C CNN
+F 4 "d" V 6905 2590 60  0001 C CNN "Field4"
+F 5 "RC0603FR-0768KL" V 6905 2590 60  0001 C CNN "Field5"
+	1    6905 2590
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R4
 U 1 1 5921D4B0
-P 6450 3000
-F 0 "R4" V 6530 3000 50  0000 C CNN
-F 1 "12K" V 6450 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6380 3000 50  0000 C CNN
-F 3 "" H 6450 3000 50  0000 C CNN
-F 4 "d" V 6450 3000 60  0001 C CNN "Field4"
-F 5 "RC0603FR-0712KL" V 6450 3000 60  0001 C CNN "Field5"
-	1    6450 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
-U 1 1 5921D4B9
-P 6800 2700
-F 0 "C4" H 6825 2800 50  0000 L CNN
-F 1 "33uF" H 6825 2600 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6700 2750 50  0000 C CNN
-F 3 "" H 6800 2700 50  0000 C CNN
-F 4 "1.69mOhms" H 7000 2500 60  0000 C CNN "Resistance"
-F 5 "C2012X5R1A336M125AC" H 6800 2700 60  0001 C CNN "Field5"
-	1    6800 2700
+P 6905 2990
+F 0 "R4" V 6985 2990 50  0000 C CNN
+F 1 "17.8K" V 6905 2990 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6835 2990 50  0001 C CNN
+F 3 "" H 6905 2990 50  0000 C CNN
+F 4 "d" V 6905 2990 60  0001 C CNN "Field4"
+F 5 "RC0603FR-0712KL" V 6905 2990 60  0001 C CNN "Field5"
+	1    6905 2990
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -218,11 +116,9 @@ L L L1
 U 1 1 5921D4C2
 P 5850 2350
 F 0 "L1" V 5800 2350 50  0000 C CNN
-F 1 "15uH" V 5925 2350 50  0000 C CNN
-F 2 "Bourns:Bourns-8040" H 5850 2350 50  0001 C CNN
+F 1 "8.2uH" V 5925 2350 50  0000 C CNN
+F 2 "Bourns:Bourns-SRP7028A" H 5850 2350 50  0001 C CNN
 F 3 "" H 5850 2350 50  0000 C CNN
-F 4 "0.07 Ohm" V 5700 2400 60  0000 C CNN "Resistance"
-F 5 "SRN8040-150M" V 5850 2350 60  0001 C CNN "Field5"
 	1    5850 2350
 	0    1    1    0   
 $EndComp
@@ -241,17 +137,17 @@ F 5 "SS24FL" H 5550 2650 60  0001 C CNN "Field5"
 	1    5550 2650
 	0    1    1    0   
 $EndComp
-Text Label 2050 2300 0    60   ~ 0
+Text Label 1550 2300 0    60   ~ 0
 V24
 Text Notes 1650 1750 0    60   ~ 0
-24V to 12V Buck
+24V to 5V Buck
 $Comp
 L R R2
 U 1 1 5921D4D5
 P 3150 3050
 F 0 "R2" V 3230 3050 50  0000 C CNN
 F 1 "10K" V 3150 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3320 2820 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3320 2820 50  0001 C CNN
 F 3 "" H 3150 3050 50  0000 C CNN
 	1    3150 3050
 	1    0    0    -1  
@@ -296,7 +192,7 @@ U 1 1 5921D4F7
 P 7300 2600
 F 0 "R5" V 7380 2600 50  0000 C CNN
 F 1 "102K" V 7300 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 2600 50  0001 C CNN
 F 3 "" H 7300 2600 50  0000 C CNN
 	1    7300 2600
 	1    0    0    -1  
@@ -307,7 +203,7 @@ U 1 1 5921D4FE
 P 7300 3000
 F 0 "R6" V 7380 3000 50  0000 C CNN
 F 1 "196K" V 7300 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7230 3000 50  0001 C CNN
 F 3 "" H 7300 3000 50  0000 C CNN
 	1    7300 3000
 	1    0    0    -1  
@@ -398,15 +294,15 @@ $EndComp
 $Comp
 L CONN_01X01 J1
 U 1 1 5921E4C9
-P 830 2720
-F 0 "J1" H 830 2820 50  0000 C CNN
-F 1 "Switch_in" V 930 2720 50  0000 C CNN
-F 2 "pinheaders:pinhead-01x01_3x1" H 830 2720 50  0001 C CNN
-F 3 "" H 830 2720 50  0001 C CNN
-	1    830  2720
+P 770 2560
+F 0 "J1" H 770 2660 50  0000 C CNN
+F 1 "Switch_in" V 870 2560 50  0000 C CNN
+F 2 "pinheaders:pinhead-01x01_3x1" H 770 2560 50  0001 C CNN
+F 3 "" H 770 2560 50  0001 C CNN
+	1    770  2560
 	-1   0    0    1   
 $EndComp
-Text Label 1060 2720 0    60   ~ 0
+Text Label 1000 2560 0    60   ~ 0
 Switch_on
 $Comp
 L Ferrite_Bead_Small L2
@@ -419,6 +315,154 @@ F 3 "https://www.digikey.com/product-detail/en/BLM18PG121SN1D/490-1037-1-ND/" H 
 	1    4020 3250
 	0    1    1    0   
 $EndComp
+Text Notes 4580 4165 0    60   ~ 0
+5V to 3.3V LDO
+$Comp
+L LED-RESCUE-main_master_board D3
+U 1 1 59235EB5
+P 5100 4405
+F 0 "D3" H 5100 4505 50  0000 C CNN
+F 1 "GRN_LED" H 5100 4305 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5100 4405 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 5100 4405 50  0001 C CNN
+	1    5100 4405
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R8
+U 1 1 59235EBC
+P 5500 4405
+F 0 "R8" V 5580 4405 50  0000 C CNN
+F 1 "100" V 5500 4405 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 4405 50  0001 C CNN
+F 3 "" H 5500 4405 50  0000 C CNN
+	1    5500 4405
+	0    1    1    0   
+$EndComp
+$Comp
+L LP3852-3.3 U3
+U 1 1 59235EC4
+P 5850 4975
+F 0 "U3" H 6100 5225 50  0000 C CNN
+F 1 "LP3852-3.3" H 5800 5225 50  0000 C CNN
+F 2 "SOT-223:SOT-223" H 5600 4725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp3852.pdf" H 6200 4725 50  0001 C CNN
+	1    5850 4975
+	1    0    0    -1  
+$EndComp
+Text Label 5890 5565 0    60   ~ 0
+GND
+$Comp
+L C C5
+U 1 1 59235ECD
+P 4830 5185
+F 0 "C5" H 4855 5285 50  0000 L CNN
+F 1 "10uF" H 4855 5085 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4868 5035 50  0001 C CNN
+F 3 "" H 4830 5185 50  0000 C CNN
+F 4 "10V" H 4730 5085 60  0000 C CNN "Voltage"
+	1    4830 5185
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C6
+U 1 1 59235ED4
+P 6680 5185
+F 0 "C6" H 6705 5285 50  0000 L CNN
+F 1 "10uF" H 6705 5085 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6680 5185 50  0001 C CNN
+F 3 "" H 6680 5185 50  0000 C CNN
+	1    6680 5185
+	1    0    0    -1  
+$EndComp
+Text Label 6740 4825 0    60   ~ 0
+3V3_out
+Text Label 5700 4405 0    60   ~ 0
+GND
+Text Label 4950 4925 0    60   ~ 0
+v5_good
+Text Label 5200 5975 2    60   ~ 0
+PG_v5_main
+Text Label 5200 6075 2    60   ~ 0
+PG_v5_backup
+Text Label 5840 6025 0    60   ~ 0
+v5_good
+$Comp
+L 74AUC1G32 U2
+U 1 1 59235EF6
+P 5570 6025
+F 0 "U2" H 5470 6175 40  0000 C CNN
+F 1 "74AUC1G32" H 5570 5875 40  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 5570 6025 60  0001 C CNN
+F 3 "https://octopart.com/sn74auc1g32dckr-texas+instruments-464483" H 5570 6025 60  0001 C CNN
+	1    5570 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J9
+U 1 1 592365BC
+P 7550 5965
+F 0 "J9" H 7550 6065 50  0000 C CNN
+F 1 "PGoodBackup_out" V 7650 5965 50  0000 C CNN
+F 2 "pinheaders:pinhead-01x01_3x1" H 7550 5965 50  0001 C CNN
+F 3 "" H 7550 5965 50  0001 C CNN
+	1    7550 5965
+	1    0    0    -1  
+$EndComp
+Text Label 7320 5965 2    60   ~ 0
+PG_v5_backup
+$Comp
+L CONN_01X01 J8
+U 1 1 59236FA2
+P 7120 4825
+F 0 "J8" H 7120 4925 50  0000 C CNN
+F 1 "3v3_out" V 7220 4825 50  0000 C CNN
+F 2 "pinheaders:pinhead-01x01_3x1" H 7120 4825 50  0001 C CNN
+F 3 "" H 7120 4825 50  0001 C CNN
+	1    7120 4825
+	1    0    0    -1  
+$EndComp
+Text Label 4865 4405 2    60   ~ 0
+3V3_out
+Text Label 5685 6285 0    60   ~ 0
+GND
+$Comp
+L CONN_01X01 J10
+U 1 1 592615A0
+P 6055 5770
+F 0 "J10" H 6055 5870 50  0000 C CNN
+F 1 "5_in" V 6155 5770 50  0000 C CNN
+F 2 "pinheaders:pinhead-01x01_3x1" H 6055 5770 50  0001 C CNN
+F 3 "" H 6055 5770 50  0001 C CNN
+	1    6055 5770
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5921D4B9
+P 6420 2690
+F 0 "C4" H 6445 2790 50  0000 L CNN
+F 1 "47uF X7R" H 6445 2590 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6320 2740 50  0001 C CNN
+F 3 "" H 6420 2690 50  0000 C CNN
+F 4 "1.69mOhms" H 6620 2490 60  0001 C CNN "Resistance"
+F 5 "C2012X5R1A336M125AC" H 6420 2690 60  0001 C CNN "Field5"
+	1    6420 2690
+	1    0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 5938916F
+P 6130 2685
+F 0 "C8" H 6155 2785 50  0000 L CNN
+F 1 "47uF X7R" H 5925 2595 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6030 2735 50  0001 C CNN
+F 3 "" H 6130 2685 50  0000 C CNN
+F 4 "1.69mOhms" H 6330 2485 60  0001 C CNN "Resistance"
+F 5 "C2012X5R1A336M125AC" H 6130 2685 60  0001 C CNN "Field5"
+	1    6130 2685
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3300 2750 2600 2750
 Wire Wire Line
@@ -428,11 +472,6 @@ Wire Wire Line
 Connection ~ 2600 3250
 Wire Wire Line
 	1530 2300 3300 2300
-Wire Wire Line
-	2300 2300 2300 2450
-Wire Wire Line
-	2300 2750 2300 3250
-Connection ~ 2300 3250
 Wire Wire Line
 	2800 2450 3300 2450
 Wire Wire Line
@@ -461,43 +500,21 @@ Wire Wire Line
 	5550 2500 5550 2350
 Connection ~ 5550 2350
 Wire Wire Line
-	6050 2450 6050 2350
-Connection ~ 6050 2350
+	6905 2740 6905 2840
 Wire Wire Line
-	6450 2350 6450 2450
-Connection ~ 6450 2350
-Wire Wire Line
-	6800 2350 6800 2550
-Connection ~ 6800 2350
-Wire Wire Line
-	6800 3250 6800 2850
-Wire Wire Line
-	6450 3250 6450 3150
-Connection ~ 6450 3250
-Wire Wire Line
-	6450 2750 6450 2850
-Wire Wire Line
-	6050 2750 6050 3050
-Wire Wire Line
-	6050 3050 5250 3050
+	5250 3050 6810 3050
 Wire Wire Line
 	5250 3050 5250 2600
 Wire Wire Line
 	5250 2600 4950 2600
-Wire Wire Line
-	6050 2800 6450 2800
-Connection ~ 6450 2800
-Connection ~ 6050 2800
+Connection ~ 6905 2790
 Wire Wire Line
 	5550 2800 5550 2950
-Wire Wire Line
-	5550 2950 5750 2950
 Wire Wire Line
 	5650 2100 5450 2100
 Wire Wire Line
 	5650 2350 5650 2100
 Connection ~ 5650 2350
-Connection ~ 2300 2300
 Wire Wire Line
 	3250 2900 3300 2900
 Wire Wire Line
@@ -509,7 +526,6 @@ Wire Wire Line
 Connection ~ 3150 2850
 Wire Wire Line
 	3150 3200 3500 3200
-Connection ~ 6800 3250
 Wire Wire Line
 	7300 2350 7300 2450
 Connection ~ 7300 2350
@@ -528,77 +544,13 @@ Wire Wire Line
 	7300 3150 7300 3250
 Connection ~ 7300 3250
 Wire Wire Line
-	7070 1900 7170 1900
+	7120 1900 7170 1900
 Wire Wire Line
-	6370 1900 6770 1900
+	6370 1900 6720 1900
 Wire Wire Line
 	7540 3790 7060 3790
 Wire Wire Line
-	1030 2720 1490 2720
-Text Notes 4580 4165 0    60   ~ 0
-5V to 3.3V LDO
-$Comp
-L LED-RESCUE-main_master_board D3
-U 1 1 59235EB5
-P 5100 4405
-F 0 "D3" H 5100 4505 50  0000 C CNN
-F 1 "GRN_LED" H 5100 4305 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 5100 4405 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 5100 4405 50  0001 C CNN
-	1    5100 4405
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R8
-U 1 1 59235EBC
-P 5500 4405
-F 0 "R8" V 5580 4405 50  0000 C CNN
-F 1 "10" V 5500 4405 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 4405 50  0001 C CNN
-F 3 "" H 5500 4405 50  0000 C CNN
-	1    5500 4405
-	0    1    1    0   
-$EndComp
-$Comp
-L LP3852-3.3 U3
-U 1 1 59235EC4
-P 5850 4975
-F 0 "U3" H 6100 5225 50  0000 C CNN
-F 1 "LP3852-3.3" H 5800 5225 50  0000 C CNN
-F 2 "SOT-223:SOT-223" H 5600 4725 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp3852.pdf" H 6200 4725 50  0001 C CNN
-	1    5850 4975
-	1    0    0    -1  
-$EndComp
-Text Label 5890 5565 0    60   ~ 0
-GND
-$Comp
-L C C5
-U 1 1 59235ECD
-P 4830 5185
-F 0 "C5" H 4855 5285 50  0000 L CNN
-F 1 "22uF" H 4855 5085 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4868 5035 50  0001 C CNN
-F 3 "" H 4830 5185 50  0000 C CNN
-F 4 "10V" H 4730 5085 60  0000 C CNN "Voltage"
-	1    4830 5185
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C6
-U 1 1 59235ED4
-P 6680 5185
-F 0 "C6" H 6705 5285 50  0000 L CNN
-F 1 "22uF" H 6705 5085 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6680 5185 50  0001 C CNN
-F 3 "" H 6680 5185 50  0000 C CNN
-	1    6680 5185
-	1    0    0    -1  
-$EndComp
-Text Label 6740 4825 0    60   ~ 0
-3V3_out
-Text Label 5700 4405 0    60   ~ 0
-GND
+	970  2560 1435 2560
 Connection ~ 4830 4825
 Connection ~ 6680 4825
 Connection ~ 6680 5565
@@ -627,67 +579,20 @@ Wire Wire Line
 Wire Wire Line
 	4830 5335 4830 5565
 Connection ~ 4830 5565
-Text Label 4950 4925 0    60   ~ 0
-v5_good
-Text Label 5200 5975 2    60   ~ 0
-PG_v5_main
-Text Label 5200 6075 2    60   ~ 0
-PG_v5_backup
 Wire Wire Line
 	5270 6075 4570 6075
 Wire Wire Line
 	5270 5975 4670 5975
 Wire Wire Line
 	5820 6025 6200 6025
-Text Label 5840 6025 0    60   ~ 0
-v5_good
-$Comp
-L 74AUC1G32 U2
-U 1 1 59235EF6
-P 5570 6025
-F 0 "U2" H 5470 6175 40  0000 C CNN
-F 1 "74AUC1G32" H 5570 5875 40  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 5570 6025 60  0001 C CNN
-F 3 "https://octopart.com/sn74auc1g32dckr-texas+instruments-464483" H 5570 6025 60  0001 C CNN
-	1    5570 6025
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 4405 5350 4405
 Wire Wire Line
 	5650 4405 5890 4405
 Wire Wire Line
 	4900 4405 4620 4405
-Text Label 4640 4825 0    60   ~ 0
-V5_MAIN
-$Comp
-L CONN_01X01 J9
-U 1 1 592365BC
-P 7550 5965
-F 0 "J9" H 7550 6065 50  0000 C CNN
-F 1 "PGoodBackup_out" V 7650 5965 50  0000 C CNN
-F 2 "pinheaders:pinhead-01x01_3x1" H 7550 5965 50  0001 C CNN
-F 3 "" H 7550 5965 50  0001 C CNN
-	1    7550 5965
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 5965 6870 5965
-Text Label 7320 5965 2    60   ~ 0
-PG_v5_backup
-$Comp
-L CONN_01X01 J8
-U 1 1 59236FA2
-P 7120 4825
-F 0 "J8" H 7120 4925 50  0000 C CNN
-F 1 "3v3_out" V 7220 4825 50  0000 C CNN
-F 2 "pinheaders:pinhead-01x01_3x1" H 7120 4825 50  0001 C CNN
-F 3 "" H 7120 4825 50  0001 C CNN
-	1    7120 4825
-	1    0    0    -1  
-$EndComp
-Text Label 4865 4405 2    60   ~ 0
-3V3_out
 Wire Wire Line
 	5570 5925 5570 5770
 Wire Wire Line
@@ -696,17 +601,111 @@ Wire Wire Line
 	5570 6125 5570 6285
 Wire Wire Line
 	5570 6285 5860 6285
-Text Label 5685 6285 0    60   ~ 0
-GND
+Wire Wire Line
+	6810 3050 6810 2790
+Wire Wire Line
+	6810 2790 6905 2790
+Wire Wire Line
+	6905 3140 6905 3250
+Connection ~ 6905 3250
+Wire Wire Line
+	6905 2440 6905 2350
+Connection ~ 6905 2350
+Wire Wire Line
+	6420 2950 6420 2840
+Connection ~ 6420 2950
+Wire Wire Line
+	6130 2835 6130 2950
+Connection ~ 6130 2950
+Wire Wire Line
+	6130 2535 6130 2350
+Connection ~ 6130 2350
+Wire Wire Line
+	6420 2540 6420 2350
+Connection ~ 6420 2350
+Wire Wire Line
+	5550 2950 6420 2950
 $Comp
-L CONN_01X01 J10
-U 1 1 592615A0
-P 6055 5770
-F 0 "J10" H 6055 5870 50  0000 C CNN
-F 1 "5_in" V 6155 5770 50  0000 C CNN
-F 2 "pinheaders:pinhead-01x01_3x1" H 6055 5770 50  0001 C CNN
-F 3 "" H 6055 5770 50  0001 C CNN
-	1    6055 5770
+L C C3
+U 1 1 5938F132
+P 2200 2680
+F 0 "C3" H 2225 2780 50  0000 L CNN
+F 1 "2.2uF" H 2225 2580 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2050 2850 50  0001 C CNN
+F 3 "" H 2200 2680 50  0001 C CNN
+F 4 "5.92mOhms" H 1900 2580 60  0001 C CNN "Resistance"
+F 5 "C1005X5R1V225K050BC" H 2200 2680 60  0001 C CNN "Field5"
+	1    2200 2680
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1945 2530 1945 2300
+Connection ~ 1945 2300
+Wire Wire Line
+	2200 2530 2200 2300
+Connection ~ 2200 2300
+Wire Wire Line
+	1945 2830 1945 3250
+Connection ~ 1945 3250
+Wire Wire Line
+	2200 2830 2200 3250
+Connection ~ 2200 3250
+$Comp
+L C C7
+U 1 1 5938F5AF
+P 2475 2510
+F 0 "C7" H 2500 2610 50  0000 L CNN
+F 1 "0.1uF" H 2500 2410 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2325 2680 50  0001 C CNN
+F 3 "" H 2475 2510 50  0001 C CNN
+F 4 "5.92mOhms" H 2175 2410 60  0001 C CNN "Resistance"
+F 5 "C1005X5R1V225K050BC" H 2475 2510 60  0001 C CNN "Field5"
+	1    2475 2510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 2360 2475 2300
+Connection ~ 2475 2300
+Wire Wire Line
+	2475 2660 2475 3250
+Connection ~ 2475 3250
+Text Notes 2080 2890 0    60   ~ 0
+X7R
+$Comp
+L R R9
+U 1 1 59393BF6
+P 1435 2755
+F 0 "R9" V 1515 2755 50  0000 C CNN
+F 1 "10K" V 1435 2755 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1365 2755 50  0001 C CNN
+F 3 "" H 1435 2755 50  0000 C CNN
+F 4 "d" V 1435 2755 60  0001 C CNN "Field4"
+F 5 "CRCW040245K3FKED" V 1435 2755 60  0001 C CNN "Field5"
+	1    1435 2755
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1435 2560 1435 2605
+Wire Wire Line
+	1435 2905 1435 3035
+Wire Wire Line
+	1435 3035 1875 3035
+Wire Wire Line
+	1875 3035 1875 3250
+Connection ~ 1875 3250
+$Comp
+L R R10
+U 1 1 59396812
+P 4450 4825
+F 0 "R10" V 4530 4825 50  0000 C CNN
+F 1 "0" V 4450 4825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4380 4825 50  0001 C CNN
+F 3 "" H 4450 4825 50  0000 C CNN
+	1    4450 4825
+	0    1    1    0   
+$EndComp
+Text Label 4260 4825 2    60   ~ 0
+V5_MAIN
+Wire Wire Line
+	4300 4825 3860 4825
 $EndSCHEMATC
