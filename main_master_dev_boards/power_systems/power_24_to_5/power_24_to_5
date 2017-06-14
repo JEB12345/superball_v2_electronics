@@ -1,0 +1,13 @@
+Qty,partname,description,lib
+0,"74LVC1G32","","main_master_board-cache"
+0,"C","Unpolarized capacitor","device"
+0,"CONN_01X01","Connector, single row, 01x01","conn"
+0,"CP1","Polarised capacitor","device"
+0,"D_Schottky","Diode schottky","device"
+0,"Ferrite_Bead_Small","","main_master_board-cache"
+0,"L","","main_master_board-cache"
+0,"LED","","device"
+0,"LED-RESCUE-main_master_board","","main_master_board-cache"
+0,"LMR16030","","main_master_board-cache"
+0,"LP3852-3.3","","main_master_board-cache"
+0,"R","Resistor","device"
