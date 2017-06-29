@@ -1,4 +1,4 @@
-update=6/14/2017 1:28:22 PM
+update=6/19/2017 11:22:33 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/main_master_board/Library/TPS61232DRC
 LibName31=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/SBv1_PowerBoard_Library/mcp73831
+LibName32=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/main_master_board/Library/Si1900DL
+LibName33=C:/Users/jebruce/Documents/GitHub/superball_v2_electronics/main_master_board/Library/sn74lvc1g04
