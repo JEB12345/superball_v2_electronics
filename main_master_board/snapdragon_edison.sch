@@ -54,6 +54,7 @@ LIBS:Si1077X
 LIBS:LTC2955-1
 LIBS:antenna
 LIBS:ptn78060
+LIBS:lmz14203h
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
