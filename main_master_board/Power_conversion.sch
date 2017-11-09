@@ -55,6 +55,8 @@ LIBS:LTC2955-1
 LIBS:antenna
 LIBS:ptn78060
 LIBS:lmz14203h
+LIBS:as1364
+LIBS:lt3083-dfn
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
@@ -92,37 +94,10 @@ Text Notes 1380 580  0    60   ~ 12
 Sheet Inputs
 Text Notes 645  5960 0    60   ~ 0
 5V to 3.3V LDO
-$Comp
-L LED-RESCUE-main_master_board D?
-U 1 1 5866D243
-P 1165 6200
-AR Path="/5866D243" Ref="D?"  Part="1" 
-AR Path="/58643B62/5866D243" Ref="D4"  Part="1" 
-AR Path="/5876FF98/5866D243" Ref="D4"  Part="1" 
-F 0 "D4" H 1165 6300 50  0000 C CNN
-F 1 "GRN_LED" H 1165 6100 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 1165 6200 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/kingbright/APT1608ZGC/754-1126-1-ND" H 1165 6200 50  0001 C CNN
-	1    1165 6200
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R3
-U 1 1 5866D24A
-P 1565 6200
-F 0 "R3" V 1645 6200 50  0000 C CNN
-F 1 "10" V 1565 6200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1495 6200 50  0001 C CNN
-F 3 "" H 1565 6200 50  0000 C CNN
-	1    1565 6200
-	0    1    1    0   
-$EndComp
 Text HLabel 1075 1050 0    60   Input ~ 0
 Vbackup
 Text Label 1125 1050 0    60   ~ 0
 Vbackup
-Text Label 775  6200 0    60   ~ 0
-3V3
 $Comp
 L Si1900DL U5
 U 1 1 586DC5A6
@@ -136,44 +111,6 @@ F 3 "DOCUMENTATION" H 3150 1060 50  0001 C CNN
 $EndComp
 Text Label 3670 960  0    60   ~ 0
 PFET_ON
-$Comp
-L LP3852-3.3 U2
-U 1 1 586E05C4
-P 1915 6770
-F 0 "U2" H 2165 7020 50  0000 C CNN
-F 1 "LP3852-3.3" H 1865 7020 50  0000 C CNN
-F 2 "SOT-223:SOT-223" H 1665 6520 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp3852.pdf" H 2265 6520 50  0001 C CNN
-	1    1915 6770
-	1    0    0    -1  
-$EndComp
-Text Label 1955 7360 0    60   ~ 0
-GND
-$Comp
-L C C1
-U 1 1 586E2888
-P 895 6980
-F 0 "C1" H 920 7080 50  0000 L CNN
-F 1 "22uF" H 920 6880 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 933 6830 50  0001 C CNN
-F 3 "" H 895 6980 50  0000 C CNN
-F 4 "10V" H 795 6880 60  0000 C CNN "Voltage"
-	1    895  6980
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C8
-U 1 1 586E7909
-P 2745 6980
-F 0 "C8" H 2770 7080 50  0000 L CNN
-F 1 "22uF" H 2770 6880 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2745 6980 50  0001 C CNN
-F 3 "" H 2745 6980 50  0000 C CNN
-	1    2745 6980
-	1    0    0    -1  
-$EndComp
-Text Label 2805 6620 0    60   ~ 0
-3V3_out
 Text Label 2630 960  2    60   ~ 0
 GND
 Text Label 2880 800  2    60   ~ 0
@@ -404,8 +341,6 @@ Text Label 9820 1720 0    60   ~ 0
 V5_volt
 Text Label 9820 1910 0    60   ~ 0
 3V3_volt
-Text Label 1765 6200 0    60   ~ 0
-GND
 Text Label 2620 1160 2    60   ~ 0
 charge_on
 Text Label 3690 1160 0    60   ~ 0
@@ -416,8 +351,370 @@ Text HLabel 10260 1170 2    60   Output ~ 0
 GND
 Text Label 9870 1170 0    60   ~ 0
 GND
-Text Label 725  6620 0    60   ~ 0
+Text Label 5300 740  0    60   ~ 0
+V5_MERGE
+Text HLabel 1100 1200 0    60   Input ~ 0
+Switch_on
+Text Label 1125 1200 0    60   ~ 0
+Switch_on
+Text Notes 600  3800 0    60   ~ 0
+5V to 4V LDO (SD410 Power)
+Text HLabel 10250 1300 2    60   Output ~ 0
+V4_snapdragon
+Text Label 9875 1300 0    60   ~ 0
+V4
+$Comp
+L LED-RESCUE-main_master_board D17
+U 1 1 588AAACC
+P 3250 3825
+AR Path="/588AAACC" Ref="D17"  Part="1" 
+AR Path="/58643B62/588AAACC" Ref="D17"  Part="1" 
+F 0 "D17" H 3250 3925 50  0000 C CNN
+F 1 "ORG_LED" H 3250 3725 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3250 3825 50  0001 C CNN
+F 3 "" H 3250 3825 50  0000 C CNN
+	1    3250 3825
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R34
+U 1 1 588AB24C
+P 3700 3825
+F 0 "R34" V 3780 3825 50  0000 C CNN
+F 1 "680" V 3700 3825 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3630 3825 50  0001 C CNN
+F 3 "" H 3700 3825 50  0000 C CNN
+	1    3700 3825
+	0    1    1    0   
+$EndComp
+Text Label 3925 3825 0    60   ~ 0
+GND
+Text Label 2900 3825 0    60   ~ 0
+V4
+$Comp
+L C C54
+U 1 1 58933091
+P 4300 1550
+F 0 "C54" H 4325 1650 50  0000 L CNN
+F 1 "2200uF" H 4325 1450 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-U_EIA-6032-15_Reflow" H 4338 1400 50  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/avx-corporation/TLN6228M006R0055/478-5430-1-ND/2001010" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	1    0    0    -1  
+$EndComp
+Text Label 4350 1850 0    60   ~ 0
+GND
+$Comp
+L LMZ14203H U3
+U 1 1 5A021453
+P 2400 3150
+F 0 "U3" H 2400 2800 60  0000 C CNN
+F 1 "LMZ14203H" H 2400 3500 60  0000 C CNN
+F 2 "TO-PMOD:TO-PMOD" H 2400 3150 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmz14203h.pdf" H 2400 3150 60  0001 C CNN
+	1    2400 3150
+	1    0    0    -1  
+$EndComp
+Text Label 1700 2900 0    60   ~ 0
+V24
+Text Label 2900 3400 0    60   ~ 0
+GND
+$Comp
+L C_Small C2
+U 1 1 5A034BCC
+P 1900 2750
+F 0 "C2" H 1910 2820 50  0000 L CNN
+F 1 "10uF" H 1910 2670 50  0000 L CNN
+F 2 "" H 1900 2750 50  0001 C CNN
+F 3 "" H 1900 2750 50  0001 C CNN
+F 4 "C_IN" V 1800 2800 60  0000 C CNN "Field4"
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A035492
+P 1750 3050
+F 0 "R4" V 1830 3050 50  0000 C CNN
+F 1 "100k" V 1750 3050 50  0000 C CNN
+F 2 "" V 1680 3050 50  0001 C CNN
+F 3 "" H 1750 3050 50  0001 C CNN
+F 4 "R_ON" V 1650 3050 60  0000 C CNN "Field4"
+	1    1750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A035860
+P 1400 3100
+F 0 "R2" V 1480 3100 50  0000 C CNN
+F 1 "178k" V 1400 3100 50  0000 C CNN
+F 2 "" V 1330 3100 50  0001 C CNN
+F 3 "" H 1400 3100 50  0001 C CNN
+F 4 "R_ENT" V 1300 3100 60  0000 C CNN "Field4"
+	1    1400 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A035961
+P 1200 3250
+F 0 "R1" V 1280 3250 50  0000 C CNN
+F 1 "10k" V 1200 3250 50  0000 C CNN
+F 2 "" V 1130 3250 50  0001 C CNN
+F 3 "" H 1200 3250 50  0001 C CNN
+F 4 "R_ENB" V 1100 3250 60  0000 C CNN "Field4"
+	1    1200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 5A035F5E
+P 3600 2900
+F 0 "R7" V 3680 2900 50  0000 C CNN
+F 1 "34k" V 3600 2900 50  0000 C CNN
+F 2 "" V 3530 2900 50  0001 C CNN
+F 3 "" H 3600 2900 50  0001 C CNN
+F 4 "R_FBT" V 3500 2900 60  0000 C CNN "Field4"
+	1    3600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5A0362DE
+P 3800 3050
+F 0 "R10" V 3880 3050 50  0000 C CNN
+F 1 "6.49k" V 3800 3050 50  0000 C CNN
+F 2 "" V 3730 3050 50  0001 C CNN
+F 3 "" H 3800 3050 50  0001 C CNN
+F 4 "R_FBB" V 3700 3050 60  0000 C CNN "Field4"
+	1    3800 3050
+	0    -1   -1   0   
+$EndComp
+Text Label 3900 3050 0    60   ~ 0
+GND
+Text Label 1750 3400 0    60   ~ 0
+GND
+Text Label 1000 3250 2    60   ~ 0
+GND
+$Comp
+L C_Small C4
+U 1 1 5A03A00B
+P 3200 2900
+F 0 "C4" H 3210 2970 50  0000 L CNN
+F 1 "0.022uF" H 3210 2820 50  0000 L CNN
+F 2 "" H 3200 2900 50  0001 C CNN
+F 3 "" H 3200 2900 50  0001 C CNN
+F 4 "C_FF" V 3100 2900 60  0000 C CNN "Field4"
+	1    3200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 5A03ACF6
+P 3200 3250
+F 0 "C5" H 3210 3320 50  0000 L CNN
+F 1 "4700pF" H 3210 3170 50  0000 L CNN
+F 2 "" H 3200 3250 50  0001 C CNN
+F 3 "" H 3200 3250 50  0001 C CNN
+F 4 "C_SS" V 3100 3250 60  0000 C CNN "Field4"
+	1    3200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5A03B195
+P 3050 2600
+F 0 "C3" H 3060 2670 50  0000 L CNN
+F 1 "100uF" H 3060 2520 50  0000 L CNN
+F 2 "" H 3050 2600 50  0001 C CNN
+F 3 "" H 3050 2600 50  0001 C CNN
+F 4 "C_O" V 2950 2600 60  0000 C CNN "Field4"
+F 5 "1-95mOhm" H 3300 2600 39  0000 C CNN "ESR"
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+Text Label 1950 2600 0    60   ~ 0
+GND
+Text Label 3100 2450 0    60   ~ 0
+GND
+Text Label 3450 2750 0    60   ~ 0
 V5
+Text Notes 700  2300 0    60   ~ 0
+24 to 5V integrated buck converter
+$Comp
+L LED_ALT D6
+U 1 1 5A048E39
+P 3500 2250
+F 0 "D6" H 3500 2350 50  0000 C CNN
+F 1 "Red LED" H 3500 2150 50  0000 C CNN
+F 2 "" H 3500 2250 50  0001 C CNN
+F 3 "" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R18
+U 1 1 5A048F42
+P 3850 2250
+F 0 "R18" V 3930 2250 50  0000 C CNN
+F 1 "680" V 3850 2250 50  0000 C CNN
+F 2 "" V 3780 2250 50  0001 C CNN
+F 3 "" H 3850 2250 50  0001 C CNN
+	1    3850 2250
+	0    1    1    0   
+$EndComp
+Text Label 4050 2250 0    60   ~ 0
+GND
+Text Label 3200 2250 0    60   ~ 0
+V5
+$Comp
+L AS1364 U4
+U 1 1 5A049AD9
+P 2250 4550
+F 0 "U4" H 2250 4200 60  0000 C CNN
+F 1 "AS1364" H 2250 4900 60  0000 C CNN
+F 2 "" H 2250 4550 60  0001 C CNN
+F 3 "http://ams.com/eng/content/download/1961/15107/1937" H 2250 4550 60  0001 C CNN
+	1    2250 4550
+	1    0    0    -1  
+$EndComp
+Text Label 750  4350 0    60   ~ 0
+V5
+$Comp
+L SW_Push SW3
+U 1 1 5A04A1D3
+P 1000 5350
+F 0 "SW3" H 1050 5450 50  0000 L CNN
+F 1 "SW_Push" H 1000 5290 50  0000 C CNN
+F 2 "" H 1000 5550 50  0000 C CNN
+F 3 "" H 1000 5550 50  0000 C CNN
+	1    1000 5350
+	1    0    0    -1  
+$EndComp
+Text Label 1450 4800 0    60   ~ 0
+GND
+Text Label 750  5350 2    60   ~ 0
+GND
+$Comp
+L R R3
+U 1 1 5A04A96A
+P 1400 5200
+F 0 "R3" V 1480 5200 50  0000 C CNN
+F 1 "100k" V 1400 5200 50  0000 C CNN
+F 2 "" V 1330 5200 50  0001 C CNN
+F 3 "" H 1400 5200 50  0001 C CNN
+F 4 "R_ON" V 1300 5200 60  0000 C CNN "Field4"
+	1    1400 5200
+	-1   0    0    1   
+$EndComp
+Text Label 1250 5050 0    60   ~ 0
+V5
+Text Label 1600 5350 0    60   ~ 0
+4V_EN
+Text Label 1350 4650 0    60   ~ 0
+4V_EN
+$Comp
+L R R20
+U 1 1 5A04B241
+P 3200 4500
+F 0 "R20" V 3280 4500 50  0000 C CNN
+F 1 "100k" V 3200 4500 50  0000 C CNN
+F 2 "" V 3130 4500 50  0001 C CNN
+F 3 "" H 3200 4500 50  0001 C CNN
+F 4 "R_ON" V 3100 4500 60  0000 C CNN "Field4"
+	1    3200 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5A04B834
+P 900 4500
+F 0 "C1" H 910 4570 50  0000 L CNN
+F 1 "4.7uF" H 910 4420 50  0000 L CNN
+F 2 "" H 900 4500 50  0001 C CNN
+F 3 "" H 900 4500 50  0001 C CNN
+F 4 "Cin" V 800 4550 60  0000 C CNN "Field4"
+	1    900  4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 5A04BA2A
+P 3500 4650
+F 0 "C14" H 3510 4720 50  0000 L CNN
+F 1 "10nF" H 3510 4570 50  0000 L CNN
+F 2 "" H 3500 4650 50  0001 C CNN
+F 3 "" H 3500 4650 50  0001 C CNN
+F 4 "C_BYP" V 3400 4700 60  0000 C CNN "Field4"
+	1    3500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C19
+U 1 1 5A04BDE6
+P 3800 4550
+F 0 "C19" H 3810 4620 50  0000 L CNN
+F 1 "4.7uF" H 3810 4470 50  0000 L CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "" H 3800 4550 50  0001 C CNN
+F 4 "Cout" V 3700 4600 60  0000 C CNN "Field4"
+	1    3800 4550
+	1    0    0    -1  
+$EndComp
+Text Label 3850 4800 0    60   ~ 0
+GND
+Text Label 3850 4350 0    60   ~ 0
+4V
+$Comp
+L LT3083-DFN U2
+U 1 1 5A04CD31
+P 1800 6750
+F 0 "U2" H 1800 6350 60  0000 C CNN
+F 1 "LT3083-DFN" H 1800 7200 60  0000 C CNN
+F 2 "" H 1850 6750 60  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/3083fa.pdf" H 1850 6750 60  0001 C CNN
+	1    1800 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5A04CDA0
+P 2450 7250
+F 0 "R19" V 2530 7250 50  0000 C CNN
+F 1 "66.5k" V 2450 7250 50  0000 C CNN
+F 2 "" V 2380 7250 50  0001 C CNN
+F 3 "" H 2450 7250 50  0001 C CNN
+	1    2450 7250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5A04CE9F
+P 2200 7250
+F 0 "C11" H 2225 7350 50  0000 L CNN
+F 1 "10pF" H 2225 7150 50  0000 L CNN
+F 2 "" H 2238 7100 50  0001 C CNN
+F 3 "" H 2200 7250 50  0001 C CNN
+	1    2200 7250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5A04CF9E
+P 2650 7050
+F 0 "C12" H 2675 7150 50  0000 L CNN
+F 1 "10uF" H 2450 6950 50  0000 L CNN
+F 2 "" H 2688 6900 50  0001 C CNN
+F 3 "" H 2650 7050 50  0001 C CNN
+F 4 "X5R/X7R" H 2400 7050 39  0000 C CNN "Field4"
+	1    2650 7050
+	-1   0    0    -1  
+$EndComp
+Text Label 750  6500 0    60   ~ 0
+V5
+Text Label 2100 7500 2    60   ~ 0
+GND
 Wire Wire Line
 	2390 1060 2650 1060
 Wire Wire Line
@@ -430,17 +727,6 @@ Wire Notes Line
 	500  1400 2350 1400
 Wire Notes Line
 	8670 2000 8670 4610
-Connection ~ 895  6620
-Connection ~ 2745 6620
-Connection ~ 2745 7360
-Wire Wire Line
-	2745 7360 2745 7130
-Wire Wire Line
-	2745 6620 2745 6830
-Wire Wire Line
-	2465 6620 2745 6620
-Wire Wire Line
-	2745 6620 2985 6620
 Wire Wire Line
 	1100 750  1550 750 
 Wire Wire Line
@@ -455,50 +741,17 @@ Wire Notes Line
 	6750 4000 6750 2100
 Wire Wire Line
 	3650 960  4030 960 
-Wire Wire Line
-	665  7360 895  7360
-Wire Wire Line
-	895  7360 1915 7360
-Wire Wire Line
-	1915 7360 2525 7360
-Wire Wire Line
-	2525 7360 2745 7360
-Wire Wire Line
-	2745 7360 2965 7360
-Wire Wire Line
-	1915 7360 1915 7270
-Connection ~ 1915 7360
-Wire Wire Line
-	2525 6720 2465 6720
-Wire Wire Line
-	2525 7360 2525 6720
-Connection ~ 2525 7360
-Wire Wire Line
-	1365 6720 995  6720
-Wire Wire Line
-	665  6620 895  6620
-Wire Wire Line
-	895  6620 1365 6620
-Wire Wire Line
-	895  6620 895  6830
-Wire Wire Line
-	895  7130 895  7360
-Connection ~ 895  7360
 Connection ~ 5240 1030
 Wire Wire Line
 	5240 1030 5790 1030
 Wire Wire Line
-	5240 980  5240 1030
-Wire Wire Line
-	5240 1030 5240 1070
+	5240 980  5240 1070
 Wire Wire Line
 	5240 740  5790 740 
 Wire Wire Line
 	5240 780  5240 740 
 Wire Wire Line
-	5240 1370 5240 1410
-Wire Wire Line
-	5240 1410 5240 1450
+	5240 1370 5240 1450
 Wire Wire Line
 	5240 1410 5510 1410
 Connection ~ 5240 1410
@@ -510,17 +763,13 @@ Connection ~ 6000 1030
 Wire Wire Line
 	6000 1030 6550 1030
 Wire Wire Line
-	6000 980  6000 1030
-Wire Wire Line
-	6000 1030 6000 1070
+	6000 980  6000 1070
 Wire Wire Line
 	6000 740  6550 740 
 Wire Wire Line
 	6000 780  6000 740 
 Wire Wire Line
-	6000 1370 6000 1410
-Wire Wire Line
-	6000 1410 6000 1450
+	6000 1370 6000 1450
 Wire Wire Line
 	6000 1410 6270 1410
 Connection ~ 6000 1410
@@ -551,15 +800,9 @@ Wire Wire Line
 Wire Notes Line
 	2360 1400 4120 1400
 Wire Wire Line
-	1830 1730 1830 1790
+	1830 1730 1830 1810
 Wire Wire Line
-	1830 1790 1830 1810
-Wire Wire Line
-	1500 2070 1680 2070
-Wire Wire Line
-	1680 2070 1830 2070
-Wire Wire Line
-	1830 2070 2120 2070
+	1500 2070 2120 2070
 Wire Wire Line
 	1680 2010 1680 2070
 Connection ~ 1680 2070
@@ -573,20 +816,12 @@ Wire Wire Line
 Wire Wire Line
 	1680 1810 1680 1790
 Wire Wire Line
-	1680 1790 1830 1790
-Wire Wire Line
-	1830 1790 2220 1790
+	1680 1790 2220 1790
 Connection ~ 1830 1790
 Wire Wire Line
-	2610 1730 2610 1790
+	2610 1730 2610 1810
 Wire Wire Line
-	2610 1790 2610 1810
-Wire Wire Line
-	2280 2070 2460 2070
-Wire Wire Line
-	2460 2070 2610 2070
-Wire Wire Line
-	2610 2070 2900 2070
+	2280 2070 2900 2070
 Wire Wire Line
 	2460 2010 2460 2070
 Connection ~ 2460 2070
@@ -600,9 +835,7 @@ Wire Wire Line
 Wire Wire Line
 	2460 1810 2460 1790
 Wire Wire Line
-	2460 1790 2610 1790
-Wire Wire Line
-	2610 1790 3000 1790
+	2460 1790 3000 1790
 Connection ~ 2610 1790
 Wire Notes Line
 	3040 2100 3040 1400
@@ -628,472 +861,277 @@ Wire Notes Line
 	4770 6500 4770 7780
 Wire Wire Line
 	10260 1170 9750 1170
-Text Label 5300 740  0    60   ~ 0
-V5_MERGE
-Text Label 1015 6720 0    60   ~ 0
-v5_good
-Text HLabel 1100 1200 0    60   Input ~ 0
-Switch_on
 Wire Wire Line
 	1100 1200 1550 1200
-Text Label 1125 1200 0    60   ~ 0
-Switch_on
-$Comp
-L TPS82084SIL U20
-U 1 1 58868B7E
-P 2300 4775
-F 0 "U20" H 2250 4275 50  0000 C CNN
-F 1 "TPS82084SIL" H 2300 5225 50  0000 C CNN
-F 2 "uSIP-8:uSIP-8" H 1950 4275 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps82084.pdf" H 2700 4275 50  0001 C CNN
-	1    2300 4775
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C51
-U 1 1 5886A066
-P 975 5000
-F 0 "C51" H 1000 5100 50  0000 L CNN
-F 1 "10uF" H 1000 4900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1013 4850 50  0001 C CNN
-F 3 "" H 975 5000 50  0000 C CNN
-F 4 "10V" H 850 4900 60  0000 C CNN "Voltage"
-F 5 "LMK212BJ106KG-T" H 975 5000 60  0001 C CNN "Field5"
-	1    975  5000
-	1    0    0    -1  
-$EndComp
-Text Label 1600 5400 0    60   ~ 0
-GND
-$Comp
-L R R52
-U 1 1 5886AF3E
-P 3500 4650
-F 0 "R52" V 3580 4650 50  0000 C CNN
-F 1 "649K" V 3500 4650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 3430 4650 50  0001 C CNN
-F 3 "" H 3500 4650 50  0000 C CNN
-F 4 "d" V 3500 4650 60  0001 C CNN "Field4"
-F 5 "CRCW0402649KFKED" V 3500 4650 60  0001 C CNN "Field5"
-	1    3500 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R51
-U 1 1 5886B024
-P 3325 4925
-F 0 "R51" V 3405 4925 50  0000 C CNN
-F 1 "162K" V 3325 4925 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 3255 4925 50  0001 C CNN
-F 3 "" H 3325 4925 50  0000 C CNN
-F 4 "d" V 3325 4925 60  0001 C CNN "Field4"
-F 5 "CRCW0402162KFKED" V 3325 4925 60  0001 C CNN "Field5"
-	1    3325 4925
-	0    1    1    0   
-$EndComp
-$Comp
-L R R53
-U 1 1 5886B308
-P 3725 4650
-F 0 "R53" V 3805 4650 50  0000 C CNN
-F 1 "499K" V 3725 4650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 3655 4650 50  0001 C CNN
-F 3 "" H 3725 4650 50  0000 C CNN
-F 4 "d" V 3725 4650 60  0001 C CNN "Field4"
-F 5 "CRCW0402499KFKED" V 3725 4650 60  0001 C CNN "Field5"
-	1    3725 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C52
-U 1 1 5886B50C
-P 4050 4800
-F 0 "C52" H 4075 4900 50  0000 L CNN
-F 1 "22uF" H 4075 4700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1210" H 4088 4650 50  0001 C CNN
-F 3 "" H 4050 4800 50  0000 C CNN
-F 4 "3ohm" H 3925 4700 60  0000 C CNN "Resistance"
-F 5 "GRM32ER71C226KE18L" H 4050 4800 60  0001 C CNN "Field5"
-	1    4050 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 4475 3500 4475
-Wire Wire Line
-	3500 4475 3725 4475
-Wire Wire Line
-	3725 4475 4050 4475
-Wire Wire Line
-	4050 4475 4250 4475
-Wire Wire Line
-	3500 4500 3500 4475
-Connection ~ 3500 4475
-Wire Wire Line
-	3725 4500 3725 4475
-Connection ~ 3725 4475
-Wire Wire Line
-	3500 4800 3500 4825
-Wire Wire Line
-	3500 4825 3500 4925
-Wire Wire Line
-	3500 4925 3475 4925
-Wire Wire Line
-	3175 4925 2900 4925
-Text Label 3150 4925 2    60   ~ 0
-GND
-Wire Wire Line
-	3000 4775 3350 4775
-Wire Wire Line
-	3350 4775 3350 4825
-Wire Wire Line
-	3350 4825 3500 4825
-Connection ~ 3500 4825
-Wire Wire Line
-	3000 5125 3725 5125
-Wire Wire Line
-	3725 5125 3725 4800
-Wire Wire Line
-	4050 4650 4050 4475
-Connection ~ 4050 4475
-Wire Wire Line
-	4050 5400 4050 4950
-Connection ~ 4050 5400
-Wire Wire Line
-	1600 4925 1475 4925
-Wire Wire Line
-	1475 4925 1475 5025
-Wire Wire Line
-	1475 5025 1475 5125
-Wire Wire Line
-	1475 5125 1475 5400
-Connection ~ 1475 5400
-Wire Wire Line
-	1600 5025 1475 5025
-Connection ~ 1475 5025
-Wire Wire Line
-	1600 5125 1475 5125
-Connection ~ 1475 5125
-Wire Wire Line
-	775  4475 975  4475
-Wire Wire Line
-	975  4475 1475 4475
-Wire Wire Line
-	1475 4475 1600 4475
-Wire Wire Line
-	1600 4575 1475 4575
-Wire Wire Line
-	1475 4575 1475 4475
-Connection ~ 1475 4475
-Wire Wire Line
-	1200 4775 1600 4775
-Wire Wire Line
-	875  5400 975  5400
-Wire Wire Line
-	975  5400 1475 5400
-Wire Wire Line
-	1475 5400 4050 5400
-Wire Wire Line
-	4050 5400 4175 5400
-Wire Wire Line
-	975  5150 975  5400
-Connection ~ 975  5400
-Wire Wire Line
-	975  4850 975  4475
-Connection ~ 975  4475
-Text Label 925  4475 2    60   ~ 0
-V5
 Wire Wire Line
 	1075 1050 1525 1050
-Text Label 1575 4775 2    60   ~ 0
-v5_good
-Text Notes 675  4200 0    60   ~ 0
-5V to 4V Buck (Snapdragon Power)
-Text Label 4125 4475 0    60   ~ 0
-V4
 Wire Notes Line
 	4450 5550 500  5550
 Wire Notes Line
 	3300 5575 3300 7775
 Wire Notes Line
 	6600 4625 8675 4625
-Text HLabel 10250 1300 2    60   Output ~ 0
-V4_snapdragon
 Wire Wire Line
 	10250 1300 9750 1300
-Text Label 9875 1300 0    60   ~ 0
-V4
-$Comp
-L LED-RESCUE-main_master_board D17
-U 1 1 588AAACC
-P 3300 4175
-AR Path="/588AAACC" Ref="D17"  Part="1" 
-AR Path="/58643B62/588AAACC" Ref="D17"  Part="1" 
-F 0 "D17" H 3300 4275 50  0000 C CNN
-F 1 "ORG_LED" H 3300 4075 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 3300 4175 50  0001 C CNN
-F 3 "" H 3300 4175 50  0000 C CNN
-	1    3300 4175
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R34
-U 1 1 588AB24C
-P 3750 4175
-F 0 "R34" V 3830 4175 50  0000 C CNN
-F 1 "100" V 3750 4175 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3680 4175 50  0001 C CNN
-F 3 "" H 3750 4175 50  0000 C CNN
-	1    3750 4175
-	0    1    1    0   
-$EndComp
-Text Label 3975 4175 0    60   ~ 0
-GND
 Wire Wire Line
-	3900 4175 4175 4175
+	3850 3825 4125 3825
 Wire Wire Line
-	3500 4175 3600 4175
+	3450 3825 3550 3825
 Wire Wire Line
-	3100 4175 2850 4175
-Text Label 2950 4175 0    60   ~ 0
-V4
-$Comp
-L C C54
-U 1 1 58933091
-P 4300 1550
-F 0 "C54" H 4325 1650 50  0000 L CNN
-F 1 "2200uF" H 4325 1450 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-U_EIA-6032-15_Reflow" H 4338 1400 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/avx-corporation/TLN6228M006R0055/478-5430-1-ND/2001010" H 4300 1550 50  0001 C CNN
-	1    4300 1550
-	1    0    0    -1  
-$EndComp
+	3050 3825 2800 3825
 Wire Wire Line
 	4300 1350 4300 1400
 Wire Wire Line
 	4300 1700 4300 1850
 Wire Wire Line
 	4300 1850 4550 1850
-Text Label 4350 1850 0    60   ~ 0
-GND
 Wire Wire Line
-	1365 6200 1415 6200
+	1350 2900 1950 2900
 Wire Wire Line
-	1715 6200 1955 6200
+	1500 3400 1950 3400
 Wire Wire Line
-	965  6200 685  6200
+	2850 3400 3550 3400
+Wire Wire Line
+	1900 2900 1900 2850
+Connection ~ 1900 2900
+Wire Wire Line
+	1900 2650 1900 2600
+Wire Wire Line
+	1900 2600 2150 2600
+Wire Wire Line
+	1550 2900 1550 3050
+Wire Wire Line
+	1550 3050 1600 3050
+Connection ~ 1550 2900
+Wire Wire Line
+	1900 3050 1950 3050
+Wire Wire Line
+	1350 3250 1950 3250
+Connection ~ 1400 3250
+Wire Wire Line
+	1400 2950 1400 2900
+Connection ~ 1400 2900
+Wire Wire Line
+	1050 3250 800  3250
+Wire Wire Line
+	3950 3050 4050 3050
+Wire Wire Line
+	3050 2700 3050 2900
+Wire Wire Line
+	3050 2900 2850 2900
+Wire Wire Line
+	3050 2750 3650 2750
+Connection ~ 3600 2750
+Wire Wire Line
+	3200 2800 3200 2750
+Connection ~ 3200 2750
+Wire Wire Line
+	2850 3050 3650 3050
+Connection ~ 3600 3050
+Wire Wire Line
+	3200 3000 3200 3050
+Connection ~ 3200 3050
+Wire Wire Line
+	2850 3250 2950 3250
+Wire Wire Line
+	2950 3250 2950 3150
+Wire Wire Line
+	2950 3150 3200 3150
+Wire Wire Line
+	3200 3350 3200 3400
+Connection ~ 3200 3400
+Connection ~ 3050 2750
+Wire Wire Line
+	3050 2500 3050 2450
+Wire Wire Line
+	3050 2450 3300 2450
+Wire Notes Line
+	500  3600 4250 3600
+Wire Notes Line
+	4250 2100 4250 5550
+Wire Wire Line
+	3650 2250 3700 2250
+Wire Wire Line
+	4000 2250 4200 2250
+Wire Wire Line
+	3350 2250 3150 2250
+Wire Wire Line
+	650  4350 1650 4350
+Wire Wire Line
+	1550 4350 1550 4500
+Wire Wire Line
+	1550 4500 1650 4500
+Connection ~ 1550 4350
+Wire Wire Line
+	900  4350 900  4400
+Connection ~ 900  4350
+Wire Wire Line
+	1650 4650 1300 4650
+Wire Wire Line
+	1650 4800 900  4800
+Wire Wire Line
+	900  4800 900  4600
+Wire Wire Line
+	800  5350 550  5350
+Wire Wire Line
+	1200 5350 1900 5350
+Wire Wire Line
+	1400 5350 1400 5350
+Connection ~ 1400 5350
+Wire Wire Line
+	1400 5050 1200 5050
+Wire Wire Line
+	2850 4350 4000 4350
+Wire Wire Line
+	3000 4350 3000 4500
+Wire Wire Line
+	3000 4500 2850 4500
+Connection ~ 3000 4350
+Wire Wire Line
+	3200 4650 2850 4650
+Connection ~ 3200 4350
+Wire Wire Line
+	2850 4800 3500 4800
+Wire Wire Line
+	3500 4800 3500 4750
+Wire Wire Line
+	3500 4550 3500 4350
+Connection ~ 3500 4350
+Wire Wire Line
+	3800 4650 3800 4800
+Wire Wire Line
+	3800 4800 4050 4800
+Wire Wire Line
+	3800 4450 3800 4350
+Connection ~ 3800 4350
+Wire Wire Line
+	2300 6500 2400 6500
+Wire Wire Line
+	2400 6400 2400 6900
+Wire Wire Line
+	2300 6900 2950 6900
+Wire Wire Line
+	2300 6800 2400 6800
+Connection ~ 2400 6800
+Wire Wire Line
+	2300 6700 2400 6700
+Connection ~ 2400 6700
+Wire Wire Line
+	2300 6600 2400 6600
+Connection ~ 2400 6600
+Connection ~ 2400 6900
+Connection ~ 2650 6900
+Wire Wire Line
+	2300 7000 2450 7000
+Wire Wire Line
+	2450 7000 2450 7100
+Wire Wire Line
+	2450 7100 2200 7100
+Wire Wire Line
+	2450 7500 2450 7400
+Wire Wire Line
+	1900 7500 2650 7500
+Wire Wire Line
+	2200 7500 2200 7400
+Wire Wire Line
+	2650 7500 2650 7200
+Connection ~ 2450 7500
+Wire Wire Line
+	2300 6400 2400 6400
+Connection ~ 2400 6500
+Connection ~ 2200 7500
+Wire Wire Line
+	1300 7000 1200 7000
+Wire Wire Line
+	1200 7000 1200 6900
+Wire Wire Line
+	800  6900 1300 6900
+Wire Wire Line
+	1200 6800 1300 6800
+Wire Wire Line
+	1200 6500 1200 6800
+Wire Wire Line
+	700  6500 1300 6500
+Wire Wire Line
+	1200 6600 1300 6600
+Connection ~ 1200 6600
+Wire Wire Line
+	1300 6700 1200 6700
+Connection ~ 1200 6700
+Connection ~ 1200 6500
 $Comp
-L LMZ14203H U3
-U 1 1 5A021453
-P 3100 2950
-F 0 "U3" H 3100 2600 60  0000 C CNN
-F 1 "LMZ14203H" H 3100 3300 60  0000 C CNN
-F 2 "TO-PMOD:TO-PMOD" H 3100 2950 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmz14203h.pdf" H 3100 2950 60  0001 C CNN
-	1    3100 2950
+L C_Small C8
+U 1 1 5A04FE61
+P 950 6650
+F 0 "C8" H 960 6720 50  0000 L CNN
+F 1 "10uF" H 960 6570 50  0000 L CNN
+F 2 "" H 950 6650 50  0001 C CNN
+F 3 "" H 950 6650 50  0001 C CNN
+	1    950  6650
 	1    0    0    -1  
 $EndComp
-Text Label 2400 2700 0    60   ~ 0
-V24
-Wire Wire Line
-	2050 2700 2100 2700
-Wire Wire Line
-	2100 2700 2250 2700
-Wire Wire Line
-	2250 2700 2600 2700
-Wire Wire Line
-	2600 2700 2650 2700
-Wire Wire Line
-	2200 3200 2650 3200
-Wire Wire Line
-	3550 3200 3900 3200
-Wire Wire Line
-	3900 3200 4250 3200
-Text Label 3600 3200 0    60   ~ 0
-GND
 $Comp
-L C_Small C2
-U 1 1 5A034BCC
-P 2600 2550
-F 0 "C2" H 2610 2620 50  0000 L CNN
-F 1 "10uF" H 2610 2470 50  0000 L CNN
-F 2 "" H 2600 2550 50  0001 C CNN
-F 3 "" H 2600 2550 50  0001 C CNN
-F 4 "C_IN" V 2500 2600 60  0000 C CNN "Field4"
-	1    2600 2550
+L C_Small C10
+U 1 1 5A04FF16
+P 1000 7050
+F 0 "C10" H 1010 7120 50  0000 L CNN
+F 1 "2.2uF" H 1010 6970 50  0000 L CNN
+F 2 "" H 1000 7050 50  0001 C CNN
+F 3 "" H 1000 7050 50  0001 C CNN
+	1    1000 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 2700 2600 2650
-Connection ~ 2600 2700
+	1000 6900 1000 6950
+Connection ~ 1200 6900
+Connection ~ 1000 6900
+Text Label 850  6900 0    60   ~ 0
+V5
+Text Label 850  6750 2    60   ~ 0
+GND
 Wire Wire Line
-	2600 2450 2600 2400
+	1000 7150 1000 7200
 Wire Wire Line
-	2600 2400 2850 2400
+	1000 7200 750  7200
+Text Label 950  7200 2    60   ~ 0
+GND
+Wire Wire Line
+	950  6550 950  6500
+Connection ~ 950  6500
+Wire Wire Line
+	950  6750 650  6750
+Text Label 2750 6900 0    60   ~ 0
+3V3
 $Comp
-L R R4
-U 1 1 5A035492
-P 2450 2850
-F 0 "R4" V 2530 2850 50  0000 C CNN
-F 1 "100k" V 2450 2850 50  0000 C CNN
-F 2 "" V 2380 2850 50  0001 C CNN
-F 3 "" H 2450 2850 50  0001 C CNN
-F 4 "R_ON" V 2350 2850 60  0000 C CNN "Field4"
-	1    2450 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 2700 2250 2850
-Wire Wire Line
-	2250 2850 2300 2850
-Connection ~ 2250 2700
-Wire Wire Line
-	2600 2850 2650 2850
-$Comp
-L R R2
-U 1 1 5A035860
-P 2100 2900
-F 0 "R2" V 2180 2900 50  0000 C CNN
-F 1 "178k" V 2100 2900 50  0000 C CNN
-F 2 "" V 2030 2900 50  0001 C CNN
-F 3 "" H 2100 2900 50  0001 C CNN
-F 4 "R_ENT" V 2000 2900 60  0000 C CNN "Field4"
-	1    2100 2900
+L LED-RESCUE-main_master_board D?
+U 1 1 5A051A5D
+P 2250 5925
+F 0 "D?" H 2250 6025 50  0000 C CNN
+F 1 "GRN_LED" H 2250 5825 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 2250 5925 50  0001 C CNN
+F 3 "" H 2250 5925 50  0000 C CNN
+	1    2250 5925
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R1
-U 1 1 5A035961
-P 1900 3050
-F 0 "R1" V 1980 3050 50  0000 C CNN
-F 1 "10k" V 1900 3050 50  0000 C CNN
-F 2 "" V 1830 3050 50  0001 C CNN
-F 3 "" H 1900 3050 50  0001 C CNN
-F 4 "R_ENB" V 1800 3050 60  0000 C CNN "Field4"
-	1    1900 3050
-	0    -1   -1   0   
+L R R?
+U 1 1 5A051A63
+P 2700 5925
+F 0 "R?" V 2780 5925 50  0000 C CNN
+F 1 "680" V 2700 5925 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2630 5925 50  0001 C CNN
+F 3 "" H 2700 5925 50  0000 C CNN
+	1    2700 5925
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2050 3050 2100 3050
-Wire Wire Line
-	2100 3050 2650 3050
-Connection ~ 2100 3050
-Wire Wire Line
-	2100 2750 2100 2700
-Connection ~ 2100 2700
-Wire Wire Line
-	1750 3050 1500 3050
-$Comp
-L R R7
-U 1 1 5A035F5E
-P 4300 2700
-F 0 "R7" V 4380 2700 50  0000 C CNN
-F 1 "34k" V 4300 2700 50  0000 C CNN
-F 2 "" V 4230 2700 50  0001 C CNN
-F 3 "" H 4300 2700 50  0001 C CNN
-F 4 "R_FBT" V 4200 2700 60  0000 C CNN "Field4"
-	1    4300 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R10
-U 1 1 5A0362DE
-P 4500 2850
-F 0 "R10" V 4580 2850 50  0000 C CNN
-F 1 "6.49k" V 4500 2850 50  0000 C CNN
-F 2 "" V 4430 2850 50  0001 C CNN
-F 3 "" H 4500 2850 50  0001 C CNN
-F 4 "R_FBB" V 4400 2850 60  0000 C CNN "Field4"
-	1    4500 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4650 2850 4750 2850
-Text Label 4600 2850 0    60   ~ 0
+Text Label 2925 5925 0    60   ~ 0
 GND
-Text Label 2450 3200 0    60   ~ 0
-GND
-Text Label 1700 3050 2    60   ~ 0
-GND
+Text Label 1900 5925 0    60   ~ 0
+3V3
 Wire Wire Line
-	3750 2500 3750 2550
+	2850 5925 3125 5925
 Wire Wire Line
-	3750 2550 3750 2700
+	2450 5925 2550 5925
 Wire Wire Line
-	3750 2700 3550 2700
-$Comp
-L C_Small C4
-U 1 1 5A03A00B
-P 3900 2700
-F 0 "C4" H 3910 2770 50  0000 L CNN
-F 1 "0.022uF" H 3910 2620 50  0000 L CNN
-F 2 "" H 3900 2700 50  0001 C CNN
-F 3 "" H 3900 2700 50  0001 C CNN
-F 4 "C_FF" V 3800 2700 60  0000 C CNN "Field4"
-	1    3900 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 2550 3900 2550
-Wire Wire Line
-	3900 2550 4300 2550
-Wire Wire Line
-	4300 2550 4350 2550
-Connection ~ 4300 2550
-Wire Wire Line
-	3900 2600 3900 2550
-Connection ~ 3900 2550
-Wire Wire Line
-	3550 2850 3900 2850
-Wire Wire Line
-	3900 2850 4300 2850
-Wire Wire Line
-	4300 2850 4350 2850
-Connection ~ 4300 2850
-Wire Wire Line
-	3900 2800 3900 2850
-Connection ~ 3900 2850
-$Comp
-L C_Small C5
-U 1 1 5A03ACF6
-P 3900 3050
-F 0 "C5" H 3910 3120 50  0000 L CNN
-F 1 "4700pF" H 3910 2970 50  0000 L CNN
-F 2 "" H 3900 3050 50  0001 C CNN
-F 3 "" H 3900 3050 50  0001 C CNN
-F 4 "C_SS" V 3800 3050 60  0000 C CNN "Field4"
-	1    3900 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 3050 3650 3050
-Wire Wire Line
-	3650 3050 3650 2950
-Wire Wire Line
-	3650 2950 3900 2950
-Wire Wire Line
-	3900 3150 3900 3200
-Connection ~ 3900 3200
-$Comp
-L C_Small C3
-U 1 1 5A03B195
-P 3750 2400
-F 0 "C3" H 3760 2470 50  0000 L CNN
-F 1 "100uF" H 3760 2320 50  0000 L CNN
-F 2 "" H 3750 2400 50  0001 C CNN
-F 3 "" H 3750 2400 50  0001 C CNN
-F 4 "C_O" V 3650 2400 60  0000 C CNN "Field4"
-F 5 "1-95mOhm" H 4000 2400 39  0000 C CNN "ESR"
-	1    3750 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 3750 2550
-Wire Wire Line
-	3750 2300 3750 2250
-Wire Wire Line
-	3750 2250 4000 2250
-Text Label 2650 2400 0    60   ~ 0
-GND
-Text Label 3800 2250 0    60   ~ 0
-GND
-Text Label 4150 2550 0    60   ~ 0
-V5
+	2050 5925 1800 5925
 $EndSCHEMATC

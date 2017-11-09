@@ -55,6 +55,8 @@ LIBS:LTC2955-1
 LIBS:antenna
 LIBS:ptn78060
 LIBS:lmz14203h
+LIBS:as1364
+LIBS:lt3083-dfn
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
