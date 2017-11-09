@@ -1,4 +1,4 @@
-update=Tue 07 Nov 2017 11:11:05 AM PST
+update=Thu 09 Nov 2017 10:57:53 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -337,3 +337,5 @@ LibName295=Library/LTC2955-1
 LibName296=Library/antenna
 LibName297=Library/ptn78060
 LibName298=Library/lmz14203h
+LibName299=Library/as1364
+LibName300=Library/lt3083-dfn
