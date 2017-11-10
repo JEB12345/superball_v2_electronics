@@ -392,19 +392,6 @@ GND
 Text Label 2900 3825 0    60   ~ 0
 V4
 $Comp
-L C C54
-U 1 1 58933091
-P 4300 1550
-F 0 "C54" H 4325 1650 50  0000 L CNN
-F 1 "2200uF" H 4325 1450 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-U_EIA-6032-15_Reflow" H 4338 1400 50  0001 C CNN
-F 3 "http://www.digikey.com/product-detail/en/avx-corporation/TLN6228M006R0055/478-5430-1-ND/2001010" H 4300 1550 50  0001 C CNN
-	1    4300 1550
-	1    0    0    -1  
-$EndComp
-Text Label 4350 1850 0    60   ~ 0
-GND
-$Comp
 L LMZ14203H U3
 U 1 1 5A021453
 P 2400 3150
@@ -935,12 +922,6 @@ Wire Wire Line
 	3450 3825 3550 3825
 Wire Wire Line
 	3050 3825 2800 3825
-Wire Wire Line
-	4300 1350 4300 1400
-Wire Wire Line
-	4300 1700 4300 1850
-Wire Wire Line
-	4300 1850 4550 1850
 Wire Wire Line
 	1350 2900 1950 2900
 Wire Wire Line
