@@ -574,7 +574,7 @@ U 1 1 5A049AD9
 P 2250 4550
 F 0 "U4" H 2250 4200 60  0000 C CNN
 F 1 "AS1364" H 2250 4900 60  0000 C CNN
-F 2 "" H 2250 4550 60  0001 C CNN
+F 2 "Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.65mm" H 2250 4550 60  0001 C CNN
 F 3 "http://ams.com/eng/content/download/1961/15107/1937" H 2250 4550 60  0001 C CNN
 	1    2250 4550
 	1    0    0    -1  
@@ -592,7 +592,7 @@ F 3 "" H 1000 5550 50  0000 C CNN
 	1    1000 5350
 	1    0    0    -1  
 $EndComp
-Text Label 1450 4800 0    60   ~ 0
+Text Label 1400 4800 0    60   ~ 0
 GND
 Text Label 750  5350 2    60   ~ 0
 GND
@@ -672,7 +672,7 @@ U 1 1 5A04CD31
 P 1800 6750
 F 0 "U2" H 1800 6350 60  0000 C CNN
 F 1 "LT3083-DFN" H 1800 7200 60  0000 C CNN
-F 2 "" H 1850 6750 60  0001 C CNN
+F 2 "Housings_DFN_QFN:DFN-12-1EP_4x4mm_Pitch0.5mm" H 1850 6750 60  0001 C CNN
 F 3 "http://cds.linear.com/docs/en/datasheet/3083fa.pdf" H 1850 6750 60  0001 C CNN
 	1    1800 6750
 	-1   0    0    -1  
@@ -715,6 +715,62 @@ Text Label 750  6500 0    60   ~ 0
 V5
 Text Label 2100 7500 2    60   ~ 0
 GND
+$Comp
+L C_Small C8
+U 1 1 5A04FE61
+P 950 6650
+F 0 "C8" H 960 6720 50  0000 L CNN
+F 1 "10uF" H 960 6570 50  0000 L CNN
+F 2 "" H 950 6650 50  0001 C CNN
+F 3 "" H 950 6650 50  0001 C CNN
+	1    950  6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 5A04FF16
+P 1000 7050
+F 0 "C10" H 1010 7120 50  0000 L CNN
+F 1 "2.2uF" H 1010 6970 50  0000 L CNN
+F 2 "" H 1000 7050 50  0001 C CNN
+F 3 "" H 1000 7050 50  0001 C CNN
+	1    1000 7050
+	1    0    0    -1  
+$EndComp
+Text Label 850  6900 0    60   ~ 0
+V5
+Text Label 850  6750 2    60   ~ 0
+GND
+Text Label 950  7200 2    60   ~ 0
+GND
+Text Label 2750 6900 0    60   ~ 0
+3V3
+$Comp
+L LED-RESCUE-main_master_board D4
+U 1 1 5A051A5D
+P 2250 5925
+F 0 "D4" H 2250 6025 50  0000 C CNN
+F 1 "GRN_LED" H 2250 5825 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 2250 5925 50  0001 C CNN
+F 3 "" H 2250 5925 50  0000 C CNN
+	1    2250 5925
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R21
+U 1 1 5A051A63
+P 2700 5925
+F 0 "R21" V 2780 5925 50  0000 C CNN
+F 1 "680" V 2700 5925 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2630 5925 50  0001 C CNN
+F 3 "" H 2700 5925 50  0000 C CNN
+	1    2700 5925
+	0    1    1    0   
+$EndComp
+Text Label 2925 5925 0    60   ~ 0
+GND
+Text Label 1900 5925 0    60   ~ 0
+3V3
 Wire Wire Line
 	2390 1060 2650 1060
 Wire Wire Line
@@ -1059,79 +1115,28 @@ Wire Wire Line
 	1300 6700 1200 6700
 Connection ~ 1200 6700
 Connection ~ 1200 6500
-$Comp
-L C_Small C8
-U 1 1 5A04FE61
-P 950 6650
-F 0 "C8" H 960 6720 50  0000 L CNN
-F 1 "10uF" H 960 6570 50  0000 L CNN
-F 2 "" H 950 6650 50  0001 C CNN
-F 3 "" H 950 6650 50  0001 C CNN
-	1    950  6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C10
-U 1 1 5A04FF16
-P 1000 7050
-F 0 "C10" H 1010 7120 50  0000 L CNN
-F 1 "2.2uF" H 1010 6970 50  0000 L CNN
-F 2 "" H 1000 7050 50  0001 C CNN
-F 3 "" H 1000 7050 50  0001 C CNN
-	1    1000 7050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 6900 1000 6950
 Connection ~ 1200 6900
 Connection ~ 1000 6900
-Text Label 850  6900 0    60   ~ 0
-V5
-Text Label 850  6750 2    60   ~ 0
-GND
 Wire Wire Line
 	1000 7150 1000 7200
 Wire Wire Line
 	1000 7200 750  7200
-Text Label 950  7200 2    60   ~ 0
-GND
 Wire Wire Line
 	950  6550 950  6500
 Connection ~ 950  6500
 Wire Wire Line
 	950  6750 650  6750
-Text Label 2750 6900 0    60   ~ 0
-3V3
-$Comp
-L LED-RESCUE-main_master_board D?
-U 1 1 5A051A5D
-P 2250 5925
-F 0 "D?" H 2250 6025 50  0000 C CNN
-F 1 "GRN_LED" H 2250 5825 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 2250 5925 50  0001 C CNN
-F 3 "" H 2250 5925 50  0000 C CNN
-	1    2250 5925
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R?
-U 1 1 5A051A63
-P 2700 5925
-F 0 "R?" V 2780 5925 50  0000 C CNN
-F 1 "680" V 2700 5925 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2630 5925 50  0001 C CNN
-F 3 "" H 2700 5925 50  0000 C CNN
-	1    2700 5925
-	0    1    1    0   
-$EndComp
-Text Label 2925 5925 0    60   ~ 0
-GND
-Text Label 1900 5925 0    60   ~ 0
-3V3
 Wire Wire Line
 	2850 5925 3125 5925
 Wire Wire Line
 	2450 5925 2550 5925
 Wire Wire Line
 	2050 5925 1800 5925
+Wire Wire Line
+	1600 4800 1600 5050
+Wire Wire Line
+	1600 5050 2150 5050
+Connection ~ 1600 4800
 $EndSCHEMATC
