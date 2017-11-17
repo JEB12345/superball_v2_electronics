@@ -29,13 +29,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:TPS754
-LIBS:FDS4935A
-LIBS:Si1900DL
-LIBS:LP3852-3.3
 LIBS:conn_2x50
 LIBS:conn_open_q_x2
+LIBS:FDS4935A
 LIBS:LMR16020
+LIBS:LP3852-3.3
+LIBS:Si1900DL
+LIBS:TPS754
 LIBS:TPS61089
 LIBS:TPS61232DRC
 LIBS:TPS832130SIL
@@ -57,12 +57,91 @@ LIBS:ptn78060
 LIBS:lmz14203h
 LIBS:as1364
 LIBS:lt3083-dfn
+LIBS:teensy
+LIBS:ac-dc
+LIBS:Altera
+LIBS:analog_devices
+LIBS:Battery_Management
+LIBS:bbd
+LIBS:Bosch
+LIBS:brooktre
+LIBS:Connector
+LIBS:dc-dc
+LIBS:Diode
+LIBS:Display
+LIBS:driver_gate
+LIBS:DSP_Microchip_DSPIC33
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:Espressif
+LIBS:FPGA_Actel
+LIBS:ftdi
+LIBS:gennum
+LIBS:Graphic
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:LED
+LIBS:LEM
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
+LIBS:logic_programmable
+LIBS:Logic_TTL_IEEE
+LIBS:maxim
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_Parallax
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
+LIBS:modules
+LIBS:Motor
+LIBS:motor_drivers
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:Relay
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:Sensor_Current
+LIBS:sensors
+LIBS:silabs
+LIBS:supertex
+LIBS:Switch
+LIBS:Transformer
+LIBS:Transistor
+LIBS:triac_thyristor
+LIBS:Valve
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:tps211x
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -768,8 +847,6 @@ Wire Wire Line
 	2650 960  2440 960 
 Wire Notes Line
 	500  1400 2350 1400
-Wire Notes Line
-	8670 2000 8670 4610
 Wire Wire Line
 	1100 750  1550 750 
 Wire Wire Line
@@ -778,10 +855,6 @@ Wire Wire Line
 	10260 890  9760 890 
 Wire Wire Line
 	10260 1020 9760 1020
-Wire Notes Line
-	500  2100 8670 2100
-Wire Notes Line
-	6750 4000 6750 2100
 Wire Wire Line
 	3650 960  4030 960 
 Connection ~ 5240 1030
@@ -900,8 +973,6 @@ Wire Notes Line
 	4120 1400 4120 480 
 Wire Notes Line
 	2140 1400 2140 480 
-Wire Notes Line
-	4770 6500 4770 7780
 Wire Wire Line
 	10260 1170 9750 1170
 Wire Wire Line
@@ -909,11 +980,9 @@ Wire Wire Line
 Wire Wire Line
 	1075 1050 1525 1050
 Wire Notes Line
-	4450 5550 500  5550
+	4250 5550 500  5550
 Wire Notes Line
 	3300 5575 3300 7775
-Wire Notes Line
-	6600 4625 8675 4625
 Wire Wire Line
 	10250 1300 9750 1300
 Wire Wire Line
@@ -1005,7 +1074,7 @@ Connection ~ 900  4350
 Wire Wire Line
 	1650 4650 1300 4650
 Wire Wire Line
-	1650 4800 900  4800
+	900  4800 1650 4800
 Wire Wire Line
 	900  4800 900  4600
 Wire Wire Line
@@ -1120,4 +1189,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 5050 2150 5050
 Connection ~ 1600 4800
+Wire Notes Line
+	500  2100 11200 2100
 $EndSCHEMATC
