@@ -1,4 +1,4 @@
-update=Wed 15 Nov 2017 11:57:49 AM PST
+update=Tue 21 Nov 2017 01:31:35 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -418,3 +418,4 @@ LibName376=Xicor
 LibName377=zetex
 LibName378=Zilog
 LibName379=Library/tps211x
+LibName380=Library/adg5419

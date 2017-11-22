@@ -136,6 +136,7 @@ LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
 LIBS:tps211x
+LIBS:adg5419
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
