@@ -1,0 +1,288 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TPS2813
+LIBS:psmn013-80ys
+LIBS:rq3e120attb
+LIBS:mosfet_driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS2811/2/3 U1
+U 1 1 5A70F235
+P 4900 3350
+F 0 "U1" H 4900 2900 60  0000 C CNN
+F 1 "TPS2811/2/3" H 4900 3800 60  0000 C CNN
+F 2 "Package_SSOP:TSSOP-8_4.4x3mm_P0.65mm" H 4900 3350 60  0001 C CNN
+F 3 "" H 4900 3350 60  0001 C CNN
+	1    4900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J1
+U 1 1 5A70F3A1
+P 3000 3350
+F 0 "J1" H 3000 3450 50  0000 C CNN
+F 1 "Ext_IN" H 3000 3150 50  0000 C CNN
+F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3000 3350 50  0001 C CNN
+F 3 "" H 3000 3350 50  0001 C CNN
+	1    3000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J3
+U 1 1 5A70F4AC
+P 10100 3150
+F 0 "J3" H 10100 3250 50  0000 C CNN
+F 1 "Batt_IN" H 10100 2950 50  0000 C CNN
+F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 10100 3150 50  0001 C CNN
+F 3 "" H 10100 3150 50  0001 C CNN
+	1    10100 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J2
+U 1 1 5A70F5B7
+P 7800 5850
+F 0 "J2" H 7800 5950 50  0000 C CNN
+F 1 "OUT" H 7800 5650 50  0000 C CNN
+F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 7800 5850 50  0001 C CNN
+F 3 "" H 7800 5850 50  0001 C CNN
+	1    7800 5850
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A70F953
+P 3600 3250
+F 0 "R1" V 3680 3250 50  0000 C CNN
+F 1 "100k" V 3600 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 3250 50  0001 C CNN
+F 3 "" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A70F990
+P 3800 3500
+F 0 "R2" V 3880 3500 50  0000 C CNN
+F 1 "43k" V 3800 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3730 3500 50  0001 C CNN
+F 3 "" H 3800 3500 50  0001 C CNN
+	1    3800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A70FAFE
+P 5850 3800
+F 0 "C1" H 5875 3900 50  0000 L CNN
+F 1 "0.1uF" H 5875 3700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 3650 50  0001 C CNN
+F 3 "" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A70FBB6
+P 5850 4300
+F 0 "#PWR01" H 5850 4050 50  0001 C CNN
+F 1 "GND" H 5850 4150 50  0000 C CNN
+F 2 "" H 5850 4300 50  0001 C CNN
+F 3 "" H 5850 4300 50  0001 C CNN
+	1    5850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5A710088
+P 7850 5100
+F 0 "C2" H 7875 5200 50  0000 L CNN
+F 1 "CP1" H 7875 5000 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D12.5mm_P5.00mm" H 7850 5100 50  0001 C CNN
+F 3 "" H 7850 5100 50  0001 C CNN
+	1    7850 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A71027F
+P 7400 5550
+F 0 "#PWR02" H 7400 5300 50  0001 C CNN
+F 1 "GND" H 7400 5400 50  0000 C CNN
+F 2 "" H 7400 5550 50  0001 C CNN
+F 3 "" H 7400 5550 50  0001 C CNN
+	1    7400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PSMN013-80YS Q2
+U 1 1 5A71031E
+P 8750 3850
+F 0 "Q2" H 9200 3950 40  0000 R CNN
+F 1 "Batt_MOSFET" H 9600 3850 40  0000 R TNN
+F 2 "Package_TO_SOT_SMD:SOT-669_LFPAK" H 9200 3750 30  0000 C CNN
+F 3 "" H 8750 3850 60  0000 C CNN
+	1    8750 3850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5500 3100 5850 3100
+Wire Wire Line
+	5850 3100 5850 3650
+Wire Wire Line
+	5850 3450 5500 3450
+Wire Wire Line
+	3200 3250 3450 3250
+Wire Wire Line
+	3750 3250 4350 3250
+Wire Wire Line
+	3800 3250 3800 3350
+Connection ~ 3800 3250
+Wire Wire Line
+	4100 3250 4100 3600
+Wire Wire Line
+	4100 3600 4350 3600
+Connection ~ 4100 3250
+Wire Wire Line
+	3350 3100 4350 3100
+Wire Wire Line
+	4350 3750 4350 3450
+Wire Wire Line
+	3200 3350 3200 4050
+Connection ~ 5850 3450
+Wire Wire Line
+	5850 3950 5850 4300
+Wire Wire Line
+	8000 5450 7900 5450
+Wire Wire Line
+	7900 5450 7900 5650
+Wire Wire Line
+	7800 5450 7800 5650
+Wire Wire Line
+	7400 5450 7800 5450
+Wire Wire Line
+	7400 5450 7400 5550
+Wire Wire Line
+	9900 3650 9900 3150
+Wire Wire Line
+	8000 2600 8000 5450
+Connection ~ 3350 3250
+Connection ~ 3350 3100
+Wire Wire Line
+	3350 2600 3350 3250
+Wire Wire Line
+	9900 2600 9900 3050
+Wire Wire Line
+	3350 2600 9900 2600
+Connection ~ 8000 2600
+Connection ~ 8000 5100
+Wire Wire Line
+	3800 3650 3800 3850
+Connection ~ 3800 3750
+Wire Wire Line
+	9200 3650 9900 3650
+Wire Wire Line
+	9200 3800 9350 3800
+Wire Wire Line
+	9350 3650 9350 3950
+Connection ~ 9350 3650
+Wire Wire Line
+	9350 3950 9200 3950
+Connection ~ 9350 3800
+Wire Wire Line
+	9200 4100 9650 4100
+Wire Wire Line
+	9650 4100 9650 3250
+Wire Wire Line
+	9650 3250 5500 3250
+$Comp
+L GND #PWR03
+U 1 1 5A7390D3
+P 3800 3850
+F 0 "#PWR03" H 3800 3600 50  0001 C CNN
+F 1 "GND" H 3800 3700 50  0000 C CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "" H 3800 3850 50  0001 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3850 8300 3850
+Wire Wire Line
+	7700 3850 7700 5450
+Connection ~ 7700 5450
+Connection ~ 7700 5100
+Text Notes 3500 4700 0    60   ~ 0
+Doesn't work. Since the two inputs get connected together when both are on.
+$Comp
+L PSMN013-80YS Q1
+U 1 1 5A78CB82
+P 6850 3850
+F 0 "Q1" H 7300 3950 40  0000 R CNN
+F 1 "Batt_MOSFET" H 7700 3850 40  0000 R TNN
+F 2 "Package_TO_SOT_SMD:SOT-669_LFPAK" H 7300 3750 30  0000 C CNN
+F 3 "" H 6850 3850 60  0000 C CNN
+	1    6850 3850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5500 3600 6400 3600
+Wire Wire Line
+	3800 3750 4350 3750
+Wire Wire Line
+	3200 4050 6400 4050
+Wire Wire Line
+	6250 3750 6250 4050
+Wire Wire Line
+	6250 3900 6400 3900
+Connection ~ 6250 4050
+Wire Wire Line
+	6250 3750 6400 3750
+Connection ~ 6250 3900
+Connection ~ 7700 3850
+$EndSCHEMATC

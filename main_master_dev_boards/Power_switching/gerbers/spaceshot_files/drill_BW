@@ -1,0 +1,157 @@
+%!PS-Adobe-3.0
+%%Creator: cairo 1.14.6 (http://cairographics.org)
+%%CreationDate: Mon Dec 11 13:13:26 2017
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%DocumentMedia: 103x63mm 293 178 0 () ()
+%%BoundingBox: 13 8 281 171
+%%EndComments
+%%BeginProlog
+/languagelevel where
+{ pop languagelevel } { 1 } ifelse
+2 lt { /Helvetica findfont 12 scalefont setfont 50 500 moveto
+  (This print job requires a PostScript Language Level 2 printer.) show
+  showpage quit } if
+/q { gsave } bind def
+/Q { grestore } bind def
+/cm { 6 array astore concat } bind def
+/w { setlinewidth } bind def
+/J { setlinecap } bind def
+/j { setlinejoin } bind def
+/M { setmiterlimit } bind def
+/d { setdash } bind def
+/m { moveto } bind def
+/l { lineto } bind def
+/c { curveto } bind def
+/h { closepath } bind def
+/re { exch dup neg 3 1 roll 5 3 roll moveto 0 rlineto
+      0 exch rlineto 0 rlineto closepath } bind def
+/S { stroke } bind def
+/f { fill } bind def
+/f* { eofill } bind def
+/n { newpath } bind def
+/W { clip } bind def
+/W* { eoclip } bind def
+/BT { } bind def
+/ET { } bind def
+/pdfmark where { pop globaldict /?pdfmark /exec load put }
+    { globaldict begin /?pdfmark /pop load def /pdfmark
+    /cleartomark load def end } ifelse
+/BDC { mark 3 1 roll /BDC pdfmark } bind def
+/EMC { mark /EMC pdfmark } bind def
+/cairo_store_point { /cairo_point_y exch def /cairo_point_x exch def } def
+/Tj { show currentpoint cairo_store_point } bind def
+/TJ {
+  {
+    dup
+    type /stringtype eq
+    { show } { -0.001 mul 0 cairo_font_matrix dtransform rmoveto } ifelse
+  } forall
+  currentpoint cairo_store_point
+} bind def
+/cairo_selectfont { cairo_font_matrix aload pop pop pop 0 0 6 array astore
+    cairo_font exch selectfont cairo_point_x cairo_point_y moveto } bind def
+/Tf { pop /cairo_font exch def /cairo_font_matrix where
+      { pop cairo_selectfont } if } bind def
+/Td { matrix translate cairo_font_matrix matrix concatmatrix dup
+      /cairo_font_matrix exch def dup 4 get exch 5 get cairo_store_point
+      /cairo_font where { pop cairo_selectfont } if } bind def
+/Tm { 2 copy 8 2 roll 6 array astore /cairo_font_matrix exch def
+      cairo_store_point /cairo_font where { pop cairo_selectfont } if } bind def
+/g { setgray } bind def
+/rg { setrgbcolor } bind def
+/d1 { setcachedevice } bind def
+/cairo_set_page_size {
+  % Change paper size, but only if different from previous paper size otherwise
+  % duplex fails. PLRM specifies a tolerance of 5 pts when matching paper size
+  % so we use the same when checking if the size changes.
+  /setpagedevice where {
+    pop currentpagedevice
+    /PageSize known {
+      2 copy
+      currentpagedevice /PageSize get aload pop
+      exch 4 1 roll
+      sub abs 5 gt
+      3 1 roll
+      sub abs 5 gt
+      or
+    } {
+      true
+    } ifelse
+    {
+      2 array astore
+      2 dict begin
+        /PageSize exch def
+        /ImagingBBox null def
+      currentdict end
+      setpagedevice
+    } {
+      pop pop
+    } ifelse
+  } {
+    pop
+  } ifelse
+} def
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+%%PageMedia: 103x63mm
+%%PageBoundingBox: 13 8 281 171
+293 178 cairo_set_page_size
+%%EndPageSetup
+q 13 8 268 163 rectclip q
+0 g
+0.425197 w
+1 J
+0 j
+[] 0.0 d
+10 M q 1 0 0 1 0 178 cm
+13.555 -7.668 m 13.555 -7.668 l S Q
+q 1 0 0 1 0 178 cm
+279.953 -7.668 m 13.555 -7.668 l S Q
+q 1 0 0 1 0 178 cm
+279.953 -169.668 m 279.953 -7.668 l S Q
+q 1 0 0 1 0 178 cm
+13.555 -169.668 m 279.953 -169.668 l S Q
+q 1 0 0 1 0 178 cm
+13.555 -7.668 m 13.555 -169.668 l S Q
+0.45098 0.45098 0.870588 rg
+32.957 116.332 m 32.957 118.207 30.148 118.207 30.148 116.332 c 30.148 
+114.461 32.957 114.461 32.957 116.332 c f*
+32.957 109.133 m 32.957 111.004 30.148 111.004 30.148 109.133 c 30.148 
+107.262 32.957 107.262 32.957 109.133 c f*
+32.957 101.934 m 32.957 103.805 30.148 103.805 30.148 101.934 c 30.148 
+100.062 32.957 100.062 32.957 101.934 c f*
+32.957 32.812 m 32.957 34.688 30.148 34.688 30.148 32.812 c 30.148 30.941
+ 32.957 30.941 32.957 32.812 c f*
+32.957 25.613 m 32.957 27.484 30.148 27.484 30.148 25.613 c 30.148 23.742
+ 32.957 23.742 32.957 25.613 c f*
+32.957 18.414 m 32.957 20.285 30.148 20.285 30.148 18.414 c 30.148 16.543
+ 32.957 16.543 32.957 18.414 c f*
+33.535 149.844 m 33.535 152.484 29.574 152.484 29.574 149.844 c 29.574 
+147.203 33.535 147.203 33.535 149.844 c f*
+33.535 137.934 m 33.535 140.574 29.574 140.574 29.574 137.934 c 29.574 
+135.293 33.535 135.293 33.535 137.934 c f*
+33.535 67.043 m 33.535 69.684 29.574 69.684 29.574 67.043 c 29.574 64.402
+ 33.535 64.402 33.535 67.043 c f*
+33.535 55.133 m 33.535 57.773 29.574 57.773 29.574 55.133 c 29.574 52.492
+ 33.535 52.492 33.535 55.133 c f*
+263.934 98.332 m 263.934 100.973 259.973 100.973 259.973 98.332 c 259.973
+ 95.695 263.934 95.695 263.934 98.332 c f*
+263.934 86.426 m 263.934 89.066 259.973 89.066 259.973 86.426 c 259.973
+ 83.785 263.934 83.785 263.934 86.426 c f*
+127.996 47.934 m 127.996 51.727 122.309 51.727 122.309 47.934 c 122.309
+ 44.141 127.996 44.141 127.996 47.934 c f*
+156.344 47.934 m 156.344 51.727 150.656 51.727 150.656 47.934 c 150.656
+ 44.141 156.344 44.141 156.344 47.934 c f*
+199.996 47.934 m 199.996 51.727 194.309 51.727 194.309 47.934 c 194.309
+ 44.141 199.996 44.141 199.996 47.934 c f*
+228.344 47.934 m 228.344 51.727 222.656 51.727 222.656 47.934 c 222.656
+ 44.141 228.344 44.141 228.344 47.934 c f*
+Q Q
+showpage
+%%Trailer
+%%EOF

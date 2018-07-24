@@ -137,12 +137,15 @@ LIBS:zetex
 LIBS:Zilog
 LIBS:tps211x
 LIBS:adg5419
+LIBS:szmmbz52_zener
+LIBS:ltc4416
+LIBS:rq3e120attb
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -160,296 +163,145 @@ Text Label 1300 750  0    60   ~ 0
 V24
 Text Label 1220 900  0    60   ~ 0
 GND
-Text HLabel 10260 890  2    60   Output ~ 0
-V5_out
-Text HLabel 10260 1020 2    60   Output ~ 0
-3V3
-Text Label 9860 890  0    60   ~ 0
-V5
-Text Label 9860 1020 0    60   ~ 0
-3V3
 Text Notes 9500 600  0    60   ~ 12
 Sheet Outputs
 Text Notes 1380 580  0    60   ~ 12
 Sheet Inputs
 Text Notes 645  5960 0    60   ~ 0
 5V to 3.3V LDO
-Text HLabel 1075 1050 0    60   Input ~ 0
-Vbackup
-Text Label 1125 1050 0    60   ~ 0
-Vbackup
 $Comp
-L Si1900DL U5
-U 1 1 586DC5A6
-P 3150 1060
-F 0 "U5" H 3150 870 50  0000 C CNN
-F 1 "Si1900DL" H 3150 1250 50  0000 C CNN
-F 2 "NASA_IRG_SSB:SOT323-6" H 3150 1060 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3150 1060 50  0001 C CNN
-	1    3150 1060
-	1    0    0    -1  
-$EndComp
-Text Label 3670 960  0    60   ~ 0
-PFET_ON
-Text Label 2630 960  2    60   ~ 0
-GND
-Text Label 2880 800  2    60   ~ 0
-Switch_on
-$Comp
-L Fuse_Small F3
+L Fuse_Small F1
 U 1 1 58726D0C
-P 5240 880
-F 0 "F3" H 5240 820 50  0000 C CNN
-F 1 "MF-MSMF200-2" V 5240 1210 50  0000 C CNN
-F 2 "SMD-1812:SMD-1812" H 5240 880 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/MF-MSMF200-2-Bourns-datasheet-10413427.pdf" H 5240 880 50  0001 C CNN
-	1    5240 880 
+P 4390 880
+F 0 "F1" H 4390 820 50  0000 C CNN
+F 1 "MF-MSMF200-2" V 4390 1210 50  0000 C CNN
+F 2 "SMD-1812:SMD-1812" H 4390 880 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/MF-MSMF200-2-Bourns-datasheet-10413427.pdf" H 4390 880 50  0001 C CNN
+	1    4390 880 
 	0    1    1    0   
 $EndComp
 $Comp
-L R R17
+L R R15
 U 1 1 58726D12
-P 5240 1220
-F 0 "R17" V 5320 1220 50  0000 C CNN
-F 1 "0.02" V 5240 1220 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5170 1220 50  0001 C CNN
-F 3 "" H 5240 1220 50  0000 C CNN
-	1    5240 1220
-	-1   0    0    1   
-$EndComp
-$Comp
-L D_TVS D8
-U 1 1 58726D18
-P 5240 1600
-F 0 "D8" H 5240 1700 50  0000 C CNN
-F 1 "uClamp0511P" V 5240 1270 50  0000 C CNN
-F 2 "SLP1006P2:SLP1006P2" H 5240 1600 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/UCLAMP0511P.TCT-Semtech-datasheet-8827746.pdf" H 5240 1600 50  0001 C CNN
-	1    5240 1600
-	0    -1   -1   0   
-$EndComp
-Text Label 5260 1850 0    60   ~ 0
-GND
-$Comp
-L Fuse_Small F4
-U 1 1 58726E5B
-P 6000 880
-F 0 "F4" H 6000 820 50  0000 C CNN
-F 1 "MF-MSMF150-2" V 6000 1210 50  0000 C CNN
-F 2 "SMD-1812:SMD-1812" H 6000 880 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/MF-MSMF150-2-Bourns-datasheet-10413427.pdf" H 6000 880 50  0001 C CNN
-	1    6000 880 
-	0    1    1    0   
-$EndComp
-$Comp
-L R R22
-U 1 1 58726E61
-P 6000 1220
-F 0 "R22" V 6080 1220 50  0000 C CNN
-F 1 "0.02" V 6000 1220 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5930 1220 50  0001 C CNN
-F 3 "" H 6000 1220 50  0000 C CNN
-	1    6000 1220
+P 4390 1220
+F 0 "R15" V 4470 1220 50  0000 C CNN
+F 1 "0.02" V 4390 1220 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4320 1220 50  0001 C CNN
+F 3 "" H 4390 1220 50  0000 C CNN
+	1    4390 1220
 	-1   0    0    1   
 $EndComp
 $Comp
 L D_TVS D10
-U 1 1 58726E67
-P 6000 1600
-F 0 "D10" H 6000 1700 50  0000 C CNN
-F 1 "uClamp3311P" V 6000 1270 50  0000 C CNN
-F 2 "SLP1006P2:SLP1006P2" H 6000 1600 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/UCLAMP3311P.TCT-Semtech-datasheet-10884930.pdf" H 6000 1600 50  0001 C CNN
-	1    6000 1600
+U 1 1 58726D18
+P 4390 1600
+F 0 "D10" H 4390 1700 50  0000 C CNN
+F 1 "uClamp0511P" V 4390 1270 50  0000 C CNN
+F 2 "SLP1006P2:SLP1006P2" H 4390 1600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/UCLAMP0511P.TCT-Semtech-datasheet-8827746.pdf" H 4390 1600 50  0001 C CNN
+	1    4390 1600
 	0    -1   -1   0   
 $EndComp
-Text Label 6020 1850 0    60   ~ 0
+Text Label 4410 1850 0    60   ~ 0
 GND
-Text Label 6040 740  0    60   ~ 0
+$Comp
+L Fuse_Small F2
+U 1 1 58726E5B
+P 5150 880
+F 0 "F2" H 5150 820 50  0000 C CNN
+F 1 "MF-MSMF150-2" V 5150 1210 50  0000 C CNN
+F 2 "SMD-1812:SMD-1812" H 5150 880 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/MF-MSMF150-2-Bourns-datasheet-10413427.pdf" H 5150 880 50  0001 C CNN
+	1    5150 880 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 58726E61
+P 5150 1220
+F 0 "R16" V 5230 1220 50  0000 C CNN
+F 1 "0.02" V 5150 1220 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 1220 50  0001 C CNN
+F 3 "" H 5150 1220 50  0000 C CNN
+	1    5150 1220
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_TVS D11
+U 1 1 58726E67
+P 5150 1600
+F 0 "D11" H 5150 1700 50  0000 C CNN
+F 1 "uClamp3311P" V 5150 1270 50  0000 C CNN
+F 2 "SLP1006P2:SLP1006P2" H 5150 1600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/UCLAMP3311P.TCT-Semtech-datasheet-10884930.pdf" H 5150 1600 50  0001 C CNN
+	1    5150 1600
+	0    -1   -1   0   
+$EndComp
+Text Label 5170 1850 0    60   ~ 0
+GND
+Text Label 5190 740  0    60   ~ 0
 3V3_out
-Text Label 5290 1030 0    60   ~ 0
+Text Label 4440 1030 0    60   ~ 0
 V5_FUSE
-Text Label 6040 1030 0    60   ~ 0
+Text Label 5190 1030 0    60   ~ 0
 3V3_FUSE
-Text Label 5290 1410 0    60   ~ 0
+Text Label 4440 1410 0    60   ~ 0
 V5
-Text Label 6060 1410 0    60   ~ 0
+Text Label 5210 1410 0    60   ~ 0
 3V3
+$Comp
+L INA197-RESCUE-main_master_board U5
+U 1 1 5873C64E
+P 8000 790
+F 0 "U5" H 8000 590 60  0000 C CNN
+F 1 "INA197" H 8000 990 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8000 940 60  0001 C CNN
+F 3 "" H 8000 940 60  0000 C CNN
+	1    8000 790 
+	-1   0    0    1   
+$EndComp
+Text Label 8570 690  0    60   ~ 0
+3V3
+Text Label 8570 790  0    60   ~ 0
+GND
+Text Label 8570 890  0    60   ~ 0
+V5_cur
+Text Label 7020 740  0    60   ~ 0
+V5_FUSE
+Text Label 7020 840  0    60   ~ 0
+V5
 $Comp
 L INA197-RESCUE-main_master_board U7
-U 1 1 5873C64E
-P 8000 1240
-AR Path="/5873C64E" Ref="U7"  Part="1" 
-AR Path="/58643B62/5873C64E" Ref="U7"  Part="1" 
-AR Path="/5876FF98/5873C64E" Ref="U7"  Part="1" 
-F 0 "U7" H 8000 1040 60  0000 C CNN
-F 1 "INA197" H 8000 1440 60  0000 C CNN
-F 2 "dp_devices:dp_devices-SOT-23-5" H 8000 1390 60  0001 C CNN
-F 3 "" H 8000 1390 60  0000 C CNN
-	1    8000 1240
-	-1   0    0    1   
-$EndComp
-Text Label 8570 1140 0    60   ~ 0
-3V3
-Text Label 8570 1240 0    60   ~ 0
-GND
-Text Label 8570 1340 0    60   ~ 0
-V5_cur
-Text Label 7020 1190 0    60   ~ 0
-V5_FUSE
-Text Label 7020 1290 0    60   ~ 0
-V5
-$Comp
-L INA197-RESCUE-main_master_board U8
 U 1 1 5873D918
-P 8000 1760
-AR Path="/5873D918" Ref="U8"  Part="1" 
-AR Path="/58643B62/5873D918" Ref="U8"  Part="1" 
-AR Path="/5876FF98/5873D918" Ref="U8"  Part="1" 
-F 0 "U8" H 8000 1560 60  0000 C CNN
-F 1 "INA197" H 8000 1960 60  0000 C CNN
-F 2 "dp_devices:dp_devices-SOT-23-5" H 8000 1910 60  0001 C CNN
-F 3 "" H 8000 1910 60  0000 C CNN
-	1    8000 1760
+P 8000 1810
+F 0 "U7" H 8000 1610 60  0000 C CNN
+F 1 "INA197" H 8000 2010 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8000 1960 60  0001 C CNN
+F 3 "" H 8000 1960 60  0000 C CNN
+	1    8000 1810
 	-1   0    0    1   
 $EndComp
-Text Label 8570 1660 0    60   ~ 0
+Text Label 8570 1710 0    60   ~ 0
 3V3
-Text Label 8570 1760 0    60   ~ 0
+Text Label 8570 1810 0    60   ~ 0
 GND
-Text Label 8570 1860 0    60   ~ 0
+Text Label 8570 1910 0    60   ~ 0
 3V3_cur
-Text Label 7020 1710 0    60   ~ 0
+Text Label 7020 1760 0    60   ~ 0
 3V3_FUSE
-Text Label 7020 1810 0    60   ~ 0
+Text Label 7020 1860 0    60   ~ 0
 3V3
 Text Notes 4130 580  0    60   ~ 0
 Coverted Power Fuses and Current Monitoring
-$Comp
-L R_Small R5
-U 1 1 58748886
-P 1830 1630
-F 0 "R5" H 1860 1650 50  0000 L CNN
-F 1 "10k" H 1860 1590 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1830 1630 50  0001 C CNN
-F 3 "" H 1830 1630 50  0000 C CNN
-	1    1830 1630
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R6
-U 1 1 5874888C
-P 1830 1910
-F 0 "R6" H 1860 1930 50  0000 L CNN
-F 1 "10K" H 1860 1870 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 1830 1910 50  0001 C CNN
-F 3 "" H 1830 1910 50  0000 C CNN
-	1    1830 1910
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C6
-U 1 1 58748892
-P 1680 1910
-F 0 "C6" H 1690 1980 50  0000 L CNN
-F 1 "100nF" V 1580 1820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1680 1910 50  0001 C CNN
-F 3 "" H 1680 1910 50  0000 C CNN
-	1    1680 1910
-	1    0    0    -1  
-$EndComp
-Text Label 1630 1510 0    60   ~ 0
-V5
-Text Label 1880 2070 0    60   ~ 0
-GND
-Text Label 1860 1790 0    60   ~ 0
-V5_volt
-$Comp
-L R_Small R8
-U 1 1 5874A054
-P 2610 1630
-F 0 "R8" H 2640 1650 50  0000 L CNN
-F 1 "6.2k" H 2640 1590 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 2610 1630 50  0001 C CNN
-F 3 "" H 2610 1630 50  0000 C CNN
-	1    2610 1630
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R9
-U 1 1 5874A05A
-P 2610 1910
-F 0 "R9" H 2640 1930 50  0000 L CNN
-F 1 "10K" H 2640 1870 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 2610 1910 50  0001 C CNN
-F 3 "" H 2610 1910 50  0000 C CNN
-	1    2610 1910
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C7
-U 1 1 5874A060
-P 2460 1910
-F 0 "C7" H 2470 1980 50  0000 L CNN
-F 1 "100nF" V 2360 1820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2460 1910 50  0001 C CNN
-F 3 "" H 2460 1910 50  0000 C CNN
-	1    2460 1910
-	1    0    0    -1  
-$EndComp
-Text Label 2410 1510 0    60   ~ 0
-3V3
-Text Label 2660 2070 0    60   ~ 0
-GND
-Text Label 2640 1790 0    60   ~ 0
-3V3_volt
-Text Notes 670  1990 1    60   ~ 0
-Voltage \nMonitoring
-Text HLabel 10250 1620 2    60   Output ~ 0
-V5_cur
-Text HLabel 10250 1720 2    60   Output ~ 0
-V5_volt
-Text HLabel 10250 1820 2    60   Output ~ 0
-3V3_cur
-Text HLabel 10250 1910 2    60   Output ~ 0
-3V3_volt
-Text Label 9820 1620 0    60   ~ 0
-V5_cur
-Text Label 9820 1820 0    60   ~ 0
-3V3_cur
-Text Label 9820 1720 0    60   ~ 0
-V5_volt
-Text Label 9820 1910 0    60   ~ 0
-3V3_volt
-Text Label 2620 1160 2    60   ~ 0
-charge_on
-Text Label 3690 1160 0    60   ~ 0
-GND
-Text Label 3670 1060 0    60   ~ 0
-P_ref_buc
-Text HLabel 10260 1170 2    60   Output ~ 0
-GND
-Text Label 9870 1170 0    60   ~ 0
-GND
-Text Label 5300 740  0    60   ~ 0
-V5_MERGE
-Text HLabel 1100 1200 0    60   Input ~ 0
-Switch_on
-Text Label 1125 1200 0    60   ~ 0
-Switch_on
+Text Label 4450 740  0    60   ~ 0
+V5_out
 Text Notes 600  3800 0    60   ~ 0
 5V to 4V LDO (SD410 Power)
-Text HLabel 10250 1300 2    60   Output ~ 0
-V4_snapdragon
-Text Label 9875 1300 0    60   ~ 0
-V4
 $Comp
-L LED-RESCUE-main_master_board D17
+L LED-RESCUE-main_master_board D8
 U 1 1 588AAACC
 P 3250 3825
-AR Path="/588AAACC" Ref="D17"  Part="1" 
-AR Path="/58643B62/588AAACC" Ref="D17"  Part="1" 
-F 0 "D17" H 3250 3925 50  0000 C CNN
+F 0 "D8" H 3250 3925 50  0000 C CNN
 F 1 "ORG_LED" H 3250 3725 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 3250 3825 50  0001 C CNN
 F 3 "" H 3250 3825 50  0000 C CNN
@@ -457,12 +309,12 @@ F 3 "" H 3250 3825 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R34
+L R R12
 U 1 1 588AB24C
 P 3700 3825
-F 0 "R34" V 3780 3825 50  0000 C CNN
+F 0 "R12" V 3780 3825 50  0000 C CNN
 F 1 "680" V 3700 3825 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3630 3825 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3630 3825 50  0001 C CNN
 F 3 "" H 3700 3825 50  0000 C CNN
 	1    3700 3825
 	0    1    1    0   
@@ -472,10 +324,10 @@ GND
 Text Label 2900 3825 0    60   ~ 0
 V4
 $Comp
-L LMZ14203H U3
+L LMZ14203H U4
 U 1 1 5A021453
 P 2400 3150
-F 0 "U3" H 2400 2800 60  0000 C CNN
+F 0 "U4" H 2400 2800 60  0000 C CNN
 F 1 "LMZ14203H" H 2400 3500 60  0000 C CNN
 F 2 "TO-PMOD:TO-PMOD" H 2400 3150 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmz14203h.pdf" H 2400 3150 60  0001 C CNN
@@ -487,114 +339,114 @@ V24
 Text Label 2900 3400 0    60   ~ 0
 GND
 $Comp
-L C_Small C2
+L C_Small C4
 U 1 1 5A034BCC
 P 1900 2750
-F 0 "C2" H 1910 2820 50  0000 L CNN
+F 0 "C4" H 1910 2820 50  0000 L CNN
 F 1 "10uF" H 1910 2670 50  0000 L CNN
-F 2 "" H 1900 2750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1900 2750 50  0001 C CNN
 F 3 "" H 1900 2750 50  0001 C CNN
 F 4 "C_IN" V 1800 2800 60  0000 C CNN "Field4"
 	1    1900 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L R R7
 U 1 1 5A035492
 P 1750 3050
-F 0 "R4" V 1830 3050 50  0000 C CNN
+F 0 "R7" V 1830 3050 50  0000 C CNN
 F 1 "100k" V 1750 3050 50  0000 C CNN
-F 2 "" V 1680 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1680 3050 50  0001 C CNN
 F 3 "" H 1750 3050 50  0001 C CNN
 F 4 "R_ON" V 1650 3050 60  0000 C CNN "Field4"
 	1    1750 3050
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L R R6
 U 1 1 5A035860
 P 1400 3100
-F 0 "R2" V 1480 3100 50  0000 C CNN
+F 0 "R6" V 1480 3100 50  0000 C CNN
 F 1 "178k" V 1400 3100 50  0000 C CNN
-F 2 "" V 1330 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 3100 50  0001 C CNN
 F 3 "" H 1400 3100 50  0001 C CNN
 F 4 "R_ENT" V 1300 3100 60  0000 C CNN "Field4"
 	1    1400 3100
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R1
+L R R5
 U 1 1 5A035961
 P 1200 3250
-F 0 "R1" V 1280 3250 50  0000 C CNN
+F 0 "R5" V 1280 3250 50  0000 C CNN
 F 1 "10k" V 1200 3250 50  0000 C CNN
-F 2 "" V 1130 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 3250 50  0001 C CNN
 F 3 "" H 1200 3250 50  0001 C CNN
 F 4 "R_ENB" V 1100 3250 60  0000 C CNN "Field4"
 	1    1200 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R7
+L R R11
 U 1 1 5A035F5E
 P 3600 2900
-F 0 "R7" V 3680 2900 50  0000 C CNN
+F 0 "R11" V 3680 2900 50  0000 C CNN
 F 1 "34k" V 3600 2900 50  0000 C CNN
-F 2 "" V 3530 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 2900 50  0001 C CNN
 F 3 "" H 3600 2900 50  0001 C CNN
 F 4 "R_FBT" V 3500 2900 60  0000 C CNN "Field4"
 	1    3600 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L R R13
 U 1 1 5A0362DE
 P 3800 3050
-F 0 "R10" V 3880 3050 50  0000 C CNN
+F 0 "R13" V 3880 3050 50  0000 C CNN
 F 1 "6.49k" V 3800 3050 50  0000 C CNN
-F 2 "" V 3730 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3730 3050 50  0001 C CNN
 F 3 "" H 3800 3050 50  0001 C CNN
 F 4 "R_FBB" V 3700 3050 60  0000 C CNN "Field4"
 	1    3800 3050
 	0    -1   -1   0   
 $EndComp
-Text Label 3900 3050 0    60   ~ 0
+Text Label 4000 3050 0    60   ~ 0
 GND
 Text Label 1750 3400 0    60   ~ 0
 GND
 Text Label 1000 3250 2    60   ~ 0
 GND
 $Comp
-L C_Small C4
+L C_Small C8
 U 1 1 5A03A00B
 P 3200 2900
-F 0 "C4" H 3210 2970 50  0000 L CNN
+F 0 "C8" H 3210 2970 50  0000 L CNN
 F 1 "0.022uF" H 3210 2820 50  0000 L CNN
-F 2 "" H 3200 2900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3200 2900 50  0001 C CNN
 F 3 "" H 3200 2900 50  0001 C CNN
 F 4 "C_FF" V 3100 2900 60  0000 C CNN "Field4"
 	1    3200 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
+L C_Small C9
 U 1 1 5A03ACF6
 P 3200 3250
-F 0 "C5" H 3210 3320 50  0000 L CNN
+F 0 "C9" H 3210 3320 50  0000 L CNN
 F 1 "4700pF" H 3210 3170 50  0000 L CNN
-F 2 "" H 3200 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3200 3250 50  0001 C CNN
 F 3 "" H 3200 3250 50  0001 C CNN
 F 4 "C_SS" V 3100 3250 60  0000 C CNN "Field4"
 	1    3200 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L C_Small C7
 U 1 1 5A03B195
 P 3050 2600
-F 0 "C3" H 3060 2670 50  0000 L CNN
+F 0 "C7" H 3060 2670 50  0000 L CNN
 F 1 "100uF" H 3060 2520 50  0000 L CNN
-F 2 "" H 3050 2600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3050 2600 50  0001 C CNN
 F 3 "" H 3050 2600 50  0001 C CNN
 F 4 "C_O" V 2950 2600 60  0000 C CNN "Field4"
 F 5 "1-95mOhm" H 3300 2600 39  0000 C CNN "ESR"
@@ -606,27 +458,27 @@ GND
 Text Label 3100 2450 0    60   ~ 0
 GND
 Text Label 3450 2750 0    60   ~ 0
-V5
+V5_out
 Text Notes 700  2300 0    60   ~ 0
 24 to 5V integrated buck converter
 $Comp
-L LED_ALT D6
+L LED_ALT D9
 U 1 1 5A048E39
 P 3500 2250
-F 0 "D6" H 3500 2350 50  0000 C CNN
+F 0 "D9" H 3500 2350 50  0000 C CNN
 F 1 "Red LED" H 3500 2150 50  0000 C CNN
-F 2 "" H 3500 2250 50  0001 C CNN
+F 2 "LEDs:LED_0603" H 3500 2250 50  0001 C CNN
 F 3 "" H 3500 2250 50  0001 C CNN
 	1    3500 2250
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R18
+L R R14
 U 1 1 5A048F42
 P 3850 2250
-F 0 "R18" V 3930 2250 50  0000 C CNN
+F 0 "R14" V 3930 2250 50  0000 C CNN
 F 1 "680" V 3850 2250 50  0000 C CNN
-F 2 "" V 3780 2250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 2250 50  0001 C CNN
 F 3 "" H 3850 2250 50  0001 C CNN
 	1    3850 2250
 	0    1    1    0   
@@ -636,10 +488,10 @@ GND
 Text Label 3200 2250 0    60   ~ 0
 V5
 $Comp
-L AS1364 U4
+L AS1364 U3
 U 1 1 5A049AD9
 P 2250 4550
-F 0 "U4" H 2250 4200 60  0000 C CNN
+F 0 "U3" H 2250 4200 60  0000 C CNN
 F 1 "AS1364" H 2250 4900 60  0000 C CNN
 F 2 "Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.65mm" H 2250 4550 60  0001 C CNN
 F 3 "http://ams.com/eng/content/download/1961/15107/1937" H 2250 4550 60  0001 C CNN
@@ -648,46 +500,17 @@ F 3 "http://ams.com/eng/content/download/1961/15107/1937" H 2250 4550 60  0001 C
 $EndComp
 Text Label 750  4350 0    60   ~ 0
 V5
-$Comp
-L SW_Push SW3
-U 1 1 5A04A1D3
-P 1000 5350
-F 0 "SW3" H 1050 5450 50  0000 L CNN
-F 1 "SW_Push" H 1000 5290 50  0000 C CNN
-F 2 "" H 1000 5550 50  0000 C CNN
-F 3 "" H 1000 5550 50  0000 C CNN
-	1    1000 5350
-	1    0    0    -1  
-$EndComp
 Text Label 1400 4800 0    60   ~ 0
 GND
-Text Label 750  5350 2    60   ~ 0
-GND
-$Comp
-L R R3
-U 1 1 5A04A96A
-P 1400 5200
-F 0 "R3" V 1480 5200 50  0000 C CNN
-F 1 "100k" V 1400 5200 50  0000 C CNN
-F 2 "" V 1330 5200 50  0001 C CNN
-F 3 "" H 1400 5200 50  0001 C CNN
-F 4 "R_ON" V 1300 5200 60  0000 C CNN "Field4"
-	1    1400 5200
-	-1   0    0    1   
-$EndComp
-Text Label 1250 5050 0    60   ~ 0
-V5
-Text Label 1600 5350 0    60   ~ 0
-4V_EN
 Text Label 1350 4650 0    60   ~ 0
 4V_EN
 $Comp
-L R R20
+L R R10
 U 1 1 5A04B241
 P 3200 4500
-F 0 "R20" V 3280 4500 50  0000 C CNN
+F 0 "R10" V 3280 4500 50  0000 C CNN
 F 1 "100k" V 3200 4500 50  0000 C CNN
-F 2 "" V 3130 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 4500 50  0001 C CNN
 F 3 "" H 3200 4500 50  0001 C CNN
 F 4 "R_ON" V 3100 4500 60  0000 C CNN "Field4"
 	1    3200 4500
@@ -699,31 +522,31 @@ U 1 1 5A04B834
 P 900 4500
 F 0 "C1" H 910 4570 50  0000 L CNN
 F 1 "4.7uF" H 910 4420 50  0000 L CNN
-F 2 "" H 900 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 4500 50  0001 C CNN
 F 3 "" H 900 4500 50  0001 C CNN
 F 4 "Cin" V 800 4550 60  0000 C CNN "Field4"
 	1    900  4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C14
+L C_Small C10
 U 1 1 5A04BA2A
 P 3500 4650
-F 0 "C14" H 3510 4720 50  0000 L CNN
+F 0 "C10" H 3510 4720 50  0000 L CNN
 F 1 "10nF" H 3510 4570 50  0000 L CNN
-F 2 "" H 3500 4650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3500 4650 50  0001 C CNN
 F 3 "" H 3500 4650 50  0001 C CNN
 F 4 "C_BYP" V 3400 4700 60  0000 C CNN "Field4"
 	1    3500 4650
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C19
+L C_Small C11
 U 1 1 5A04BDE6
 P 3800 4550
-F 0 "C19" H 3810 4620 50  0000 L CNN
+F 0 "C11" H 3810 4620 50  0000 L CNN
 F 1 "4.7uF" H 3810 4470 50  0000 L CNN
-F 2 "" H 3800 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3800 4550 50  0001 C CNN
 F 3 "" H 3800 4550 50  0001 C CNN
 F 4 "Cout" V 3700 4600 60  0000 C CNN "Field4"
 	1    3800 4550
@@ -732,7 +555,7 @@ $EndComp
 Text Label 3850 4800 0    60   ~ 0
 GND
 Text Label 3850 4350 0    60   ~ 0
-4V
+4V_out
 $Comp
 L LT3083-DFN U2
 U 1 1 5A04CD31
@@ -745,34 +568,34 @@ F 3 "http://cds.linear.com/docs/en/datasheet/3083fa.pdf" H 1850 6750 60  0001 C 
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R19
+L R R8
 U 1 1 5A04CDA0
 P 2450 7250
-F 0 "R19" V 2530 7250 50  0000 C CNN
+F 0 "R8" V 2530 7250 50  0000 C CNN
 F 1 "66.5k" V 2450 7250 50  0000 C CNN
-F 2 "" V 2380 7250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 7250 50  0001 C CNN
 F 3 "" H 2450 7250 50  0001 C CNN
 	1    2450 7250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C11
+L C C5
 U 1 1 5A04CE9F
 P 2200 7250
-F 0 "C11" H 2225 7350 50  0000 L CNN
+F 0 "C5" H 2225 7350 50  0000 L CNN
 F 1 "10pF" H 2225 7150 50  0000 L CNN
-F 2 "" H 2238 7100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 7100 50  0001 C CNN
 F 3 "" H 2200 7250 50  0001 C CNN
 	1    2200 7250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C12
+L C C6
 U 1 1 5A04CF9E
 P 2650 7050
-F 0 "C12" H 2675 7150 50  0000 L CNN
+F 0 "C6" H 2675 7150 50  0000 L CNN
 F 1 "10uF" H 2450 6950 50  0000 L CNN
-F 2 "" H 2688 6900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 6900 50  0001 C CNN
 F 3 "" H 2650 7050 50  0001 C CNN
 F 4 "X5R/X7R" H 2400 7050 39  0000 C CNN "Field4"
 	1    2650 7050
@@ -783,23 +606,23 @@ V5
 Text Label 2100 7500 2    60   ~ 0
 GND
 $Comp
-L C_Small C8
+L C_Small C2
 U 1 1 5A04FE61
 P 950 6650
-F 0 "C8" H 960 6720 50  0000 L CNN
+F 0 "C2" H 960 6720 50  0000 L CNN
 F 1 "10uF" H 960 6570 50  0000 L CNN
-F 2 "" H 950 6650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 950 6650 50  0001 C CNN
 F 3 "" H 950 6650 50  0001 C CNN
 	1    950  6650
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C10
+L C_Small C3
 U 1 1 5A04FF16
 P 1000 7050
-F 0 "C10" H 1010 7120 50  0000 L CNN
+F 0 "C3" H 1010 7120 50  0000 L CNN
 F 1 "2.2uF" H 1010 6970 50  0000 L CNN
-F 2 "" H 1000 7050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1000 7050 50  0001 C CNN
 F 3 "" H 1000 7050 50  0001 C CNN
 	1    1000 7050
 	1    0    0    -1  
@@ -811,12 +634,12 @@ GND
 Text Label 950  7200 2    60   ~ 0
 GND
 Text Label 2750 6900 0    60   ~ 0
-3V3
+3V3_out
 $Comp
-L LED-RESCUE-main_master_board D4
+L LED-RESCUE-main_master_board D7
 U 1 1 5A051A5D
 P 2250 5925
-F 0 "D4" H 2250 6025 50  0000 C CNN
+F 0 "D7" H 2250 6025 50  0000 C CNN
 F 1 "GRN_LED" H 2250 5825 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 2250 5925 50  0001 C CNN
 F 3 "" H 2250 5925 50  0000 C CNN
@@ -824,12 +647,12 @@ F 3 "" H 2250 5925 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R21
+L R R9
 U 1 1 5A051A63
 P 2700 5925
-F 0 "R21" V 2780 5925 50  0000 C CNN
+F 0 "R9" V 2780 5925 50  0000 C CNN
 F 1 "680" V 2700 5925 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2630 5925 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2630 5925 50  0001 C CNN
 F 3 "" H 2700 5925 50  0000 C CNN
 	1    2700 5925
 	0    1    1    0   
@@ -838,154 +661,235 @@ Text Label 2925 5925 0    60   ~ 0
 GND
 Text Label 1900 5925 0    60   ~ 0
 3V3
-Wire Wire Line
-	2390 1060 2650 1060
-Wire Wire Line
-	2390 800  2390 1060
-Wire Wire Line
-	3030 800  2390 800 
-Wire Wire Line
-	2650 960  2440 960 
+$Comp
+L Fuse_Small F3
+U 1 1 5A21873C
+P 5950 880
+F 0 "F3" H 5950 820 50  0000 C CNN
+F 1 "MF-MSMF150-2" V 5950 1210 50  0000 C CNN
+F 2 "SMD-1812:SMD-1812" H 5950 880 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/MF-MSMF150-2-Bourns-datasheet-10413427.pdf" H 5950 880 50  0001 C CNN
+	1    5950 880 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 5A218742
+P 5950 1220
+F 0 "R17" V 6030 1220 50  0000 C CNN
+F 1 "0.02" V 5950 1220 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5880 1220 50  0001 C CNN
+F 3 "" H 5950 1220 50  0000 C CNN
+	1    5950 1220
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_TVS D12
+U 1 1 5A218748
+P 5950 1600
+F 0 "D12" H 5950 1700 50  0000 C CNN
+F 1 "ESD5Z2.5T1G " V 5950 1270 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5950 1600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/ESD5Z2.5T1G-ON-Semiconductor-datasheet-11544130.pdf" H 5950 1600 50  0001 C CNN
+	1    5950 1600
+	0    -1   -1   0   
+$EndComp
+Text Label 5970 1850 0    60   ~ 0
+GND
+Text Label 5990 740  0    60   ~ 0
+4V_out
+Text Label 5990 1030 0    60   ~ 0
+4V_FUSE
+Text Label 6010 1410 0    60   ~ 0
+4V
+$Comp
+L INA197-RESCUE-main_master_board U6
+U 1 1 5A218C0E
+P 8000 1310
+F 0 "U6" H 8000 1110 60  0000 C CNN
+F 1 "INA197" H 8000 1510 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8000 1460 60  0001 C CNN
+F 3 "" H 8000 1460 60  0000 C CNN
+	1    8000 1310
+	-1   0    0    1   
+$EndComp
+Text Label 8570 1310 0    60   ~ 0
+GND
+Text Label 8570 1410 0    60   ~ 0
+4V_cur
+Text Label 7075 1260 0    60   ~ 0
+4V_FUSE
+Text Label 7080 1360 0    60   ~ 0
+4V
+Text Label 8570 1210 0    60   ~ 0
+4V
+$Comp
+L Conn_01x01 J1
+U 1 1 5A21A32F
+P 10700 2450
+F 0 "J1" H 10700 2550 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 2350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 2450 50  0001 C CNN
+F 3 "" H 10700 2450 50  0001 C CNN
+	1    10700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 5A21A48F
+P 10700 2750
+F 0 "J2" H 10700 2850 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 2750 50  0001 C CNN
+F 3 "" H 10700 2750 50  0001 C CNN
+	1    10700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5A21A541
+P 10700 3050
+F 0 "J3" H 10700 3150 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 2950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 3050 50  0001 C CNN
+F 3 "" H 10700 3050 50  0001 C CNN
+	1    10700 3050
+	1    0    0    -1  
+$EndComp
+Text Notes 10550 2250 0    60   ~ 0
+Voltage
+$Comp
+L Conn_01x01 J4
+U 1 1 5A21AAF9
+P 10700 3600
+F 0 "J4" H 10700 3700 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 3500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 3600 50  0001 C CNN
+F 3 "" H 10700 3600 50  0001 C CNN
+	1    10700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5A21AAFF
+P 10700 3900
+F 0 "J5" H 10700 4000 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 3900 50  0001 C CNN
+F 3 "" H 10700 3900 50  0001 C CNN
+	1    10700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5A21AB05
+P 10700 4200
+F 0 "J6" H 10700 4300 50  0000 C CNN
+F 1 "Conn_01x01" H 10700 4100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 10700 4200 50  0001 C CNN
+F 3 "" H 10700 4200 50  0001 C CNN
+	1    10700 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 10550 3400 0    60   ~ 0
+Current
+Text Label 10250 2450 0    60   ~ 0
+5V
+Text Label 10250 2750 0    60   ~ 0
+4V
+Text Label 10250 3050 0    60   ~ 0
+3V3
+Text Label 10400 3600 2    60   ~ 0
+5V_cur
+Text Label 10400 3900 2    60   ~ 0
+4V_cur
+Text Label 10400 4200 2    60   ~ 0
+3V3_cur
+$Comp
+L R R4
+U 1 1 5A20DD30
+P 1100 5200
+F 0 "R4" V 1180 5200 50  0000 C CNN
+F 1 "0" V 1100 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1030 5200 50  0001 C CNN
+F 3 "" H 1100 5200 50  0001 C CNN
+	1    1100 5200
+	0    1    1    0   
+$EndComp
 Wire Notes Line
 	500  1400 2350 1400
 Wire Wire Line
 	1100 750  1550 750 
 Wire Wire Line
 	1100 900  1550 900 
+Connection ~ 4390 1030
 Wire Wire Line
-	10260 890  9760 890 
+	4390 1030 4940 1030
 Wire Wire Line
-	10260 1020 9760 1020
+	4390 980  4390 1070
 Wire Wire Line
-	3650 960  4030 960 
-Connection ~ 5240 1030
+	4390 740  4940 740 
 Wire Wire Line
-	5240 1030 5790 1030
+	4390 780  4390 740 
 Wire Wire Line
-	5240 980  5240 1070
+	4390 1370 4390 1450
 Wire Wire Line
-	5240 740  5790 740 
+	4390 1410 4660 1410
+Connection ~ 4390 1410
 Wire Wire Line
-	5240 780  5240 740 
+	4390 1750 4390 1850
 Wire Wire Line
-	5240 1370 5240 1450
+	4390 1850 4610 1850
+Connection ~ 5150 1030
 Wire Wire Line
-	5240 1410 5510 1410
-Connection ~ 5240 1410
+	5150 1030 5700 1030
 Wire Wire Line
-	5240 1750 5240 1850
+	5150 980  5150 1070
 Wire Wire Line
-	5240 1850 5460 1850
-Connection ~ 6000 1030
+	5150 740  5700 740 
 Wire Wire Line
-	6000 1030 6550 1030
+	5150 780  5150 740 
 Wire Wire Line
-	6000 980  6000 1070
+	5150 1370 5150 1450
 Wire Wire Line
-	6000 740  6550 740 
+	5150 1410 5420 1410
+Connection ~ 5150 1410
 Wire Wire Line
-	6000 780  6000 740 
+	5150 1750 5150 1850
 Wire Wire Line
-	6000 1370 6000 1450
+	5150 1850 5370 1850
 Wire Wire Line
-	6000 1410 6270 1410
-Connection ~ 6000 1410
+	7400 740  7000 740 
 Wire Wire Line
-	6000 1750 6000 1850
+	7400 840  6990 840 
 Wire Wire Line
-	6000 1850 6220 1850
+	8550 690  8750 690 
 Wire Wire Line
-	7400 1190 7000 1190
+	8550 790  8750 790 
 Wire Wire Line
-	7400 1290 6990 1290
+	8550 890  8920 890 
 Wire Wire Line
-	8550 1140 8750 1140
+	7400 1760 7000 1760
 Wire Wire Line
-	8550 1240 8750 1240
+	7400 1860 6990 1860
 Wire Wire Line
-	8550 1340 8920 1340
+	8550 1710 8750 1710
 Wire Wire Line
-	7400 1710 7000 1710
+	8550 1810 8750 1810
 Wire Wire Line
-	7400 1810 6990 1810
-Wire Wire Line
-	8550 1660 8750 1660
-Wire Wire Line
-	8550 1760 8750 1760
-Wire Wire Line
-	8550 1860 8920 1860
+	8550 1910 8920 1910
 Wire Notes Line
 	2360 1400 4120 1400
-Wire Wire Line
-	1830 1730 1830 1810
-Wire Wire Line
-	1500 2070 2120 2070
-Wire Wire Line
-	1680 2010 1680 2070
-Connection ~ 1680 2070
-Wire Wire Line
-	1830 2010 1830 2070
-Connection ~ 1830 2070
-Wire Wire Line
-	1830 1530 1830 1510
-Wire Wire Line
-	1830 1510 1500 1510
-Wire Wire Line
-	1680 1810 1680 1790
-Wire Wire Line
-	1680 1790 2220 1790
-Connection ~ 1830 1790
-Wire Wire Line
-	2610 1730 2610 1810
-Wire Wire Line
-	2280 2070 2900 2070
-Wire Wire Line
-	2460 2010 2460 2070
-Connection ~ 2460 2070
-Wire Wire Line
-	2610 2010 2610 2070
-Connection ~ 2610 2070
-Wire Wire Line
-	2610 1530 2610 1510
-Wire Wire Line
-	2610 1510 2280 1510
-Wire Wire Line
-	2460 1810 2460 1790
-Wire Wire Line
-	2460 1790 3000 1790
-Connection ~ 2610 1790
 Wire Notes Line
 	3040 2100 3040 1400
-Wire Wire Line
-	10250 1620 9780 1620
-Wire Wire Line
-	10250 1720 9780 1720
-Wire Wire Line
-	9780 1820 10250 1820
-Wire Wire Line
-	10250 1910 9780 1910
-Wire Wire Line
-	2650 1160 2170 1160
-Wire Wire Line
-	3650 1160 3880 1160
-Wire Wire Line
-	3650 1060 4100 1060
 Wire Notes Line
 	4120 1400 4120 480 
 Wire Notes Line
 	2140 1400 2140 480 
-Wire Wire Line
-	10260 1170 9750 1170
-Wire Wire Line
-	1100 1200 1550 1200
-Wire Wire Line
-	1075 1050 1525 1050
 Wire Notes Line
 	4250 5550 500  5550
 Wire Notes Line
 	3300 5575 3300 7775
-Wire Wire Line
-	10250 1300 9750 1300
 Wire Wire Line
 	3850 3825 4125 3825
 Wire Wire Line
@@ -1070,23 +974,7 @@ Wire Wire Line
 	1550 4500 1650 4500
 Connection ~ 1550 4350
 Wire Wire Line
-	900  4350 900  4400
-Connection ~ 900  4350
-Wire Wire Line
 	1650 4650 1300 4650
-Wire Wire Line
-	900  4800 1650 4800
-Wire Wire Line
-	900  4800 900  4600
-Wire Wire Line
-	800  5350 550  5350
-Wire Wire Line
-	1200 5350 1900 5350
-Wire Wire Line
-	1400 5350 1400 5350
-Connection ~ 1400 5350
-Wire Wire Line
-	1400 5050 1200 5050
 Wire Wire Line
 	2850 4350 4000 4350
 Wire Wire Line
@@ -1186,10 +1074,66 @@ Wire Wire Line
 Wire Wire Line
 	2050 5925 1800 5925
 Wire Wire Line
-	1600 4800 1600 5050
-Wire Wire Line
 	1600 5050 2150 5050
-Connection ~ 1600 4800
 Wire Notes Line
 	500  2100 11200 2100
+Connection ~ 5950 1030
+Wire Wire Line
+	5950 1030 6500 1030
+Wire Wire Line
+	5950 980  5950 1070
+Wire Wire Line
+	5950 740  6500 740 
+Wire Wire Line
+	5950 780  5950 740 
+Wire Wire Line
+	5950 1370 5950 1450
+Wire Wire Line
+	5950 1410 6220 1410
+Connection ~ 5950 1410
+Wire Wire Line
+	5950 1750 5950 1850
+Wire Wire Line
+	5950 1850 6170 1850
+Wire Wire Line
+	7400 1260 7000 1260
+Wire Wire Line
+	7400 1360 6990 1360
+Wire Wire Line
+	8550 1210 8750 1210
+Wire Wire Line
+	8550 1310 8750 1310
+Wire Wire Line
+	8550 1410 8920 1410
+Wire Wire Line
+	10500 2450 10100 2450
+Wire Wire Line
+	10500 2750 10100 2750
+Wire Wire Line
+	10500 3050 10100 3050
+Wire Wire Line
+	10500 3600 10100 3600
+Wire Wire Line
+	10500 3900 10100 3900
+Wire Wire Line
+	10500 4200 10050 4200
+Wire Wire Line
+	1600 4800 1600 5050
+Connection ~ 1600 4800
+Wire Wire Line
+	900  4800 1650 4800
+Wire Wire Line
+	900  4800 900  4600
+Wire Wire Line
+	900  4350 900  4400
+Connection ~ 900  4350
+Wire Wire Line
+	700  4350 700  5200
+Wire Wire Line
+	700  5200 950  5200
+Connection ~ 700  4350
+Wire Wire Line
+	1250 5200 1600 5200
+Text Label 1300 5200 0    60   ~ 0
+4V_EN
 $EndSCHEMATC

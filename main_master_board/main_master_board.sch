@@ -137,12 +137,15 @@ LIBS:zetex
 LIBS:Zilog
 LIBS:tps211x
 LIBS:adg5419
+LIBS:szmmbz52_zener
+LIBS:ltc4416
+LIBS:rq3e120attb
 LIBS:main_master_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -346,197 +349,107 @@ sensor_SDA
 Text Label 15130 4600 0    60   ~ 0
 sensor_SCL
 $Comp
-L CONN_02X05 P4
+L Conn_02x05_Top_Bottom P2
 U 1 1 588D5068
-P 2110 7395
-F 0 "P4" H 2110 7695 50  0000 C CNN
-F 1 "CONN_02X05" H 2110 7095 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 2110 6195 50  0001 C CNN
-F 3 "" H 2110 6195 50  0000 C CNN
-	1    2110 7395
+P 2210 8645
+F 0 "P2" H 2210 8945 50  0000 C CNN
+F 1 "CONN_02X05" H 2210 8345 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 2210 7445 50  0001 C CNN
+F 3 "" H 2210 7445 50  0000 C CNN
+	1    2210 8645
 	1    0    0    -1  
 $EndComp
-Text Label 2390 7195 0    60   ~ 0
-V24_in_ext
-Text Label 1440 7295 0    60   ~ 0
+Text Label 1590 8545 0    60   ~ 0
 signal_1s
-Text Label 1450 7395 0    60   ~ 0
+Text Label 1600 8645 0    60   ~ 0
 signal_3s
-Text Label 1450 7495 0    60   ~ 0
+Text Label 1600 8745 0    60   ~ 0
 signal_5s
-Text Label 2370 7295 0    60   ~ 0
+Text Label 2520 8545 0    60   ~ 0
 signal_2s
-Text Label 2370 7395 0    60   ~ 0
+Text Label 2520 8645 0    60   ~ 0
 signal_4s
-Text Label 2370 7495 0    60   ~ 0
+Text Label 2520 8745 0    60   ~ 0
 signal_6s
-Text Notes 1700 4525 0    60   ~ 0
+Text Notes 1250 4275 0    60   ~ 0
 Molex Nano-Fit
 $Comp
 L CONN_01X02 P3
-U 1 1 588D5078
-P 2530 3315
-F 0 "P3" H 2530 3465 50  0000 C CNN
-F 1 "Vbackup" V 2630 3315 50  0000 C CNN
-F 2 "microclasp:microclasp_2" H 2530 3315 50  0001 C CNN
-F 3 "" H 2530 3315 50  0000 C CNN
-	1    2530 3315
+U 1 1 588D5086
+P 2525 3100
+F 0 "P3" H 2525 3250 50  0000 C CNN
+F 1 "Hebi_1" V 2625 3100 50  0000 C CNN
+F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2525 3100 50  0001 C CNN
+F 3 "" H 2525 3100 50  0000 C CNN
+	1    2525 3100
 	-1   0    0    1   
 $EndComp
-Text Label 2740 3265 0    60   ~ 0
-Vbackup_in
 $Comp
-L GND #PWR05
-U 1 1 588D5080
-P 2780 3385
-F 0 "#PWR05" H 2780 3135 50  0001 C CNN
-F 1 "GND" H 2780 3235 50  0000 C CNN
-F 2 "" H 2780 3385 50  0000 C CNN
-F 3 "" H 2780 3385 50  0000 C CNN
-	1    2780 3385
+L CONN_01X02 P4
+U 1 1 588D508D
+P 2525 3550
+F 0 "P4" H 2525 3700 50  0000 C CNN
+F 1 "Hebi_2" V 2625 3550 50  0000 C CNN
+F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2525 3550 50  0001 C CNN
+F 3 "" H 2525 3550 50  0000 C CNN
+	1    2525 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GNDPWR #PWR04
+U 1 1 588D5095
+P 2785 3180
+F 0 "#PWR04" H 2785 2980 50  0001 C CNN
+F 1 "GNDPWR" H 2785 3050 50  0000 C CNN
+F 2 "" H 2785 3130 50  0000 C CNN
+F 3 "" H 2785 3130 50  0000 C CNN
+	1    2785 3180
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P1
-U 1 1 588D5086
-P 4525 3250
-F 0 "P1" H 4525 3400 50  0000 C CNN
-F 1 "Hebi_1" V 4625 3250 50  0000 C CNN
-F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4525 3250 50  0001 C CNN
-F 3 "" H 4525 3250 50  0000 C CNN
-	1    4525 3250
-	-1   0    0    1   
+L GNDPWR #PWR05
+U 1 1 588D509B
+P 2775 3630
+F 0 "#PWR05" H 2775 3430 50  0001 C CNN
+F 1 "GNDPWR" H 2775 3500 50  0000 C CNN
+F 2 "" H 2775 3580 50  0000 C CNN
+F 3 "" H 2775 3580 50  0000 C CNN
+	1    2775 3630
+	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
-U 1 1 588D508D
-P 4525 3690
-F 0 "P2" H 4525 3840 50  0000 C CNN
-F 1 "Hebi_2" V 4625 3690 50  0000 C CNN
-F 2 "correct_molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4525 3690 50  0001 C CNN
-F 3 "" H 4525 3690 50  0000 C CNN
-	1    4525 3690
-	-1   0    0    1   
+L ZENERsmall D1
+U 1 1 588D50FD
+P 1200 3300
+F 0 "D1" H 1300 3260 50  0000 C CNN
+F 1 "P6SMB30AT3G" V 1200 3650 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 1200 3300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 1200 3300 50  0001 C CNN
+	1    1200 3300
+	0    1    1    0   
 $EndComp
-Text Label 4745 3200 0    60   ~ 0
-V_hebi1
+Text Notes 550  3800 0    60   ~ 0
+Transient Voltage Suppessor 30V\n
 $Comp
 L GNDPWR #PWR06
-U 1 1 588D5095
-P 4785 3330
-F 0 "#PWR06" H 4785 3130 50  0001 C CNN
-F 1 "GNDPWR" H 4785 3200 50  0000 C CNN
-F 2 "" H 4785 3280 50  0000 C CNN
-F 3 "" H 4785 3280 50  0000 C CNN
-	1    4785 3330
+U 1 1 588D5126
+P 1790 8295
+F 0 "#PWR06" H 1790 8095 50  0001 C CNN
+F 1 "GNDPWR" H 1790 8165 50  0000 C CNN
+F 2 "" H 1790 8245 50  0000 C CNN
+F 3 "" H 1790 8245 50  0000 C CNN
+	1    1790 8295
 	1    0    0    -1  
 $EndComp
 $Comp
 L GNDPWR #PWR07
-U 1 1 588D509B
-P 4775 3770
-F 0 "#PWR07" H 4775 3570 50  0001 C CNN
-F 1 "GNDPWR" H 4775 3640 50  0000 C CNN
-F 2 "" H 4775 3720 50  0000 C CNN
-F 3 "" H 4775 3720 50  0000 C CNN
-	1    4775 3770
-	1    0    0    -1  
-$EndComp
-Text Label 4755 3640 0    60   ~ 0
-V_hebi2
-$Comp
-L D_Schottky D2
-U 1 1 588D50A2
-P 3810 3350
-F 0 "D2" H 3810 3450 50  0000 C CNN
-F 1 "PDS760Q-13" H 3810 3250 50  0000 C CNN
-F 2 "PowerDI:PowerDI" H 3810 3350 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3810 3350 50  0001 C CNN
-	1    3810 3350
-	-1   0    0    1   
-$EndComp
-Text Label 4000 3350 0    60   ~ 0
-V_hebi1
-$Comp
-L D_Schottky D1
-U 1 1 588D50AA
-P 3800 3640
-F 0 "D1" H 3800 3740 50  0000 C CNN
-F 1 "PDS760Q-13" H 3800 3540 50  0000 C CNN
-F 2 "PowerDI:PowerDI" H 3800 3640 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/STPS5H100B-TR-STMicroelectronics-datasheet-5318140.pdf" H 3800 3640 50  0001 C CNN
-	1    3800 3640
-	-1   0    0    1   
-$EndComp
-Text Label 3990 3640 0    60   ~ 0
-V_hebi2
-Text Notes 3370 3180 0    60   ~ 0
-Bettery Reverse\nCurrent Protection
-Text Label 3380 3350 0    60   ~ 0
-Vmotors
-Text Label 3370 3640 0    60   ~ 0
-Vmotors
-$Comp
-L ZENERsmall D3
-U 1 1 588D50FD
-P 1320 2685
-F 0 "D3" H 1420 2645 50  0000 C CNN
-F 1 "P6SMB30AT3G" H 1460 2805 50  0000 C CNN
-F 2 "Diodes_SMD:SMB_Standard" H 1320 2685 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/P6SMB36AT3G-ON-Semiconductor-datasheet-5314825.pdf" H 1320 2685 50  0001 C CNN
-	1    1320 2685
-	0    1    1    0   
-$EndComp
-Text Notes 680  3165 0    60   ~ 0
-Transient Voltage Suppessor 
-Text Label 1400 2545 0    60   ~ 0
-Vmain
-Text Notes 1510 3045 0    60   ~ 0
-Circuits can take 48V, \nexcept TSV diode
-Text Label 620  2545 0    60   ~ 0
-V24_on
-$Comp
-L Fuse F1
-U 1 1 588D510E
-P 1050 2545
-F 0 "F1" V 1130 2545 50  0000 C CNN
-F 1 "3413.0328.22" V 975 2545 50  0000 C CNN
-F 2 "dp_devices:dp_devices-C1206" V 980 2545 50  0001 C CNN
-F 3 "http://datasheet.octopart.com/3413.0328.22-Schurter-datasheet-8645987.pdf" H 1050 2545 50  0001 C CNN
-	1    1050 2545
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GNDPWR #PWR08
-U 1 1 588D5126
-P 1640 7045
-F 0 "#PWR08" H 1640 6845 50  0001 C CNN
-F 1 "GNDPWR" H 1640 6915 50  0000 C CNN
-F 2 "" H 1640 6995 50  0000 C CNN
-F 3 "" H 1640 6995 50  0000 C CNN
-	1    1640 7045
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDPWR #PWR09
 U 1 1 588D512C
-P 2480 7645
-F 0 "#PWR09" H 2480 7445 50  0001 C CNN
-F 1 "GNDPWR" H 2480 7515 50  0000 C CNN
-F 2 "" H 2480 7595 50  0000 C CNN
-F 3 "" H 2480 7595 50  0000 C CNN
-	1    2480 7645
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDPWR #PWR010
-U 1 1 588EACE1
-P 1320 2845
-F 0 "#PWR010" H 1320 2645 50  0001 C CNN
-F 1 "GNDPWR" H 1320 2715 50  0000 C CNN
-F 2 "" H 1320 2795 50  0000 C CNN
-F 3 "" H 1320 2795 50  0000 C CNN
-	1    1320 2845
+P 2630 8895
+F 0 "#PWR07" H 2630 8695 50  0001 C CNN
+F 1 "GNDPWR" H 2630 8765 50  0000 C CNN
+F 2 "" H 2630 8845 50  0000 C CNN
+F 3 "" H 2630 8845 50  0000 C CNN
+	1    2630 8895
 	1    0    0    -1  
 $EndComp
 Text Label 15155 4750 0    60   ~ 0
@@ -546,10 +459,10 @@ uC_GPIO2
 Text Label 4150 1550 0    60   ~ 0
 V4
 $Comp
-L +24V #PWR011
+L +24V #PWR08
 U 1 1 58919C55
 P 2600 800
-F 0 "#PWR011" H 2600 650 50  0001 C CNN
+F 0 "#PWR08" H 2600 650 50  0001 C CNN
 F 1 "+24V" H 2600 940 50  0000 C CNN
 F 2 "" H 2600 800 50  0000 C CNN
 F 3 "" H 2600 800 50  0000 C CNN
@@ -559,10 +472,10 @@ $EndComp
 Text Label 2525 1280 0    60   ~ 0
 Switch_on
 $Comp
-L +5V #PWR012
+L +5V #PWR09
 U 1 1 58924C9E
 P 4375 1075
-F 0 "#PWR012" H 4375 925 50  0001 C CNN
+F 0 "#PWR09" H 4375 925 50  0001 C CNN
 F 1 "+5V" H 4375 1215 50  0000 C CNN
 F 2 "" H 4375 1075 50  0000 C CNN
 F 3 "" H 4375 1075 50  0000 C CNN
@@ -570,10 +483,10 @@ F 3 "" H 4375 1075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR013
+L +3V3 #PWR010
 U 1 1 58925954
 P 4375 1325
-F 0 "#PWR013" H 4375 1175 50  0001 C CNN
+F 0 "#PWR010" H 4375 1175 50  0001 C CNN
 F 1 "+3V3" H 4375 1465 50  0000 C CNN
 F 2 "" H 4375 1325 50  0000 C CNN
 F 3 "" H 4375 1325 50  0000 C CNN
@@ -609,21 +522,21 @@ shutdown_int
 Text Label 15125 6450 0    60   ~ 0
 uC_pwr_kill
 $Comp
-L Ferrite_Bead_Small L8
+L Ferrite_Bead_Small L1
 U 1 1 589D34C8
 P 1100 975
-F 0 "L8" V 1175 1025 50  0000 L CNN
+F 0 "L1" V 1175 1025 50  0000 L CNN
 F 1 "2.0A/0.05 DCR" V 975 800 50  0000 L CNN
-F 2 "dp_devices2:dp_devices-C603" V 1030 975 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 1030 975 50  0001 C CNN
 F 3 "http://www.digikey.com/product-detail/en/BLM18PG121SN1D/490-1037-1-ND/" H 1100 975 50  0001 C CNN
 	1    1100 975 
 	0    1    1    0   
 $EndComp
 $Comp
-L GNDPWR #PWR022
+L GNDPWR #PWR011
 U 1 1 589DB72C
 P 925 1075
-F 0 "#PWR022" H 925 875 50  0001 C CNN
+F 0 "#PWR011" H 925 875 50  0001 C CNN
 F 1 "GNDPWR" H 925 945 50  0000 C CNN
 F 2 "" H 925 1025 50  0000 C CNN
 F 3 "" H 925 1025 50  0000 C CNN
@@ -631,10 +544,10 @@ F 3 "" H 925 1025 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L GND #PWR012
 U 1 1 589DB9F6
 P 1300 1075
-F 0 "#PWR023" H 1300 825 50  0001 C CNN
+F 0 "#PWR012" H 1300 825 50  0001 C CNN
 F 1 "GND" H 1300 925 50  0000 C CNN
 F 2 "" H 1300 1075 50  0000 C CNN
 F 3 "" H 1300 1075 50  0000 C CNN
@@ -644,10 +557,10 @@ $EndComp
 NoConn ~ 15770 925 
 NoConn ~ 15770 835 
 $Comp
-L GND #PWR024
+L GND #PWR013
 U 1 1 5A037546
 P 2760 2450
-F 0 "#PWR024" H 2760 2200 50  0001 C CNN
+F 0 "#PWR013" H 2760 2200 50  0001 C CNN
 F 1 "GND" H 2760 2300 50  0000 C CNN
 F 2 "" H 2760 2450 50  0000 C CNN
 F 3 "" H 2760 2450 50  0000 C CNN
@@ -655,169 +568,276 @@ F 3 "" H 2760 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X05 P?
+L Conn_02x05_Top_Bottom P1
 U 1 1 5A105F41
-P 2110 4945
-F 0 "P?" H 2110 5245 50  0000 C CNN
-F 1 "CONN_02X05" H 2110 4645 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 2110 3745 50  0001 C CNN
-F 3 "" H 2110 3745 50  0000 C CNN
-	1    2110 4945
+P 1610 4695
+F 0 "P1" H 1610 4995 50  0000 C CNN
+F 1 "CONN_02X05" H 1610 4395 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 1610 3495 50  0001 C CNN
+F 3 "" H 1610 3495 50  0000 C CNN
+	1    1610 4695
 	1    0    0    -1  
 $EndComp
-Text Label 2390 4745 0    60   ~ 0
-V24_in_batt
-Text Label 1820 5145 2    60   ~ 0
-V24_in_batt
-Text Label 1440 4845 0    60   ~ 0
+Text Label 1940 4495 0    60   ~ 0
+V24_in_batt_raw
+Text Label 1370 4895 2    60   ~ 0
+V24_in_batt_raw
+Text Label 990  4595 0    60   ~ 0
 signal_1s
-Text Label 1450 4945 0    60   ~ 0
+Text Label 1000 4695 0    60   ~ 0
 signal_3s
-Text Label 1450 5045 0    60   ~ 0
+Text Label 1000 4795 0    60   ~ 0
 signal_5s
-Text Label 2370 4845 0    60   ~ 0
+Text Label 1920 4595 0    60   ~ 0
 signal_2s
-Text Label 2370 4945 0    60   ~ 0
+Text Label 1920 4695 0    60   ~ 0
 signal_4s
-Text Label 2370 5045 0    60   ~ 0
+Text Label 1920 4795 0    60   ~ 0
 signal_6s
-Text Notes 1250 6975 0    60   ~ 0
+Text Notes 1400 8225 0    60   ~ 0
 Molex Nano-Fit Charger/External Power
 $Comp
-L GNDPWR #PWR?
+L GNDPWR #PWR014
 U 1 1 5A105F50
-P 1640 4595
-F 0 "#PWR?" H 1640 4395 50  0001 C CNN
-F 1 "GNDPWR" H 1640 4465 50  0000 C CNN
-F 2 "" H 1640 4545 50  0000 C CNN
-F 3 "" H 1640 4545 50  0000 C CNN
-	1    1640 4595
+P 1190 4345
+F 0 "#PWR014" H 1190 4145 50  0001 C CNN
+F 1 "GNDPWR" H 1190 4215 50  0000 C CNN
+F 2 "" H 1190 4295 50  0000 C CNN
+F 3 "" H 1190 4295 50  0000 C CNN
+	1    1190 4345
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR?
+L GNDPWR #PWR015
 U 1 1 5A105F56
-P 2480 5195
-F 0 "#PWR?" H 2480 4995 50  0001 C CNN
-F 1 "GNDPWR" H 2480 5065 50  0000 C CNN
-F 2 "" H 2480 5145 50  0000 C CNN
-F 3 "" H 2480 5145 50  0000 C CNN
-	1    2480 5195
+P 2030 4945
+F 0 "#PWR015" H 2030 4745 50  0001 C CNN
+F 1 "GNDPWR" H 2030 4815 50  0000 C CNN
+F 2 "" H 2030 4895 50  0000 C CNN
+F 3 "" H 2030 4895 50  0000 C CNN
+	1    2030 4945
 	1    0    0    -1  
 $EndComp
-Text Label 1860 7595 2    60   ~ 0
+Text Label 3700 10250 0    60   ~ 0
 V24_in_ext
 $Comp
-L ADG5419 U?
-U 1 1 5A14AA71
-P 1950 6100
-F 0 "U?" H 1950 5800 60  0000 C CNN
-F 1 "ADG5419" H 1950 6400 60  0000 C CNN
-F 2 "Package_CSP:LFCSP-8-1EP_2x3mm_P0.5mm" H 1950 6100 60  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG5419.pdf" H 1950 6100 60  0001 C CNN
-	1    1950 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_SPDT SW?
-U 1 1 5A14BB2A
-P 2950 5650
-F 0 "SW?" H 2950 5820 50  0000 C CNN
-F 1 "SW_SPDT" H 2950 5450 50  0000 C CNN
-F 2 "" H 2950 5650 50  0001 C CNN
-F 3 "" H 2950 5650 50  0001 C CNN
-	1    2950 5650
-	1    0    0    -1  
-$EndComp
-Text Label 2450 6050 0    60   ~ 0
-V24_in_ext
-$Comp
-L GND #PWR?
-U 1 1 5A14D28C
-P 3050 6150
-F 0 "#PWR?" H 3050 5900 50  0001 C CNN
-F 1 "GND" H 3050 6000 50  0000 C CNN
-F 2 "" H 3050 6150 50  0000 C CNN
-F 3 "" H 3050 6150 50  0000 C CNN
-	1    3050 6150
-	1    0    0    -1  
-$EndComp
-Text Notes 3500 6200 0    60   ~ 0
-EN/SW,	IN2/24ext,	S1A/24Batt,	S1B/24ext\n0		X			off			off\n1		1			off			on\n1		0			on			off
-Text Label 3250 8150 0    60   ~ 0
-V24_in_ext
-Text Label 1450 6050 2    60   ~ 0
-V24_in_batt
-$Comp
-L SW_SPDT SW?
+L SW_SPDT SW2
 U 1 1 5A150138
-P 3000 8250
-F 0 "SW?" H 3000 8420 50  0000 C CNN
-F 1 "SW_SPDT" H 3000 8050 50  0000 C CNN
-F 2 "" H 3000 8250 50  0001 C CNN
-F 3 "" H 3000 8250 50  0001 C CNN
-	1    3000 8250
+P 3450 10350
+F 0 "SW2" H 3450 10520 50  0000 C CNN
+F 1 "SW_SPDT" H 3450 10150 50  0000 C CNN
+F 2 "microclasp:microclasp_3" H 3450 10350 50  0001 C CNN
+F 3 "" H 3450 10350 50  0001 C CNN
+	1    3450 10350
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR017
 U 1 1 5A150E71
-P 3550 8350
-F 0 "#PWR?" H 3550 8100 50  0001 C CNN
-F 1 "GND" H 3550 8200 50  0000 C CNN
-F 2 "" H 3550 8350 50  0000 C CNN
-F 3 "" H 3550 8350 50  0000 C CNN
-	1    3550 8350
+P 4000 10450
+F 0 "#PWR017" H 4000 10200 50  0001 C CNN
+F 1 "GND" H 4000 10300 50  0000 C CNN
+F 2 "" H 4000 10450 50  0000 C CNN
+F 3 "" H 4000 10450 50  0000 C CNN
+	1    4000 10450
 	-1   0    0    -1  
 $EndComp
-Text Label 2800 8650 0    60   ~ 0
+Text Label 2850 11000 0    60   ~ 0
 V24_in_ext
+$Comp
+L PSMN013-80YS Q1
+U 1 1 5A15C756
+P 1850 10800
+F 0 "Q1" V 2175 10925 40  0000 R CNN
+F 1 "Si7461DP" V 2225 10975 40  0000 R TNN
+F 2 "SMD_Packages:SO-8_PowerPAK_Vishay_Single" V 1525 10800 30  0000 C CNN
+F 3 "http://datasheet.octopart.com/SI7461DP-T1-E3-Vishay-datasheet-8638651.pdf" H 1850 10800 60  0001 C CNN
+F 4 " SI7461DP-T1-E3 " V 1850 10800 60  0001 C CNN "Field4"
+	1    1850 10800
+	0    -1   -1   0   
+$EndComp
+Text Label 1300 10800 2    60   ~ 0
+V24_in_batt
+$Comp
+L D_Zener_Small_ALT D2
+U 1 1 5A1CCC74
+P 2800 10750
+F 0 "D2" H 2800 10840 50  0000 C CNN
+F 1 "15V" H 2800 10660 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 2800 10750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/308/MMBZ5221BLT1-D-79158.pdf" V 2800 10750 50  0001 C CNN
+F 4 "SZMMBZ5245BLT1G" H 2800 10750 60  0001 C CNN "Field4"
+	1    2800 10750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5A1CD554
+P 2800 10500
+F 0 "R1" H 2830 10520 50  0000 L CNN
+F 1 "10k" H 2830 10460 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 10500 50  0001 C CNN
+F 3 "" H 2800 10500 50  0001 C CNN
+	1    2800 10500
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 10300 0    39   ~ 0
+Zener Vgs protection
+Text Label 2800 3050 0    60   ~ 0
+Vmain
+Text Label 2800 3500 0    60   ~ 0
+Vmain
+Text Label 4850 8650 2    60   ~ 0
+V24_in_ext_raw
+$Comp
+L R R2
+U 1 1 5A1FE864
+P 6000 9150
+F 0 "R2" V 6080 9150 50  0000 C CNN
+F 1 "10k" V 6000 9150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 9150 50  0001 C CNN
+F 3 "" H 6000 9150 50  0001 C CNN
+	1    6000 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener_Small_ALT D5
+U 1 1 5A1FF6D5
+P 6400 8750
+F 0 "D5" H 6400 8840 50  0000 C CNN
+F 1 "15V" H 6400 8660 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 6400 8750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/308/MMBZ5221BLT1-D-79158.pdf" V 6400 8750 50  0001 C CNN
+F 4 "SZMMBZ5245BLT1G" H 6400 8750 60  0001 C CNN "Field4"
+	1    6400 8750
+	0    1    1    0   
+$EndComp
+Text Label 2540 8445 0    60   ~ 0
+V24_in_ext_raw
+Text Label 2010 8845 2    60   ~ 0
+V24_in_ext_raw
+Text Label 6500 8550 0    60   ~ 0
+V24_in_ext
+$Comp
+L GNDPWR #PWR019
+U 1 1 5A20325F
+P 6000 9350
+F 0 "#PWR019" H 6000 9150 50  0001 C CNN
+F 1 "GNDPWR" H 6000 9220 50  0000 C CNN
+F 2 "" H 6000 9300 50  0000 C CNN
+F 3 "" H 6000 9300 50  0000 C CNN
+	1    6000 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A2054CB
+P 5800 5000
+F 0 "R3" V 5880 5000 50  0000 C CNN
+F 1 "10k" V 5800 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 5000 50  0001 C CNN
+F 3 "" H 5800 5000 50  0001 C CNN
+	1    5800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener_Small_ALT D6
+U 1 1 5A2054D2
+P 6200 4600
+F 0 "D6" H 6200 4690 50  0000 C CNN
+F 1 "15V" H 6200 4510 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 6200 4600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/308/MMBZ5221BLT1-D-79158.pdf" V 6200 4600 50  0001 C CNN
+F 4 "SZMMBZ5245BLT1G" H 6200 4600 60  0001 C CNN "Field4"
+	1    6200 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDPWR #PWR020
+U 1 1 5A2054E0
+P 5800 5200
+F 0 "#PWR020" H 5800 5000 50  0001 C CNN
+F 1 "GNDPWR" H 5800 5070 50  0000 C CNN
+F 2 "" H 5800 5150 50  0000 C CNN
+F 3 "" H 5800 5150 50  0000 C CNN
+	1    5800 5200
+	1    0    0    -1  
+$EndComp
+Text Label 4350 4500 2    60   ~ 0
+V24_in_batt_raw
+Text Label 6300 4400 0    60   ~ 0
+V24_in_batt
+Text Notes 4400 4000 0    60   ~ 0
+Reverse Polarity Protection
+$Comp
+L GNDPWR #PWR021
+U 1 1 5A210F06
+P 1200 3500
+F 0 "#PWR021" H 1200 3300 50  0001 C CNN
+F 1 "GNDPWR" H 1200 3370 50  0000 C CNN
+F 2 "" H 1200 3450 50  0000 C CNN
+F 3 "" H 1200 3450 50  0000 C CNN
+	1    1200 3500
+	1    0    0    -1  
+$EndComp
+Text Label 1250 3150 0    60   ~ 0
+Vmain
+$Comp
+L D_Small D3
+U 1 1 5A2200B5
+P 6200 8900
+F 0 "D3" H 6150 8980 50  0000 L CNN
+F 1 "RF05VAM2STR" H 6050 8820 50  0000 L CNN
+F 2 "Diode_SMD:D_TUMD2" V 6200 8900 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RF05VAM2STR-Rohm-datasheet-62340789.pdf" V 6200 8900 50  0001 C CNN
+	1    6200 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D4
+U 1 1 5A2214B7
+P 6000 4750
+F 0 "D4" H 5950 4830 50  0000 L CNN
+F 1 "RF05VAM2STR" H 5850 4670 50  0000 L CNN
+F 2 "Diode_SMD:D_TUMD2" V 6000 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RF05VAM2STR-Rohm-datasheet-62340789.pdf" V 6000 4750 50  0001 C CNN
+	1    6000 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 2250 9950 0    60   ~ 0
+Why is this here?
 Wire Wire Line
-	3200 8150 3550 8150
+	3650 10250 4000 10250
 Wire Wire Line
-	3550 8350 3200 8350
+	4000 10450 3650 10450
 Wire Wire Line
-	1500 6050 900  6050
+	1190 4315 1190 4345
 Wire Wire Line
-	2400 6250 2950 6250
+	2030 4895 2030 4945
 Wire Wire Line
-	2400 6150 3050 6150
+	1910 4495 2240 4495
 Wire Wire Line
-	2400 6050 2950 6050
+	1370 4315 1190 4315
 Wire Wire Line
-	2600 5650 2750 5650
+	1370 4495 1370 4315
 Wire Wire Line
-	2600 5950 2600 5650
+	1410 4495 1370 4495
 Wire Wire Line
-	2400 5950 2600 5950
+	1410 4895 1080 4895
 Wire Wire Line
-	1640 4565 1640 4595
+	1910 4895 2030 4895
 Wire Wire Line
-	2480 5145 2480 5195
+	1910 4795 2340 4795
 Wire Wire Line
-	2360 4745 2690 4745
+	1910 4695 2340 4695
 Wire Wire Line
-	1820 4565 1640 4565
+	1910 4595 2340 4595
 Wire Wire Line
-	1820 4745 1820 4565
+	1410 4795 980  4795
 Wire Wire Line
-	1860 4745 1820 4745
+	1410 4695 980  4695
 Wire Wire Line
-	1860 5145 1530 5145
-Wire Wire Line
-	2360 5145 2480 5145
-Wire Wire Line
-	2360 5045 2790 5045
-Wire Wire Line
-	2360 4945 2790 4945
-Wire Wire Line
-	2360 4845 2790 4845
-Wire Wire Line
-	1860 5045 1430 5045
-Wire Wire Line
-	1860 4945 1430 4945
-Wire Wire Line
-	1860 4845 1430 4845
+	1410 4595 980  4595
 Wire Wire Line
 	1300 975  1300 1075
 Wire Wire Line
@@ -869,68 +889,45 @@ Wire Wire Line
 Wire Wire Line
 	15600 4850 15105 4850
 Wire Wire Line
-	1640 7015 1640 7045
+	1790 8265 1790 8295
 Wire Wire Line
-	2480 7595 2480 7645
+	2630 8845 2630 8895
 Wire Wire Line
-	600  2545 900  2545
+	2510 8445 2840 8445
 Wire Wire Line
-	1320 2785 1320 2845
-Connection ~ 1320 2545
+	1970 8265 1790 8265
 Wire Wire Line
-	1320 2545 1320 2585
+	1970 8445 1970 8265
 Wire Wire Line
-	1200 2545 1840 2545
+	2010 8445 1970 8445
 Wire Wire Line
-	2360 7195 2690 7195
+	2010 8845 1680 8845
 Wire Wire Line
-	1820 7015 1640 7015
+	2510 8845 2630 8845
 Wire Wire Line
-	1820 7195 1820 7015
+	2725 3500 3105 3500
 Wire Wire Line
-	1860 7195 1820 7195
+	2785 3150 2785 3180
 Wire Wire Line
-	1860 7595 1530 7595
+	2725 3150 2785 3150
 Wire Wire Line
-	2360 7595 2480 7595
+	2775 3600 2775 3630
 Wire Wire Line
-	3950 3640 4300 3640
+	2725 3600 2775 3600
 Wire Wire Line
-	3650 3640 3330 3640
+	2725 3050 3095 3050
 Wire Wire Line
-	3960 3350 4310 3350
+	2510 8745 2940 8745
 Wire Wire Line
-	3660 3350 3340 3350
+	2510 8645 2940 8645
 Wire Wire Line
-	4725 3640 5105 3640
+	2510 8545 2940 8545
 Wire Wire Line
-	4785 3300 4785 3330
+	2010 8745 1580 8745
 Wire Wire Line
-	4725 3300 4785 3300
+	2010 8645 1580 8645
 Wire Wire Line
-	4775 3740 4775 3770
-Wire Wire Line
-	4725 3740 4775 3740
-Wire Wire Line
-	4725 3200 5095 3200
-Wire Wire Line
-	2780 3365 2780 3385
-Wire Wire Line
-	2730 3365 2780 3365
-Wire Wire Line
-	2730 3265 3240 3265
-Wire Wire Line
-	2360 7495 2790 7495
-Wire Wire Line
-	2360 7395 2790 7395
-Wire Wire Line
-	2360 7295 2790 7295
-Wire Wire Line
-	1860 7495 1430 7495
-Wire Wire Line
-	1860 7395 1430 7395
-Wire Wire Line
-	1860 7295 1430 7295
+	2010 8545 1580 8545
 Wire Wire Line
 	15105 4600 15655 4600
 Wire Wire Line
@@ -1008,59 +1005,157 @@ Wire Wire Line
 	2600 860  3000 860 
 Wire Wire Line
 	3000 1110 2450 1110
-Text Label 1450 5950 2    60   ~ 0
-Vmain
 Wire Wire Line
-	1500 5950 1150 5950
-Text Label 2450 6250 0    60   ~ 0
+	1400 10800 750  10800
+Wire Wire Line
+	2450 10350 2450 10550
+Wire Wire Line
+	2450 10550 2300 10550
+Wire Wire Line
+	2450 10350 3250 10350
+Wire Wire Line
+	2800 10400 2800 10350
+Connection ~ 2800 10350
+Wire Wire Line
+	2800 10600 2800 10650
+Wire Wire Line
+	2300 10700 2500 10700
+Wire Wire Line
+	2500 10700 2500 11000
+Wire Wire Line
+	2300 11000 3300 11000
+Wire Wire Line
+	2800 11000 2800 10850
+Connection ~ 2500 11000
+Wire Wire Line
+	2300 10850 2500 10850
+Connection ~ 2500 10850
+Connection ~ 2800 11000
+Wire Wire Line
+	4300 8650 5100 8650
+Wire Wire Line
+	5850 8900 6100 8900
+Wire Wire Line
+	6000 8900 6000 9000
+Connection ~ 6000 8900
+Wire Wire Line
+	6000 8550 7000 8550
+Wire Wire Line
+	6400 8650 6400 8550
+Connection ~ 6400 8550
+Wire Wire Line
+	6000 9300 6000 9350
+Wire Wire Line
+	3800 4500 4700 4500
+Wire Wire Line
+	5800 4700 5800 4850
+Connection ~ 5800 4750
+Wire Wire Line
+	5600 4400 6800 4400
+Wire Wire Line
+	6200 4500 6200 4400
+Connection ~ 6200 4400
+Wire Wire Line
+	5800 5150 5800 5200
+Wire Wire Line
+	1200 3400 1200 3500
+Wire Wire Line
+	1200 3200 1200 3150
+Wire Wire Line
+	1200 3150 1600 3150
+Wire Wire Line
+	6300 8900 6400 8900
+Wire Wire Line
+	6400 8900 6400 8850
+Wire Wire Line
+	6100 4750 6200 4750
+Wire Wire Line
+	6200 4750 6200 4700
+Wire Wire Line
+	5550 4750 5900 4750
+Wire Wire Line
+	5050 8350 5050 8650
+Wire Wire Line
+	5050 8500 5100 8500
+Connection ~ 5050 8650
+Wire Wire Line
+	5050 8350 5100 8350
+Connection ~ 5050 8500
+Wire Wire Line
+	5100 8800 5100 9100
+Wire Wire Line
+	5100 9100 5850 9100
+Wire Wire Line
+	5850 9100 5850 8900
+Text Notes 5200 8150 0    60   ~ 0
+Reverse Polarity Protection
+Wire Wire Line
+	4600 4200 4600 4500
+Wire Wire Line
+	4600 4350 4700 4350
+Connection ~ 4600 4500
+Wire Wire Line
+	4600 4200 4700 4200
+Connection ~ 4600 4350
+Wire Wire Line
+	4700 4650 4700 4900
+Wire Wire Line
+	4700 4900 5550 4900
+Wire Wire Line
+	5550 4900 5550 4750
+$Sheet
+S 1800 5800 2000 1150
+U 5ACE9FB3
+F0 "Ideal_Diode" 60
+F1 "ideal_diode.sch" 60
+F2 "V24_Ext" I L 1800 6050 60 
+F3 "V24_Batt" I L 1800 6350 60 
+F4 "GND" I L 1800 6650 60 
+F5 "V24_Out" O R 3800 6350 60 
+$EndSheet
+Text Label 1700 6350 2    60   ~ 0
+V24_in_batt
+Wire Wire Line
+	1800 6350 1200 6350
+Text Label 1700 6050 2    60   ~ 0
 V24_in_ext
+Wire Wire Line
+	1800 6050 1250 6050
 $Comp
-L GND #PWR?
-U 1 1 5A154EFD
-P 800 6150
-F 0 "#PWR?" H 800 5900 50  0001 C CNN
-F 1 "GND" H 800 6000 50  0000 C CNN
-F 2 "" H 800 6150 50  0000 C CNN
-F 3 "" H 800 6150 50  0000 C CNN
-	1    800  6150
+L GNDPWR #PWR?
+U 1 1 5ACEBE05
+P 1550 6750
+F 0 "#PWR?" H 1550 6550 50  0001 C CNN
+F 1 "GNDPWR" H 1550 6620 50  0000 C CNN
+F 2 "" H 1550 6700 50  0000 C CNN
+F 3 "" H 1550 6700 50  0000 C CNN
+	1    1550 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  6150 1500 6150
-Text Label 1450 6250 2    60   ~ 0
-V24_in_batt
+	1800 6650 1550 6650
 Wire Wire Line
-	1500 6250 900  6250
+	1550 6650 1550 6750
 $Comp
-L PSMN013-80YS Q?
-U 1 1 5A15C756
-P 2050 8600
-F 0 "Q?" V 2375 8725 40  0000 R CNN
-F 1 "Si7461DP" V 2425 8775 40  0000 R TNN
-F 2 "SMD_Packages:SO-8_PowerPAK_Vishay_Single" V 1725 8600 30  0000 C CNN
-F 3 "http://datasheet.octopart.com/SI7461DP-T1-E3-Vishay-datasheet-8638651.pdf" H 2050 8600 60  0001 C CNN
-	1    2050 8600
-	0    -1   -1   0   
+L rq3e120attb Q?
+U 1 1 5AD68A05
+P 5550 8550
+F 0 "Q?" V 6000 8650 40  0000 R CNN
+F 1 "rq3e120attb" V 5900 8650 40  0000 R TNN
+F 2 "HSMT8" V 6000 8450 30  0000 C CNN
+F 3 "http://www.rohm.com/web/global/datasheet/RQ3E120AT/rq3e120at-e" H 5550 8550 60  0001 C CNN
+	1    5550 8550
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2500 8650 3300 8650
-Wire Wire Line
-	2500 8500 2650 8500
-Wire Wire Line
-	2650 8500 2650 8800
-Connection ~ 2650 8650
-Wire Wire Line
-	2650 8800 2500 8800
-Text Label 1500 8600 2    60   ~ 0
-V24_in_batt
-Wire Wire Line
-	1600 8600 950  8600
-Wire Wire Line
-	2500 8350 2650 8350
-Wire Wire Line
-	2650 8350 2650 8250
-Wire Wire Line
-	2650 8250 2800 8250
-Text Notes 750  9100 0    79   ~ 16
-TODO: Add a zener diode to protect the Gate!!!\n
+$Comp
+L rq3e120attb Q?
+U 1 1 5AD6AE59
+P 5150 4400
+F 0 "Q?" V 5600 4500 40  0000 R CNN
+F 1 "rq3e120attb" V 5500 4500 40  0000 R TNN
+F 2 "HSMT8" V 5600 4300 30  0000 C CNN
+F 3 "http://www.rohm.com/web/global/datasheet/RQ3E120AT/rq3e120at-e" H 5150 4400 60  0001 C CNN
+	1    5150 4400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

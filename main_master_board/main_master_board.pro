@@ -1,4 +1,4 @@
-update=Tue 21 Nov 2017 01:31:35 PM PST
+update=Wed 11 Apr 2018 11:06:03 AM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -419,3 +419,6 @@ LibName377=zetex
 LibName378=Zilog
 LibName379=Library/tps211x
 LibName380=Library/adg5419
+LibName381=Library/szmmbz52_zener
+LibName382=Library/ltc4416
+LibName383=Library/rq3e120attb
