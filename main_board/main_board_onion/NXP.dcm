@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LPC54114J256BD64
+D 32-bit ARM Cortex-M4/M0+ MCU; 192 KB SRAM; 256 KB flash, Crystal-less USB operation
+F https://www.nxp.com/docs/en/data-sheet/LPC5411X.pdf
+$ENDCMP
+#
+$CMP NXP
+D 16-bit/32-bit ARM7TDMI-S microcontroller, 32kB flash, 8kB RAM
+K ARM, 16-bit, 32-bit, ARM7, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC2141_42_44_46_48.pdf
+$ENDCMP
+#
+#End Doc Library
