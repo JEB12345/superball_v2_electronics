@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV62569
+D 2-A High Efficiency Synchronous Buck Converter in SOT Package
+F http://www.ti.com/lit/ds/symlink/tlv62569.pdf
+$ENDCMP
+#
+#End Doc Library
