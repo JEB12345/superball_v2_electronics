@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L Onion:Omega2 O?
 U 1 1 5B63412D
-P 4400 3200
-F 0 "O?" H 4425 4415 50  0000 C CNN
-F 1 "Omega2" H 4425 4324 50  0000 C CNN
-F 2 "" H 4000 3550 50  0001 C CNN
-F 3 "" H 4000 3550 50  0001 C CNN
-	1    4400 3200
+P 5700 2800
+F 0 "O?" H 5725 4015 50  0000 C CNN
+F 1 "Omega2" H 5725 3924 50  0000 C CNN
+F 2 "" H 5300 3150 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5700 2800
 	1    0    0    -1  
 $EndComp
 Text HLabel 850  650  0    50   Input ~ 0
@@ -288,14 +288,14 @@ Text Label 9950 1800 2    50   ~ 0
 D-_Omega
 Text Label 9450 3900 2    50   ~ 0
 D+_Omega
-Text Label 5200 2950 0    50   ~ 0
+Text Label 6500 2550 0    50   ~ 0
 TXD
-Text Label 5200 2850 0    50   ~ 0
+Text Label 6500 2450 0    50   ~ 0
 RXD
 Wire Wire Line
-	5150 2850 5400 2850
+	6450 2450 6700 2450
 Wire Wire Line
-	5150 2950 5400 2950
+	6450 2550 6700 2550
 $Comp
 L LED:CLV1L-FKB D?
 U 1 1 5B6A8E1C
@@ -350,18 +350,18 @@ Wire Wire Line
 	8150 1350 8250 1350
 Wire Wire Line
 	8150 1150 8250 1150
-Text Label 3650 3050 2    50   ~ 0
+Text Label 4950 2650 2    50   ~ 0
 B_LED
-Text Label 3650 2950 2    50   ~ 0
+Text Label 4950 2550 2    50   ~ 0
 G_LED
-Text Label 3650 2850 2    50   ~ 0
+Text Label 4950 2450 2    50   ~ 0
 R_LED
 Wire Wire Line
-	3700 2850 3400 2850
+	5000 2450 4700 2450
 Wire Wire Line
-	3700 2950 3400 2950
+	5000 2550 4700 2550
 Wire Wire Line
-	3700 3050 3400 3050
+	5000 2650 4700 2650
 Text Label 7600 1150 0    50   ~ 0
 B_LED
 Text Label 7600 1350 0    50   ~ 0
@@ -380,4 +380,310 @@ Wire Notes Line
 	7500 2250 7500 500 
 Wire Notes Line
 	7500 2250 11200 2250
+$Comp
+L Pulse:H1102 U?
+U 1 1 5B6C2CE9
+P 3100 6450
+F 0 "U?" H 3125 7325 50  0000 C CNN
+F 1 "H1102" H 3125 7234 50  0000 C CNN
+F 2 "" H 2800 6750 50  0001 C CNN
+F 3 "" H 2800 6750 50  0001 C CNN
+	1    3100 6450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 7200
+NoConn ~ 3800 7100
+NoConn ~ 2450 7200
+NoConn ~ 2450 7100
+$Comp
+L Connector:RJ45_Shielded J?
+U 1 1 5B6C7EA3
+P 5550 6350
+F 0 "J?" H 5221 6298 50  0000 R CNN
+F 1 "RJ45_Shielded" H 5221 6389 50  0000 R CNN
+F 2 "" V 5550 6375 50  0001 C CNN
+F 3 "~" V 5550 6375 50  0001 C CNN
+	1    5550 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 6550 4500 6550
+Wire Wire Line
+	4500 6550 4500 5800
+Wire Wire Line
+	4500 5800 3800 5800
+Wire Wire Line
+	5150 6250 3800 6250
+Wire Wire Line
+	3800 6450 4400 6450
+Wire Wire Line
+	4400 6450 4400 6150
+Wire Wire Line
+	4400 6150 5150 6150
+Wire Wire Line
+	5150 6050 4300 6050
+Wire Wire Line
+	4300 6050 4300 6900
+Wire Wire Line
+	4300 6900 3800 6900
+$Comp
+L Device:R R?
+U 1 1 5B6CE392
+P 3950 7300
+F 0 "R?" H 4020 7346 50  0000 L CNN
+F 1 "75" H 4020 7255 50  0000 L CNN
+F 2 "" V 3880 7300 50  0001 C CNN
+F 3 "~" H 3950 7300 50  0001 C CNN
+	1    3950 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B6CE45E
+P 4200 7300
+F 0 "R?" H 4270 7346 50  0000 L CNN
+F 1 "75" H 4270 7255 50  0000 L CNN
+F 2 "" V 4130 7300 50  0001 C CNN
+F 3 "~" H 4200 7300 50  0001 C CNN
+	1    4200 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 7000 3950 7000
+Wire Wire Line
+	3950 7000 3950 7150
+Wire Wire Line
+	3800 6350 4200 6350
+Wire Wire Line
+	4200 6350 4200 7150
+Wire Wire Line
+	3950 7450 3950 7600
+Wire Wire Line
+	3950 7600 4200 7600
+Wire Wire Line
+	4200 7450 4200 7600
+Connection ~ 4200 7600
+Wire Wire Line
+	4200 7600 5000 7600
+$Comp
+L Device:C_Small C?
+U 1 1 5B6D6417
+P 5650 7600
+F 0 "C?" V 5421 7600 50  0000 C CNN
+F 1 "1nF/2KV" V 5512 7600 50  0000 C CNN
+F 2 "" H 5650 7600 50  0001 C CNN
+F 3 "~" H 5650 7600 50  0001 C CNN
+	1    5650 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 7600 6150 7600
+Text Label 5950 7600 0    50   ~ 0
+GND
+Connection ~ 5000 7600
+Wire Wire Line
+	5000 7600 5550 7600
+NoConn ~ 5150 6350
+NoConn ~ 5150 6450
+NoConn ~ 5150 6650
+NoConn ~ 5150 6750
+Wire Wire Line
+	5550 5850 5550 5800
+Wire Wire Line
+	5550 5800 5000 5800
+Wire Wire Line
+	5000 5800 5000 7600
+$Comp
+L Device:R R?
+U 1 1 5B6EE2BA
+P 1850 5500
+F 0 "R?" H 1700 5550 50  0000 L CNN
+F 1 "49.9" H 1600 5450 50  0000 L CNN
+F 2 "" V 1780 5500 50  0001 C CNN
+F 3 "~" H 1850 5500 50  0001 C CNN
+	1    1850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B6EE3D5
+P 1950 5500
+F 0 "R?" H 2020 5546 50  0000 L CNN
+F 1 "49.9" H 2020 5455 50  0000 L CNN
+F 2 "" V 1880 5500 50  0001 C CNN
+F 3 "~" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B6EE44E
+P 1350 5050
+F 0 "C?" V 1098 5050 50  0000 C CNN
+F 1 "100nF" V 1189 5050 50  0000 C CNN
+F 2 "" H 1388 4900 50  0001 C CNN
+F 3 "~" H 1350 5050 50  0001 C CNN
+	1    1350 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 5050 1850 5050
+Wire Wire Line
+	1850 5050 1850 5350
+Wire Wire Line
+	1850 5650 1850 5800
+Connection ~ 1850 5800
+Wire Wire Line
+	1850 5800 1200 5800
+Wire Wire Line
+	1200 5050 1150 5050
+Wire Wire Line
+	1150 5050 1150 5250
+Wire Wire Line
+	1150 5250 950  5250
+Text Label 1100 5250 2    50   ~ 0
+GND
+Text Label 1350 5800 0    50   ~ 0
+TX-
+Wire Wire Line
+	1850 5800 2450 5800
+Text Label 1350 6200 0    50   ~ 0
+TX+
+Wire Wire Line
+	1200 6200 1950 6200
+Wire Wire Line
+	1950 5650 1950 6200
+Connection ~ 1950 6200
+Wire Wire Line
+	1950 6200 2450 6200
+Wire Wire Line
+	1850 5050 1950 5050
+Wire Wire Line
+	1950 5050 1950 5350
+Connection ~ 1850 5050
+Wire Wire Line
+	2450 6500 1950 6500
+Wire Wire Line
+	2450 6900 1850 6900
+Wire Wire Line
+	2450 6000 2250 6000
+Wire Wire Line
+	2250 6000 2250 5150
+Wire Wire Line
+	2250 5050 2500 5050
+$Comp
+L Device:C C?
+U 1 1 5B716833
+P 2500 5300
+F 0 "C?" H 2385 5254 50  0000 R CNN
+F 1 "1uF" H 2385 5345 50  0000 R CNN
+F 2 "" H 2538 5150 50  0001 C CNN
+F 3 "~" H 2500 5300 50  0001 C CNN
+	1    2500 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 5150 2250 5150
+Connection ~ 2250 5150
+Wire Wire Line
+	2250 5150 2250 5050
+Wire Wire Line
+	2500 5450 2500 5500
+Wire Wire Line
+	2500 5500 2750 5500
+Text Label 2550 5500 0    50   ~ 0
+GND
+Wire Wire Line
+	2450 6700 2250 6700
+Wire Wire Line
+	2250 6700 2250 6000
+Connection ~ 2250 6000
+Text Label 1350 6500 0    50   ~ 0
+RX-
+Text Label 1350 6900 0    50   ~ 0
+RX+
+$Comp
+L Device:R R?
+U 1 1 5B7228FD
+P 1850 7200
+F 0 "R?" H 1700 7250 50  0000 L CNN
+F 1 "49.9" H 1600 7150 50  0000 L CNN
+F 2 "" V 1780 7200 50  0001 C CNN
+F 3 "~" H 1850 7200 50  0001 C CNN
+	1    1850 7200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B722904
+P 1950 7200
+F 0 "R?" H 2020 7246 50  0000 L CNN
+F 1 "49.9" H 2020 7155 50  0000 L CNN
+F 2 "" V 1880 7200 50  0001 C CNN
+F 3 "~" H 1950 7200 50  0001 C CNN
+	1    1950 7200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B72290B
+P 1350 7650
+F 0 "C?" V 1602 7650 50  0000 C CNN
+F 1 "100nF" V 1511 7650 50  0000 C CNN
+F 2 "" H 1388 7500 50  0001 C CNN
+F 3 "~" H 1350 7650 50  0001 C CNN
+	1    1350 7650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1500 7650 1850 7650
+Wire Wire Line
+	1850 7650 1850 7350
+Wire Wire Line
+	1200 7650 1150 7650
+Wire Wire Line
+	1150 7650 1150 7450
+Wire Wire Line
+	1150 7450 950  7450
+Text Label 1100 7450 2    50   ~ 0
+GND
+Wire Wire Line
+	1850 7650 1950 7650
+Wire Wire Line
+	1950 7650 1950 7350
+Connection ~ 1850 7650
+Wire Wire Line
+	1950 7050 1950 6500
+Connection ~ 1950 6500
+Wire Wire Line
+	1950 6500 1200 6500
+Wire Wire Line
+	1850 7050 1850 6900
+Connection ~ 1850 6900
+Wire Wire Line
+	1850 6900 1200 6900
+Text Label 2300 5050 0    50   ~ 0
+3v3
+Text Label 6500 2850 0    50   ~ 0
+TX-
+Text Label 6500 2950 0    50   ~ 0
+TX+
+Text Label 6500 3050 0    50   ~ 0
+RX-
+Text Label 6500 3150 0    50   ~ 0
+RX+
+Wire Wire Line
+	6450 2850 6700 2850
+Wire Wire Line
+	6450 2950 6700 2950
+Wire Wire Line
+	6450 3050 6700 3050
+Wire Wire Line
+	6450 3150 6700 3150
+Wire Notes Line
+	500  4700 7000 4700
+Wire Notes Line
+	7000 4700 7000 6500
+Text Notes 4250 5100 0    50   ~ 0
+Ethernet Jack and Magnetic Transformer
 $EndSCHEMATC
