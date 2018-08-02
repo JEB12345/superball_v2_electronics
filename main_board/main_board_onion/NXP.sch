@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:main_board_onion-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -399,72 +400,128 @@ RTCin
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 5B63D16B
-P 10150 3000
-F 0 "J?" H 9921 2898 50  0000 R CNN
-F 1 "USB_B_Micro" H 9921 2989 50  0000 R CNN
-F 2 "" H 10300 2950 50  0001 C CNN
-F 3 "~" H 10300 2950 50  0001 C CNN
-	1    10150 3000
+P 10700 3000
+F 0 "J?" H 10471 2898 50  0000 R CNN
+F 1 "USB_B_Micro_NXP" H 11000 3350 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 10850 2950 50  0001 C CNN
+F 3 "~" H 10850 2950 50  0001 C CNN
+	1    10700 3000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10150 2600 10150 2500
+	10700 2600 10700 2500
 Wire Wire Line
-	10150 2500 10250 2500
+	10700 2500 10800 2500
 Wire Wire Line
-	10250 2600 10250 2500
-Connection ~ 10250 2500
+	10800 2600 10800 2500
+Connection ~ 10800 2500
 Wire Wire Line
-	10250 2500 10550 2500
-Text Label 10300 2500 0    62   ~ 0
+	10800 2500 11100 2500
+Text Label 10850 2500 0    62   ~ 0
 GND
 Wire Wire Line
-	9850 2800 9850 2500
+	10400 2800 10400 2500
 Wire Wire Line
-	9850 2500 10150 2500
-Connection ~ 10150 2500
+	10400 2500 10700 2500
+Connection ~ 10700 2500
 $Comp
 L Device:R R?
 U 1 1 5B641EBA
-P 9600 2900
-F 0 "R?" V 9393 2900 50  0000 C CNN
-F 1 "33" V 9484 2900 50  0000 C CNN
-F 2 "" V 9530 2900 50  0001 C CNN
-F 3 "~" H 9600 2900 50  0001 C CNN
-	1    9600 2900
+P 10200 3650
+F 0 "R?" V 9993 3650 50  0000 C CNN
+F 1 "33" V 10084 3650 50  0000 C CNN
+F 2 "" V 10130 3650 50  0001 C CNN
+F 3 "~" H 10200 3650 50  0001 C CNN
+	1    10200 3650
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5B641F67
-P 9600 3000
-F 0 "R?" V 9400 3000 50  0000 C CNN
-F 1 "33" V 9500 3000 50  0000 C CNN
-F 2 "" V 9530 3000 50  0001 C CNN
-F 3 "~" H 9600 3000 50  0001 C CNN
-	1    9600 3000
+P 10200 3750
+F 0 "R?" V 10000 3750 50  0000 C CNN
+F 1 "33" V 10100 3750 50  0000 C CNN
+F 2 "" V 10130 3750 50  0001 C CNN
+F 3 "~" H 10200 3750 50  0001 C CNN
+	1    10200 3750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9850 2900 9750 2900
-Wire Wire Line
-	9850 3000 9750 3000
-Wire Wire Line
-	9850 3200 9850 3300
-Wire Wire Line
-	9850 3300 9600 3300
-Text Label 9700 3300 0    79   ~ 0
+	10400 3200 10400 3300
+Text Label 10250 3300 0    79   ~ 0
 5v
-Text HLabel 10850 3400 2    59   Output ~ 0
+Text HLabel 11000 4050 2    59   Output ~ 0
 5V
 Wire Wire Line
-	10850 3400 10550 3400
-Text Label 10750 3400 2    59   ~ 0
+	11000 4050 10700 4050
+Text Label 10900 4050 2    59   ~ 0
 5v
-Text Notes 10300 2450 2    79   ~ 0
+Text Notes 10850 2450 2    79   ~ 0
 USB Micro for NXP
 Wire Notes Line
-	9150 3450 11200 3450
+	9150 500  9150 4150
+Wire Wire Line
+	10050 3650 9700 3650
+Wire Wire Line
+	10050 3750 9700 3750
+Wire Wire Line
+	7150 3450 7400 3450
+Wire Wire Line
+	9900 3300 10200 3300
+Text Label 9950 3300 0    50   ~ 0
+VBUS
+Wire Wire Line
+	7150 5100 7550 5100
+Text Label 7200 5100 0    50   ~ 0
+NXP_D+
+Text Label 7200 5200 0    50   ~ 0
+NXP_D-
+Wire Wire Line
+	7150 5200 7550 5200
+Text Label 10000 3750 2    50   ~ 0
+NXP_D-
+Text Label 10000 3650 2    50   ~ 0
+NXP_D+
+Text Label 7200 3450 0    50   ~ 0
+3v3
+$Comp
+L Power_Protection:SP0503BAHT D?
+U 1 1 5B678F4C
+P 9700 3000
+F 0 "D?" V 9358 3000 50  0000 C CNN
+F 1 "SP0503BAHT" V 9449 3000 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 9925 2950 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 9825 3125 50  0001 C CNN
+	1    9700 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10350 3650 10650 3650
+Wire Wire Line
+	10350 3750 10650 3750
+Wire Wire Line
+	9900 2900 10400 2900
+Wire Wire Line
+	9900 3000 10400 3000
+Wire Wire Line
+	9900 3100 10200 3100
+Wire Wire Line
+	10200 3100 10200 3300
+Connection ~ 10200 3300
+Wire Wire Line
+	10200 3300 10400 3300
+Text Label 10350 3000 2    50   ~ 0
+D+IN_NXP
+Text Label 10350 2900 2    50   ~ 0
+D-IN_NXP
+Text Label 10400 3650 0    50   ~ 0
+D+IN_NXP
+Text Label 10400 3750 0    50   ~ 0
+D-IN_NXP
+Text Label 9450 3000 2    62   ~ 0
+GND
+Wire Wire Line
+	9500 3000 9250 3000
 Wire Notes Line
-	9150 500  9150 3450
+	9150 4150 11200 4150
 $EndSCHEMATC

@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:main_board_onion-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Onion:Omega2 O?
-U 1 1 5B5F993F
-P 7900 3000
-F 0 "O?" H 7925 4215 50  0000 C CNN
-F 1 "Omega2" H 7925 4124 50  0000 C CNN
-F 2 "" H 7500 3350 50  0001 C CNN
-F 3 "" H 7500 3350 50  0001 C CNN
-	1    7900 3000
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 2900 5600 1900 1600
 U 5B5F9B97
@@ -249,4 +239,10 @@ Text Label 4850 5950 0    79   ~ 0
 5v
 Wire Wire Line
 	4800 5950 5050 5950
+$Sheet
+S 6900 2400 2050 1450
+U 5B6340A6
+F0 "Omega2" 50
+F1 "Omega2.sch" 50
+$EndSheet
 $EndSCHEMATC
