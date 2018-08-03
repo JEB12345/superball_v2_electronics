@@ -253,7 +253,7 @@ Wire Wire Line
 Text Label 5400 4000 0    50   ~ 0
 SWDIO
 Wire Wire Line
-	7150 4250 7450 4250
+	7150 4250 7550 4250
 Text Label 7200 4250 0    50   ~ 0
 ~RESET
 $Comp
@@ -379,7 +379,7 @@ U 1 1 5B638921
 P 9700 2200
 F 0 "JP?" H 9600 2450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 9650 2350 50  0000 C CNN
-F 2 "" H 9700 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9700 2200 50  0001 C CNN
 F 3 "~" H 9700 2200 50  0001 C CNN
 	1    9700 2200
 	1    0    0    -1  
@@ -524,4 +524,48 @@ Wire Wire Line
 	9500 3000 9250 3000
 Wire Notes Line
 	9150 4150 11200 4150
+Text Label 5700 2300 2    50   ~ 0
+NXP_MOSI
+Text Label 5700 2400 2    50   ~ 0
+NXP_MISO
+Text Label 5700 2500 2    50   ~ 0
+NXP_SPICS
+Text Label 5700 2700 2    50   ~ 0
+NXP_SPICLK
+Wire Wire Line
+	5750 2700 5150 2700
+Wire Wire Line
+	5750 2500 5150 2500
+Wire Wire Line
+	5750 2400 5150 2400
+Wire Wire Line
+	5750 2300 5150 2300
+Text Label 7200 4050 0    50   ~ 0
+NXP_Ready
+Wire Wire Line
+	7150 4050 7800 4050
+Text Label 7200 3950 0    50   ~ 0
+Omega_Ready
+Wire Wire Line
+	7150 3950 7800 3950
+Text HLabel 7800 4050 2    50   Output ~ 0
+NXP_Ready
+Text HLabel 7800 3950 2    50   Input ~ 0
+Omega_Ready
+Text HLabel 7550 4250 2    50   Input ~ 0
+Reset_NXP
+Text HLabel 5150 2300 0    50   Output ~ 0
+NXP_MOSI
+Text HLabel 5150 2400 0    50   Input ~ 0
+NXP_MISO
+Text HLabel 5150 2500 0    50   Output ~ 0
+NXP_SPICS
+Text HLabel 5150 2700 0    50   Output ~ 0
+NXP_SPICLK
+Text Label 7200 3850 0    50   ~ 0
+Reset_Omega
+Wire Wire Line
+	7150 3850 7800 3850
+Text HLabel 7800 3850 2    50   Output ~ 0
+Reset_Omega
 $EndSCHEMATC

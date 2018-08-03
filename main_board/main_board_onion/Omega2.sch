@@ -20,7 +20,7 @@ U 1 1 5B63412D
 P 5700 2800
 F 0 "O?" H 5725 4015 50  0000 C CNN
 F 1 "Omega2" H 5725 3924 50  0000 C CNN
-F 2 "" H 5300 3150 50  0001 C CNN
+F 2 "Onion:Omega2p" H 5300 3150 50  0001 C CNN
 F 3 "" H 5300 3150 50  0001 C CNN
 	1    5700 2800
 	1    0    0    -1  
@@ -401,8 +401,8 @@ U 1 1 5B6C7EA3
 P 5550 6350
 F 0 "J?" H 5221 6298 50  0000 R CNN
 F 1 "RJ45_Shielded" H 5221 6389 50  0000 R CNN
-F 2 "" V 5550 6375 50  0001 C CNN
-F 3 "~" V 5550 6375 50  0001 C CNN
+F 2 "TE:1-338088-3" V 5550 6375 50  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=338088&DocType=Customer+Drawing&DocLang=English" V 5550 6375 50  0001 C CNN
 	1    5550 6350
 	-1   0    0    1   
 $EndComp
@@ -686,4 +686,78 @@ Wire Notes Line
 	7000 4700 7000 6500
 Text Notes 4250 5100 0    50   ~ 0
 Ethernet Jack and Magnetic Transformer
+Text Label 6500 2050 0    50   ~ 0
+GND
+Text Label 4950 2050 2    50   ~ 0
+GND
+Text Label 6500 2150 0    50   ~ 0
+3v3
+Wire Wire Line
+	6450 2150 6650 2150
+Wire Wire Line
+	6450 2050 6650 2050
+Wire Wire Line
+	5000 2050 4800 2050
+Text Label 6500 2650 0    50   ~ 0
+Reset_Omega
+Text Label 4950 2950 2    50   ~ 0
+Omega_MISO
+Text Label 4950 3050 2    50   ~ 0
+Omega_MOSI
+Text Label 4950 3150 2    50   ~ 0
+Omega_SPICLK
+Wire Wire Line
+	5000 3150 4350 3150
+Wire Wire Line
+	5000 3050 4350 3050
+Wire Wire Line
+	5000 2950 4350 2950
+Text Label 4950 3250 2    50   ~ 0
+Omega_SPICS
+Wire Wire Line
+	5000 3250 4350 3250
+NoConn ~ 6450 2250
+NoConn ~ 6450 2350
+NoConn ~ 6450 2750
+NoConn ~ 5000 3550
+Text Label 6500 3250 0    50   ~ 0
+Reset_NXP
+Text Label 6500 3350 0    50   ~ 0
+NXP_Ready
+Wire Wire Line
+	6450 3250 7100 3250
+Wire Wire Line
+	6450 3350 7100 3350
+Text Label 4950 2150 2    50   ~ 0
+Omega_Ready
+NoConn ~ 5000 2250
+NoConn ~ 5000 2350
+NoConn ~ 5000 2750
+NoConn ~ 5000 2850
+NoConn ~ 5000 3350
+NoConn ~ 5000 3450
+NoConn ~ 6450 3450
+NoConn ~ 6450 3550
+Text HLabel 4350 2950 0    50   Output ~ 0
+Omega_MISO
+Text HLabel 4350 3050 0    50   Input ~ 0
+Omega_MOSI
+Text HLabel 4350 3150 0    50   Input ~ 0
+Omega_SPICLK
+Text HLabel 4350 3250 0    50   Input ~ 0
+Omega_SPICS
+Text HLabel 4350 2150 0    50   Output ~ 0
+Omega_Reday
+Wire Wire Line
+	4350 2150 5000 2150
+Text HLabel 7100 2650 2    50   Input ~ 0
+Reset_Omega
+Wire Wire Line
+	6450 2650 7100 2650
+Text HLabel 7100 3350 2    50   Input ~ 0
+NXP_Ready
+Text HLabel 7100 3250 2    50   Output ~ 0
+Reset_NXP
+Text Notes 5100 1200 0    98   ~ 0
+Add Extra antenna?
 $EndSCHEMATC
