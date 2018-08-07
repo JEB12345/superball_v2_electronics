@@ -225,10 +225,8 @@ Wire Wire Line
 Wire Wire Line
 	1400 5350 2900 5350
 Connection ~ 2900 4750
-Text Label 2950 4750 0    79   ~ 0
-3v3
-Wire Wire Line
-	2900 4750 3200 4750
+Text Label 3200 4750 2    79   ~ 0
+3v3_fro_5v
 Wire Notes Line
 	500  1300 1250 1300
 Wire Notes Line
@@ -645,4 +643,40 @@ Text Notes 750  2100 0    79   ~ 0
 24V to 5V
 Text Notes 800  3950 0    79   ~ 0
 5V to 3.3V
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5B69732D
+P 3750 4750
+F 0 "JP?" H 3750 4955 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 3750 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 4750 50  0001 C CNN
+F 3 "~" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4750 3600 4750
+Wire Wire Line
+	3900 4750 4100 4750
+Text Label 3950 4750 0    50   ~ 0
+3v3
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B69F017
+P 950 6050
+F 0 "J?" H 870 5725 50  0000 C CNN
+F 1 "Backup_3v3" H 870 5816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 950 6050 50  0001 C CNN
+F 3 "~" H 950 6050 50  0001 C CNN
+	1    950  6050
+	-1   0    0    1   
+$EndComp
+Text Label 1200 5950 0    50   ~ 0
+3v3
+Text Label 1200 6050 0    50   ~ 0
+GND
+Wire Wire Line
+	1150 5950 1350 5950
+Wire Wire Line
+	1150 6050 1350 6050
 $EndSCHEMATC

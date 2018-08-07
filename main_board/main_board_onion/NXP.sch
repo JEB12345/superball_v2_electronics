@@ -458,8 +458,6 @@ Text Label 10900 4050 2    59   ~ 0
 5v
 Text Notes 10850 2450 2    79   ~ 0
 USB Micro for NXP
-Wire Notes Line
-	9150 500  9150 4150
 Wire Wire Line
 	10050 3650 9700 3650
 Wire Wire Line
@@ -568,4 +566,263 @@ Wire Wire Line
 	7150 3850 7800 3850
 Text HLabel 7800 3850 2    50   Output ~ 0
 Reset_Omega
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5B6A4E93
+P 10650 4750
+F 0 "J?" H 10730 4742 50  0000 L CNN
+F 1 "Conn_01x06" H 10730 4651 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 10650 4750 50  0001 C CNN
+F 3 "~" H 10650 4750 50  0001 C CNN
+	1    10650 4750
+	1    0    0    -1  
+$EndComp
+Text Label 5700 4600 2    50   ~ 0
+I2C_SCL_Flex1
+Text Label 5700 4700 2    50   ~ 0
+I2C_SDA_Flex1
+Wire Wire Line
+	5750 4600 5150 4600
+Wire Wire Line
+	5750 4700 5150 4700
+Text Label 5700 4800 2    50   ~ 0
+GPIO25
+Text Label 5700 4900 2    50   ~ 0
+GPIO26
+Wire Wire Line
+	5750 4800 5400 4800
+Wire Wire Line
+	5750 4900 5400 4900
+Text Label 10400 4550 2    50   ~ 0
+GND
+Text Label 10400 5050 2    50   ~ 0
+3v3
+Text Label 10400 4650 2    50   ~ 0
+I2C_SCL_Flex1
+Text Label 10400 4750 2    50   ~ 0
+I2C_SDA_Flex1
+Text Label 10400 4850 2    50   ~ 0
+GPIO25
+Text Label 10400 4950 2    50   ~ 0
+GPIO26
+Wire Wire Line
+	10450 4850 10100 4850
+Wire Wire Line
+	10450 4950 10100 4950
+$Comp
+L Device:R_Small R?
+U 1 1 5B6BE260
+P 9400 4450
+F 0 "R?" H 9459 4496 50  0000 L CNN
+F 1 "4.7k" H 9459 4405 50  0000 L CNN
+F 2 "" H 9400 4450 50  0001 C CNN
+F 3 "~" H 9400 4450 50  0001 C CNN
+	1    9400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5B6BE322
+P 9700 4450
+F 0 "R?" H 9759 4496 50  0000 L CNN
+F 1 "4.7k" H 9759 4405 50  0000 L CNN
+F 2 "" H 9700 4450 50  0001 C CNN
+F 3 "~" H 9700 4450 50  0001 C CNN
+	1    9700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4650 9700 4550
+Wire Wire Line
+	9700 4650 10450 4650
+Wire Wire Line
+	9400 4750 9400 4550
+Wire Wire Line
+	9400 4750 10450 4750
+Wire Wire Line
+	9400 4350 9400 4250
+Wire Wire Line
+	9400 4250 9700 4250
+Wire Wire Line
+	9700 4250 9700 4350
+Wire Wire Line
+	10450 5050 10250 5050
+Text Label 9600 4250 2    50   ~ 0
+3v3
+Wire Notes Line
+	9150 5150 11200 5150
+Text Notes 10200 4300 0    50   ~ 0
+Cable Sensor Package
+Text Label 5700 5000 2    50   ~ 0
+ADC0.0
+Wire Wire Line
+	5750 5000 5400 5000
+Wire Wire Line
+	10450 4550 10250 4550
+Text Label 10400 5350 2    50   ~ 0
+GND
+Wire Wire Line
+	10450 5350 10250 5350
+Text Notes 10300 5250 0    50   ~ 0
+End Effector Sensor
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5B6ED584
+P 10650 5450
+F 0 "J?" H 10730 5442 50  0000 L CNN
+F 1 "Conn_01x04" H 10730 5351 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 5450 50  0001 C CNN
+F 3 "~" H 10650 5450 50  0001 C CNN
+	1    10650 5450
+	1    0    0    -1  
+$EndComp
+Text Label 10400 5550 2    50   ~ 0
+EE_otherWire
+Text Label 10400 5650 2    50   ~ 0
+GND
+Text Label 10400 5450 2    50   ~ 0
+3v3
+Wire Wire Line
+	10450 5450 10250 5450
+$Comp
+L Device:R_Small R?
+U 1 1 5B7095E5
+P 9600 5500
+F 0 "R?" H 9541 5454 50  0000 R CNN
+F 1 "3.4k" H 9541 5545 50  0000 R CNN
+F 2 "" H 9600 5500 50  0001 C CNN
+F 3 "~" H 9600 5500 50  0001 C CNN
+	1    9600 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9850 5550 9850 5350
+Wire Wire Line
+	9850 5350 9600 5350
+Wire Wire Line
+	9600 5350 9600 5400
+Wire Wire Line
+	9850 5550 10450 5550
+Wire Wire Line
+	9600 5650 9600 5600
+Wire Wire Line
+	9600 5650 10450 5650
+Text Label 9850 5350 2    50   ~ 0
+ADC0.0
+Wire Notes Line
+	11200 5750 9150 5750
+Text Notes 9200 5750 0    39   ~ 0
+Resistor value could change depending on the sensor value
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5B72C26E
+P 10650 6050
+F 0 "J?" H 10730 6042 50  0000 L CNN
+F 1 "Conn_01x04" H 10730 5951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 6050 50  0001 C CNN
+F 3 "~" H 10650 6050 50  0001 C CNN
+	1    10650 6050
+	1    0    0    -1  
+$EndComp
+Text Label 10400 5950 2    39   ~ 0
+Tension_pos_1
+Text Label 10400 6050 2    39   ~ 0
+Tension_neg_1
+Text Label 10400 6150 2    39   ~ 0
+Tension_pos_2
+Text Label 10400 6250 2    39   ~ 0
+Tension_neg_2
+Text Notes 10450 5850 0    50   ~ 0
+Tension Sensors
+Text Notes 9250 6400 0    39   ~ 0
+Not sure how this sensor works. Might be an SPI sensor.
+Wire Notes Line
+	9150 500  9150 6500
+Text Label 7200 2950 0    50   ~ 0
+SPI_clock_flex7
+Text Label 7200 3050 0    50   ~ 0
+SPI_MOSI_flex7
+Text Label 7200 3150 0    50   ~ 0
+SPI_MISO_flex7
+Text Label 7200 2850 0    50   ~ 0
+SPI_CS_flex7
+Wire Wire Line
+	7150 2950 7800 2950
+Wire Wire Line
+	7150 3050 7800 3050
+Wire Wire Line
+	7150 3150 7800 3150
+Wire Wire Line
+	7150 2850 7700 2850
+Text Label 9850 6050 2    50   ~ 0
+SPI_clock_flex7
+Text Label 9850 6150 2    50   ~ 0
+SPI_MOSI_flex7
+Text Label 9850 6250 2    50   ~ 0
+SPI_MISO_flex7
+Text Label 9850 5950 2    50   ~ 0
+SPI_CS_flex7
+Wire Wire Line
+	9250 6250 10450 6250
+Wire Wire Line
+	9250 6150 10450 6150
+Wire Wire Line
+	9250 6050 10450 6050
+Wire Wire Line
+	9350 5950 10450 5950
+Text Label 5700 3500 2    50   ~ 0
+USART_RXD_flex3
+Text Label 5700 3600 2    50   ~ 0
+USART_TXD_flex3
+Text Label 5700 3400 2    50   ~ 0
+USART_SCK_flex3
+Text Label 5700 3700 2    50   ~ 0
+USART_CTS_flex3
+Text Label 5700 3800 2    50   ~ 0
+USART_RTS_flex3
+Wire Wire Line
+	5750 3800 5050 3800
+Wire Wire Line
+	5750 3700 5050 3700
+Wire Wire Line
+	5750 3600 5050 3600
+Wire Wire Line
+	5750 3500 5050 3500
+Wire Wire Line
+	5750 3400 5050 3400
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5B7E7861
+P 6300 7250
+F 0 "J?" H 6380 7242 50  0000 L CNN
+F 1 "Conn_01x06" H 6380 7151 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 6300 7250 50  0001 C CNN
+F 3 "~" H 6300 7250 50  0001 C CNN
+	1    6300 7250
+	1    0    0    -1  
+$EndComp
+Text Label 6050 7250 2    50   ~ 0
+USART_RXD_flex3
+Text Label 6050 7350 2    50   ~ 0
+USART_TXD_flex3
+Text Label 6050 7150 2    50   ~ 0
+USART_SCK_flex3
+Text Label 6050 7450 2    50   ~ 0
+USART_CTS_flex3
+Text Label 6050 7550 2    50   ~ 0
+USART_RTS_flex3
+Wire Wire Line
+	6100 7550 5400 7550
+Wire Wire Line
+	6100 7450 5400 7450
+Wire Wire Line
+	6100 7350 5400 7350
+Wire Wire Line
+	6100 7250 5400 7250
+Wire Wire Line
+	6100 7150 5400 7150
+Text Label 6050 7050 2    50   ~ 0
+GND
+Wire Wire Line
+	6100 7050 5900 7050
 $EndSCHEMATC
