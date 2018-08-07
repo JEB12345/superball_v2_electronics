@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L NXP:LPC54114J256BD64 U?
+L NXP:LPC54114J256BD64 U3
 U 1 1 5B5F9BB3
 P 6450 3800
-F 0 "U?" H 6450 1650 50  0000 C CNN
+F 0 "U3" H 6450 1650 50  0000 C CNN
 F 1 "LPC54114J256BD64" H 6450 1723 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 7500 5750 50  0001 C CNN
 F 3 "https://www.nxp.com/docs/en/data-sheet/LPC5411X.pdf" H 6450 3800 50  0001 C CNN
@@ -38,23 +38,23 @@ Wire Wire Line
 Text Label 1500 1200 2    50   ~ 0
 GND
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5B5F9E20
 P 6250 1500
-F 0 "C?" H 6365 1546 50  0000 L CNN
+F 0 "C6" H 6365 1546 50  0000 L CNN
 F 1 "0.1uF" H 6300 1400 50  0000 L CNN
-F 2 "" H 6288 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6288 1350 50  0001 C CNN
 F 3 "~" H 6250 1500 50  0001 C CNN
 	1    6250 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C7
 U 1 1 5B5F9E80
 P 6550 1500
-F 0 "C?" H 6665 1546 50  0000 L CNN
+F 0 "C7" H 6665 1546 50  0000 L CNN
 F 1 "0.01uF" H 6600 1400 50  0000 L CNN
-F 2 "" H 6588 1350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 1350 50  0001 C CNN
 F 3 "~" H 6550 1500 50  0001 C CNN
 	1    6550 1500
 	1    0    0    -1  
@@ -101,23 +101,23 @@ Wire Wire Line
 Text Label 6200 1200 0    50   ~ 0
 GND
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5B5FA2FD
 P 7300 1700
-F 0 "C?" V 7400 1750 50  0000 L CNN
+F 0 "C9" V 7400 1750 50  0000 L CNN
 F 1 "10uF" V 7400 1400 50  0000 L CNN
-F 2 "" H 7338 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7338 1550 50  0001 C CNN
 F 3 "~" H 7300 1700 50  0001 C CNN
 	1    7300 1700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5B5FA3DF
 P 7300 1450
-F 0 "C?" V 7400 1500 50  0000 L CNN
+F 0 "C8" V 7400 1500 50  0000 L CNN
 F 1 "0.1uF" V 7400 1150 50  0000 L CNN
-F 2 "" H 7338 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7338 1300 50  0001 C CNN
 F 3 "~" H 7300 1450 50  0001 C CNN
 	1    7300 1450
 	0    1    1    0   
@@ -154,34 +154,34 @@ Wire Wire Line
 Text Label 7550 1550 0    50   ~ 0
 GND
 $Comp
-L Device:C_Small C?
+L Device:C_Small C10
 U 1 1 5B5FAF1A
 P 7500 4500
-F 0 "C?" H 7592 4546 50  0000 L CNN
+F 0 "C10" H 7592 4546 50  0000 L CNN
 F 1 "0.1uF" H 7592 4455 50  0000 L CNN
-F 2 "" H 7500 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7500 4500 50  0001 C CNN
 F 3 "~" H 7500 4500 50  0001 C CNN
 	1    7500 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 5B5FB05C
 P 8150 4500
-F 0 "C?" H 8242 4546 50  0000 L CNN
+F 0 "C11" H 8242 4546 50  0000 L CNN
 F 1 "0.1uF" H 8200 4450 50  0000 L CNN
-F 2 "" H 8150 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8150 4500 50  0001 C CNN
 F 3 "~" H 8150 4500 50  0001 C CNN
 	1    8150 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 5B5FB0A4
 P 8450 4500
-F 0 "C?" H 8542 4546 50  0000 L CNN
+F 0 "C12" H 8542 4546 50  0000 L CNN
 F 1 "10uF" H 8500 4450 50  0000 L CNN
-F 2 "" H 8450 4500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8450 4500 50  0001 C CNN
 F 3 "~" H 8450 4500 50  0001 C CNN
 	1    8450 4500
 	1    0    0    -1  
@@ -257,10 +257,10 @@ Wire Wire Line
 Text Label 7200 4250 0    50   ~ 0
 ~RESET
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J11
 U 1 1 5B611719
 P 10200 1200
-F 0 "J?" H 10250 1617 50  0000 C CNN
+F 0 "J11" H 10250 1617 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 10250 1526 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10200 1200 50  0001 C CNN
 F 3 "~" H 10200 1200 50  0001 C CNN
@@ -307,34 +307,34 @@ Wire Wire Line
 Text Notes 9200 700  0    118  ~ 0
 ARM Debug Connector\n
 $Comp
-L Device:Crystal_Small Y?
+L Device:Crystal_Small Y1
 U 1 1 5B620F7D
 P 10400 1850
-F 0 "Y?" H 10400 1625 50  0000 C CNN
+F 0 "Y1" H 10400 1625 50  0000 C CNN
 F 1 "XTAL" H 10400 1716 50  0000 C CNN
-F 2 "" H 10400 1850 50  0001 C CNN
-F 3 "~" H 10400 1850 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 10400 1850 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ABS07-120-32.768KHZ-T-Abracon-datasheet-41232047.pdf" H 10400 1850 50  0001 C CNN
 	1    10400 1850
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C13
 U 1 1 5B6221AA
 P 10150 2000
-F 0 "C?" H 10242 2046 50  0000 L CNN
+F 0 "C13" H 10242 2046 50  0000 L CNN
 F 1 "Cx1" H 10242 1955 50  0000 L CNN
-F 2 "" H 10150 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10150 2000 50  0001 C CNN
 F 3 "~" H 10150 2000 50  0001 C CNN
 	1    10150 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C14
 U 1 1 5B6221EC
 P 10600 2000
-F 0 "C?" H 10692 2046 50  0000 L CNN
+F 0 "C14" H 10692 2046 50  0000 L CNN
 F 1 "Cx2" H 10692 1955 50  0000 L CNN
-F 2 "" H 10600 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10600 2000 50  0001 C CNN
 F 3 "~" H 10600 2000 50  0001 C CNN
 	1    10600 2000
 	1    0    0    -1  
@@ -374,10 +374,10 @@ Wire Notes Line
 Wire Notes Line
 	9150 2300 11200 2300
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5B638921
 P 9700 2200
-F 0 "JP?" H 9600 2450 50  0000 C CNN
+F 0 "JP3" H 9600 2450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 9650 2350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 9700 2200 50  0001 C CNN
 F 3 "~" H 9700 2200 50  0001 C CNN
@@ -398,10 +398,10 @@ Wire Wire Line
 Text Label 9250 2200 0    62   ~ 0
 RTCin
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J15
 U 1 1 5B63D16B
 P 10700 3000
-F 0 "J?" H 10471 2898 50  0000 R CNN
+F 0 "J15" H 10471 2898 50  0000 R CNN
 F 1 "USB_B_Micro_NXP" H 11000 3350 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 10850 2950 50  0001 C CNN
 F 3 "~" H 10850 2950 50  0001 C CNN
@@ -425,23 +425,23 @@ Wire Wire Line
 	10400 2500 10700 2500
 Connection ~ 10700 2500
 $Comp
-L Device:R R?
+L Device:R R8
 U 1 1 5B641EBA
 P 10200 3650
-F 0 "R?" V 9993 3650 50  0000 C CNN
+F 0 "R8" V 9993 3650 50  0000 C CNN
 F 1 "33" V 10084 3650 50  0000 C CNN
-F 2 "" V 10130 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10130 3650 50  0001 C CNN
 F 3 "~" H 10200 3650 50  0001 C CNN
 	1    10200 3650
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5B641F67
 P 10200 3750
-F 0 "R?" V 10000 3750 50  0000 C CNN
+F 0 "R9" V 10000 3750 50  0000 C CNN
 F 1 "33" V 10100 3750 50  0000 C CNN
-F 2 "" V 10130 3750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10130 3750 50  0001 C CNN
 F 3 "~" H 10200 3750 50  0001 C CNN
 	1    10200 3750
 	0    -1   -1   0   
@@ -483,10 +483,10 @@ NXP_D+
 Text Label 7200 3450 0    50   ~ 0
 3v3
 $Comp
-L Power_Protection:SP0503BAHT D?
+L Power_Protection:SP0503BAHT D1
 U 1 1 5B678F4C
 P 9700 3000
-F 0 "D?" V 9358 3000 50  0000 C CNN
+F 0 "D1" V 9358 3000 50  0000 C CNN
 F 1 "SP0503BAHT" V 9449 3000 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 9925 2950 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 9825 3125 50  0001 C CNN
@@ -567,10 +567,10 @@ Wire Wire Line
 Text HLabel 7800 3850 2    50   Output ~ 0
 Reset_Omega
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J12
 U 1 1 5B6A4E93
 P 10650 4750
-F 0 "J?" H 10730 4742 50  0000 L CNN
+F 0 "J12" H 10730 4742 50  0000 L CNN
 F 1 "Conn_01x06" H 10730 4651 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 10650 4750 50  0001 C CNN
 F 3 "~" H 10650 4750 50  0001 C CNN
@@ -610,23 +610,23 @@ Wire Wire Line
 Wire Wire Line
 	10450 4950 10100 4950
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5B6BE260
 P 9400 4450
-F 0 "R?" H 9459 4496 50  0000 L CNN
+F 0 "R5" H 9459 4496 50  0000 L CNN
 F 1 "4.7k" H 9459 4405 50  0000 L CNN
-F 2 "" H 9400 4450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 4450 50  0001 C CNN
 F 3 "~" H 9400 4450 50  0001 C CNN
 	1    9400 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R7
 U 1 1 5B6BE322
 P 9700 4450
-F 0 "R?" H 9759 4496 50  0000 L CNN
+F 0 "R7" H 9759 4496 50  0000 L CNN
 F 1 "4.7k" H 9759 4405 50  0000 L CNN
-F 2 "" H 9700 4450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9700 4450 50  0001 C CNN
 F 3 "~" H 9700 4450 50  0001 C CNN
 	1    9700 4450
 	1    0    0    -1  
@@ -666,10 +666,10 @@ Wire Wire Line
 Text Notes 10300 5250 0    50   ~ 0
 End Effector Sensor
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J13
 U 1 1 5B6ED584
 P 10650 5450
-F 0 "J?" H 10730 5442 50  0000 L CNN
+F 0 "J13" H 10730 5442 50  0000 L CNN
 F 1 "Conn_01x04" H 10730 5351 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 5450 50  0001 C CNN
 F 3 "~" H 10650 5450 50  0001 C CNN
@@ -685,12 +685,12 @@ Text Label 10400 5450 2    50   ~ 0
 Wire Wire Line
 	10450 5450 10250 5450
 $Comp
-L Device:R_Small R?
+L Device:R_Small R6
 U 1 1 5B7095E5
 P 9600 5500
-F 0 "R?" H 9541 5454 50  0000 R CNN
+F 0 "R6" H 9541 5454 50  0000 R CNN
 F 1 "3.4k" H 9541 5545 50  0000 R CNN
-F 2 "" H 9600 5500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9600 5500 50  0001 C CNN
 F 3 "~" H 9600 5500 50  0001 C CNN
 	1    9600 5500
 	-1   0    0    1   
@@ -714,10 +714,10 @@ Wire Notes Line
 Text Notes 9200 5750 0    39   ~ 0
 Resistor value could change depending on the sensor value
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J14
 U 1 1 5B72C26E
 P 10650 6050
-F 0 "J?" H 10730 6042 50  0000 L CNN
+F 0 "J14" H 10730 6042 50  0000 L CNN
 F 1 "Conn_01x04" H 10730 5951 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 6050 50  0001 C CNN
 F 3 "~" H 10650 6050 50  0001 C CNN
@@ -791,10 +791,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 3400 5050 3400
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J10
 U 1 1 5B7E7861
 P 6300 7250
-F 0 "J?" H 6380 7242 50  0000 L CNN
+F 0 "J10" H 6380 7242 50  0000 L CNN
 F 1 "Conn_01x06" H 6380 7151 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 6300 7250 50  0001 C CNN
 F 3 "~" H 6300 7250 50  0001 C CNN
