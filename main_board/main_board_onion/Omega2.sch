@@ -195,7 +195,6 @@ Wire Wire Line
 	9250 3500 9500 3500
 Wire Wire Line
 	9500 3800 9500 3500
-Connection ~ 9500 3500
 Text Notes 9600 2350 0    50   ~ 0
 USB to Serial Chip (like FTDI)
 Wire Notes Line
@@ -386,7 +385,7 @@ U 1 1 5B6C2CE9
 P 3100 6450
 F 0 "U4" H 3125 7325 50  0000 C CNN
 F 1 "H1102" H 3125 7234 50  0000 C CNN
-F 2 "Inductor_SMD:L_Coilcraft_XxL4040" H 2800 6750 50  0001 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x12.8mm_P1.27mm" H 2800 6750 50  0001 C CNN
 F 3 "" H 2800 6750 50  0001 C CNN
 	1    3100 6450
 	1    0    0    -1  
@@ -395,17 +394,6 @@ NoConn ~ 3800 7200
 NoConn ~ 3800 7100
 NoConn ~ 2450 7200
 NoConn ~ 2450 7100
-$Comp
-L Connector:RJ45_Shielded J16
-U 1 1 5B6C7EA3
-P 5550 6350
-F 0 "J16" H 5221 6298 50  0000 R CNN
-F 1 "RJ45_Shielded" H 5221 6389 50  0000 R CNN
-F 2 "TE:1-338088-3" V 5550 6375 50  0001 C CNN
-F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=338088&DocType=Customer+Drawing&DocLang=English" V 5550 6375 50  0001 C CNN
-	1    5550 6350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5150 6550 4500 6550
 Wire Wire Line
@@ -463,8 +451,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 7450 4200 7600
 Connection ~ 4200 7600
-Wire Wire Line
-	4200 7600 5000 7600
 $Comp
 L Device:C_Small C18
 U 1 1 5B6D6417
@@ -480,19 +466,10 @@ Wire Wire Line
 	5750 7600 6150 7600
 Text Label 5950 7600 0    50   ~ 0
 GND
-Connection ~ 5000 7600
-Wire Wire Line
-	5000 7600 5550 7600
 NoConn ~ 5150 6350
 NoConn ~ 5150 6450
 NoConn ~ 5150 6650
 NoConn ~ 5150 6750
-Wire Wire Line
-	5550 5850 5550 5800
-Wire Wire Line
-	5550 5800 5000 5800
-Wire Wire Line
-	5000 5800 5000 7600
 $Comp
 L Device:R R10
 U 1 1 5B6EE2BA
@@ -760,4 +737,18 @@ Text HLabel 7100 3250 2    50   Output ~ 0
 Reset_NXP
 Text Notes 5100 1200 0    98   ~ 0
 Add Extra antenna?
+$Comp
+L Connector:RJ45 J16
+U 1 1 5B6A0DFB
+P 5550 6350
+F 0 "J16" H 5220 6354 50  0000 R CNN
+F 1 "RJ45" H 5220 6445 50  0000 R CNN
+F 2 "TE:1-338088-3" V 5550 6375 50  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=338088&DocType=Customer+Drawing&DocLang=English" V 5550 6375 50  0001 C CNN
+	1    5550 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 7600 5550 7600
+Connection ~ 9500 3500
 $EndSCHEMATC
