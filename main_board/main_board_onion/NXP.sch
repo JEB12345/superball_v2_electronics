@@ -571,7 +571,7 @@ L Connector_Generic:Conn_01x06 J12
 U 1 1 5B6A4E93
 P 10650 4750
 F 0 "J12" H 10730 4742 50  0000 L CNN
-F 1 "Conn_01x06" H 10730 4651 50  0000 L CNN
+F 1 "CableSensor" H 10730 4651 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 10650 4750 50  0001 C CNN
 F 3 "~" H 10650 4750 50  0001 C CNN
 	1    10650 4750
@@ -596,7 +596,7 @@ Wire Wire Line
 Text Label 10400 4550 2    50   ~ 0
 GND
 Text Label 10400 5050 2    50   ~ 0
-3v3
+5v
 Text Label 10400 4650 2    50   ~ 0
 I2C_SCL_Flex1
 Text Label 10400 4750 2    50   ~ 0
@@ -670,7 +670,7 @@ L Connector_Generic:Conn_01x04 J13
 U 1 1 5B6ED584
 P 10650 5450
 F 0 "J13" H 10730 5442 50  0000 L CNN
-F 1 "Conn_01x04" H 10730 5351 50  0000 L CNN
+F 1 "EndSensor" H 10730 5351 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 5450 50  0001 C CNN
 F 3 "~" H 10650 5450 50  0001 C CNN
 	1    10650 5450
@@ -716,25 +716,25 @@ Resistor value could change depending on the sensor value
 $Comp
 L Connector_Generic:Conn_01x04 J14
 U 1 1 5B72C26E
-P 10650 6050
-F 0 "J14" H 10730 6042 50  0000 L CNN
-F 1 "Conn_01x04" H 10730 5951 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10650 6050 50  0001 C CNN
-F 3 "~" H 10650 6050 50  0001 C CNN
-	1    10650 6050
+P 10600 6050
+F 0 "J14" H 10680 6042 50  0000 L CNN
+F 1 "TensionSensor" H 10680 5951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Lock_504050-0491_1x04-1MP_P1.50mm_Horizontal" H 10600 6050 50  0001 C CNN
+F 3 "~" H 10600 6050 50  0001 C CNN
+	1    10600 6050
 	1    0    0    -1  
 $EndComp
-Text Label 10400 5950 2    39   ~ 0
+Text Label 10350 5950 2    39   ~ 0
 Tension_pos_1
-Text Label 10400 6050 2    39   ~ 0
+Text Label 10350 6050 2    39   ~ 0
 Tension_neg_1
-Text Label 10400 6150 2    39   ~ 0
+Text Label 10350 6150 2    39   ~ 0
 Tension_pos_2
-Text Label 10400 6250 2    39   ~ 0
+Text Label 10350 6250 2    39   ~ 0
 Tension_neg_2
-Text Notes 10450 5850 0    50   ~ 0
+Text Notes 10400 5850 0    50   ~ 0
 Tension Sensors
-Text Notes 9250 6400 0    39   ~ 0
+Text Notes 9200 6400 0    39   ~ 0
 Not sure how this sensor works. Might be an SPI sensor.
 Wire Notes Line
 	9150 500  9150 6500
@@ -754,22 +754,22 @@ Wire Wire Line
 	7150 3150 7800 3150
 Wire Wire Line
 	7150 2850 7700 2850
-Text Label 9850 6050 2    50   ~ 0
+Text Label 9800 6050 2    50   ~ 0
 SPI_clock_flex7
-Text Label 9850 6150 2    50   ~ 0
+Text Label 9800 6150 2    50   ~ 0
 SPI_MOSI_flex7
-Text Label 9850 6250 2    50   ~ 0
+Text Label 9800 6250 2    50   ~ 0
 SPI_MISO_flex7
-Text Label 9850 5950 2    50   ~ 0
+Text Label 9800 5950 2    50   ~ 0
 SPI_CS_flex7
 Wire Wire Line
-	9250 6250 10450 6250
+	9200 6250 10400 6250
 Wire Wire Line
-	9250 6150 10450 6150
+	9200 6150 10400 6150
 Wire Wire Line
-	9250 6050 10450 6050
+	9200 6050 10400 6050
 Wire Wire Line
-	9350 5950 10450 5950
+	9300 5950 10400 5950
 Text Label 5700 3500 2    50   ~ 0
 USART_RXD_flex3
 Text Label 5700 3600 2    50   ~ 0
@@ -795,7 +795,7 @@ L Connector_Generic:Conn_01x06 J10
 U 1 1 5B7E7861
 P 6300 7250
 F 0 "J10" H 6380 7242 50  0000 L CNN
-F 1 "Conn_01x06" H 6380 7151 50  0000 L CNN
+F 1 "USART" H 6380 7151 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Pico-Lock_504050-0691_1x06-1MP_P1.50mm_Horizontal" H 6300 7250 50  0001 C CNN
 F 3 "~" H 6300 7250 50  0001 C CNN
 	1    6300 7250

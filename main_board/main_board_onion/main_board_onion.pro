@@ -1,4 +1,4 @@
-update=Tue 07 Aug 2018 10:37:41 AM PDT
+update=Wed 08 Aug 2018 01:27:48 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -16,15 +16,15 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 LastNetListRead=main_board_onion.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0.13
 MinViaDiameter=0.4
-MinViaDrill=0.3
+MinViaDrill=0.305
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
@@ -56,4 +56,16 @@ OthersTextUpright=1
 SolderMaskClearance=0.2
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
+[pcbnew/Netclasses]
+[pcbnew/Netclasses/1]
+Name=Power
+Clearance=0.2
+TrackWidth=1
+ViaDiameter=1.2
+ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
