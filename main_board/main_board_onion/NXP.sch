@@ -40,29 +40,25 @@ GND
 $Comp
 L Device:C C6
 U 1 1 5B5F9E20
-P 6250 1500
-F 0 "C6" H 6365 1546 50  0000 L CNN
-F 1 "0.1uF" H 6300 1400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6288 1350 50  0001 C CNN
-F 3 "~" H 6250 1500 50  0001 C CNN
-	1    6250 1500
+P 4900 900
+F 0 "C6" H 5015 946 50  0000 L CNN
+F 1 "0.1uF" H 4950 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 750 50  0001 C CNN
+F 3 "~" H 4900 900 50  0001 C CNN
+	1    4900 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C7
 U 1 1 5B5F9E80
-P 6550 1500
-F 0 "C7" H 6665 1546 50  0000 L CNN
-F 1 "0.01uF" H 6600 1400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 1350 50  0001 C CNN
-F 3 "~" H 6550 1500 50  0001 C CNN
-	1    6550 1500
+P 5200 900
+F 0 "C7" H 5315 946 50  0000 L CNN
+F 1 "0.01uF" H 5250 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 750 50  0001 C CNN
+F 3 "~" H 5200 900 50  0001 C CNN
+	1    5200 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 1650 6250 1850
-Wire Wire Line
-	6550 1650 6550 1850
 Wire Wire Line
 	6250 1850 6350 1850
 Wire Wire Line
@@ -78,7 +74,6 @@ Connection ~ 6350 1850
 Wire Wire Line
 	6450 1850 6550 1850
 Connection ~ 6450 1850
-Connection ~ 6550 1850
 Wire Wire Line
 	6550 1850 6550 1900
 Wire Wire Line
@@ -86,19 +81,19 @@ Wire Wire Line
 Text Label 6000 1850 0    50   ~ 0
 3v3
 Wire Wire Line
-	6550 1350 6550 1300
+	5200 750  5200 700 
 Wire Wire Line
-	6550 1300 6400 1300
+	5200 700  5050 700 
 Wire Wire Line
-	6250 1300 6250 1350
+	4900 700  4900 750 
 Wire Wire Line
-	6400 1300 6400 1200
+	5050 700  5050 600 
 Wire Wire Line
-	6400 1200 6200 1200
-Connection ~ 6400 1300
+	5050 600  4850 600 
+Connection ~ 5050 700 
 Wire Wire Line
-	6400 1300 6250 1300
-Text Label 6200 1200 0    50   ~ 0
+	5050 700  4900 700 
+Text Label 4850 600  0    50   ~ 0
 GND
 $Comp
 L Device:C C9
@@ -207,15 +202,11 @@ Wire Wire Line
 Wire Wire Line
 	7500 4700 7750 4700
 Connection ~ 7500 4600
-Text Label 7550 4700 0    50   ~ 0
-AGND
 Wire Wire Line
 	8150 4600 8150 4700
 Wire Wire Line
 	8150 4700 8400 4700
 Connection ~ 8150 4600
-Text Label 8200 4700 0    50   ~ 0
-AGND
 Wire Wire Line
 	8150 4400 8150 4350
 Wire Wire Line
@@ -242,8 +233,6 @@ Wire Wire Line
 	6650 5700 6650 5800
 Wire Wire Line
 	6650 5800 6900 5800
-Text Label 6700 5800 0    50   ~ 0
-AGND
 Wire Wire Line
 	5750 3900 5350 3900
 Text Label 5400 3900 0    50   ~ 0
@@ -801,28 +790,192 @@ F 3 "~" H 6300 7250 50  0001 C CNN
 	1    6300 7250
 	1    0    0    -1  
 $EndComp
-Text Label 6050 7250 2    50   ~ 0
+Text Label 6050 7450 2    50   ~ 0
 USART_RXD_flex3
 Text Label 6050 7350 2    50   ~ 0
 USART_TXD_flex3
-Text Label 6050 7150 2    50   ~ 0
-USART_SCK_flex3
-Text Label 6050 7450 2    50   ~ 0
-USART_CTS_flex3
 Text Label 6050 7550 2    50   ~ 0
+USART_SCK_flex3
+Text Label 6050 7250 2    50   ~ 0
+USART_CTS_flex3
+Text Label 6050 7150 2    50   ~ 0
 USART_RTS_flex3
 Wire Wire Line
-	6100 7550 5400 7550
-Wire Wire Line
-	6100 7450 5400 7450
-Wire Wire Line
-	6100 7350 5400 7350
+	6100 7150 5400 7150
 Wire Wire Line
 	6100 7250 5400 7250
 Wire Wire Line
-	6100 7150 5400 7150
+	6100 7350 5400 7350
+Wire Wire Line
+	6100 7450 5400 7450
+Wire Wire Line
+	6100 7550 5400 7550
 Text Label 6050 7050 2    50   ~ 0
 GND
 Wire Wire Line
 	6100 7050 5900 7050
+$Comp
+L Device:C C21
+U 1 1 5B6FEE29
+P 5550 900
+F 0 "C21" H 5665 946 50  0000 L CNN
+F 1 "0.1uF" H 5600 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 750 50  0001 C CNN
+F 3 "~" H 5550 900 50  0001 C CNN
+	1    5550 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5B6FEE30
+P 5850 900
+F 0 "C22" H 5965 946 50  0000 L CNN
+F 1 "0.01uF" H 5900 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 750 50  0001 C CNN
+F 3 "~" H 5850 900 50  0001 C CNN
+	1    5850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 750  5850 700 
+Wire Wire Line
+	5850 700  5700 700 
+Wire Wire Line
+	5550 700  5550 750 
+Wire Wire Line
+	5700 700  5700 600 
+Wire Wire Line
+	5700 600  5500 600 
+Connection ~ 5700 700 
+Wire Wire Line
+	5700 700  5550 700 
+Text Label 5500 600  0    50   ~ 0
+GND
+$Comp
+L Device:C C23
+U 1 1 5B70EED9
+P 6200 900
+F 0 "C23" H 6315 946 50  0000 L CNN
+F 1 "0.1uF" H 6250 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 750 50  0001 C CNN
+F 3 "~" H 6200 900 50  0001 C CNN
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 5B70EEE0
+P 6500 900
+F 0 "C24" H 6615 946 50  0000 L CNN
+F 1 "0.01uF" H 6550 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 750 50  0001 C CNN
+F 3 "~" H 6500 900 50  0001 C CNN
+	1    6500 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 750  6500 700 
+Wire Wire Line
+	6500 700  6350 700 
+Wire Wire Line
+	6200 700  6200 750 
+Wire Wire Line
+	6350 700  6350 600 
+Wire Wire Line
+	6350 600  6150 600 
+Connection ~ 6350 700 
+Wire Wire Line
+	6350 700  6200 700 
+Text Label 6150 600  0    50   ~ 0
+GND
+$Comp
+L Device:C C25
+U 1 1 5B70EEF1
+P 6850 900
+F 0 "C25" H 6965 946 50  0000 L CNN
+F 1 "0.1uF" H 6900 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6888 750 50  0001 C CNN
+F 3 "~" H 6850 900 50  0001 C CNN
+	1    6850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5B70EEF8
+P 7150 900
+F 0 "C26" H 7265 946 50  0000 L CNN
+F 1 "0.01uF" H 7200 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7188 750 50  0001 C CNN
+F 3 "~" H 7150 900 50  0001 C CNN
+	1    7150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1050 7150 1250
+Wire Wire Line
+	7150 750  7150 700 
+Wire Wire Line
+	7150 700  7000 700 
+Wire Wire Line
+	6850 700  6850 750 
+Wire Wire Line
+	7000 700  7000 600 
+Wire Wire Line
+	7000 600  6800 600 
+Connection ~ 7000 700 
+Wire Wire Line
+	7000 700  6850 700 
+Text Label 6800 600  0    50   ~ 0
+GND
+Wire Wire Line
+	6250 1850 6250 1700
+Wire Wire Line
+	6250 1700 5200 1700
+Wire Wire Line
+	4900 1050 4900 1700
+Wire Wire Line
+	5200 1050 5200 1700
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1700 4900 1700
+Wire Wire Line
+	6350 1850 6350 1600
+Wire Wire Line
+	6350 1600 5850 1600
+Wire Wire Line
+	5550 1050 5550 1600
+Wire Wire Line
+	5850 1050 5850 1600
+Connection ~ 5850 1600
+Wire Wire Line
+	5850 1600 5550 1600
+Wire Wire Line
+	6450 1850 6450 1500
+Wire Wire Line
+	6450 1500 6200 1500
+Wire Wire Line
+	6200 1050 6200 1500
+Wire Wire Line
+	6500 1500 6450 1500
+Wire Wire Line
+	6500 1050 6500 1500
+Connection ~ 6450 1500
+Wire Wire Line
+	6550 1850 6550 1600
+Wire Wire Line
+	6550 1600 6850 1600
+Wire Wire Line
+	6850 1050 6850 1250
+Connection ~ 6550 1850
+Wire Wire Line
+	6850 1250 7150 1250
+Connection ~ 6850 1250
+Wire Wire Line
+	6850 1250 6850 1600
+Text Label 6700 5800 0    50   ~ 0
+GND
+Text Label 7550 4700 0    50   ~ 0
+GND
+Text Label 8200 4700 0    50   ~ 0
+GND
 $EndSCHEMATC
