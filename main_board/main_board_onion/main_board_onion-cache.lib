@@ -728,6 +728,44 @@ X EN 9 -350 100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# antenna_conn_smt
+#
+DEF antenna_conn_smt U 0 40 Y Y 1 F N
+F0 "U" 0 -175 60 H V C CNN
+F1 "antenna_conn_smt" 0 175 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+C 0 0 25 0 1 0 N
+C 0 0 125 0 1 0 N
+C 50 -50 25 0 1 0 N
+C 50 50 25 0 1 0 N
+S -125 125 125 -125 0 1 0 N
+P 2 0 1 0 75 -50 100 -50 N
+P 2 0 1 0 75 50 100 50 N
+P 3 0 1 0 -125 0 -25 0 0 0 N
+X ~ 1 300 50 200 L 50 50 1 1 I
+X ~ 2 300 -50 200 L 50 50 1 1 I
+X ~ 3 -325 0 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# antenna_molex_antenna_47948-0001
+#
+DEF antenna_molex_antenna_47948-0001 U 0 40 Y Y 1 F N
+F0 "U" 0 200 60 H V C CNN
+F1 "antenna_molex_antenna_47948-0001" 0 -200 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -150 150 150 -150 0 1 0 N
+X Sig 1 350 0 200 L 50 50 1 1 I
+X ~ 2 -350 100 200 R 50 50 1 1 I
+X ~ 3 -350 0 200 R 50 50 1 1 I
+X ~ 4 -350 -100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # power_+24V
 #
 DEF power_+24V #PWR 0 0 Y Y 1 F P

@@ -716,4 +716,76 @@ Connection ~ 2650 3000
 Connection ~ 2200 3000
 Wire Wire Line
 	2200 3000 2650 3000
+$Comp
+L antenna:molex_antenna_47948-0001 U6
+U 1 1 5B6E10D8
+P 1500 6900
+F 0 "U6" H 1500 7247 60  0000 C CNN
+F 1 "molex_antenna_47948-0001" H 1500 7141 60  0000 C CNN
+F 2 "antenna:Molex_47948-0001" H 1500 6900 60  0001 C CNN
+F 3 "" H 1500 6900 60  0001 C CNN
+	1    1500 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L2
+U 1 1 5B6E11A0
+P 2100 6900
+F 0 "L2" V 2000 6900 50  0000 C CNN
+F 1 "1.8nH" V 2200 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2100 6900 50  0001 C CNN
+F 3 "~" H 2100 6900 50  0001 C CNN
+F 4 "400mA" V 2300 6900 50  0000 C CNN "Field4"
+	1    2100 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C27
+U 1 1 5B6E14A7
+P 2350 7050
+F 0 "C27" H 2442 7096 50  0000 L CNN
+F 1 "1.3pF" H 2442 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 7050 50  0001 C CNN
+F 3 "~" H 2350 7050 50  0001 C CNN
+	1    2350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L antenna:conn_smt U7
+U 1 1 5B6E15AA
+P 2925 6900
+F 0 "U7" H 2912 7212 60  0000 C CNN
+F 1 "conn_smt" H 2912 7106 60  0000 C CNN
+F 2 "antenna:U.FL-R-SMT-1(01)" H 2925 6900 60  0001 C CNN
+F 3 "http://www.digikey.com/product-detail/en/U.FL-R-SMT-1%2801%29/H122041-ND/3978494" H 2925 6900 60  0001 C CNN
+	1    2925 6900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1150 6800
+NoConn ~ 1150 6900
+NoConn ~ 1150 7000
+Wire Wire Line
+	1850 6900 2000 6900
+Wire Wire Line
+	2200 6900 2350 6900
+Wire Wire Line
+	2350 6900 2350 6950
+Wire Wire Line
+	2350 6900 2600 6900
+Connection ~ 2350 6900
+Wire Wire Line
+	2350 7150 2350 7200
+Wire Wire Line
+	2350 7200 3300 7200
+Wire Wire Line
+	3300 7200 3300 6950
+Wire Wire Line
+	3225 6850 3300 6850
+Wire Wire Line
+	3225 6950 3300 6950
+Connection ~ 3300 6950
+Wire Wire Line
+	3300 6950 3300 6850
+Text Label 2800 7200 0    79   ~ 0
+GND
 $EndSCHEMATC

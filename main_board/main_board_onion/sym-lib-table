@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name antenna)(type Legacy)(uri /home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/old_KiCAD_files/main_master_board/Library/antenna.lib)(options "")(descr ""))
 )
