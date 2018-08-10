@@ -96,12 +96,12 @@ $EndComp
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5B652805
-P 1600 2700
-F 0 "SW1" H 1650 2850 50  0000 C CNN
-F 1 "SW_SPDT" H 1600 2500 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 1600 2700 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/JS102011SAQN-C%26K-Components-datasheet-67873653.pdf" H 1600 2700 50  0001 C CNN
-	1    1600 2700
+P 3400 2600
+F 0 "SW1" H 3450 2750 50  0000 C CNN
+F 1 "SW_SPDT" H 3400 2400 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 3400 2600 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/JS102011SAQN-C%26K-Components-datasheet-67873653.pdf" H 3400 2600 50  0001 C CNN
+	1    3400 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -348,112 +348,60 @@ Wire Wire Line
 Wire Wire Line
 	2400 1600 2600 1600
 $Comp
-L TI:TPSM84209 U1
-U 1 1 5B774A9A
-P 2200 2700
-F 0 "U1" H 2175 3175 50  0000 C CNN
-F 1 "TPSM84209" H 2175 3084 50  0000 C CNN
-F 2 "TI:TPSM84209" H 2150 2700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpsm84209.pdf" H 2150 2700 50  0001 C CNN
-	1    2200 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C1
 U 1 1 5B774BDE
-P 850 2700
-F 0 "C1" H 942 2746 50  0000 L CNN
-F 1 "10uF" H 942 2655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 850 2700 50  0001 C CNN
-F 3 "~" H 850 2700 50  0001 C CNN
-	1    850  2700
+P 3900 2700
+F 0 "C1" H 3992 2746 50  0000 L CNN
+F 1 "10uF" H 3992 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 2700 50  0001 C CNN
+F 3 "~" H 3900 2700 50  0001 C CNN
+	1    3900 2700
 	1    0    0    -1  
 $EndComp
-Text Label 750  2450 0    50   ~ 0
-24v
-Wire Wire Line
-	2200 3000 2200 2900
-Text Label 1850 3000 0    50   ~ 0
-GND
 $Comp
 L Device:R_Small R1
 U 1 1 5B7778F5
-P 2650 2600
-F 0 "R1" H 2709 2646 50  0000 L CNN
-F 1 "10k" H 2709 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 2600 50  0001 C CNN
-F 3 "~" H 2650 2600 50  0001 C CNN
-	1    2650 2600
-	1    0    0    -1  
+P 5050 2550
+F 0 "R1" V 4950 2450 50  0000 L CNN
+F 1 "5.62k" V 4950 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 2550 50  0001 C CNN
+F 3 "~" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 5B778795
-P 2650 2900
-F 0 "R2" H 2709 2946 50  0000 L CNN
-F 1 "1.37k" H 2709 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 2900 50  0001 C CNN
-F 3 "~" H 2650 2900 50  0001 C CNN
-	1    2650 2900
+P 4900 2700
+F 0 "R2" H 4959 2746 50  0000 L CNN
+F 1 "1.07k" H 4959 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 2700 50  0001 C CNN
+F 3 "~" H 4900 2700 50  0001 C CNN
+	1    4900 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 2750 2650 2750
-Wire Wire Line
-	2650 2750 2650 2700
-Wire Wire Line
-	2650 2750 2650 2800
-Connection ~ 2650 2750
-Wire Wire Line
-	2500 2450 2650 2450
-Wire Wire Line
-	2650 2450 2650 2500
 $Comp
 L Device:C_Small C3
 U 1 1 5B77C3FD
-P 3000 2600
-F 0 "C3" H 3092 2646 50  0000 L CNN
-F 1 "47uF" H 3092 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3000 2600 50  0001 C CNN
-F 3 "~" H 3000 2600 50  0001 C CNN
-	1    3000 2600
-	1    0    0    -1  
+P 5050 2300
+F 0 "C3" V 4900 2250 50  0000 L CNN
+F 1 "0.022uF" V 5000 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 2300 50  0001 C CNN
+F 3 "~" H 5050 2300 50  0001 C CNN
+	1    5050 2300
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C4
 U 1 1 5B77C463
-P 3350 2600
-F 0 "C4" H 3442 2646 50  0000 L CNN
-F 1 "47uF" H 3442 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 2600 50  0001 C CNN
-F 3 "~" H 3350 2600 50  0001 C CNN
-	1    3350 2600
+P 5350 2700
+F 0 "C4" H 5400 2750 50  0000 L CNN
+F 1 "1uF" H 5400 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 2700 50  0001 C CNN
+F 3 "~" H 5350 2700 50  0001 C CNN
+	1    5350 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 2450 3000 2450
-Wire Wire Line
-	3000 2450 3000 2500
-Connection ~ 2650 2450
-Wire Wire Line
-	3000 2450 3350 2450
-Wire Wire Line
-	3350 2450 3350 2500
-Connection ~ 3000 2450
-Wire Wire Line
-	3350 2450 3550 2450
-Connection ~ 3350 2450
-Wire Wire Line
-	3000 2700 3000 3000
-Wire Wire Line
-	3000 3000 2650 3000
-Wire Wire Line
-	3350 2700 3350 3000
-Wire Wire Line
-	3350 3000 3000 3000
-Connection ~ 3000 3000
-Text Label 3500 2450 2    79   ~ 0
-5v_from_24v
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5B788548
@@ -651,59 +599,18 @@ Wire Wire Line
 	2150 4050 2150 4550
 Wire Wire Line
 	2150 4550 2050 4550
-Wire Wire Line
-	700  2450 850  2450
 $Comp
 L Device:R_Small R22
 U 1 1 5B6D5748
-P 1200 2600
-F 0 "R22" H 1259 2646 50  0000 L CNN
-F 1 "402k" H 1259 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 2600 50  0001 C CNN
-F 3 "~" H 1200 2600 50  0001 C CNN
-	1    1200 2600
-	1    0    0    -1  
+P 4050 2350
+F 0 "R22" V 3950 2300 50  0000 L CNN
+F 1 "100k" V 4150 2250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 2350 50  0001 C CNN
+F 3 "~" H 4050 2350 50  0001 C CNN
+F 4 "Ron" V 4050 2350 50  0000 C CNN "Field4"
+	1    4050 2350
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 2600 1850 2600
-Wire Wire Line
-	1800 2800 1800 3000
-Connection ~ 1800 3000
-Wire Wire Line
-	1800 3000 2200 3000
-Wire Wire Line
-	1200 2700 1400 2700
-Wire Wire Line
-	1200 2500 1200 2450
-Connection ~ 1200 2450
-Wire Wire Line
-	1200 2450 1850 2450
-$Comp
-L Device:R_Small R23
-U 1 1 5B6E55DD
-P 1200 2800
-F 0 "R23" H 1259 2846 50  0000 L CNN
-F 1 "100k" H 1259 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 2800 50  0001 C CNN
-F 3 "~" H 1200 2800 50  0001 C CNN
-	1    1200 2800
-	1    0    0    -1  
-$EndComp
-Connection ~ 1200 2700
-Wire Wire Line
-	1200 2900 1200 3000
-Wire Wire Line
-	1200 3000 1800 3000
-Wire Wire Line
-	850  2600 850  2450
-Connection ~ 850  2450
-Wire Wire Line
-	850  2450 1200 2450
-Wire Wire Line
-	850  2800 850  3000
-Wire Wire Line
-	850  3000 1200 3000
-Connection ~ 1200 3000
 Text Label 2450 850  0    50   ~ 0
 GND
 Text Label 2450 1100 0    50   ~ 0
@@ -712,10 +619,6 @@ Text Label 2450 1350 0    50   ~ 0
 GND
 Text Label 2450 1600 0    50   ~ 0
 GND
-Connection ~ 2650 3000
-Connection ~ 2200 3000
-Wire Wire Line
-	2200 3000 2650 3000
 $Comp
 L antenna:molex_antenna_47948-0001 U6
 U 1 1 5B6E10D8
@@ -787,5 +690,199 @@ Connection ~ 3300 6950
 Wire Wire Line
 	3300 6950 3300 6850
 Text Label 2800 7200 0    79   ~ 0
+GND
+$Comp
+L TI:LMZ14203 U1
+U 1 1 5B6EBE52
+P 4400 1750
+F 0 "U1" V 4304 2178 50  0000 L CNN
+F 1 "LMZ14203" V 4395 2178 50  0000 L CNN
+F 2 "TI:TI" H 4400 1750 50  0001 C CNN
+F 3 "" H 4400 1750 50  0001 C CNN
+	1    4400 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5B6F048C
+P 2800 2750
+F 0 "R24" H 2859 2796 50  0000 L CNN
+F 1 "11.8k" H 2859 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 2750 50  0001 C CNN
+F 3 "~" H 2800 2750 50  0001 C CNN
+F 4 "RenB" H 2800 2750 50  0000 C CNN "Field4"
+	1    2800 2750
+	1    0    0    -1  
+$EndComp
+Text Label 3600 2150 0    50   ~ 0
+24v
+Wire Wire Line
+	4100 2100 4100 2150
+Wire Wire Line
+	3900 2800 3900 2900
+$Comp
+L Device:C_Small C28
+U 1 1 5B708A4F
+P 4200 2700
+F 0 "C28" H 4250 2750 50  0000 L CNN
+F 1 "1uF" H 4250 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4200 2700 50  0001 C CNN
+F 3 "~" H 4200 2700 50  0001 C CNN
+	1    4200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2550 4200 2550
+Wire Wire Line
+	4200 2550 4200 2600
+Wire Wire Line
+	3900 2550 3900 2600
+Wire Wire Line
+	4200 2800 4200 2900
+Wire Wire Line
+	4200 2900 3900 2900
+Connection ~ 3900 2900
+Wire Wire Line
+	4300 2100 4300 2500
+Wire Wire Line
+	4400 2100 4400 2900
+Wire Wire Line
+	4400 2900 4200 2900
+Connection ~ 4200 2900
+$Comp
+L Device:C_Small C29
+U 1 1 5B732978
+P 4500 2700
+F 0 "C29" H 4550 2750 50  0000 L CNN
+F 1 "0.022uF" H 4550 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2100 4500 2600
+Wire Wire Line
+	4500 2800 4500 2900
+Wire Wire Line
+	4500 2900 4400 2900
+Connection ~ 4400 2900
+Wire Wire Line
+	4200 2100 4200 2350
+Wire Wire Line
+	3950 2350 3900 2350
+Wire Wire Line
+	3900 2350 3900 2150
+Connection ~ 3900 2150
+Wire Wire Line
+	3900 2150 4100 2150
+Wire Wire Line
+	3900 2350 3900 2550
+Connection ~ 3900 2350
+Connection ~ 3900 2550
+Wire Wire Line
+	4200 2350 4150 2350
+$Comp
+L Device:C_Small C30
+U 1 1 5B753733
+P 5650 2700
+F 0 "C30" H 5700 2750 50  0000 L CNN
+F 1 "100uF" H 5700 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5650 2700 50  0001 C CNN
+F 3 "~" H 5650 2700 50  0001 C CNN
+	1    5650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2550 4900 2550
+Wire Wire Line
+	4900 2550 4900 2600
+Wire Wire Line
+	4500 2900 4900 2900
+Wire Wire Line
+	4900 2900 4900 2800
+Connection ~ 4500 2900
+Wire Wire Line
+	4600 2100 4600 2300
+Wire Wire Line
+	4600 2550 4900 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 2900 5350 2900
+Wire Wire Line
+	5350 2900 5350 2800
+Connection ~ 4900 2900
+Wire Wire Line
+	5350 2900 5650 2900
+Wire Wire Line
+	5650 2900 5650 2800
+Connection ~ 5350 2900
+Wire Wire Line
+	5150 2550 5350 2550
+Wire Wire Line
+	5350 2550 5350 2600
+Wire Wire Line
+	5350 2550 5650 2550
+Wire Wire Line
+	5650 2550 5650 2600
+Connection ~ 5350 2550
+Wire Wire Line
+	4950 2300 4600 2300
+Connection ~ 4600 2300
+Wire Wire Line
+	4600 2300 4600 2550
+Wire Wire Line
+	4700 2100 5650 2100
+Wire Wire Line
+	5650 2100 5650 2300
+Connection ~ 5650 2550
+Wire Wire Line
+	5150 2300 5650 2300
+Connection ~ 5650 2300
+Wire Wire Line
+	5650 2300 5650 2550
+Text Label 4950 2100 0    79   ~ 0
+5v_from_24v
+$Comp
+L Device:R_Small R23
+U 1 1 5B6F4323
+P 2800 2400
+F 0 "R23" H 2859 2446 50  0000 L CNN
+F 1 "68.1k" H 2859 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 2400 50  0001 C CNN
+F 3 "~" H 2800 2400 50  0001 C CNN
+F 4 "RenT" H 2800 2400 50  0000 C CNN "Field4"
+	1    2800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2500 2800 2600
+Wire Wire Line
+	4300 2500 3600 2500
+Wire Wire Line
+	3600 2700 3600 2900
+Wire Wire Line
+	3600 2900 3900 2900
+Wire Wire Line
+	3600 2900 2800 2900
+Wire Wire Line
+	2800 2900 2800 2850
+Connection ~ 3600 2900
+Wire Wire Line
+	3200 2600 2800 2600
+Connection ~ 2800 2600
+Wire Wire Line
+	2800 2600 2800 2650
+Wire Wire Line
+	2800 2300 2800 2150
+Wire Wire Line
+	2800 2150 3900 2150
+Wire Wire Line
+	4400 1300 4400 1250
+Wire Wire Line
+	4400 1250 4100 1250
+Text Label 4200 1250 0    50   ~ 0
+GND
+Text Label 4600 2900 0    50   ~ 0
 GND
 $EndSCHEMATC
