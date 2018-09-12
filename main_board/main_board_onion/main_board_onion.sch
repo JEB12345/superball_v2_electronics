@@ -96,13 +96,13 @@ $EndComp
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 5B652805
-P 3400 2600
-F 0 "SW1" H 3450 2750 50  0000 C CNN
-F 1 "SW_SPDT" H 3400 2400 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 3400 2600 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/JS102011SAQN-C%26K-Components-datasheet-67873653.pdf" H 3400 2600 50  0001 C CNN
-	1    3400 2600
-	1    0    0    -1  
+P 3500 2650
+F 0 "SW1" H 3550 2800 50  0000 C CNN
+F 1 "SW_SPDT" H 3500 2450 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 3500 2650 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/JS102011SAQN-C%26K-Components-datasheet-67873653.pdf" H 3500 2650 50  0001 C CNN
+	1    3500 2650
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1400 4050 1400 4550
@@ -858,16 +858,7 @@ $EndComp
 Wire Wire Line
 	2800 2500 2800 2600
 Wire Wire Line
-	4300 2500 3600 2500
-Wire Wire Line
-	3600 2700 3600 2900
-Wire Wire Line
-	3600 2900 3900 2900
-Wire Wire Line
-	3600 2900 2800 2900
-Wire Wire Line
 	2800 2900 2800 2850
-Connection ~ 3600 2900
 Wire Wire Line
 	3200 2600 2800 2600
 Connection ~ 2800 2600
@@ -885,4 +876,21 @@ Text Label 4200 1250 0    50   ~ 0
 GND
 Text Label 4600 2900 0    50   ~ 0
 GND
+Wire Wire Line
+	2800 2900 3200 2900
+Wire Wire Line
+	3200 2600 3200 2550
+Wire Wire Line
+	3200 2550 3300 2550
+Wire Wire Line
+	3700 2650 3700 2500
+Wire Wire Line
+	3700 2500 4300 2500
+Wire Wire Line
+	3300 2750 3200 2750
+Wire Wire Line
+	3200 2750 3200 2900
+Connection ~ 3200 2900
+Wire Wire Line
+	3200 2900 3900 2900
 $EndSCHEMATC
