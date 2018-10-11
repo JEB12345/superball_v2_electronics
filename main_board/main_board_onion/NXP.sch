@@ -978,4 +978,6 @@ Text Label 7550 4700 0    50   ~ 0
 GND
 Text Label 8200 4700 0    50   ~ 0
 GND
+Text Notes 7900 2350 0    50   ~ 0
+TODO: Add LEDs\n
 $EndSCHEMATC
