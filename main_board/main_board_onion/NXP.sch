@@ -472,9 +472,11 @@ NXP_D+
 Text Label 7200 3450 0    50   ~ 0
 3v3
 $Comp
-L Power_Protection:SP0503BAHT D1
+L main_board_onion-rescue:SP0503BAHT-Power_Protection D1
 U 1 1 5B678F4C
 P 9700 3000
+AR Path="/5B678F4C" Ref="D1"  Part="1" 
+AR Path="/5B5F9B97/5B678F4C" Ref="D1"  Part="1" 
 F 0 "D1" V 9358 3000 50  0000 C CNN
 F 1 "SP0503BAHT" V 9449 3000 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 9925 2950 50  0001 L CNN

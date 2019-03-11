@@ -893,4 +893,8 @@ Wire Wire Line
 Connection ~ 3200 2900
 Wire Wire Line
 	3200 2900 3900 2900
+Text Notes 1500 5000 0    50   ~ 0
+Need to change 15uH to 2.2uH\n
+Text Notes 4800 2400 0    50   ~ 0
+Put down higher watt resistors for feedback
 $EndSCHEMATC

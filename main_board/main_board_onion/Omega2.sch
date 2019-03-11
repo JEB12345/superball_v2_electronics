@@ -218,7 +218,7 @@ Wire Notes Line
 Wire Wire Line
 	9600 1500 10150 1500
 $Comp
-L Power_Protection:SP0503BAHT D3
+L main_board_onion-rescue:SP0503BAHT-Power_Protection D3
 U 1 1 5B66BC75
 P 9550 1200
 F 0 "D3" V 9208 1200 50  0000 C CNN
