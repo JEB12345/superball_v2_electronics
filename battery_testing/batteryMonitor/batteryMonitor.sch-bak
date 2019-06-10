@@ -1,0 +1,111 @@
+EESchema Schematic File Version 5
+LIBS:batteryMonitor-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L battery_management:BQ76930 U?
+U 1 1 5CAD5142
+P 5725 3475
+F 0 "U?" H 5725 5056 50  0000 C CNN
+F 1 "BQ76930" H 5725 4965 50  0000 C CNN
+F 2 "Package_SO:TSSOP-44_4.4x11.2mm_P0.5mm" H 5725 3475 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/bq76940" H 6425 4625 50  0001 C CNN
+	1    5725 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3425 4850 3425
+Wire Wire Line
+	4850 3425 4850 3325
+Wire Wire Line
+	4850 3325 4925 3325
+Wire Wire Line
+	4925 3525 4850 3525
+Wire Wire Line
+	4850 3525 4850 3425
+Connection ~ 4850 3425
+Text Label 1150 950  2    50   ~ 0
+Batt_GND
+Text Label 1150 1050 2    50   ~ 0
+P1
+Text Label 1150 1150 2    50   ~ 0
+P3
+$Comp
+L Connector_Generic:Conn_02x05_Top_Bottom J?
+U 1 1 5CAE337A
+P 1425 1150
+F 0 "J?" H 1475 1567 50  0000 C CNN
+F 1 "Battery Input Connector" H 1475 1476 50  0000 C CNN
+F 2 "" H 1425 1150 50  0001 C CNN
+F 3 "~" H 1425 1150 50  0001 C CNN
+	1    1425 1150
+	1    0    0    -1  
+$EndComp
+Text Label 1150 1250 2    50   ~ 0
+P5
+Text Label 1150 1350 2    50   ~ 0
+Batt_VCC
+Text Label 1800 1350 0    50   ~ 0
+Batt_GND
+Text Label 1800 950  0    50   ~ 0
+Batt_VCC
+Text Label 1800 1050 0    50   ~ 0
+P2
+Text Label 1800 1150 0    50   ~ 0
+P4
+Text Label 1800 1250 0    50   ~ 0
+P6
+Wire Wire Line
+	1225 950  800  950 
+Wire Wire Line
+	1225 1050 1050 1050
+Wire Wire Line
+	1225 1150 1050 1150
+Wire Wire Line
+	1225 1250 1050 1250
+Wire Wire Line
+	1225 1350 800  1350
+Wire Wire Line
+	1725 950  2150 950 
+Wire Wire Line
+	1725 1050 1900 1050
+Wire Wire Line
+	1725 1150 1900 1150
+Wire Wire Line
+	1725 1250 1900 1250
+Wire Wire Line
+	1725 1350 2150 1350
+Text Label 6600 4375 0    50   ~ 0
+Batt_GND
+Text Label 6600 4225 0    50   ~ 0
+P1
+Text Label 6600 4075 0    50   ~ 0
+P2
+Text Label 6600 3775 0    50   ~ 0
+P2
+Text Label 6600 3625 0    50   ~ 0
+P3
+Wire Wire Line
+	6525 3625 6575 3625
+Wire Wire Line
+	6575 3625 6575 3475
+Wire Wire Line
+	6575 3475 6525 3475
+Wire Wire Line
+	6575 3625 6700 3625
+Connection ~ 6575 3625
+Text Label 6600 3325 0    50   ~ 0
+P4
+$EndSCHEMATC

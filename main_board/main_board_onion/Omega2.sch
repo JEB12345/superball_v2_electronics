@@ -1,6 +1,6 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:main_board_onion-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -350,11 +350,11 @@ Wire Wire Line
 Wire Wire Line
 	8150 1150 8250 1150
 Text Label 4950 2650 2    50   ~ 0
-B_LED
+R_LED
 Text Label 4950 2550 2    50   ~ 0
 G_LED
 Text Label 4950 2450 2    50   ~ 0
-R_LED
+B_LED
 Wire Wire Line
 	5000 2450 4700 2450
 Wire Wire Line
@@ -362,11 +362,11 @@ Wire Wire Line
 Wire Wire Line
 	5000 2650 4700 2650
 Text Label 7600 1150 0    50   ~ 0
-B_LED
+R_LED
 Text Label 7600 1350 0    50   ~ 0
 G_LED
 Text Label 7600 1550 0    50   ~ 0
-R_LED
+B_LED
 Wire Wire Line
 	7550 1550 7850 1550
 Wire Wire Line
@@ -546,8 +546,6 @@ Wire Wire Line
 	2450 6000 2250 6000
 Wire Wire Line
 	2250 6000 2250 5150
-Wire Wire Line
-	2250 5050 2500 5050
 $Comp
 L Device:C C17
 U 1 1 5B716833
@@ -561,9 +559,6 @@ F 3 "~" H 2500 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 5150 2250 5150
-Connection ~ 2250 5150
-Wire Wire Line
-	2250 5150 2250 5050
 Wire Wire Line
 	2500 5450 2500 5500
 Wire Wire Line
@@ -639,8 +634,6 @@ Wire Wire Line
 Connection ~ 1850 6900
 Wire Wire Line
 	1850 6900 1200 6900
-Text Label 2300 5050 0    50   ~ 0
-3v3
 Text Label 6500 2850 0    50   ~ 0
 TX-
 Text Label 6500 2950 0    50   ~ 0
