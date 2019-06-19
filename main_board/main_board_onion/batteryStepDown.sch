@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -25,21 +25,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmzm23601.pdf" H 3350 1975 50  0001 C CNN
 	1    3350 2725
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J13
-U 1 1 5CB0F652
-P 1125 1850
-F 0 "J13" H 1017 1525 50  0000 C CNN
-F 1 "Power In" H 1017 1616 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1125 1850 50  0001 C CNN
-F 3 "~" H 1125 1850 50  0001 C CNN
-	1    1125 1850
-	-1   0    0    1   
-$EndComp
-Text Label 1375 1850 0    50   ~ 0
-GND_Batt
-Text Label 1375 1750 0    50   ~ 0
-Batt_In
 $Comp
 L Device:C_Small C26
 U 1 1 5CB12BC7
@@ -108,7 +93,7 @@ F 3 "~" H 6925 2600 50  0001 C CNN
 $EndComp
 Connection ~ 6925 2500
 Wire Wire Line
-	6925 2500 7300 2500
+	6925 2500 7525 2500
 Wire Wire Line
 	6925 2700 6925 3025
 Wire Wire Line
@@ -126,11 +111,11 @@ F 3 "~" H 5550 2600 50  0001 C CNN
 	1    5550 2600
 	1    0    0    -1  
 $EndComp
-Text Label 5575 2500 2    50   ~ 0
+Text Label 5475 2500 2    50   ~ 0
 5V
 Connection ~ 5550 2500
 Wire Wire Line
-	5550 2500 5425 2500
+	5550 2500 5125 2500
 Wire Wire Line
 	5550 2700 5550 2900
 Wire Wire Line
@@ -157,10 +142,6 @@ Text Label 2275 3625 0    50   ~ 0
 GND
 Wire Wire Line
 	1925 3625 1525 3625
-Wire Wire Line
-	1325 1850 1750 1850
-Wire Wire Line
-	1325 1750 1650 1750
 Text Label 2825 2525 2    50   ~ 0
 Batt_In
 Wire Wire Line
@@ -174,44 +155,6 @@ Wire Wire Line
 	5950 2850 6000 2850
 Text Label 7150 2500 0    50   ~ 0
 3v3
-$Comp
-L Connector:Conn_01x02_Female J14
-U 1 1 5CB169CC
-P 5025 1775
-F 0 "J14" H 5053 1751 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 5053 1660 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5025 1775 50  0001 C CNN
-F 3 "~" H 5025 1775 50  0001 C CNN
-	1    5025 1775
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J16
-U 1 1 5CB16ED5
-P 7800 1775
-F 0 "J16" H 7828 1751 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7828 1660 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7800 1775 50  0001 C CNN
-F 3 "~" H 7800 1775 50  0001 C CNN
-	1    7800 1775
-	1    0    0    -1  
-$EndComp
-Text Label 4750 1775 2    50   ~ 0
-GND
-Text Label 4750 1875 2    50   ~ 0
-5V
-Wire Wire Line
-	4825 1875 4650 1875
-Wire Wire Line
-	4825 1775 4600 1775
-Text Label 7550 1775 2    50   ~ 0
-GND
-Text Label 7550 1875 2    50   ~ 0
-3v3
-Wire Wire Line
-	7600 1875 7400 1875
-Wire Wire Line
-	7600 1775 7375 1775
 Text HLabel 1025 925  0    50   Input ~ 0
 Pack+
 Text HLabel 1025 1025 0    50   Input ~ 0
@@ -230,25 +173,10 @@ Text Label 2825 2725 2    50   ~ 0
 GND
 Wire Wire Line
 	2850 2725 2650 2725
-$Comp
-L Connector:Conn_01x01_Female J15
-U 1 1 5CB8B93E
-P 5025 2100
-F 0 "J15" H 5053 2126 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 5053 2035 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5025 2100 50  0001 C CNN
-F 3 "~" H 5025 2100 50  0001 C CNN
-	1    5025 2100
-	1    0    0    -1  
-$EndComp
 Text Label 3900 2925 0    50   ~ 0
 PG
 Wire Wire Line
 	3850 2925 4050 2925
-Text Label 4675 2100 0    50   ~ 0
-PG
-Wire Wire Line
-	4625 2100 4825 2100
 Wire Wire Line
 	3350 3175 4500 3175
 Connection ~ 5800 2500
@@ -329,4 +257,78 @@ Text Label 5350 3275 2    50   ~ 0
 5V
 Wire Wire Line
 	5225 3275 5450 3275
+Text HLabel 7800 2500 2    50   Output ~ 0
+3v3
+Text HLabel 4925 2500 0    50   Output ~ 0
+5V
+$Comp
+L Device:R R39
+U 1 1 5D11C709
+P 5125 2250
+F 0 "R39" H 5195 2296 50  0000 L CNN
+F 1 "1k" H 5195 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5055 2250 50  0001 C CNN
+F 3 "~" H 5125 2250 50  0001 C CNN
+	1    5125 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5D11C977
+P 5125 1900
+F 0 "D6" V 5072 1978 50  0000 L CNN
+F 1 "Green" V 5163 1978 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5125 1900 50  0001 C CNN
+F 3 "~" H 5125 1900 50  0001 C CNN
+	1    5125 1900
+	0    1    1    0   
+$EndComp
+Text Label 5275 1725 2    50   ~ 0
+GND
+Wire Wire Line
+	5125 2400 5125 2500
+Connection ~ 5125 2500
+Wire Wire Line
+	5125 2500 4925 2500
+Wire Wire Line
+	5125 2100 5125 2050
+Wire Wire Line
+	5125 1750 5125 1725
+Wire Wire Line
+	5125 1725 5275 1725
+Text Label 7675 1725 2    50   ~ 0
+GND
+Wire Wire Line
+	7525 1750 7525 1725
+Wire Wire Line
+	7525 2100 7525 2050
+Wire Wire Line
+	7525 1725 7675 1725
+$Comp
+L Device:LED D7
+U 1 1 5D1204D2
+P 7525 1900
+F 0 "D7" V 7472 1978 50  0000 L CNN
+F 1 "Red" V 7563 1978 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7525 1900 50  0001 C CNN
+F 3 "~" H 7525 1900 50  0001 C CNN
+	1    7525 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5D1204D3
+P 7525 2250
+F 0 "R40" H 7595 2296 50  0000 L CNN
+F 1 "1k" H 7595 2205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7455 2250 50  0001 C CNN
+F 3 "~" H 7525 2250 50  0001 C CNN
+	1    7525 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 2400 7525 2500
+Connection ~ 7525 2500
+Wire Wire Line
+	7525 2500 7800 2500
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ U 1 1 5D055422
 P 5750 3425
 F 0 "U8" H 5775 4874 60  0000 C CNN
 F 1 "Teensy-LC" H 5775 4768 60  0000 C CNN
-F 2 "Teensy:Teensy30_31_32_LC" H 5775 4662 60  0000 C CNN
+F 2 "Teensy:Teensy_LC_Min" H 5775 4662 60  0000 C CNN
 F 3 "https://www.pjrc.com/teensy/teensyLC.html" H 5775 4556 60  0000 C CNN
 	1    5750 3425
 	1    0    0    -1  
@@ -218,4 +218,31 @@ Text Label 3500 2100 2    50   ~ 0
 3V3
 Text HLabel 4850 2050 2    50   Input ~ 0
 ~Teensy_Reset
+NoConn ~ 6850 2575
+NoConn ~ 6850 2675
+NoConn ~ 6850 2775
+NoConn ~ 6850 2875
+NoConn ~ 6850 2975
+NoConn ~ 6850 3075
+NoConn ~ 6850 3375
+NoConn ~ 6850 3475
+NoConn ~ 6850 3575
+NoConn ~ 6850 3675
+NoConn ~ 6850 3775
+NoConn ~ 6850 4075
+NoConn ~ 6850 4375
+NoConn ~ 4700 4375
+NoConn ~ 4700 4275
+NoConn ~ 4700 4175
+NoConn ~ 4700 4075
+NoConn ~ 4700 3975
+NoConn ~ 4700 3875
+NoConn ~ 4700 3775
+NoConn ~ 4700 3675
+NoConn ~ 4700 3375
+NoConn ~ 4700 3275
+NoConn ~ 4700 3175
+NoConn ~ 4700 3075
+NoConn ~ 4700 2675
+NoConn ~ 4700 2575
 $EndSCHEMATC

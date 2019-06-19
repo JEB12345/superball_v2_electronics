@@ -2,4 +2,5 @@
   (lib (name "antenna")(type "Legacy")(uri "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/old_KiCAD_files/main_master_board/Library/antenna.lib")(options "")(descr ""))
   (lib (name "main_board_onion-rescue")(type "Legacy")(uri "${KIPRJMOD}/main_board_onion-rescue.lib")(options "")(descr ""))
   (lib (name "Teensy")(type "Legacy")(uri "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/main_board/teensy_library/teensy.lib")(options "")(descr ""))
+  (lib (name "main_board_onion-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/main_board_onion-eagle-import.lib")(options "")(descr ""))
 )

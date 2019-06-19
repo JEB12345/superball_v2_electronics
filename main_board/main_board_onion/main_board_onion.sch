@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -88,10 +88,10 @@ F8 "~Reset_Teensy" O R 10200 2600 50
 F9 "Omega_Reset" I L 8150 3250 50 
 $EndSheet
 $Comp
-L Connector_Generic:Conn_01x02 J4
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5B758A61
 P 3000 950
-F 0 "J4" H 3080 942 50  0000 L CNN
+F 0 "J2" H 3080 942 50  0000 L CNN
 F 1 "Hebi_Power" H 3080 851 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical" H 3000 950 50  0001 C CNN
 F 3 "~" H 3000 950 50  0001 C CNN
@@ -138,33 +138,7 @@ F 3 "~" H 2000 700 50  0001 C CNN
 	1    2000 700 
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5B76D033
-P 2000 950
-F 0 "J2" H 2080 942 50  0000 L CNN
-F 1 "Hebi_Power" H 2080 851 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical" H 2000 950 50  0001 C CNN
-F 3 "~" H 2000 950 50  0001 C CNN
-	1    2000 950 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5B76D073
-P 3000 700
-F 0 "J3" H 3080 692 50  0000 L CNN
-F 1 "Hebi_Power" H 3080 601 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical" H 3000 700 50  0001 C CNN
-F 3 "~" H 3000 700 50  0001 C CNN
-	1    3000 700 
-	-1   0    0    1   
-$EndComp
 Text Label 2250 600  0    50   ~ 0
-24v
-Text Label 2250 850  0    50   ~ 0
-24v
-Text Label 3250 600  0    50   ~ 0
 24v
 Text Label 3250 850  0    50   ~ 0
 24v
@@ -172,14 +146,6 @@ Wire Wire Line
 	2200 600  2400 600 
 Wire Wire Line
 	2200 700  2400 700 
-Wire Wire Line
-	2200 850  2400 850 
-Wire Wire Line
-	2200 950  2400 950 
-Wire Wire Line
-	3200 600  3400 600 
-Wire Wire Line
-	3200 700  3400 700 
 Wire Wire Line
 	3200 850  3400 850 
 Wire Wire Line
@@ -261,10 +227,6 @@ Wire Notes Line
 Wire Notes Line
 	10350 1000 11200 1000
 Text Label 2250 700  0    50   ~ 0
-GND
-Text Label 2250 950  0    50   ~ 0
-GND
-Text Label 3250 700  0    50   ~ 0
 GND
 Text Label 3250 950  0    50   ~ 0
 GND
@@ -363,6 +325,8 @@ F1 "batteryStepDown.sch" 50
 F2 "Pack+" I L 3275 2000 50 
 F3 "5V_EN" I L 3275 2350 50 
 F4 "Pack_GND" I L 3275 2125 50 
+F5 "3v3" O R 4525 2000 50 
+F6 "5V" O R 4525 2150 50 
 $EndSheet
 Wire Wire Line
 	8675 4150 8375 4150
@@ -484,4 +448,70 @@ F 3 "~" H 3850 900 50  0001 C CNN
 	1    3850 900 
 	-1   0    0    1   
 $EndComp
+Text Label 4700 2000 2    50   ~ 0
+3v3
+Text Label 4700 2150 2    50   ~ 0
+5v
+Wire Wire Line
+	4525 2150 4700 2150
+Wire Wire Line
+	4525 2000 4700 2000
+Text Label 2000 4450 0    50   ~ 0
+5v
+Text Label 1950 4625 0    50   ~ 0
+GND
+Wire Wire Line
+	1950 4625 2125 4625
+Wire Wire Line
+	2000 4450 2125 4450
+$Comp
+L RF:NRF24L01_Breakout U12
+U 1 1 5D12ECD5
+P 4825 4825
+F 0 "U12" H 5205 4871 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 5205 4780 50  0000 L CNN
+F 2 "RF_Module:nRF24L01_Breakout" H 4975 5425 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 4825 4725 50  0001 C CNN
+	1    4825 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4525 4325 4525
+$Sheet
+S 2125 4275 1550 1075
+U 5D07F3D0
+F0 "nRF24L01+Trinket" 50
+F1 "nRF24L01.sch" 50
+F2 "mRF_MOSI" I R 3675 4525 50 
+F3 "nRF_MISO" I R 3675 4625 50 
+F4 "nRF_SCK" I R 3675 4725 50 
+F5 "nRF_CSN" I R 3675 4825 50 
+F6 "nRF_CE" I R 3675 5025 50 
+F7 "GND" I L 2125 4625 50 
+F8 "5V" I L 2125 4450 50 
+F9 "Trinket_RST" I L 2125 4825 50 
+$EndSheet
+Wire Wire Line
+	3675 4625 4325 4625
+Wire Wire Line
+	3675 4725 4325 4725
+Wire Wire Line
+	3675 4825 4325 4825
+Wire Wire Line
+	3675 5025 4325 5025
+NoConn ~ 4325 5125
+Text Label 4975 4175 2    50   ~ 0
+3v3
+Text Label 5000 5525 2    50   ~ 0
+GND
+Wire Wire Line
+	4825 4225 4825 4175
+Wire Wire Line
+	4825 4175 4975 4175
+Wire Wire Line
+	4825 5425 4825 5525
+Wire Wire Line
+	4825 5525 5000 5525
+Text Notes 5225 4700 0    50   ~ 0
+Alternative nRF24 Pinout as backup\n
 $EndSCHEMATC
