@@ -415,6 +415,8 @@ $Comp
 L Trinket:Trinket_M0 U9
 U 1 1 5D093872
 P 3075 3925
+AR Path="/5D093872" Ref="U9"  Part="1" 
+AR Path="/5D07F3D0/5D093872" Ref="U9"  Part="1" 
 F 0 "U9" H 3025 4390 50  0000 C CNN
 F 1 "Trinket_M0" H 3025 4299 50  0000 C CNN
 F 2 "Trinket:Trinket_M0_noMounting" H 3025 4025 50  0001 C CNN
