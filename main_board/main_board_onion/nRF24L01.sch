@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -67,8 +67,6 @@ Wire Wire Line
 	7425 3700 7425 3775
 Wire Wire Line
 	7525 2050 7425 2050
-Text HLabel 2075 3725 0    50   Input ~ 0
-5V
 Connection ~ 6075 1100
 Wire Wire Line
 	6075 1100 6250 1100
@@ -411,66 +409,9 @@ Text Label 6775 2050 0    50   ~ 0
 3v3_Trinket
 Text Label 6525 775  2    50   ~ 0
 3v3_Trinket
-$Comp
-L Trinket:Trinket_M0 U9
-U 1 1 5D093872
-P 3075 3925
-AR Path="/5D093872" Ref="U9"  Part="1" 
-AR Path="/5D07F3D0/5D093872" Ref="U9"  Part="1" 
-F 0 "U9" H 3025 4390 50  0000 C CNN
-F 1 "Trinket_M0" H 3025 4299 50  0000 C CNN
-F 2 "Trinket:Trinket_M0_noMounting" H 3025 4025 50  0001 C CNN
-F 3 "https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/downloads" H 3025 4025 50  0001 C CNN
-	1    3075 3925
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3775 3725
-$Comp
-L Transistor_FET:BSS138 Q8
-U 1 1 5D099668
-P 1975 4525
-F 0 "Q8" V 2226 4525 50  0000 C CNN
-F 1 "BSS138" V 2317 4525 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2175 4450 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1975 4525 50  0001 L CNN
-	1    1975 4525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2275 4125 2075 4125
-Wire Wire Line
-	2075 4125 2075 4325
-Wire Wire Line
-	2075 4725 2075 4875
-Wire Wire Line
-	2075 4875 2275 4875
-Text Label 2275 4875 2    50   ~ 0
-GND
-Text Label 1750 4525 2    50   ~ 0
-Trinket_RST
-Wire Wire Line
-	1775 4525 1325 4525
-Text HLabel 1325 4525 0    50   Input ~ 0
-Trinket_RST
-Text Label 2100 3825 0    50   ~ 0
-GND
-Wire Wire Line
-	2100 3825 2275 3825
-Text Label 4250 4125 2    50   ~ 0
-3v3_Trinket
 NoConn ~ 6825 3000
 Text Label 6775 2900 2    50   ~ 0
 nRF_CE
-Text Label 1900 4025 0    50   ~ 0
-nRF_SCK
-Text Label 4125 3925 2    50   ~ 0
-nRF_CSN
-Text Label 4075 3825 2    50   ~ 0
-nRF_CE
-Text Label 1875 3925 0    50   ~ 0
-nRF_MOSI
-Text Label 4175 4025 2    50   ~ 0
-nRF_MISO
 Wire Wire Line
 	6400 2500 6825 2500
 Wire Wire Line
@@ -482,21 +423,13 @@ Wire Wire Line
 Wire Wire Line
 	6400 2900 6825 2900
 Wire Wire Line
-	3775 3925 4125 3925
-Wire Wire Line
-	3775 3825 4075 3825
-Wire Wire Line
-	2275 3925 1875 3925
-Wire Wire Line
-	3775 4025 4175 4025
-Wire Wire Line
-	2275 4025 1900 4025
-Wire Wire Line
-	2075 3725 2275 3725
-Wire Wire Line
-	3775 4125 4250 4125
-Wire Wire Line
 	6075 775  6525 775 
 Wire Wire Line
 	6775 2050 7325 2050
+$Sheet
+S 2975 3225 1900 1400
+U 5D0BDDAB
+F0 "Trinket_M0_rev_D" 50
+F1 "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/Adafruit-Trinket-M0-PCB-master/Trinket M0 rev D/Trinket_M0_rev_D.sch" 50
+$EndSheet
 $EndSCHEMATC
