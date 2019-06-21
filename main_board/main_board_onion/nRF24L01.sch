@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
-LIBS:main_board_onion-cache
+LIBS:nRF24_testing-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -27,7 +27,6 @@ F 3 "~" H 6075 925 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6075 825  6075 775 
-Connection ~ 7425 3775
 Wire Wire Line
 	5900 775  6075 775 
 $Comp
@@ -41,8 +40,6 @@ F 3 "~" H 5900 925 50  0001 C CNN
 	1    5900 925 
 	1    0    0    -1  
 $EndComp
-Text Label 6775 2700 2    50   ~ 0
-nRF_CSN
 Wire Wire Line
 	8325 3850 8275 3850
 Wire Wire Line
@@ -72,14 +69,10 @@ Wire Wire Line
 	6075 1100 6250 1100
 Wire Wire Line
 	8275 3500 8275 3850
-Wire Wire Line
-	5900 1100 5800 1100
 Text Label 8650 3675 2    50   ~ 0
 GND
 Wire Wire Line
 	8275 3400 8275 3500
-Text Label 7050 3775 0    50   ~ 0
-GND
 Wire Wire Line
 	5900 1025 5900 1100
 Text HLabel 6400 2900 0    50   Input ~ 0
@@ -97,7 +90,6 @@ Wire Wire Line
 Wire Wire Line
 	9475 2150 9475 2025
 Connection ~ 7325 2050
-Connection ~ 7325 3775
 Connection ~ 6075 775 
 Text HLabel 6400 2600 0    50   Input ~ 0
 nRF_SCK
@@ -120,7 +112,6 @@ Wire Wire Line
 	9275 2825 9525 2825
 Wire Wire Line
 	7425 2100 7425 2050
-Connection ~ 5900 1100
 Wire Wire Line
 	6075 1025 6075 1100
 Text HLabel 6400 2400 0    50   Input ~ 0
@@ -157,20 +148,9 @@ Wire Wire Line
 	9475 2550 8900 2550
 Text Label 6250 1100 2    50   ~ 0
 GND
-$Comp
-L Device:C_Small C33
-U 1 1 5D08136B
-P 6075 925
-F 0 "C33" H 6167 971 50  0000 L CNN
-F 1 "1nF" H 6167 880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6075 925 50  0001 C CNN
-F 3 "~" H 6075 925 50  0001 C CNN
-	1    6075 925 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 825  5900 775 
-Text HLabel 5800 1100 0    50   Input ~ 0
+Text HLabel 1750 3900 0    50   Input ~ 0
 GND
 Wire Wire Line
 	8475 3400 8475 3350
@@ -191,12 +171,10 @@ Wire Wire Line
 	9475 2350 9475 2400
 Text Label 6775 2400 2    50   ~ 0
 nRF_MOSI
-Wire Wire Line
-	7425 3775 7325 3775
 Text HLabel 6400 2500 0    50   Input ~ 0
 nRF_MISO
 $Comp
-L RF:nRF24L01P U10
+L New_nRF24:nRF24L01P U10
 U 1 1 5D07F55C
 P 7425 2900
 F 0 "U10" H 7425 3881 50  0000 C CNN
@@ -235,23 +213,12 @@ F 3 "~" H 8475 3850 50  0001 C CNN
 	1    8475 3850
 	0    -1   -1   0   
 $EndComp
-Text Label 7050 3775 0    50   ~ 0
+Text Label 6975 3775 0    50   ~ 0
 GND
 Wire Wire Line
 	8575 3500 8675 3500
 Text Label 8650 3350 2    50   ~ 0
 GND
-$Comp
-L Device:C_Small C37
-U 1 1 5D095A49
-P 8675 4075
-F 0 "C37" H 8767 4121 50  0000 L CNN
-F 1 "12pF" H 8767 4030 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8675 4075 50  0001 C CNN
-F 3 "~" H 8675 4075 50  0001 C CNN
-	1    8675 4075
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9525 2825 10225 2825
 Wire Wire Line
@@ -343,7 +310,7 @@ F 3 "" H 10575 2825 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6725 3775 7325 3775
+	6725 3775 7225 3775
 Connection ~ 8300 2600
 NoConn ~ 10925 2725
 Wire Wire Line
@@ -419,17 +386,81 @@ Wire Wire Line
 Wire Wire Line
 	6400 2600 6825 2600
 Wire Wire Line
-	6400 2700 6825 2700
-Wire Wire Line
 	6400 2900 6825 2900
 Wire Wire Line
 	6075 775  6525 775 
 Wire Wire Line
 	6775 2050 7325 2050
 $Sheet
-S 2975 3225 1900 1400
+S 1975 3550 1900 1400
 U 5D0BDDAB
 F0 "Trinket_M0_rev_D" 50
 F1 "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/Adafruit-Trinket-M0-PCB-master/Trinket M0 rev D/Trinket_M0_rev_D.sch" 50
+F2 "3v3" I L 1975 3800 50 
+F3 "GND" I L 1975 3900 50 
+F4 "~RESET_M0" I L 1975 4200 50 
+F5 "MISO" I R 3875 3775 50 
+F6 "SCK" I R 3875 3875 50 
+F7 "MOSI" I R 3875 3675 50 
+F8 "D0{slash}CE" I R 3875 4175 50 
+F9 "D1{slash}CSN" I R 3875 3975 50 
 $EndSheet
+Text Label 6775 2700 2    50   ~ 0
+nRF_CSN
+Wire Wire Line
+	6400 2700 6825 2700
+Wire Wire Line
+	3875 3675 4300 3675
+Text Label 4250 3875 2    50   ~ 0
+nRF_SCK
+Text Label 4250 3775 2    50   ~ 0
+nRF_MISO
+Text Label 4250 4175 2    50   ~ 0
+nRF_CE
+Wire Wire Line
+	3875 4175 4300 4175
+Text Label 4250 3975 2    50   ~ 0
+nRF_CSN
+Wire Wire Line
+	3875 3775 4300 3775
+Wire Wire Line
+	3875 3975 4250 3975
+Text Label 4250 3675 2    50   ~ 0
+nRF_MOSI
+Wire Wire Line
+	3875 3875 4300 3875
+Text Label 1750 3900 0    50   ~ 0
+GND
+Wire Wire Line
+	1975 3900 1750 3900
+Text Label 1500 3800 0    50   ~ 0
+3v3_Trinket
+Wire Wire Line
+	1975 3800 1500 3800
+Wire Wire Line
+	1975 4200 1625 4200
+Text HLabel 1625 4200 0    50   Input ~ 0
+Trinket_RESET
+Text HLabel 1500 3800 0    50   Input ~ 0
+3v3
+$Comp
+L Device:C_Small C37
+U 1 1 5D095A49
+P 8675 4075
+F 0 "C37" H 8767 4121 50  0000 L CNN
+F 1 "12pF" H 8767 4030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8675 4075 50  0001 C CNN
+F 3 "~" H 8675 4075 50  0001 C CNN
+	1    8675 4075
+	1    0    0    -1  
+$EndComp
+Connection ~ 7325 3775
+Connection ~ 7425 3775
+Wire Wire Line
+	7425 3775 7325 3775
+Wire Wire Line
+	7225 3700 7225 3775
+Connection ~ 7225 3775
+Wire Wire Line
+	7225 3775 7325 3775
 $EndSCHEMATC
