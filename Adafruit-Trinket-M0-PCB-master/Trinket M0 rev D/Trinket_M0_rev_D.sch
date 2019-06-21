@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
-LIBS:nRF24_testing-cache
+LIBS:main_board_onion-cache
 EELAYER 29 0
 EELAYER END
 $Descr User 12505 9349
 encoding utf-8
-Sheet 3 3
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -113,10 +113,10 @@ F 3 "" H 2100 5000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:LED0603_NOOUTLINE L1
+L Trinket_M0_rev_D-eagle-import:LED0603_NOOUTLINE L5
 U 1 1 DEA17AD5
 P 7400 3000
-F 0 "L1" H 7350 3175 42  0000 C CNN
+F 0 "L5" H 7350 3175 42  0000 C CNN
 F 1 "red" H 7350 2890 42  0000 C CNN
 F 2 "Trinket M0 rev D:CHIPLED_0603_NOOUTLINE" H 7400 3000 50  0001 C CNN
 F 3 "" H 7400 3000 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "" H 7400 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R1
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R41
 U 1 1 E54CE26F
 P 6800 2800
-F 0 "R1" H 6800 2900 50  0000 C CNN
+F 0 "R41" H 6800 2900 50  0000 C CNN
 F 1 "1.5K" H 6800 2800 40  0000 C CNB
 F 2 "Trinket M0 rev D:0603-NO" H 6800 2800 50  0001 C CNN
 F 3 "" H 6800 2800 50  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "" H 7400 3500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0603_NO C1
+L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0603_NO C30
 U 1 1 F2879E99
 P 1200 3375
-F 0 "C1" V 1110 3424 50  0000 C CNN
+F 0 "C30" V 1110 3424 50  0000 C CNN
 F 1 "1uF" V 1290 3424 50  0000 C CNN
 F 2 "Trinket M0 rev D:0603-NO" H 1200 3375 50  0001 C CNN
 F 3 "" H 1200 3375 50  0001 C CNN
@@ -168,10 +168,10 @@ F 3 "" H 1200 3675 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0603_NO C2
+L Trinket_M0_rev_D-eagle-import:CAP_CERAMIC0603_NO C31
 U 1 1 91680661
 P 2000 2800
-F 0 "C2" V 1910 2849 50  0000 C CNN
+F 0 "C31" V 1910 2849 50  0000 C CNN
 F 1 "1uF" V 2090 2849 50  0000 C CNN
 F 2 "Trinket M0 rev D:0603-NO" H 2000 2800 50  0001 C CNN
 F 3 "" H 2000 2800 50  0001 C CNN
@@ -191,8 +191,6 @@ F 3 "" H 2000 3000 50  0001 C CNN
 $EndComp
 Text Notes 7800 7300 0    85   ~ 0
 Adafruit Trinket M0
-Text Notes 7800 7500 0    85   ~ 0
-http://adafruit.com/products/3500
 Text Notes 10700 7300 0    85   ~ 0
 CC 2.5 BY-SA
 Text HLabel 900  2000 0    50   Input ~ 0
@@ -244,10 +242,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 2700 6950 2700
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
+L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5D0C1D7C
 P 3450 6250
-F 0 "J1" H 3500 6667 50  0000 C CNN
+F 0 "J3" H 3500 6667 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 3500 6576 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 3450 6250 50  0001 C CNN
 F 3 "~" H 3450 6250 50  0001 C CNN
@@ -301,38 +299,23 @@ Wire Wire Line
 	5400 4400 5575 4400
 Wire Wire Line
 	5400 4500 5575 4500
-$Comp
-L Connector:Conn_01x06_Female J2
-U 1 1 5D0CD5F1
-P 5775 3500
-F 0 "J2" H 5803 3476 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 5803 3385 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5775 3500 50  0001 C CNN
-F 3 "~" H 5775 3500 50  0001 C CNN
-	1    5775 3500
-	1    0    0    -1  
-$EndComp
+Text HLabel 5825 4700 2    50   Input ~ 0
+Operation_Sig
 Wire Wire Line
-	5400 3300 5575 3300
-Wire Wire Line
-	5400 3400 5575 3400
-Wire Wire Line
-	5400 3500 5575 3500
-Wire Wire Line
-	5400 3600 5575 3600
-Wire Wire Line
-	5400 3700 5575 3700
-Wire Wire Line
-	5400 3800 5575 3800
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 5D0CEE3F
-P 5775 4400
-F 0 "J3" H 5803 4376 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 5803 4285 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4400 50  0001 C CNN
-F 3 "~" H 5775 4400 50  0001 C CNN
-	1    5775 4400
-	1    0    0    -1  
-$EndComp
+	5400 4700 5825 4700
+NoConn ~ 5400 1700
+NoConn ~ 5400 1800
+NoConn ~ 5400 2000
+NoConn ~ 5400 2100
+NoConn ~ 5400 2200
+NoConn ~ 5400 2900
+NoConn ~ 5400 3300
+NoConn ~ 5400 3400
+NoConn ~ 5400 3500
+NoConn ~ 5400 3600
+NoConn ~ 5400 3700
+NoConn ~ 5400 3800
+NoConn ~ 5400 4200
+NoConn ~ 5400 4300
+NoConn ~ 5400 4600
 $EndSCHEMATC

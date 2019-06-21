@@ -86,6 +86,8 @@ F6 "RX1" I R 10200 2875 50
 F7 "TX1" I R 10200 2975 50 
 F8 "~Reset_Teensy" O R 10200 2600 50 
 F9 "Omega_Reset" I L 8150 3250 50 
+F10 "~M0_RESET" O R 10200 3150 50 
+F11 "Operational_Sig" I R 10200 3250 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -456,14 +458,10 @@ Wire Wire Line
 	4525 2150 4700 2150
 Wire Wire Line
 	4525 2000 4700 2000
-Text Label 2000 4450 0    50   ~ 0
-5v
 Text Label 1950 4625 0    50   ~ 0
 GND
 Wire Wire Line
 	1950 4625 2125 4625
-Wire Wire Line
-	2000 4450 2125 4450
 $Comp
 L RF:NRF24L01_Breakout U12
 U 1 1 5D12ECD5
@@ -488,8 +486,9 @@ F4 "nRF_SCK" I R 3675 4725 50
 F5 "nRF_CSN" I R 3675 4825 50 
 F6 "nRF_CE" I R 3675 5025 50 
 F7 "GND" I L 2125 4625 50 
-F8 "5V" I L 2125 4450 50 
-F9 "Trinket_RST" I L 2125 4825 50 
+F8 "3v3" I L 2125 4475 50 
+F9 "~M0_RESET" I L 2125 4850 50 
+F10 "Operational_Sig" O L 2125 5125 50 
 $EndSheet
 Wire Wire Line
 	3675 4625 4325 4625
@@ -514,4 +513,24 @@ Wire Wire Line
 	4825 5525 5000 5525
 Text Notes 5225 4700 0    50   ~ 0
 Alternative nRF24 Pinout as backup\n
+Text Label 1975 4475 0    50   ~ 0
+3v3
+Wire Wire Line
+	2125 4475 1975 4475
+Text Label 1725 4850 0    50   ~ 0
+~M0_RESET
+Wire Wire Line
+	2125 4850 1725 4850
+Text Label 1475 5125 0    50   ~ 0
+Operational_Sig
+Wire Wire Line
+	2125 5125 1475 5125
+Text Label 10850 3250 2    50   ~ 0
+Operational_Sig
+Wire Wire Line
+	10200 3150 10600 3150
+Wire Wire Line
+	10200 3250 10850 3250
+Text Label 10600 3150 2    50   ~ 0
+~M0_RESET
 $EndSCHEMATC

@@ -1,10 +1,10 @@
 EESchema Schematic File Version 5
-LIBS:nRF24_testing-cache
+LIBS:main_board_onion-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -404,6 +404,7 @@ F6 "SCK" I R 3875 3875 50
 F7 "MOSI" I R 3875 3675 50 
 F8 "D0{slash}CE" I R 3875 4175 50 
 F9 "D1{slash}CSN" I R 3875 3975 50 
+F10 "Operation_Sig" I R 3875 4550 50 
 $EndSheet
 Text Label 6775 2700 2    50   ~ 0
 nRF_CSN
@@ -440,7 +441,7 @@ Wire Wire Line
 Wire Wire Line
 	1975 4200 1625 4200
 Text HLabel 1625 4200 0    50   Input ~ 0
-Trinket_RESET
+~M0_RESET
 Text HLabel 1500 3800 0    50   Input ~ 0
 3v3
 $Comp
@@ -463,4 +464,8 @@ Wire Wire Line
 Connection ~ 7225 3775
 Wire Wire Line
 	7225 3775 7325 3775
+Text HLabel 4075 4550 2    50   Output ~ 0
+Operational_Sig
+Wire Wire Line
+	3875 4550 4075 4550
 $EndSCHEMATC

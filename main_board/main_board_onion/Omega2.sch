@@ -686,8 +686,6 @@ NoConn ~ 5000 3050
 NoConn ~ 5000 2950
 NoConn ~ 5000 3350
 NoConn ~ 5000 3450
-NoConn ~ 6450 3450
-NoConn ~ 6450 3550
 Wire Wire Line
 	6450 2650 7100 2650
 Text HLabel 7100 3350 2    50   Input ~ 0
@@ -774,4 +772,16 @@ Text HLabel 10150 5450 2    50   Input ~ 0
 Omega_Reset
 Text Label 10100 5450 2    50   ~ 0
 ResetGate
+Text Label 6800 3450 2    50   ~ 0
+~M0_RST
+Text Label 7100 3550 2    50   ~ 0
+Operational_Sig
+Text HLabel 7100 3450 2    50   Output ~ 0
+~M0_RESET
+Text HLabel 7100 3550 2    50   Input ~ 0
+Operational_Sig
+Wire Wire Line
+	6450 3450 7100 3450
+Wire Wire Line
+	6450 3550 7100 3550
 $EndSCHEMATC
