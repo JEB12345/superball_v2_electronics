@@ -339,7 +339,7 @@ Text Label 8500 4000 0    79   ~ 0
 Wire Wire Line
 	8425 4000 8675 4000
 $Sheet
-S 8675 3950 1300 1225
+S 8675 3950 1300 1600
 U 5D06C54B
 F0 "Teensy" 50
 F1 "Teensy.sch" 50
@@ -356,6 +356,8 @@ F11 "Pressure_Sensor" I R 9975 4575 50
 F12 "Teensy_Ready" I R 9975 4900 50 
 F13 "Omega_Reset" I R 9975 5025 50 
 F14 "~Teensy_Reset" I R 9975 4025 50 
+F15 "SensorBoard_RX" I L 8675 5225 50 
+F16 "SensorBoard_TX" I L 8675 5350 50 
 $EndSheet
 Wire Wire Line
 	8150 3050 7700 3050
@@ -397,8 +399,6 @@ Wire Wire Line
 	8675 4900 8300 4900
 Text Label 10025 4425 0    50   ~ 0
 bq76930_Alert
-Text Label 10025 4250 0    50   ~ 0
-LED_Strip_CMD
 Wire Wire Line
 	9975 4250 10575 4250
 Wire Wire Line
@@ -445,7 +445,7 @@ U 1 1 5B69F017
 P 3850 900
 F 0 "J5" H 3770 575 50  0000 C CNN
 F 1 "Backup_3v3" H 3770 666 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 900 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0207_1x02-1MP_P1.00mm_Vertical" H 3850 900 50  0001 C CNN
 F 3 "~" H 3850 900 50  0001 C CNN
 	1    3850 900 
 	-1   0    0    1   
@@ -533,4 +533,72 @@ Wire Wire Line
 	10200 3250 10850 3250
 Text Label 10600 3150 2    50   ~ 0
 ~M0_RESET
+Text Label 10650 4575 2    50   ~ 0
+Pressure_Sensor
+Wire Wire Line
+	9975 4575 10650 4575
+Text Label 8025 5225 0    50   ~ 0
+SensorBoard_RX
+Text Label 8025 5350 0    50   ~ 0
+SensorBoard_TX
+Wire Wire Line
+	8675 5225 8025 5225
+Wire Wire Line
+	8675 5350 8025 5350
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5D13A55A
+P 8725 6125
+F 0 "J4" H 8753 6101 50  0000 L CNN
+F 1 "SensorBoard" H 8753 6010 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0407_1x04-1MP_P1.00mm_Vertical" H 8725 6125 50  0001 C CNN
+F 3 "~" H 8725 6125 50  0001 C CNN
+	1    8725 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 6225 7875 6225
+Wire Wire Line
+	8525 6325 7875 6325
+Text Label 7875 6225 0    50   ~ 0
+SensorBoard_RX
+Text Label 7875 6325 0    50   ~ 0
+SensorBoard_TX
+Text Label 8400 6025 0    50   ~ 0
+5v
+Text Label 8325 6125 0    50   ~ 0
+GND
+Wire Wire Line
+	8525 6025 8400 6025
+Wire Wire Line
+	8525 6125 8325 6125
+$Comp
+L Connector:Conn_01x04_Female J13
+U 1 1 5D140DCA
+P 10450 6100
+F 0 "J13" H 10478 6076 50  0000 L CNN
+F 1 "LED_Pressure" H 10478 5985 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal" H 10450 6100 50  0001 C CNN
+F 3 "~" H 10450 6100 50  0001 C CNN
+	1    10450 6100
+	1    0    0    -1  
+$EndComp
+Text Label 10050 6100 0    50   ~ 0
+GND
+Text Label 10125 6000 0    50   ~ 0
+5v
+Wire Wire Line
+	10250 6100 10050 6100
+Wire Wire Line
+	10250 6000 10125 6000
+Text Label 9575 6300 0    50   ~ 0
+Pressure_Sensor
+Wire Wire Line
+	10250 6300 9575 6300
+Text Label 10025 4250 0    50   ~ 0
+LED_Strip_CMD
+Text Label 10200 6200 2    50   ~ 0
+LED_Strip_CMD
+Wire Wire Line
+	10250 6200 9650 6200
 $EndSCHEMATC

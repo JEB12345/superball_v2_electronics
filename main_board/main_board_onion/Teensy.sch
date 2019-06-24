@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Teensy:Teensy-LC U8
-U 1 1 5D055422
-P 5750 3425
-F 0 "U8" H 5775 4874 60  0000 C CNN
-F 1 "Teensy-LC" H 5775 4768 60  0000 C CNN
-F 2 "Teensy:Teensy_LC_Min" H 5775 4662 60  0000 C CNN
-F 3 "https://www.pjrc.com/teensy/teensyLC.html" H 5775 4556 60  0000 C CNN
-	1    5750 3425
-	1    0    0    -1  
-$EndComp
 Text Notes 2700 7650 0    79   ~ 0
 (NOTE: Use the Pin Labels and not the actual Pin # on the Symbol)\nPins:        Function:\n2             LED Strip Lighting\n3             Serial RX1\n4             Serial TX1\n15            Analog Input (Ground Sensor)\n16            bq76930 Alert Pin             \n18            I2C SDA0\n19            I2C SCL0
 Text HLabel 1275 1150 0    50   Input ~ 0
@@ -61,7 +50,7 @@ Text Label 4625 2875 2    50   ~ 0
 Serial_RX
 Text Label 4625 2975 2    50   ~ 0
 Serial_TX
-Text Label 6900 4275 0    50   ~ 0
+Text Label 1925 2600 2    50   ~ 0
 Pressure_Sensor
 Text Label 6900 4175 0    50   ~ 0
 bq76930_Alert
@@ -80,7 +69,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 4175 7475 4175
 Wire Wire Line
-	6850 4275 7525 4275
+	1925 2600 1250 2600
 $Comp
 L Transistor_FET:BSS138 Q6
 U 1 1 5D0146C2
@@ -159,7 +148,7 @@ Text HLabel 7225 3975 2    50   Input ~ 0
 I2C_SDA
 Text HLabel 7475 4175 2    50   Input ~ 0
 bq76930_Alert
-Text HLabel 7525 4275 2    50   Input ~ 0
+Text HLabel 1250 2600 0    50   Input ~ 0
 Pressure_Sensor
 Text Label 4625 3475 2    50   ~ 0
 Teensy_Ready
@@ -239,10 +228,35 @@ NoConn ~ 4700 3975
 NoConn ~ 4700 3875
 NoConn ~ 4700 3775
 NoConn ~ 4700 3675
-NoConn ~ 4700 3375
-NoConn ~ 4700 3275
 NoConn ~ 4700 3175
 NoConn ~ 4700 3075
-NoConn ~ 4700 2675
 NoConn ~ 4700 2575
+$Comp
+L Teensy:Teensy-LC U8
+U 1 1 5D055422
+P 5750 3425
+F 0 "U8" H 5775 4874 60  0000 C CNN
+F 1 "Teensy-LC" H 5775 4768 60  0000 C CNN
+F 2 "Teensy:Teensy_LC_Min" H 5775 4662 60  0000 C CNN
+F 3 "https://www.pjrc.com/teensy/teensyLC.html" H 5775 4556 60  0000 C CNN
+	1    5750 3425
+	1    0    0    -1  
+$EndComp
+Text Label 4025 3275 0    50   ~ 0
+SensorBoard_RX
+Text Label 4025 3375 0    50   ~ 0
+SensorBoard_TX
+Wire Wire Line
+	4700 3275 4025 3275
+Wire Wire Line
+	4700 3375 4025 3375
+Text HLabel 4025 3275 0    50   Input ~ 0
+SensorBoard_RX
+Text HLabel 4025 3375 0    50   Input ~ 0
+SensorBoard_TX
+Text Label 4025 2675 0    50   ~ 0
+Pressure_Sensor
+Wire Wire Line
+	4700 2675 4025 2675
+NoConn ~ 6850 4275
 $EndSCHEMATC
