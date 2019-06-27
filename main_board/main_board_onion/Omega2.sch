@@ -578,8 +578,8 @@ Wire Wire Line
 	6450 2050 6650 2050
 Wire Wire Line
 	5000 2050 4800 2050
-Text Label 6500 2650 0    50   ~ 0
-Reset_Omega
+Text Label 6925 2650 2    50   ~ 0
+Omega_RST
 NoConn ~ 6450 2250
 NoConn ~ 6450 2350
 NoConn ~ 6450 2750
@@ -673,7 +673,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10050 5625 50  00
 	-1   0    0    -1  
 $EndComp
 Text Label 9500 6100 2    50   ~ 0
-Reset_Omega
+Omega_RST
 Wire Wire Line
 	10250 5625 10525 5625
 Text Label 10225 5350 2    50   ~ 0
@@ -682,18 +682,18 @@ Text HLabel 10525 5625 2    50   Input ~ 0
 Omega_Reset
 Text Label 10475 5625 2    50   ~ 0
 ResetGate
-Text Label 6800 3450 2    50   ~ 0
+Text Label 6800 3550 2    50   ~ 0
 ~M0_RST
-Text Label 7100 3550 2    50   ~ 0
+Text Label 7100 3450 2    50   ~ 0
 Operational_Sig
-Text HLabel 7100 3450 2    50   Output ~ 0
+Text HLabel 7100 3550 2    50   Output ~ 0
 ~M0_RESET
-Text HLabel 7100 3550 2    50   Input ~ 0
+Text HLabel 7100 3450 2    50   Input ~ 0
 Operational_Sig
-Wire Wire Line
-	6450 3450 7100 3450
 Wire Wire Line
 	6450 3550 7100 3550
+Wire Wire Line
+	6450 3450 7100 3450
 NoConn ~ 2450 7200
 NoConn ~ 2450 7100
 Wire Notes Line

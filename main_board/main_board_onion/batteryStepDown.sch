@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -125,23 +125,6 @@ Text Label 3650 3175 0    50   ~ 0
 GND
 Text Label 6575 3025 0    50   ~ 0
 GND
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5CB412D6
-P 2075 3625
-F 0 "JP2" H 2075 3830 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 2075 3739 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 2075 3625 50  0001 C CNN
-F 3 "~" H 2075 3625 50  0001 C CNN
-	1    2075 3625
-	1    0    0    -1  
-$EndComp
-Text Label 1875 3625 2    50   ~ 0
-GND_Batt
-Text Label 2275 3625 0    50   ~ 0
-GND
-Wire Wire Line
-	1925 3625 1525 3625
 Text Label 2825 2525 2    50   ~ 0
 Batt_In
 Wire Wire Line
@@ -157,18 +140,10 @@ Text Label 7150 2500 0    50   ~ 0
 3v3
 Text HLabel 1025 925  0    50   Input ~ 0
 Pack+
-Text HLabel 1025 1025 0    50   Input ~ 0
-Pack_GND
-Text Label 1075 1025 0    50   ~ 0
-GND_Batt
 Text Label 1075 925  0    50   ~ 0
 Batt_In
 Wire Wire Line
-	1025 1025 1450 1025
-Wire Wire Line
 	1025 925  1350 925 
-Wire Wire Line
-	2450 3175 2700 3175
 Text Label 2825 2725 2    50   ~ 0
 GND
 Wire Wire Line
@@ -195,13 +170,6 @@ F 3 "~" H 5800 2600 50  0001 C CNN
 $EndComp
 Text Label 2925 3175 0    50   ~ 0
 GND
-Wire Wire Line
-	2700 3625 2700 3175
-Wire Wire Line
-	2225 3625 2700 3625
-Connection ~ 2700 3175
-Wire Wire Line
-	2700 3175 3350 3175
 Wire Wire Line
 	4500 3175 5550 3175
 Wire Wire Line
@@ -331,4 +299,11 @@ F 3 "~" H 2450 2750 50  0001 C CNN
 	1    2450 2750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2450 3175 3350 3175
+Text HLabel 2125 3175 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2450 3175 2125 3175
+Connection ~ 2450 3175
 $EndSCHEMATC

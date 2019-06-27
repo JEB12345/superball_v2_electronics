@@ -5,4 +5,5 @@
   (lib (name "main_board_onion-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/main_board_onion-eagle-import.lib")(options "")(descr ""))
   (lib (name "Trinket_M0_rev_D-eagle-import")(type "Legacy")(uri "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/Adafruit-Trinket-M0-PCB-master/Trinket M0 rev D/Trinket_M0_rev_D-eagle-import.lib")(options "")(descr ""))
   (lib (name "New_nRF24")(type "Legacy")(uri "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/nRF24_testing/nRF24_testing/New_nRF24.lib")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "Legacy")(uri "/home/jonathan/Projects/SB_CAD/SUPERball/superball_v2_electronics/main_board/mouser_library/SamacSys_Parts.lib")(options "")(descr ""))
 )

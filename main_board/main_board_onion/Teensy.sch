@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -36,12 +36,8 @@ Text Label 1625 1150 2    50   ~ 0
 GND
 Text Label 6900 3175 0    50   ~ 0
 5V
-Text Label 6900 3275 0    50   ~ 0
-GND
 Wire Wire Line
 	6850 3175 7000 3175
-Wire Wire Line
-	6850 3275 7075 3275
 Text Label 4425 1850 2    50   ~ 0
 GND
 Text Label 4625 2775 2    50   ~ 0
@@ -199,8 +195,6 @@ Wire Wire Line
 	4700 2050 4850 2050
 Wire Wire Line
 	4700 1725 4700 1675
-Wire Wire Line
-	4700 1675 4950 1675
 Text Label 4750 1675 0    50   ~ 0
 3V3
 Text Label 3500 2100 2    50   ~ 0
@@ -228,20 +222,8 @@ NoConn ~ 4700 3975
 NoConn ~ 4700 3875
 NoConn ~ 4700 3775
 NoConn ~ 4700 3675
-NoConn ~ 4700 3175
 NoConn ~ 4700 3075
 NoConn ~ 4700 2575
-$Comp
-L Teensy:Teensy-LC U8
-U 1 1 5D055422
-P 5750 3425
-F 0 "U8" H 5775 4874 60  0000 C CNN
-F 1 "Teensy-LC" H 5775 4768 60  0000 C CNN
-F 2 "Teensy:Teensy_LC_Min" H 5775 4662 60  0000 C CNN
-F 3 "https://www.pjrc.com/teensy/teensyLC.html" H 5775 4556 60  0000 C CNN
-	1    5750 3425
-	1    0    0    -1  
-$EndComp
 Text Label 4025 3275 0    50   ~ 0
 SensorBoard_RX
 Text Label 4025 3375 0    50   ~ 0
@@ -259,4 +241,111 @@ Pressure_Sensor
 Wire Wire Line
 	4700 2675 4025 2675
 NoConn ~ 6850 4275
+$Comp
+L SamacSys_Parts:CMT-8530S-SMT-TR LS1
+U 1 1 5D1128E1
+P 9675 3750
+F 0 "LS1" V 10179 3878 50  0000 L CNN
+F 1 "CMT-8530S-SMT-TR" V 10270 3878 50  0000 L CNN
+F 2 "SamacSys_Parts:CMT8530SSMTTR" H 10625 3850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/CMT-8530S-SMT-TR.pdf" H 10625 3750 50  0001 L CNN
+F 4 "Speakers & Transducers Buzzer 8.5mm sq 2.73kHz 3.6V SMT" H 10625 3650 50  0001 L CNN "Description"
+F 5 "3" H 10625 3550 50  0001 L CNN "Height"
+F 6 "490-CMT-8530S-SMT-TR" H 10625 3450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-CMT-8530S-SMT-TR" H 10625 3350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 10625 3250 50  0001 L CNN "Manufacturer_Name"
+F 9 "CMT-8530S-SMT-TR" H 10625 3150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9675 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 1675 4950 1675
+Text Label 9725 3625 2    50   ~ 0
+3V3
+NoConn ~ 9675 3750
+NoConn ~ 9575 4850
+Wire Wire Line
+	9575 3750 9575 3625
+Wire Wire Line
+	9575 3625 9725 3625
+$Comp
+L Diode:BAT42W-V D1
+U 1 1 5D11BE45
+P 9000 4300
+F 0 "D1" V 8954 4379 50  0000 L CNN
+F 1 "BAT42W-V" V 9045 4379 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9000 4125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 9000 4300 50  0001 C CNN
+	1    9000 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9575 3750 9000 3750
+Wire Wire Line
+	9000 3750 9000 4150
+Connection ~ 9575 3750
+$Comp
+L Transistor_BJT:MMBT3904 Q8
+U 1 1 5D11DB7A
+P 9575 5225
+F 0 "Q8" H 9766 5271 50  0000 L CNN
+F 1 "MMBT3904" H 9766 5180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9775 5150 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9575 5225 50  0001 L CNN
+	1    9575 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5D11E980
+P 9125 5225
+F 0 "R7" V 8918 5225 50  0000 C CNN
+F 1 "100" V 9009 5225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9055 5225 50  0001 C CNN
+F 3 "~" H 9125 5225 50  0001 C CNN
+	1    9125 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9275 5225 9375 5225
+Text Label 9475 5500 0    50   ~ 0
+GND
+Wire Wire Line
+	9675 5425 9675 5500
+Wire Wire Line
+	9675 5500 9475 5500
+Text Label 8700 5225 0    50   ~ 0
+buzzer
+Wire Wire Line
+	8975 5225 8700 5225
+$Comp
+L Teensy:Teensy-LC U8
+U 1 1 5D055422
+P 5750 3425
+F 0 "U8" H 5775 4874 60  0000 C CNN
+F 1 "Teensy-LC" H 5775 4768 60  0000 C CNN
+F 2 "Teensy:Teensy_LC_Min" H 5775 4662 60  0000 C CNN
+F 3 "https://www.pjrc.com/teensy/teensyLC.html" H 5775 4556 60  0000 C CNN
+	1    5750 3425
+	1    0    0    -1  
+$EndComp
+Text Label 4425 3175 0    50   ~ 0
+buzzer
+Wire Wire Line
+	4700 3175 4425 3175
+Wire Wire Line
+	9675 4850 9675 4900
+Wire Wire Line
+	9000 4450 9000 4900
+Wire Wire Line
+	9000 4900 9675 4900
+Connection ~ 9675 4900
+Wire Wire Line
+	9675 4900 9675 5025
+Text Label 4600 2475 2    50   ~ 0
+SW_GND
+Text Label 7200 3275 2    50   ~ 0
+SW_GND
+Wire Wire Line
+	6850 3275 7200 3275
 $EndSCHEMATC

@@ -140,18 +140,6 @@ F 3 "~" H 2000 700 50  0001 C CNN
 	1    2000 700 
 	-1   0    0    1   
 $EndComp
-Text Label 2250 600  0    50   ~ 0
-24v
-Text Label 3250 850  0    50   ~ 0
-24v
-Wire Wire Line
-	2200 600  2400 600 
-Wire Wire Line
-	2200 700  2400 700 
-Wire Wire Line
-	3200 850  3400 850 
-Wire Wire Line
-	3200 950  3400 950 
 Text Label 10250 2600 0    50   ~ 0
 ~Reset_Teensy
 Wire Wire Line
@@ -228,10 +216,6 @@ Wire Notes Line
 	10350 500  10350 1000
 Wire Notes Line
 	10350 1000 11200 1000
-Text Label 2250 700  0    50   ~ 0
-GND
-Text Label 3250 950  0    50   ~ 0
-GND
 $Comp
 L antenna:molex_antenna_47948-0001 U1
 U 1 1 5B6E10D8
@@ -305,30 +289,15 @@ Wire Wire Line
 Text Label 2800 7200 0    79   ~ 0
 GND
 $Sheet
-S 1750 1850 1250 1450
-U 5CFED7A9
-F0 "batteryMonitor" 50
-F1 "batteryMonitor.sch" 50
-F2 "Low_GND" B L 1750 3200 50 
-F3 "SCL" B L 1750 2975 50 
-F4 "SDA" B L 1750 2875 50 
-F5 "ALERT" I L 1750 2775 50 
-F6 "REGOUT" O R 3000 2350 50 
-F7 "Pack+" O R 3000 2000 50 
-F8 "PACK_GND" O R 3000 2125 50 
-F9 "Button_L" I L 1750 2450 50 
-F10 "Button_R" I L 1750 2350 50 
-$EndSheet
-$Sheet
-S 3275 1850 1250 725 
+S 3525 1850 1250 725 
 U 5D013D6A
 F0 "batteryStepDown" 50
 F1 "batteryStepDown.sch" 50
-F2 "Pack+" I L 3275 2000 50 
-F3 "5V_EN" I L 3275 2350 50 
-F4 "Pack_GND" I L 3275 2125 50 
-F5 "3v3" O R 4525 2000 50 
-F6 "5V" O R 4525 2150 50 
+F2 "Pack+" I L 3525 2000 50 
+F3 "5V_EN" I L 3525 2350 50 
+F4 "3v3" O R 4775 2000 50 
+F5 "5V" O R 4775 2150 50 
+F6 "GND" I L 3525 2500 50 
 $EndSheet
 Wire Wire Line
 	8675 4150 8375 4150
@@ -377,12 +346,6 @@ Wire Wire Line
 	8675 4600 8225 4600
 Wire Wire Line
 	8675 4475 8225 4475
-Wire Wire Line
-	3000 2000 3275 2000
-Wire Wire Line
-	3275 2125 3000 2125
-Wire Wire Line
-	3000 2350 3275 2350
 Text Label 1675 3200 2    79   ~ 0
 GND
 Text Label 7900 2200 0    79   ~ 0
@@ -450,14 +413,14 @@ F 3 "~" H 3850 900 50  0001 C CNN
 	1    3850 900 
 	-1   0    0    1   
 $EndComp
-Text Label 4700 2000 2    50   ~ 0
+Text Label 4950 2000 2    50   ~ 0
 3v3
-Text Label 4700 2150 2    50   ~ 0
+Text Label 4950 2150 2    50   ~ 0
 5v
 Wire Wire Line
-	4525 2150 4700 2150
+	4775 2150 4950 2150
 Wire Wire Line
-	4525 2000 4700 2000
+	4775 2000 4950 2000
 Text Label 1950 4625 0    50   ~ 0
 GND
 Wire Wire Line
@@ -601,4 +564,49 @@ Text Label 10200 6200 2    50   ~ 0
 LED_Strip_CMD
 Wire Wire Line
 	10250 6200 9650 6200
+$Sheet
+S 1750 1850 1250 1450
+U 5CFED7A9
+F0 "batteryMonitor" 50
+F1 "batteryMonitor.sch" 50
+F2 "Low_GND" B L 1750 3200 50 
+F3 "SCL" B L 1750 2975 50 
+F4 "SDA" B L 1750 2875 50 
+F5 "ALERT" I L 1750 2775 50 
+F6 "REGOUT" O R 3000 2350 50 
+F7 "Pack+" O R 3000 2000 50 
+F8 "PACK_GND" O R 3000 2125 50 
+F9 "Button_L" I L 1750 2450 50 
+F10 "Button_R" I L 1750 2350 50 
+$EndSheet
+Wire Wire Line
+	3000 2000 3525 2000
+Wire Wire Line
+	3000 2350 3525 2350
+Text Label 3150 2000 0    50   ~ 0
+Pack+
+Text Label 3400 2125 2    50   ~ 0
+Pack_GND
+Text Label 3600 950  2    50   ~ 0
+Pack_GND
+Text Label 2575 700  2    50   ~ 0
+Pack_GND
+Text Label 3450 850  2    50   ~ 0
+Pack+
+Text Label 2450 600  2    50   ~ 0
+Pack+
+Wire Wire Line
+	2200 600  2450 600 
+Wire Wire Line
+	2200 700  2575 700 
+Wire Wire Line
+	3200 850  3450 850 
+Wire Wire Line
+	3200 950  3600 950 
+Wire Wire Line
+	3000 2125 3400 2125
+Text Label 3350 2500 0    50   ~ 0
+GND
+Wire Wire Line
+	3525 2500 3350 2500
 $EndSCHEMATC

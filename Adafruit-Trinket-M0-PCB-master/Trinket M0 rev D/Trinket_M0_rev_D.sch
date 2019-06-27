@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 12505 9349
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -128,7 +128,7 @@ L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R41
 U 1 1 E54CE26F
 P 6800 2800
 F 0 "R41" H 6800 2900 50  0000 C CNN
-F 1 "1.5K" H 6800 2800 40  0000 C CNB
+F 1 "1k" H 6800 2800 40  0000 C CNB
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6800 2800 50  0001 C CNN
 F 3 "" H 6800 2800 50  0001 C CNN
 	1    6800 2800
@@ -318,4 +318,10 @@ NoConn ~ 5400 3800
 NoConn ~ 5400 4200
 NoConn ~ 5400 4300
 NoConn ~ 5400 4600
+Text Label 925  3525 0    50   ~ 0
+GND
+Text Label 2200 4500 0    50   ~ 0
+GND
+Text Label 7400 3325 1    50   ~ 0
+GND
 $EndSCHEMATC
