@@ -247,6 +247,10 @@ F 0 "C1" H 2442 7096 50  0000 L CNN
 F 1 "1.3pF" H 2442 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 7050 50  0001 C CNN
 F 3 "~" H 2350 7050 50  0001 C CNN
+F 4 "" H 2350 7050 50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "" H 2350 7050 50  0001 C CNN "Mouser Part Number"
+F 6 "" H 2350 7050 50  0001 C CNN "Description"
+F 7 "GRM0335C1H1R3BA01D" H 2350 7050 50  0001 C CNN "Field4"
 	1    2350 7050
 	1    0    0    -1  
 $EndComp
@@ -425,19 +429,6 @@ Text Label 1950 4625 0    50   ~ 0
 GND
 Wire Wire Line
 	1950 4625 2125 4625
-$Comp
-L RF:NRF24L01_Breakout U12
-U 1 1 5D12ECD5
-P 4825 4825
-F 0 "U12" H 5205 4871 50  0000 L CNN
-F 1 "NRF24L01_Breakout" H 5205 4780 50  0000 L CNN
-F 2 "RF_Module:nRF24L01_Breakout" H 4975 5425 50  0001 L CIN
-F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 4825 4725 50  0001 C CNN
-	1    4825 4825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3675 4525 4325 4525
 $Sheet
 S 2125 4275 1550 1075
 U 5D07F3D0
@@ -453,29 +444,6 @@ F8 "3v3" I L 2125 4475 50
 F9 "~M0_RESET" I L 2125 4850 50 
 F10 "Operational_Sig" O L 2125 5125 50 
 $EndSheet
-Wire Wire Line
-	3675 4625 4325 4625
-Wire Wire Line
-	3675 4725 4325 4725
-Wire Wire Line
-	3675 4825 4325 4825
-Wire Wire Line
-	3675 5025 4325 5025
-NoConn ~ 4325 5125
-Text Label 4975 4175 2    50   ~ 0
-3v3
-Text Label 5000 5525 2    50   ~ 0
-GND
-Wire Wire Line
-	4825 4225 4825 4175
-Wire Wire Line
-	4825 4175 4975 4175
-Wire Wire Line
-	4825 5425 4825 5525
-Wire Wire Line
-	4825 5525 5000 5525
-Text Notes 5225 4700 0    50   ~ 0
-Alternative nRF24 Pinout as backup\n
 Text Label 1975 4475 0    50   ~ 0
 3v3
 Wire Wire Line

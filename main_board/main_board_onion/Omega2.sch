@@ -410,6 +410,7 @@ F 0 "C2" V 1098 5050 50  0000 C CNN
 F 1 "100nF" V 1189 5050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1388 4900 50  0001 C CNN
 F 3 "~" H 1350 5050 50  0001 C CNN
+F 4 "" H 1350 5050 50  0001 C CNN "Manufacturer_Part_Number"
 	1    1350 5050
 	0    1    1    0   
 $EndComp
@@ -464,6 +465,9 @@ F 0 "C4" H 2385 5254 50  0000 R CNN
 F 1 "1uF" H 2385 5345 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 5150 50  0001 C CNN
 F 3 "~" H 2500 5300 50  0001 C CNN
+F 4 "" H 2500 5300 50  0001 C CNN "Mouser Part Number"
+F 5 "" H 2500 5300 50  0001 C CNN "Description"
+F 6 "MF-CAP-0402-1uF" H 2500 5300 50  0001 C CNN "Field4"
 	1    2500 5300
 	-1   0    0    1   
 $EndComp
@@ -514,6 +518,7 @@ F 0 "C3" V 1602 7650 50  0000 C CNN
 F 1 "100nF" V 1511 7650 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1388 7500 50  0001 C CNN
 F 3 "~" H 1350 7650 50  0001 C CNN
+F 4 "" H 1350 7650 50  0001 C CNN "Manufacturer_Part_Number"
 	1    1350 7650
 	0    1    -1   0   
 $EndComp
