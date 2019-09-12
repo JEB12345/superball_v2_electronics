@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:main_board_onion-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -38,13 +38,13 @@ Text Label 6900 3175 0    50   ~ 0
 5V
 Wire Wire Line
 	6850 3175 7000 3175
-Text Label 4425 1850 2    50   ~ 0
+Text Label 4625 2475 2    50   ~ 0
 GND
 Text Label 4625 2775 2    50   ~ 0
 LED_Strip_Lighting
-Text Label 4625 2875 2    50   ~ 0
+Text Label 4625 2575 2    50   ~ 0
 Serial_RX
-Text Label 4625 2975 2    50   ~ 0
+Text Label 4625 2675 2    50   ~ 0
 Serial_TX
 Text Label 1925 2600 2    50   ~ 0
 Pressure_Sensor
@@ -55,9 +55,9 @@ I2C_SDA
 Text Label 6900 3875 0    50   ~ 0
 I2C_SCL
 Wire Wire Line
-	4700 2875 4250 2875
+	4700 2575 4250 2575
 Wire Wire Line
-	4700 2975 4250 2975
+	4700 2675 4250 2675
 Wire Wire Line
 	6850 3875 7225 3875
 Wire Wire Line
@@ -83,8 +83,8 @@ $Comp
 L Device:R R35
 U 1 1 5D01CEE1
 P 3650 2550
-F 0 "R35" H 3720 2596 50  0000 L CNN
-F 1 "10K" H 3720 2505 50  0000 L CNN
+F 0 "R35" H 3450 2600 50  0000 L CNN
+F 1 "10K" H 3450 2475 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 2550 50  0001 C CNN
 F 3 "~" H 3650 2550 50  0001 C CNN
 	1    3650 2550
@@ -134,9 +134,9 @@ Wire Wire Line
 Connection ~ 2950 2775
 Text HLabel 2850 2775 0    50   Output ~ 0
 LED_Strip_CMD
-Text HLabel 4250 2875 0    50   Input ~ 0
+Text HLabel 4250 2575 0    50   Input ~ 0
 Serial_RX
-Text HLabel 4250 2975 0    50   Output ~ 0
+Text HLabel 4250 2675 0    50   Output ~ 0
 Serial_TX
 Text HLabel 7225 3875 2    50   Input ~ 0
 I2C_SCL
@@ -152,55 +152,8 @@ Wire Wire Line
 	4700 3475 4100 3475
 Text HLabel 4100 3475 0    50   Input ~ 0
 Teensy_Ready
-Text Label 4625 3575 2    50   ~ 0
-Omega_Reset
-Wire Wire Line
-	4700 3575 4100 3575
-Text HLabel 4100 3575 0    50   Input ~ 0
-Omega_Reset
-Wire Wire Line
-	4700 2475 4250 2475
-Wire Wire Line
-	4250 2475 4250 2250
-$Comp
-L Transistor_FET:2N7002E Q7
-U 1 1 5D099095
-P 4350 2050
-F 0 "Q7" H 4556 2096 50  0000 L CNN
-F 1 "2N7002E" H 4556 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4550 1975 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 4350 2050 50  0001 L CNN
-	1    4350 2050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4475 1850 4250 1850
-$Comp
-L Device:R R36
-U 1 1 5D0AE8F9
-P 4700 1875
-F 0 "R36" H 4770 1921 50  0000 L CNN
-F 1 "10k" H 4770 1830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 1875 50  0001 C CNN
-F 3 "~" H 4700 1875 50  0001 C CNN
-	1    4700 1875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 2050 4700 2050
-Wire Wire Line
-	4700 2050 4700 2025
-Connection ~ 4700 2050
-Wire Wire Line
-	4700 2050 4850 2050
-Wire Wire Line
-	4700 1725 4700 1675
-Text Label 4750 1675 0    50   ~ 0
-3V3
 Text Label 3500 2100 2    50   ~ 0
 3V3
-Text HLabel 4850 2050 2    50   Input ~ 0
-~Teensy_Reset
 NoConn ~ 6850 2575
 NoConn ~ 6850 2675
 NoConn ~ 6850 2775
@@ -215,15 +168,12 @@ NoConn ~ 6850 3775
 NoConn ~ 6850 4075
 NoConn ~ 6850 4375
 NoConn ~ 4700 4375
-NoConn ~ 4700 4275
-NoConn ~ 4700 4175
 NoConn ~ 4700 4075
 NoConn ~ 4700 3975
 NoConn ~ 4700 3875
 NoConn ~ 4700 3775
 NoConn ~ 4700 3675
 NoConn ~ 4700 3075
-NoConn ~ 4700 2575
 Text Label 4025 3275 0    50   ~ 0
 SensorBoard_RX
 Text Label 4025 3375 0    50   ~ 0
@@ -236,10 +186,10 @@ Text HLabel 4025 3275 0    50   Input ~ 0
 SensorBoard_RX
 Text HLabel 4025 3375 0    50   Input ~ 0
 SensorBoard_TX
-Text Label 4025 2675 0    50   ~ 0
+Text Label 4025 2875 0    50   ~ 0
 Pressure_Sensor
 Wire Wire Line
-	4700 2675 4025 2675
+	4700 2875 4025 2875
 NoConn ~ 6850 4275
 $Comp
 L SamacSys_Parts:CMT-8530S-SMT-TR LS1
@@ -258,8 +208,6 @@ F 9 "CMT-8530S-SMT-TR" H 10625 3150 50  0001 L CNN "Manufacturer_Part_Number"
 	1    9675 3750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4700 1675 4950 1675
 Text Label 9725 3625 2    50   ~ 0
 3V3
 NoConn ~ 9675 3750
@@ -342,10 +290,20 @@ Wire Wire Line
 Connection ~ 9675 4900
 Wire Wire Line
 	9675 4900 9675 5025
-Text Label 4600 2475 2    50   ~ 0
-SW_GND
-Text Label 7200 3275 2    50   ~ 0
-SW_GND
 Wire Wire Line
 	6850 3275 7200 3275
+Wire Wire Line
+	4700 2475 4450 2475
+NoConn ~ 4700 2975
+Text HLabel 4550 4275 0    50   Input ~ 0
+~Teensy_Reset
+Wire Wire Line
+	4700 4275 4550 4275
+Text Label 7050 3275 2    50   ~ 0
+GND
+Text HLabel 4550 4175 0    50   Input ~ 0
+Teensy_Program
+Wire Wire Line
+	4700 4175 4550 4175
+NoConn ~ 4700 3575
 $EndSCHEMATC

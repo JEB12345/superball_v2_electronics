@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:main_board_onion-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -85,9 +85,9 @@ F5 "Teensy_Ready" I L 8150 3050 50
 F6 "RX1" I R 10200 2875 50 
 F7 "TX1" I R 10200 2975 50 
 F8 "~Reset_Teensy" O R 10200 2600 50 
-F9 "Omega_Reset" I L 8150 3250 50 
-F10 "~M0_RESET" O R 10200 3150 50 
-F11 "Operational_Sig" I R 10200 3250 50 
+F9 "~M0_RESET" O R 10200 3150 50 
+F10 "Operational_Sig" I R 10200 3250 50 
+F11 "Teensy_Program" I L 8150 3200 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -146,10 +146,6 @@ Wire Wire Line
 	10200 2600 10650 2600
 Text Label 8100 3050 2    50   ~ 0
 Teensy_Ready
-Text Label 8100 3250 2    50   ~ 0
-Reset_Omega
-Wire Wire Line
-	8150 3250 7600 3250
 $Comp
 L Connector_Generic:Conn_01x01 J8
 U 1 1 5B7E5734
@@ -245,7 +241,7 @@ U 1 1 5B6E14A7
 P 2350 7050
 F 0 "C1" H 2442 7096 50  0000 L CNN
 F 1 "1.3pF" H 2442 7005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2350 7050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 2350 7050 50  0001 C CNN
 F 3 "~" H 2350 7050 50  0001 C CNN
 F 4 "" H 2350 7050 50  0001 C CNN "Manufacturer_Part_Number"
 F 5 "" H 2350 7050 50  0001 C CNN "Mouser Part Number"
@@ -327,10 +323,10 @@ F9 "I2C_SDA" I L 8675 5025 50
 F10 "bq76930_Alert" I R 9975 4425 50 
 F11 "Pressure_Sensor" I R 9975 4575 50 
 F12 "Teensy_Ready" I R 9975 4900 50 
-F13 "Omega_Reset" I R 9975 5025 50 
-F14 "~Teensy_Reset" I R 9975 4025 50 
-F15 "SensorBoard_RX" I L 8675 5225 50 
-F16 "SensorBoard_TX" I L 8675 5350 50 
+F13 "~Teensy_Reset" I R 9975 4025 50 
+F14 "SensorBoard_RX" I L 8675 5225 50 
+F15 "SensorBoard_TX" I L 8675 5350 50 
+F16 "Teensy_Program" I R 9975 5050 50 
 $EndSheet
 Wire Wire Line
 	8150 3050 7700 3050
@@ -370,53 +366,20 @@ Wire Wire Line
 	9975 4250 10575 4250
 Wire Wire Line
 	9975 4425 10575 4425
-Text Label 1700 2875 2    50   ~ 0
-I2C_SDA
-Text Label 1700 2975 2    50   ~ 0
-I2C_SCL
-Wire Wire Line
-	1750 2875 1375 2875
-Wire Wire Line
-	1750 2975 1375 2975
 Text Label 1700 2775 2    50   ~ 0
 bq76930_Alert
 Wire Wire Line
 	1750 2775 1150 2775
-Text Label 10025 5025 0    50   ~ 0
-Reset_Omega
 Text Label 10025 4900 0    50   ~ 0
 Teensy_Ready
-Text Label 8100 3250 2    50   ~ 0
-Reset_Omega
 Text Label 8100 3050 2    50   ~ 0
 Teensy_Ready
 Wire Wire Line
 	9975 4900 10550 4900
-Wire Wire Line
-	9975 5025 10550 5025
 Text Label 10025 4025 0    50   ~ 0
 ~Reset_Teensy
 Wire Wire Line
 	9975 4025 10550 4025
-Wire Wire Line
-	4050 900  4250 900 
-Text Label 4100 900  0    50   ~ 0
-GND
-Text Label 4100 800  0    50   ~ 0
-3v3
-Wire Wire Line
-	4050 800  4250 800 
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5B69F017
-P 3850 900
-F 0 "J5" H 3770 575 50  0000 C CNN
-F 1 "Backup_3v3" H 3770 666 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0207_1x02-1MP_P1.00mm_Vertical" H 3850 900 50  0001 C CNN
-F 3 "~" H 3850 900 50  0001 C CNN
-	1    3850 900 
-	-1   0    0    1   
-$EndComp
 Text Label 4950 2000 2    50   ~ 0
 3v3
 Text Label 4950 2150 2    50   ~ 0
@@ -425,37 +388,37 @@ Wire Wire Line
 	4775 2150 4950 2150
 Wire Wire Line
 	4775 2000 4950 2000
-Text Label 1950 4625 0    50   ~ 0
+Text Label 2925 4650 0    50   ~ 0
 GND
 Wire Wire Line
-	1950 4625 2125 4625
+	2925 4650 3100 4650
 $Sheet
-S 2125 4275 1550 1075
+S 3100 4300 1550 1075
 U 5D07F3D0
 F0 "nRF24L01+Trinket" 50
 F1 "nRF24L01.sch" 50
-F2 "mRF_MOSI" I R 3675 4525 50 
-F3 "nRF_MISO" I R 3675 4625 50 
-F4 "nRF_SCK" I R 3675 4725 50 
-F5 "nRF_CSN" I R 3675 4825 50 
-F6 "nRF_CE" I R 3675 5025 50 
-F7 "GND" I L 2125 4625 50 
-F8 "3v3" I L 2125 4475 50 
-F9 "~M0_RESET" I L 2125 4850 50 
-F10 "Operational_Sig" O L 2125 5125 50 
+F2 "mRF_MOSI" I R 4650 4550 50 
+F3 "nRF_MISO" I R 4650 4650 50 
+F4 "nRF_SCK" I R 4650 4750 50 
+F5 "nRF_CSN" I R 4650 4850 50 
+F6 "nRF_CE" I R 4650 5050 50 
+F7 "GND" I L 3100 4650 50 
+F8 "3v3" I L 3100 4500 50 
+F9 "~M0_RESET" I L 3100 4875 50 
+F10 "Operational_Sig" O L 3100 5150 50 
 $EndSheet
-Text Label 1975 4475 0    50   ~ 0
+Text Label 2950 4500 0    50   ~ 0
 3v3
 Wire Wire Line
-	2125 4475 1975 4475
-Text Label 1725 4850 0    50   ~ 0
+	3100 4500 2950 4500
+Text Label 2700 4875 0    50   ~ 0
 ~M0_RESET
 Wire Wire Line
-	2125 4850 1725 4850
-Text Label 1475 5125 0    50   ~ 0
+	3100 4875 2700 4875
+Text Label 2450 5150 0    50   ~ 0
 Operational_Sig
 Wire Wire Line
-	2125 5125 1475 5125
+	3100 5150 2450 5150
 Text Label 10850 3250 2    50   ~ 0
 Operational_Sig
 Wire Wire Line
@@ -476,17 +439,6 @@ Wire Wire Line
 	8675 5225 8025 5225
 Wire Wire Line
 	8675 5350 8025 5350
-$Comp
-L Connector:Conn_01x04_Female J4
-U 1 1 5D13A55A
-P 8725 6125
-F 0 "J4" H 8753 6101 50  0000 L CNN
-F 1 "SensorBoard" H 8753 6010 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0407_1x04-1MP_P1.00mm_Vertical" H 8725 6125 50  0001 C CNN
-F 3 "~" H 8725 6125 50  0001 C CNN
-	1    8725 6125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8525 6225 7875 6225
 Wire Wire Line
@@ -577,4 +529,88 @@ Text Label 3350 2500 0    50   ~ 0
 GND
 Wire Wire Line
 	3525 2500 3350 2500
+Text Label 1700 2975 2    50   ~ 0
+I2C_SCL
+Text Label 1700 2875 2    50   ~ 0
+I2C_SDA
+$Comp
+L Device:R R8
+U 1 1 5D827EC3
+P 650 2650
+F 0 "R8" H 700 2700 50  0000 L CNN
+F 1 "10k" H 700 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 580 2650 50  0001 C CNN
+F 3 "~" H 650 2650 50  0001 C CNN
+	1    650  2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5D7655E3
+P 900 2650
+F 0 "R9" H 950 2700 50  0000 L CNN
+F 1 "10k" H 950 2600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 830 2650 50  0001 C CNN
+F 3 "~" H 900 2650 50  0001 C CNN
+	1    900  2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2800 900  2875
+Wire Wire Line
+	900  2875 1750 2875
+Wire Wire Line
+	650  2800 650  2975
+Wire Wire Line
+	650  2975 1750 2975
+Wire Wire Line
+	650  2500 650  2425
+Wire Wire Line
+	650  2425 900  2425
+Wire Wire Line
+	900  2425 900  2500
+Text Label 725  2425 0    50   ~ 0
+3v3
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 5D13A55A
+P 8725 6125
+F 0 "J4" H 8753 6101 50  0000 L CNN
+F 1 "SensorBoard" H 8753 6010 50  0000 L CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0407_1x04-1MP_P1.00mm_Vertical" H 8725 6125 50  0001 C CNN
+F 3 "~" H 8725 6125 50  0001 C CNN
+	1    8725 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5B69F017
+P 875 2025
+F 0 "J5" H 795 1700 50  0000 C CNN
+F 1 "Power_On_Switch" H 795 1791 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Pico-Clasp_501331-0207_1x02-1MP_P1.00mm_Vertical" H 875 2025 50  0001 C CNN
+F 3 "~" H 875 2025 50  0001 C CNN
+	1    875  2025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1075 1925 1475 1925
+Wire Wire Line
+	1475 1925 1475 2350
+Wire Wire Line
+	1475 2350 1750 2350
+Wire Wire Line
+	1750 2450 1425 2450
+Wire Wire Line
+	1425 2450 1425 2025
+Wire Wire Line
+	1425 2025 1075 2025
+Text Label 10025 5050 0    50   ~ 0
+Teensy_Program
+Wire Wire Line
+	9975 5050 10625 5050
+Text Label 8100 3200 2    50   ~ 0
+Teensy_Program
+Wire Wire Line
+	8150 3200 7500 3200
 $EndSCHEMATC
