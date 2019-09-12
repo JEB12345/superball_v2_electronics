@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:main_board_onion-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -148,10 +148,6 @@ Text Label 2825 2725 2    50   ~ 0
 GND
 Wire Wire Line
 	2850 2725 2650 2725
-Text Label 3900 2925 0    50   ~ 0
-PG
-Wire Wire Line
-	3850 2925 4050 2925
 Wire Wire Line
 	3350 3175 4500 3175
 Connection ~ 5800 2500
@@ -178,10 +174,6 @@ Connection ~ 4500 3175
 Connection ~ 5550 3025
 Wire Wire Line
 	2450 2525 2850 2525
-Text GLabel 4050 2925 2    50   Input ~ 0
-3V3_EN
-Text GLabel 5275 3650 0    50   Input ~ 0
-3V3_EN
 Wire Wire Line
 	5800 2500 6000 2500
 Text HLabel 2800 2925 0    50   Input ~ 0
@@ -200,12 +192,9 @@ F 3 "~" H 5450 3475 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5275 3650 5450 3650
-Wire Wire Line
 	5950 2850 5950 3650
 Wire Wire Line
 	5450 3625 5450 3650
-Connection ~ 5450 3650
 Wire Wire Line
 	5450 3650 5950 3650
 Wire Wire Line

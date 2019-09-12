@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:main_board_onion-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -583,10 +583,6 @@ Wire Wire Line
 	6450 2050 6650 2050
 Wire Wire Line
 	5000 2050 4800 2050
-Text Label 6925 2650 2    50   ~ 0
-Omega_RST
-NoConn ~ 6450 2250
-NoConn ~ 6450 2350
 NoConn ~ 6450 2750
 NoConn ~ 5000 3550
 Text Label 6500 3250 0    50   ~ 0
@@ -603,8 +599,6 @@ NoConn ~ 5000 3050
 NoConn ~ 5000 2950
 NoConn ~ 5000 3350
 NoConn ~ 5000 3450
-Wire Wire Line
-	6450 2650 7100 2650
 Text HLabel 7100 3350 2    50   Input ~ 0
 Teensy_Ready
 Text HLabel 7100 3250 2    50   Output ~ 0
@@ -645,48 +639,6 @@ Wire Wire Line
 	5000 2150 4675 2150
 Text Label 4950 2150 2    50   ~ 0
 VDD25
-Wire Wire Line
-	9575 6100 8975 6100
-Wire Wire Line
-	9950 5425 9950 5350
-Wire Wire Line
-	9950 5350 10300 5350
-Wire Wire Line
-	9875 6100 9950 6100
-Wire Wire Line
-	9950 6100 9950 5825
-$Comp
-L Device:R R11
-U 1 1 5D0274A7
-P 9725 6100
-F 0 "R11" V 9518 6100 50  0000 C CNN
-F 1 "330" V 9609 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9655 6100 50  0001 C CNN
-F 3 "~" H 9725 6100 50  0001 C CNN
-	1    9725 6100
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 5D02392E
-P 10050 5625
-F 0 "Q1" H 10256 5671 50  0000 L CNN
-F 1 "BSS138" H 10256 5580 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10250 5550 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10050 5625 50  0001 L CNN
-	1    10050 5625
-	-1   0    0    -1  
-$EndComp
-Text Label 9500 6100 2    50   ~ 0
-Omega_RST
-Wire Wire Line
-	10250 5625 10525 5625
-Text Label 10225 5350 2    50   ~ 0
-VDD25
-Text HLabel 10525 5625 2    50   Input ~ 0
-Omega_Reset
-Text Label 10475 5625 2    50   ~ 0
-ResetGate
 Text Label 6800 3550 2    50   ~ 0
 ~M0_RST
 Text Label 7100 3450 2    50   ~ 0
@@ -702,12 +654,130 @@ Wire Wire Line
 NoConn ~ 2450 7200
 NoConn ~ 2450 7100
 Wire Notes Line
-	8750 2250 11200 2250
-Text Notes 9750 5125 0    50   ~ 0
-Omega Reset\n
-Wire Notes Line
 	8750 2250 8750 6525
 NoConn ~ 5000 2450
 NoConn ~ 5000 2550
 NoConn ~ 5000 2650
+Text Label 6950 2250 2    50   ~ 0
+extra_USB+
+Text Label 6950 2350 2    50   ~ 0
+extra_USB-
+Wire Wire Line
+	6450 2250 6950 2250
+Wire Wire Line
+	6450 2350 6950 2350
+Wire Wire Line
+	8775 775  8675 775 
+Text Label 7450 1800 0    50   ~ 0
+extra_USB-
+Wire Wire Line
+	7950 1900 7450 1900
+Wire Wire Line
+	8775 800  8775 775 
+Wire Wire Line
+	7950 1800 7450 1800
+Wire Wire Line
+	8675 775  8450 775 
+Text Label 8450 775  0    50   ~ 0
+GND
+Wire Wire Line
+	8675 800  8675 775 
+Text Label 7450 1900 0    50   ~ 0
+extra_USB+
+Connection ~ 8675 775 
+NoConn ~ 8375 1000
+$Comp
+L Device:R_Small R28
+U 1 1 5D7FF1F9
+P 8050 1800
+F 0 "R28" V 7854 1800 50  0000 C CNN
+F 1 "33" V 7945 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8050 1800 50  0001 C CNN
+F 3 "~" H 8050 1800 50  0001 C CNN
+	1    8050 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 5D7FF20A
+P 8050 1900
+F 0 "R42" V 8250 1900 50  0000 C CNN
+F 1 "33" V 8150 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8050 1900 50  0001 C CNN
+F 3 "~" H 8050 1900 50  0001 C CNN
+	1    8050 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J14
+U 1 1 5D6FE88E
+P 8675 1200
+F 0 "J14" H 8732 1667 50  0000 C CNN
+F 1 "USB_B_Micro" H 8732 1576 50  0000 C CNN
+F 2 "molex_105133:MOLEX_105133-0001_0" H 8825 1150 50  0001 C CNN
+F 3 "~" H 8825 1150 50  0001 C CNN
+	1    8675 1200
+	-1   0    0    1   
+$EndComp
+Text Label 8725 1800 2    50   ~ 0
+extra_in_USB-
+Wire Wire Line
+	8150 1800 8725 1800
+Text Label 8725 1900 2    50   ~ 0
+extra_in_USB+
+Wire Wire Line
+	8150 1900 8725 1900
+Text Label 8375 1100 2    50   ~ 0
+extra_in_USB-
+Text Label 8375 1200 2    50   ~ 0
+extra_in_USB+
+Wire Wire Line
+	7800 1100 8375 1100
+Text Label 8225 1400 0    50   ~ 0
+5v
+Wire Wire Line
+	8375 1400 8000 1400
+Wire Wire Line
+	8000 1400 8000 1300
+Text Notes 7425 625  0    50   ~ 0
+USB Micro, Omega USB for Teensy
+Wire Notes Line
+	7125 2250 7125 475 
+Wire Notes Line
+	7125 2250 11200 2250
+$Comp
+L main_board_onion-rescue:SP0503BAHT-Power_Protection D8
+U 1 1 5D7FF1E2
+P 7500 1200
+F 0 "D8" V 7158 1200 50  0000 C CNN
+F 1 "SP0503BAHT" V 7249 1200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 7725 1150 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 7625 1325 50  0001 C CNN
+	1    7500 1200
+	0    1    -1   0   
+$EndComp
+Text Label 7300 1200 2    50   ~ 0
+GND
+Wire Wire Line
+	7300 1200 7150 1200
+Wire Wire Line
+	7775 1200 7775 1100
+Wire Wire Line
+	7775 1100 7700 1100
+Wire Wire Line
+	7775 1200 8375 1200
+Wire Wire Line
+	7800 1100 7800 1050
+Wire Wire Line
+	7800 1050 7750 1050
+Wire Wire Line
+	7750 1050 7750 1200
+Wire Wire Line
+	7750 1200 7700 1200
+Wire Wire Line
+	7700 1300 8000 1300
+Text HLabel 6775 2650 2    50   Input ~ 0
+Teensy_Program
+Wire Wire Line
+	6450 2650 6775 2650
 $EndSCHEMATC

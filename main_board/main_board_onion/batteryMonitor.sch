@@ -1,6 +1,6 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:main_board_onion-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -90,14 +90,10 @@ F 6 "MF-CAP-0402-1uF" H 1900 2450 50  0001 C CNN "Field4"
 	1    1900 2450
 	1    0    0    -1  
 $EndComp
-Text Label 1775 3950 2    50   ~ 0
+Text Label 1450 3950 2    50   ~ 0
 Batt_GND
 Wire Wire Line
-	1475 4150 1425 4150
-Wire Wire Line
 	1475 3750 1300 3750
-Wire Wire Line
-	1900 3950 1425 3950
 Wire Wire Line
 	1475 3550 1300 3550
 Wire Wire Line
@@ -128,10 +124,6 @@ Wire Wire Line
 Wire Wire Line
 	2300 3925 3475 3925
 Wire Wire Line
-	2325 4150 2325 4075
-Wire Wire Line
-	2325 4075 3475 4075
-Wire Wire Line
 	1475 3150 1425 3150
 Wire Wire Line
 	1425 3150 1425 3250
@@ -150,8 +142,6 @@ Wire Wire Line
 	2325 3175 3475 3175
 Wire Wire Line
 	2325 3350 2325 3325
-Wire Wire Line
-	2325 3325 3475 3325
 Text Label 2325 3325 0    50   ~ 0
 VC5
 Text Label 2200 1825 2    50   ~ 0
@@ -536,12 +526,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 4225 2650 4875
 Wire Wire Line
-	1425 4150 1425 5400
-Wire Wire Line
 	1425 5400 2250 5400
-Connection ~ 1425 4150
-Wire Wire Line
-	1425 4150 1050 4150
 Connection ~ 2550 5400
 Wire Wire Line
 	2425 4875 2250 4875
@@ -787,23 +772,6 @@ F 6 "MF-CAP-0402-1uF" H 1900 4050 50  0001 C CNN "Field4"
 	1    1900 4050
 	1    0    0    -1  
 $EndComp
-Connection ~ 1900 3950
-Wire Wire Line
-	1900 4150 2325 4150
-$Comp
-L Device:R R21
-U 1 1 5CBA554C
-P 1625 4150
-F 0 "R21" V 1525 4150 50  0000 C CNN
-F 1 "1k" V 1625 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1555 4150 50  0001 C CNN
-F 3 "~" H 1625 4150 50  0001 C CNN
-	1    1625 4150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1775 4150 1900 4150
-Connection ~ 1900 4150
 $Comp
 L Transistor_FET:IRLML6402 Q3
 U 1 1 5CBB8636
@@ -993,32 +961,19 @@ Wire Wire Line
 Wire Wire Line
 	5650 3725 5775 3725
 Connection ~ 5775 3725
-$Comp
-L Device:R R28
-U 1 1 5CBD875C
-P 6000 3425
-F 0 "R28" V 5925 3425 50  0000 C CNN
-F 1 "10k" V 6000 3425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5930 3425 50  0001 C CNN
-F 3 "~" H 6000 3425 50  0001 C CNN
-	1    6000 3425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5850 3425 5775 3425
 Connection ~ 5775 3425
 Wire Wire Line
 	5775 3425 5075 3425
 Text Label 2375 3925 0    50   ~ 0
 VC1
-Text Label 6750 3525 2    50   ~ 0
+Text Label 6450 3525 2    50   ~ 0
 VC1
 Wire Wire Line
-	6800 3525 6600 3525
+	6500 3525 6300 3525
 Text Notes 3125 6900 0    50   ~ 0
 cell minimum volatage	3.0V\ncell count	6\ncharge voltage	25.2\nmax charge current	1.75A\npeak discharge current	20A\nOV Proteciton threshold	4.3V\nOV protection Delay	2s\nUV Protection Threshold	2.5V\nUV protection Delay	2s\nOCD Protection Threshold 	20A -> PROTECT2[0:3] = 0xD (89mV, 19.3A, RSNS = 1)\nOCD Protection Delay	320ms -> PROTECT2[4:6] = 0x5 (320ms)\nSCD Protection Threshold	35A -> PROTECT1[0:2] = 0x5 (155mV, 33.6A, RSNS = 1)\nSCD Protection Delay	100us -> PROTECT1[3:4] = 0X1 (100us)
 Wire Wire Line
-	2325 3775 3475 3775
+	2325 3775 3125 3775
 $Comp
 L battery_management:BQ76930 U5
 U 1 1 5CAD5142
@@ -1031,19 +986,11 @@ F 3 "http://www.ti.com/lit/gpn/bq76930" H 4975 4325 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2325 2875 3475 2875
-Text Label 3425 3625 2    50   ~ 0
-low_GND
-Text Label 3425 3475 2    50   ~ 0
-low_GND
+	2325 2875 3100 2875
 Wire Wire Line
 	3475 3475 3125 3475
 Wire Wire Line
 	3475 3625 3125 3625
-Text Label 3425 2725 2    50   ~ 0
-low_GND
-Text Label 3425 2575 2    50   ~ 0
-low_GND
 Wire Wire Line
 	3475 2575 3100 2575
 Wire Wire Line
@@ -1066,11 +1013,9 @@ Text HLabel 10050 2325 2    50   Output ~ 0
 Pack+
 Text HLabel 10050 2425 2    50   Output ~ 0
 PACK_GND
-Wire Wire Line
-	6150 3425 6800 3425
-Text HLabel 6800 3425 2    50   Input ~ 0
+Text HLabel 6500 3425 2    50   Input ~ 0
 Button_L
-Text HLabel 6800 3525 2    50   Input ~ 0
+Text HLabel 6500 3525 2    50   Input ~ 0
 Button_R
 $Comp
 L Device:C_Small C20
@@ -1086,4 +1031,53 @@ F 6 "MF-CAP-0402-1uF" H 5475 3025 50  0001 C CNN "Field4"
 	1    5475 3025
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3100 2575 3100 2725
+Wire Wire Line
+	3100 2725 3100 2875
+Connection ~ 3100 2725
+Connection ~ 3100 2875
+Wire Wire Line
+	3100 2875 3475 2875
+$Comp
+L Device:R R21
+U 1 1 5CBA554C
+P 1625 3950
+F 0 "R21" V 1525 3950 50  0000 C CNN
+F 1 "1k" V 1625 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1555 3950 50  0001 C CNN
+F 3 "~" H 1625 3950 50  0001 C CNN
+	1    1625 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1425 4150 1050 4150
+Connection ~ 1425 4150
+Wire Wire Line
+	1425 4150 1425 5400
+Wire Wire Line
+	1425 4150 1900 4150
+Wire Wire Line
+	1775 3950 1900 3950
+Connection ~ 1900 3950
+Wire Wire Line
+	1475 3950 1100 3950
+Wire Wire Line
+	1900 3950 2300 3950
+Wire Wire Line
+	2300 3950 2300 4075
+Wire Wire Line
+	2300 4075 3475 4075
+Wire Wire Line
+	2325 3325 3475 3325
+Wire Wire Line
+	3125 3475 3125 3625
+Wire Wire Line
+	3125 3625 3125 3775
+Connection ~ 3125 3625
+Connection ~ 3125 3775
+Wire Wire Line
+	3125 3775 3475 3775
+Wire Wire Line
+	5775 3425 6500 3425
 $EndSCHEMATC
